@@ -15,14 +15,9 @@ N_i \propto S_* e^{-E_{total}/T_{eff}}.
 $$
 This expression determines how frequently an excitation appears within the substrate.
 Two competing mechanisms appear:
-formation accessibility
-$$
-e^{-E_{total}/T_{eff}}
-$$
-structural persistence
-$$
-S_*.
-$$
+- formation accessibility: $e^{-E_{total}/T_{eff}}$
+- structural persistence: $S_*$.
+
 The balance between these factors determines structural populations.
 
 ## 12.5.3 Low-energy dominance
@@ -73,7 +68,7 @@ This places them far below the survival threshold.
 Wave excitations also spread due to dispersion.
 The dispersion relation derived earlier is
 $$
-\omega(k)
+\omega(k) =
 2ak^2
 +
 2uk^4
@@ -89,17 +84,14 @@ Because different wavelengths propagate at different speeds, wave packets spread
 ## 12.5.7 Energy dilution
 
 As a wave packet spreads, its energy density decreases.
-Let the packet width be
-$$
-L(t).
-$$
+Let the packet width be $L(t)$.
 Energy density scales approximately as
 $$
 \mathcal{E}(t)
 \sim
 \frac{E_{total}}{L(t)^3}.
 $$
-As (L(t)) increases, energy density decreases.
+As $L(t)$ increases, energy density decreases.
 Eventually the excitation becomes indistinguishable from the background.
 
 ## 12.5.8 Lack of confinement
@@ -109,17 +101,18 @@ Energy flows freely through the substrate according to
 $$
 \frac{\partial E}{\partial t}
 +
-\nabla \cdot \mathbf{J}
-\gamma E.
+\nabla \cdot \mathbf{J} =
+-\gamma E.
 $$
 Thus propagation modes continuously transport energy rather than trapping it.
 
 ## 12.5.9 Absence of structural invariants
 
-Durable structures possess invariants such as
-circulation
-helicity
-linking number.
+Durable structures possess invariants such as:
+- circulation
+- helicity
+- linking number.
+
 Wave excitations lack such invariants.
 Because no structural quantity protects them from perturbations, they remain ephemeral.
 
@@ -132,40 +125,21 @@ N_{wave}
 S_*^{wave}
 e^{-E_{wave}/T_{eff}}.
 $$
-Although
-$$
-S_*^{wave} \ll 1,
-$$
-the exponential factor dominates because
-$$
-E_{wave} \approx 0.
-$$
+Although $S_*^{wave} \ll 1$, the exponential factor dominates because $E_{wave} \approx 0$.
 Thus waves remain extremely abundant.
 
 ## 12.5.11 Structural hierarchy of abundance
 
-The abundance ordering predicted by the CTS framework becomes
-excitation
-abundance
-persistence
-waves
-extremely high
-very low
-precursors
-high
-low
-closure structures
-moderate
-moderate
-chiral structures
-low
-high
-shell structures
-very low
-very high
-composites
-extremely low
-extreme
+The abundance ordering predicted by the CTS framework becomes:
+
+| Excitation | Abundance | Persistence |
+|---|---|---|
+| waves | extremely high | very low |
+| precursors | high | low |
+| closure structures | moderate | moderate |
+| chiral structures | low | high |
+| shell structures | very low | very high |
+| composites | extremely low | extreme |
 
 Thus background propagation dominates the structural population of the substrate.
 
@@ -173,7 +147,7 @@ Thus background propagation dominates the structural population of the substrate
 
 This statistical hierarchy explains a fundamental feature of the universe.
 Most of reality consists of propagating excitations rather than stable objects.
-Durable structures represent only a tiny fraction of the substrate’s structural activity.
+Durable structures represent only a tiny fraction of the substrate's structural activity.
 
 ## 12.5.13 Phase-space interpretation
 
@@ -192,8 +166,3 @@ $$
 xy = 1.
 $$
 As a result they propagate through the substrate rather than forming durable structures.
-
-Why Others Become Structural Seeds
-This final section of Chapter 12 explains why certain excitations become the seeds from which durable structures emerge.
-
-This completes Chapter 12.

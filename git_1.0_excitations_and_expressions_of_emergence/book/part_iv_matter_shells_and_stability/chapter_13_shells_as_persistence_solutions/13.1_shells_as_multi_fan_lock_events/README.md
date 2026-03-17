@@ -18,30 +18,20 @@ Shells represent one of the most stable persistence solutions of the Collapse Te
 ## 13.1.2 From line locking to surface locking
 
 Earlier structural stages involved one-dimensional stabilization.
-Examples include:
-structure
-locking dimension
-vortex filament
-1D
-vortex ring
-1D closed
-helical filament
-1D torsional
+
+| Structure | Locking dimension |
+|---|---|
+| vortex filament | 1D |
+| vortex ring | 1D closed |
+| helical filament | 1D torsional |
 
 These structures concentrate tension along a line.
-Shells introduce a new configuration:
-$$
-\text{locking distributed across a surface}.
-$$
+Shells introduce a new configuration: locking distributed across a surface.
 This dramatically increases stability.
 
 ## 13.1.3 Surface parameterization
 
-A shell structure can be described as a closed surface
-$$
-\mathbf{r}(u,v)
-$$
-where
+A shell structure can be described as a closed surface $\mathbf{r}(u,v)$ where
 $$
 u \in [0,U], \quad v \in [0,V].
 $$
@@ -57,11 +47,7 @@ These conditions ensure the surface has no boundaries.
 ## 13.1.4 Principal curvature directions
 
 At each point on the surface two principal curvature directions exist.
-Let
-$$
-k_1, \quad k_2
-$$
-denote the principal curvatures.
+Let $k_1,\, k_2$ denote the principal curvatures.
 These define the mean curvature
 $$
 H = \frac{1}{2}(k_1 + k_2)
@@ -76,10 +62,7 @@ Shell stability arises from maintaining equilibrium in both curvature directions
 
 In the CTS framework shell stability is interpreted as multi-fan locking.
 Instead of a single stabilization channel, shells possess many.
-Let the locking forces be
-$$
-\mathbf{F}_1, \mathbf{F}2, \dots, \mathbf{F}{N_f}.
-$$
+Let the locking forces be $\mathbf{F}_1, \mathbf{F}_2, \dots, \mathbf{F}_{N_f}$.
 Equilibrium requires
 $$
 \sum_{i=1}^{N_f} \mathbf{F}_i = 0.
@@ -91,8 +74,7 @@ This balance prevents the shell from collapsing or expanding.
 Each locking channel contributes stabilization energy.
 Thus
 $$
-E_{lock}
-\sum_{i=1}^{N_f} E_{bond,i}.
+E_{lock} = \sum_{i=1}^{N_f} E_{bond,i}.
 $$
 If the number of channels increases, the total locking energy grows rapidly.
 Thus shells typically satisfy
@@ -104,8 +86,7 @@ $$
 
 The lock ratio becomes
 $$
-\Lambda_{lock}
-\frac{E_{lock}}{E_{form}}.
+\Lambda_{lock} = \frac{E_{lock}}{E_{form}}.
 $$
 Typical values for shells are
 $$
@@ -118,17 +99,10 @@ This places shells deep in the persistent region of the CTS phase chart.
 The persistence number is
 $$
 S_* =
-\mathcal{E}{shell}
-\mathcal{E}
-D
-T{obj}
-\frac{R}{\dot{R}t_{ref}}.
+\mathcal{E}_{shell} \cdot \mathcal{E}_D \cdot T_{obj} \cdot
+\frac{R}{\dot{R}\,t_{ref}}.
 $$
-For shell structures the shell factor
-$$
-\mathcal{E}_{shell}
-$$
-becomes large because multiple stabilization directions reinforce each other.
+For shell structures the shell factor $\mathcal{E}_{shell}$ becomes large because multiple stabilization directions reinforce each other.
 Thus
 $$
 S_* \gg 10.
@@ -139,7 +113,7 @@ $$
 Shell rigidity arises because deformation requires simultaneous changes in many directions.
 The elastic energy of a shell deformation can be written
 $$
-E_{def}
+E_{def} =
 \int
 \left(
 \kappa (2H)^2
@@ -164,30 +138,24 @@ Solutions to this equation define stable shell geometries.
 
 ## 13.1.11 Examples of shell geometries
 
-Common shell solutions include
-geometry
-curvature
-sphere
-constant curvature
-torus
-mixed curvature
-polyhedral shell
-discrete curvature
+Common shell solutions include:
+
+| Geometry | Curvature |
+|---|---|
+| sphere | constant curvature |
+| torus | mixed curvature |
+| polyhedral shell | discrete curvature |
 
 Each geometry satisfies multi-fan locking conditions.
 
 ## 13.1.12 Energy confinement
 
 Shell architectures confine energy within a closed surface.
-Let
-$$
-\mathcal{E}(x)
-$$
-represent energy density.
+Let $\mathcal{E}(x)$ represent energy density.
 Shell confinement ensures
 $$
-\int_{inside} \mathcal{E},dV
-\int_{outside} \mathcal{E},dV.
+\int_{inside} \mathcal{E}\,dV \gg
+\int_{outside} \mathcal{E}\,dV.
 $$
 Thus shells trap energy internally.
 
@@ -203,10 +171,11 @@ Because shell locking energy is large, moderate disturbances cannot destroy the 
 ## 13.1.14 Shells as persistence solutions
 
 The key insight is that shells represent a natural solution to the persistence problem.
-They simultaneously maximize
-locking energy
-curvature stability
-energy confinement.
+They simultaneously maximize:
+- locking energy
+- curvature stability
+- energy confinement.
+
 Thus shells occupy a highly stable region of structural phase space.
 
 ## 13.1.15 Summary
@@ -214,7 +183,3 @@ Thus shells occupy a highly stable region of structural phase space.
 Shell structures arise when excitations develop closed surfaces stabilized by multi-fan locking.
 Because stabilization occurs across many directions simultaneously, shell architectures produce extremely large lock ratios and persistence numbers.
 This makes shells one of the most robust persistence solutions within the Collapse Tension Substrate.
-
-Curvature as Closure Memory
-This section derives how curvature encodes structural memory within shell architectures and stabilizes persistent structures.
-

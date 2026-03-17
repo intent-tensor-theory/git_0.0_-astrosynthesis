@@ -16,8 +16,9 @@ These excitations act as structural seeds.
 ## 12.6.2 Definition of a structural seed
 
 A structural seed is an excitation that satisfies two conditions:
-it lies close to the survival threshold
-it amplifies structural organization through interaction.
+- it lies close to the survival threshold
+- it amplifies structural organization through interaction.
+
 Mathematically this corresponds to
 $$
 xy \approx 1.
@@ -39,14 +40,7 @@ Because of this proximity, small perturbations can move them across the threshol
 
 ## 12.6.4 Sensitivity to perturbations
 
-Consider a seed excitation with coordinates
-$$
-(x,y) = (x_0,y_0)
-$$
-such that
-$$
-x_0 y_0 \approx 1.
-$$
+Consider a seed excitation with coordinates $(x,y) = (x_0,y_0)$ such that $x_0 y_0 \approx 1$.
 If a perturbation increases locking energy
 $$
 x \rightarrow x_0 + \delta x
@@ -88,30 +82,23 @@ This invariant dramatically increases persistence.
 ## 12.6.7 Localized energy concentration
 
 Seed excitations also concentrate energy locally.
-Let the energy density be
-$$
-\mathcal{E}(\mathbf{x}).
-$$
+Let the energy density be $\mathcal{E}(\mathbf{x})$.
 Seeds satisfy
 $$
-\mathcal{E}{seed} \gg \langle \mathcal{E}{background} \rangle.
+\mathcal{E}_{seed} \gg \langle \mathcal{E}_{background} \rangle.
 $$
 This concentration increases the probability of nonlinear interactions.
 
 ## 12.6.8 Interaction-driven evolution
 
 Seed structures evolve through interactions with surrounding excitations.
-Examples include
-seed interaction
-resulting structure
-wave collision
-coherent packet
-packet circulation
-vortex
-vortex closure
-ring
-ring twisting
-chiral structure
+
+| Seed interaction | Resulting structure |
+|---|---|
+| wave collision | coherent packet |
+| packet circulation | vortex |
+| vortex closure | ring |
+| ring twisting | chiral structure |
 
 Thus seeds serve as transition points in the emergence hierarchy.
 
@@ -121,9 +108,7 @@ Using the population relation
 $$
 N_i \propto S_* e^{-E_{total}/T_{eff}},
 $$
-seed structures possess
-moderate formation energy
-moderate persistence.
+seed structures possess moderate formation energy and moderate persistence.
 Thus they are less abundant than waves but more common than durable objects.
 
 ## 12.6.10 Phase chart location
@@ -133,6 +118,8 @@ $$
 xy = 1.
 $$
 Graphically this appears as a band separating ephemeral and persistent regions.
+
+```
 y
 ↑
 | persistent region
@@ -143,6 +130,7 @@ y
 |
 | ephemeral region
 +----------------→ x
+```
 
 This threshold band is where structural transitions occur.
 
@@ -166,18 +154,14 @@ Each stage increases persistence.
 ## 12.6.12 Structural amplification
 
 Once a seed crosses the survival boundary, persistence grows rapidly.
-Because
-$$
-S_* > 1,
-$$
-the structure begins accumulating additional stabilization mechanisms.
+Because $S_* > 1$, the structure begins accumulating additional stabilization mechanisms.
 This amplification leads to the formation of durable structures.
 
 ## 12.6.13 Interpretation within CTS
 
 Within the CTS framework, seeds represent critical points in structural phase space.
 They are the locations where the substrate transitions from transient fluctuations to persistent structures.
-Thus the universe’s durable architecture ultimately arises from the dynamics of these threshold excitations.
+Thus the universe's durable architecture ultimately arises from the dynamics of these threshold excitations.
 
 ## 12.6.14 Summary
 
@@ -187,14 +171,3 @@ xy \approx 1.
 $$
 Because small perturbations can push them across this boundary, they serve as the origins of persistent structures.
 Through nonlinear amplification and interaction, seed excitations initiate the emergence cascade that ultimately produces durable matter-like systems.
-
-Chapter 12 Complete
-We have now derived the conditions under which:
-excitations become objects
-objects become durable
-some excitations remain background modes
-others become structural seeds.
-
-Shells as Persistence Solutions
-Chapter 13 now examines shell architectures in detail and derives why they form one of the most stable structural solutions within the Collapse Tension Substrate.
-
