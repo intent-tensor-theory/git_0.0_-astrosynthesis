@@ -28,23 +28,21 @@ However, closure does not eliminate deformation modes.
 ## 12.2.3 Instability modes of rings
 
 Closed loops possess several deformation modes.
-Let the ring radius be
-$$
-R(\theta,t).
-$$
+Let the ring radius be $R(\theta,t)$.
 Perturbations can be expanded in Fourier modes
 $$
-R(\theta,t)
+R(\theta,t) =
 R_0 +
 \sum_{n}
 a_n(t)\cos(n\theta)
 +
 b_n(t)\sin(n\theta).
 $$
-These modes correspond to
-elliptical distortions
-twisting modes
-Kelvin waves.
+These modes correspond to:
+- elliptical distortions
+- twisting modes
+- Kelvin waves.
+
 Such modes allow the ring to lose energy through radiation or reconnection.
 
 ## 12.2.4 Kelvin-wave instability
@@ -53,7 +51,7 @@ Kelvin waves propagate along vortex filaments with dispersion relation
 $$
 \omega_k =
 \frac{\kappa}{4\pi}k^2
-\ln!\left(\frac{1}{ka}\right).
+\ln\!\left(\frac{1}{ka}\right).
 $$
 These oscillations can cascade energy toward smaller scales.
 This cascade eventually leads to vortex reconnection and structural decay.
@@ -62,21 +60,14 @@ Thus closure structures remain vulnerable to perturbations.
 ## 12.2.5 Shell closure
 
 Shell structures eliminate these deformation pathways by introducing surface locking.
-Instead of a closed line
-$$
-\mathbf{r}(s),
-$$
-a shell defines a closed surface
-$$
-\mathbf{r}(u,v).
-$$
+Instead of a closed line $\mathbf{r}(s)$, a shell defines a closed surface $\mathbf{r}(u,v)$.
 This surface possesses two principal curvature directions.
 
 ## 12.2.6 Curvature energy
 
 The energy of a surface deformation is governed by curvature energy
 $$
-E_{shell}
+E_{shell} =
 \int
 \left(
 \frac{\kappa}{2}(2H)^2
@@ -85,15 +76,13 @@ E_{shell}
 \right)
 dA.
 $$
-Here
-(H) = mean curvature
-(K) = Gaussian curvature.
+Here $H$ = mean curvature and $K$ = Gaussian curvature.
 Because the surface must maintain curvature equilibrium, many deformation modes are suppressed.
 
 ## 12.2.7 Multi-axis locking
 
 Shell stability arises because multiple directions contribute to structural locking.
-Let the shell possess (N_f) locking channels.
+Let the shell possess $N_f$ locking channels.
 The equilibrium condition is
 $$
 \sum_{i=1}^{N_f} \mathbf{F}_i = 0.
@@ -103,14 +92,12 @@ Because deformation would require breaking several locking channels simultaneous
 ## 12.2.8 Lock ratio comparison
 
 The difference between closure and shell structures appears clearly in the lock ratio.
-Closure structures:
-$$
-\Lambda_{lock} \sim 1-3.
-$$
-Shell structures:
-$$
-\Lambda_{lock} \sim 10-50.
-$$
+
+| Structure | Lock ratio |
+|---|---|
+| Closure structures | $\Lambda_{lock} \sim 1$–$3$ |
+| Shell structures | $\Lambda_{lock} \sim 10$–$50$ |
+
 Thus shells move significantly further right in the CTS phase chart.
 
 ## 12.2.9 Persistence comparison
@@ -148,15 +135,13 @@ This dramatically increases structural rigidity.
 
 ## 12.2.12 Mode suppression
 
-Surface locking suppresses several instability modes including
-instability
-suppressed by shell
-filament bending
-curvature tension
-Kelvin waves
-surface rigidity
-torsion collapse
-multi-axis locking
+Surface locking suppresses several instability modes:
+
+| Instability | Suppressed by shell |
+|---|---|
+| filament bending | curvature tension |
+| Kelvin waves | surface rigidity |
+| torsion collapse | multi-axis locking |
 
 Thus shell geometry stabilizes many deformation pathways.
 
@@ -171,7 +156,3 @@ Surface locking is required for long-term structural survival.
 Closure structures stabilize excitations by eliminating endpoints, but they remain vulnerable to deformation modes.
 Shell structures introduce multi-axis locking and curvature stabilization, dramatically increasing both lock ratio and persistence.
 For this reason durable matter-like structures arise primarily from shell architectures rather than simple closure excitations.
-
-When Objecthood Begins
-This section derives the precise structural conditions under which a persistent excitation becomes a discrete object within the CTS framework.
-

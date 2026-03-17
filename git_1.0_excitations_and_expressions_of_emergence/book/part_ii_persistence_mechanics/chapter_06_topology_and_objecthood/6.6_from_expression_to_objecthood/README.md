@@ -2,129 +2,133 @@
 
 ## 6.6.1 Expressions versus objects
 
-Throughout the previous chapters we have distinguished between two classes of structures that arise within the Collapse Tension Substrate:
-Expressions
-These are dynamical field patterns that appear temporarily within the substrate.
-Examples include
-waves
+Throughout the previous chapters we have distinguished between two classes of structures that arise within the Collapse Tension Substrate.
 
-gradients
+**Expressions** are dynamical field patterns that appear temporarily within the substrate.
+Examples include:
 
-transient vortices
-
-oscillatory field modes.
+- waves
+- gradients
+- transient vortices
+- oscillatory field modes.
 
 Expressions may satisfy the basic persistence equation for short durations but lack the structural features required to form discrete entities.
 
-Objects
-Objects are persistent structures that possess
-closure
+**Objects** are persistent structures that possess:
 
-structural identity
-
-topological protection.
+- closure
+- structural identity
+- topological protection.
 
 Objects therefore represent stable units of organization within the substrate.
 
 ## 6.6.2 The emergence threshold
 
 The transition from expression to object occurs when a configuration satisfies the complete persistence condition
-S∗=EshellEDTobjRR˙ tref.S_* = \mathcal{E}_{shell} \mathcal{E} D T_{obj} \frac{R}{\dot R\,t_{ref}}.S∗​=Eshell​EDTobj​R˙tref​R​.
-Persistence requires
+
+$$
+S_* = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\,t_{ref}}.
+$$
+
+Persistence requires $S_* \geq 1$.
 However objecthood requires additional structural features beyond persistence alone.
 
 ## 6.6.3 Objecthood criteria
 
 A configuration becomes an object when it satisfies the following conditions simultaneously.
-Persistence condition
-The structure survives long enough to maintain identity.
 
-Closure condition
-The structure forms a closed manifold
+**Persistence condition:** The structure survives long enough to maintain identity, $S_* \geq 1$.
+
+**Closure condition:** The structure forms a closed manifold
+
 $$
-=V.\Sigma = \partial V.
+\Sigma = \partial V.
 $$
+
 This creates a bounded region of space.
 
-Topological protection
-The structure possesses nontrivial invariants
+**Topological protection:** The structure possesses nontrivial invariants
+
 $$
-Q0.Q\neq 0.Q=0.
+Q \neq 0.
 $$
+
 These invariants prevent continuous decay.
 
-Structural coherence
-Internal channels maintain phase coherence
+**Structural coherence:** Internal channels maintain phase coherence
+
 $$
-C1.C\approx 1.C
+C \approx 1.
 $$
+
 This prevents destructive interference.
 
 ## 6.6.4 Objecthood function
 
-We therefore define an objecthood function
+We therefore define an objecthood function $\mathcal{O}(\sigma)$ such that
+
 $$
-O()\mathcal{O}$\sigma$O(
+\mathcal{O}(\sigma) =
+\begin{cases}
+1 & \text{if all objecthood criteria are satisfied} \\
+0 & \text{otherwise}
+\end{cases}
 $$
-such that
-Formally,
-$$
-\Theta
-$$
+
+where $\Theta$ denotes the Heaviside step function applied to the combined criteria.
 
 ## 6.6.5 Expression-to-object transition
 
 The transition can therefore be written as
-σexpr→σobj\sigma_{expr} \rightarrow \sigma_{obj}σexpr​→σobj​
+
 $$
-O()=1.\mathcal{O}$\sigma$=1.O(
+\sigma_{expr} \rightarrow \sigma_{obj}
 $$
+
+when $\mathcal{O}(\sigma) = 1$.
 This represents a structural phase transition in configuration space.
 
 ## 6.6.6 Object identity
 
 Once objecthood emerges, the structure acquires persistent identity.
-This identity is characterized by
-internal energy distribution
+This identity is characterized by:
 
-topological invariants
-
-spatial boundaries.
+- internal energy distribution
+- topological invariants
+- spatial boundaries.
 
 Thus objects can be labeled by a parameter set
-P=(R,Q,V,Tobj).\mathbf{P} = (R, Q, V, T_{obj}).P=(R,Q,V,Tobj​).
+
+$$
+\mathbf{P} = (R,\, Q,\, V,\, T_{obj}).
+$$
+
 These parameters uniquely define the structure.
 
 ## 6.6.7 Object interactions
 
 Objects can interact with one another through several mechanisms:
-interaction
-effect
-collision
-exchange of structural energy
-binding
-formation of composite systems
-braiding
-topological linking
-fusion
-merging of structures
+
+| Interaction | Effect |
+|---|---|
+| collision | exchange of structural energy |
+| binding | formation of composite systems |
+| braiding | topological linking |
+| fusion | merging of structures |
 
 These interactions enable the emergence of complex architectures.
 
 ## 6.6.8 Structural hierarchy
 
-The emergence hierarchy derived so far becomes
-level
-structure
-expression
-wave or gradient
-proto-object
-closed circulation
-topologically protected closure
-composite
-braided structures
-shell system
-multi-channel coherence
+The emergence hierarchy derived so far becomes:
+
+| Level | Structure |
+|---|---|
+| expression | wave or gradient |
+| proto-object | closed circulation |
+| object | topologically protected closure |
+| composite | braided structures |
+| shell system | multi-channel coherence |
 
 Each level corresponds to increasing persistence and structural complexity.
 
@@ -132,19 +136,22 @@ Each level corresponds to increasing persistence and structural complexity.
 
 Objects dominate the persistent structure of the system because their topology suppresses decay.
 Using the abundance relation
-Ai∝e−Ei/Teff,A_i \propto e^{-E_i/T_{eff}},Ai​∝e−Ei​/Teff​,
+
+$$
+A_i \propto e^{-E_i/T_{eff}},
+$$
+
 structures with strong topological protection effectively behave as if they possess lower decay energy.
 Thus they accumulate within the substrate.
 
 ## 6.6.10 Objects as building blocks
 
 Once objects exist, they become the building blocks for higher structural levels.
-Examples include
-composite braids
+Examples include:
 
-shell architectures
-
-nested structural systems.
+- composite braids
+- shell architectures
+- nested structural systems.
 
 Thus objecthood represents the gateway to complex structure formation.
 
@@ -158,28 +165,26 @@ Thus the universe of persistent structures can be interpreted as a collection of
 
 Objecthood emerges when a configuration satisfies both persistence and topological closure.
 Formally,
+
+$$
+\text{Object} \iff S_* \geq 1 \;\text{ and }\; \mathcal{O}(\sigma) = 1.
+$$
+
 This equation summarizes the transition from transient expressions to persistent objects.
 
-Summary of Chapter 6
+## 6.6.13 Summary of Chapter 6
+
 Chapter 6 established the topological basis of objecthood.
 Key results include:
-closure as the first objecthood threshold
 
-chirality as directional persistence
-
-braid structures as composite order
-
-shell coherence through multi-fan locking
-
-topology factor TobjT_{obj}Tobj​ for structural protection
-
-objecthood function O(σ) $\mathcal{O}$\sigma$O($
+- closure as the first objecthood threshold
+- chirality as directional persistence
+- braid structures as composite order
+- shell coherence through multi-fan locking
+- topology factor $T_{obj}$ for structural protection
+- objecthood function $\mathcal{O}(\sigma)$ unifying all criteria
 
 Together these results describe how persistent objects emerge from the dynamical patterns of the Collapse Tension Substrate.
 
-Transition to Chapter 7
-Having derived the conditions for objecthood, we now turn to the energy mechanics governing excitation formation within the substrate.
+*Transition to Chapter 7:* Having derived the conditions for objecthood, we now turn to the energy mechanics governing excitation formation within the substrate.
 This leads to the formal construction of the CTS energy functional.
-
- Why Emergence Needs an Energy Functional
-

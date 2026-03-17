@@ -5,7 +5,7 @@
 Chapters 7–11 developed the mathematical machinery required to describe CTS excitations:
 Energy functional:
 $$
-E[\Phi,\mathbf{A}]
+E[\Phi,\mathbf{A}] =
 \int d^3x
 \left[
 a|(\nabla-iq\mathbf{A})\Phi|^2
@@ -69,20 +69,12 @@ Thus durable structures lie in an intermediate region where
 $$
 S_* \gg 1
 $$
-but
-$$
-E_{total}
-$$
-remains within reachable energy scales.
+but $E_{total}$ remains within reachable energy scales.
 
 ## 12.1.4 Persistence window
 
 Combining these constraints yields a persistence window for matter-like structures.
-Let
-$$
-E_{crit}
-$$
-represent the highest formation energy that occurs with appreciable probability.
+Let $E_{crit}$ represent the highest formation energy that occurs with appreciable probability.
 Matter-like excitations satisfy
 $$
 S_* > 1
@@ -110,30 +102,20 @@ Higher-energy extremes occur too rarely.
 ## 12.1.6 Structural requirements for matter
 
 For an excitation to behave like matter it must possess several structural features.
-These include:
-property
-mathematical condition
-persistence
-(S_* > 1)
-locking
-$$
-$\Lambda_{lock} \gg 1$
-$$
-closure
-topological constraint
-internal modes
-bounded excitations
+
+| Property | Mathematical condition |
+|---|---|
+| persistence | $S_* > 1$ |
+| locking | $\Lambda_{lock} \gg 1$ |
+| closure | topological constraint |
+| internal modes | bounded excitations |
 
 These conditions ensure that the structure behaves as a durable object.
 
 ## 12.1.7 Internal mode stability
 
 Matter-like structures must also support internal oscillations without destruction.
-Let
-$$
-\delta \Phi
-$$
-represent a perturbation of the structure.
+Let $\delta \Phi$ represent a perturbation of the structure.
 Stability requires
 $$
 \frac{d^2E}{d(\delta\Phi)^2} > 0.
@@ -144,24 +126,17 @@ This condition ensures that small perturbations produce restoring forces rather 
 
 Durable structures also require energy confinement.
 The excitation energy must remain localized.
-Let the energy density be
-$$
-\mathcal{E}(x).
-$$
+Let the energy density be $\mathcal{E}(x)$.
 Localization requires
 $$
-\int_V \mathcal{E}(x), d^3x < \infty.
+\int_V \mathcal{E}(x)\, d^3x < \infty.
 $$
 This condition prevents energy leakage into the surrounding substrate.
 
 ## 12.1.9 Structural isolation
 
 Matter-like structures must also resist destruction during collisions.
-Let
-$$
-E_{pert}
-$$
-represent perturbation energy from interactions.
+Let $E_{pert}$ represent perturbation energy from interactions.
 Structural survival requires
 $$
 E_{pert} < E_{lock}.
@@ -186,10 +161,11 @@ These conditions place the structure in the upper-right region of the CTS phase 
 ## 12.1.11 Structural rarity of matter
 
 Because these conditions are stringent, matter-like excitations occupy only a small fraction of structural phase space.
-Most excitations are either
-too unstable
-too energetic
-too weakly locked.
+Most excitations are either:
+- too unstable
+- too energetic
+- too weakly locked.
+
 Thus durable matter emerges only under specific structural conditions.
 
 ## 12.1.12 Interpretation within CTS
@@ -203,7 +179,3 @@ These excitations occupy regions of phase space where stabilization mechanisms b
 Not every excitation becomes matter because durable structures must satisfy several simultaneous constraints.
 They must possess strong locking energy, high persistence, localized energy, and manageable formation cost.
 These conditions restrict matter-like structures to a small region of the CTS survival map corresponding primarily to shell and composite excitations.
-
-Closure Versus Shell Lock
-This section derives the mathematical distinction between simple closure structures and the multi-axis locking required for durable matter-like shells.
-
