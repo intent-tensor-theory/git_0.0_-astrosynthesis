@@ -55,6 +55,10 @@
       
     
     
+      <link rel="stylesheet" href="../../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../../css/print-site-material.css">
+    
       <link rel="stylesheet" href="../../../_static/extra.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -426,6 +430,25 @@
         </a>
       </li>
     
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../print_page/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Print / Download
+
+      </a>
+    </li>
   
 
       
@@ -6466,6 +6489,33 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Print / Download
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -6487,159 +6537,203 @@
 <h2 id="111-the-traditional-explanatory-structure">1.1.1 The traditional explanatory structure<a class="headerlink" href="#111-the-traditional-explanatory-structure" title="Permanent link">&para;</a></h2>
 <p>Most physical explanations are built around an origin narrative.
 One begins by assuming a set of primitive entities and then describes how larger structures form from them.
-Symbolically, the explanatory chain is written
-P0→P1→P2→⋯\mathcal{P}_0 \rightarrow \mathcal{P}_1 \rightarrow \mathcal{P}_2 \rightarrow \cdotsP0​→P1​→P2​→⋯
-represents fundamental primitives (particles, fields, spacetime points, etc.), and
-Pn\mathcal{P}_nPn​
-represents progressively more complex structures.
-For example:
-$$
-quarksnucleonsatomsmolecules.\text{quarks} \rightarrow \text{nucleons} \rightarrow \text{atoms} \rightarrow \text{molecules}.quarks
-$$
-This framework assumes that once a structure forms, its continued existence is implicitly explained by the dynamics that produced it.
-However this assumption hides an important mathematical question:
-Why does the structure persist rather than disappear? <span class="arithmatex">\(\textbf{Why does the structure persist rather than disappear?}Why does the structure persist rather than disappear?\)</span></p>
+Symbolically, the explanatory chain is written</p>
+<div class="arithmatex">\[
+\mathcal{P}_0 \rightarrow \mathcal{P}_1 \rightarrow \mathcal{P}_2 \rightarrow \cdots
+\]</div>
+<p>where <span class="arithmatex">\(\mathcal{P}_0\)</span> represents fundamental primitives (particles, fields, spacetime points, etc.),
+and <span class="arithmatex">\(\mathcal{P}_n\)</span> represents progressively more complex structures.</p>
+<p>For example:</p>
+<div class="arithmatex">\[
+\text{quarks} \rightarrow \text{nucleons} \rightarrow \text{atoms} \rightarrow \text{molecules}.
+\]</div>
+<p>This framework assumes that once a structure forms, its continued existence is implicitly explained
+by the dynamics that produced it. However this assumption hides an important mathematical question:</p>
+<blockquote>
+<p><strong>Why does the structure persist rather than disappear?</strong></p>
+</blockquote>
+<hr />
 <h2 id="112-formation-versus-persistence">1.1.2 Formation versus persistence<a class="headerlink" href="#112-formation-versus-persistence" title="Permanent link">&para;</a></h2>
-<p>Let a candidate structure be denoted
-$$
-\sigma
-$$
-represent the amount or amplitude of that structure at time ttt.
-Two competing processes determine the evolution of NσN_\sigmaNσ​:
-formation processes</p>
-<p>loss processes</p>
-<p>Let
-be the formation rate, and
-LσL_\sigmaLσ​
-be the loss rate.
-Then the simplest population equation is
-dNσdt=Fσ−Lσ.\frac{dN_\sigma}{dt} = F_\sigma - L_\sigma.dtdNσ​​=Fσ​−Lσ​.
-This equation immediately shows that formation alone does not determine survival.
-Even if
-the structure may still vanish if
-Lσ≥Fσ.L_\sigma \ge F_\sigma.Lσ​≥Fσ​.
-Thus a structure may appear but never accumulate.</p>
+<p>Let a candidate structure be denoted <span class="arithmatex">\(\sigma\)</span> and let <span class="arithmatex">\(N_\sigma(t)\)</span> represent the amount or
+amplitude of that structure at time <span class="arithmatex">\(t\)</span>.</p>
+<p>Two competing processes determine the evolution of <span class="arithmatex">\(N_\sigma\)</span>:</p>
+<ul>
+<li><strong>Formation processes</strong></li>
+<li><strong>Loss processes</strong></li>
+</ul>
+<p>Let <span class="arithmatex">\(F_\sigma\)</span> be the formation rate and <span class="arithmatex">\(L_\sigma\)</span> be the loss rate.
+Then the simplest population equation is</p>
+<div class="arithmatex">\[
+\frac{dN_\sigma}{dt} = F_\sigma - L_\sigma.
+\]</div>
+<p>This equation immediately shows that formation alone does not determine survival.
+Even if <span class="arithmatex">\(F_\sigma &gt; 0\)</span>, the structure may still vanish if</p>
+<div class="arithmatex">\[
+L_\sigma \ge F_\sigma.
+\]</div>
+<p>Thus a structure may appear but never accumulate.</p>
+<hr />
 <h2 id="113-retained-structure">1.1.3 Retained structure<a class="headerlink" href="#113-retained-structure" title="Permanent link">&para;</a></h2>
-<p>Instead of counting structures directly, it is often more useful to measure their retained structural content.
-Define
-as the amount of organized structure contained in configuration σ <span class="arithmatex">\(\sigma\)</span>
-Examples include:
-bound energy in a particle</p>
-<p>coherent amplitude in a wave</p>
-<p>topological charge in a vortex</p>
-<p>chemical binding energy in a molecule.</p>
-<p>The rate of structural loss is
-R˙σ=−dRσdt.\dot{R}<em>\sigma = -\frac{dR</em>\sigma}{dt}.R˙σ​=−dtdRσ​​.
-This quantity represents how quickly the structure degrades.</p>
+<p>Instead of counting structures directly, it is often more useful to measure their retained
+structural content. Define <span class="arithmatex">\(R_\sigma(t)\)</span> as the amount of organized structure contained
+in configuration <span class="arithmatex">\(\sigma\)</span>.</p>
+<p>Examples include:</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Structural measure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave</td>
+<td>Coherent amplitude</td>
+</tr>
+<tr>
+<td>Particle</td>
+<td>Rest energy</td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td>Circulation</td>
+</tr>
+<tr>
+<td>Atom</td>
+<td>Binding energy</td>
+</tr>
+</tbody>
+</table>
+<p>The rate of structural loss is</p>
+<div class="arithmatex">\[
+\dot{R}_\sigma = -\frac{dR_\sigma}{dt}.
+\]</div>
+<p>This quantity represents how quickly the structure degrades.</p>
+<hr />
 <h2 id="114-persistence-horizon">1.1.4 Persistence horizon<a class="headerlink" href="#114-persistence-horizon" title="Permanent link">&para;</a></h2>
 <p>Not all time intervals are equally relevant.
-A structure that survives for
-$$
-1030s10^{-30}\,\text{s}10
-$$
-is very different from one that survives for
-$$
-1010years.10^{10}\,\text{years}.1010years.
-$$
-Thus we introduce a reference persistence horizon
-tref.t_{ref}.tref​.
+A structure that survives for <span class="arithmatex">\(10^{-30}\,\text{s}\)</span> is very different from one that survives for
+<span class="arithmatex">\(10^{10}\,\text{years}\)</span>.</p>
+<p>Thus we introduce a reference persistence horizon <span class="arithmatex">\(t_{ref}\)</span>.
 This parameter defines the timescale over which survival matters for the phenomenon being studied.</p>
+<hr />
 <h2 id="115-derivation-of-the-persistence-condition">1.1.5 Derivation of the persistence condition<a class="headerlink" href="#115-derivation-of-the-persistence-condition" title="Permanent link">&para;</a></h2>
-<p>A structure is meaningful only if its retained structure exceeds the amount lost during the relevant time horizon.
-Mathematically,
-Rearranging,
-Define the selection number
-Sσ=RσR˙σtref.S_\sigma = \frac{R_\sigma}{\dot{R}<em ref="ref">\sigma t</em>.Sσ​=R˙σ​tref​Rσ​​.
-Thus the persistence condition becomes
-Sσ≥1.S_\sigma \ge 1.Sσ​≥1.}</p>
+<p>A structure is meaningful only if its retained structure exceeds the amount lost during the
+relevant time horizon. Mathematically,</p>
+<div class="arithmatex">\[
+R_\sigma \gtrsim \dot{R}_\sigma \, t_{ref}.
+\]</div>
+<p>Rearranging,</p>
+<div class="arithmatex">\[
+\frac{R_\sigma}{\dot{R}_\sigma \, t_{ref}} \gtrsim 1.
+\]</div>
+<p>Define the <strong>selection number</strong></p>
+<div class="arithmatex">\[
+\boxed{S_\sigma = \frac{R_\sigma}{\dot{R}_\sigma \, t_{ref}}.}
+\]</div>
+<p>Thus the persistence condition becomes</p>
+<div class="arithmatex">\[
+S_\sigma \ge 1.
+\]</div>
+<hr />
 <h2 id="116-interpretation-of-the-selection-number">1.1.6 Interpretation of the selection number<a class="headerlink" href="#116-interpretation-of-the-selection-number" title="Permanent link">&para;</a></h2>
-<p>The dimensionless quantity
-measures the balance between retained structure and structural loss.
-Three regimes follow immediately.
-Subcritical regime
-Loss dominates retention.
-The structure dissolves before it becomes significant.</p>
-<p>Critical regime
-Retention and loss balance.
-The structure exists at the threshold of persistence.</p>
-<p>Supercritical regime
-Retention dominates.
-The structure can accumulate and persist.</p>
+<p>The dimensionless quantity <span class="arithmatex">\(S_\sigma\)</span> measures the balance between retained structure and
+structural loss. Three regimes follow immediately.</p>
+<p><strong>Subcritical regime</strong> — <span class="arithmatex">\(S_\sigma &lt; 1\)</span></p>
+<p>Loss dominates retention. The structure dissolves before it becomes significant.</p>
+<p><strong>Critical regime</strong> — <span class="arithmatex">\(S_\sigma = 1\)</span></p>
+<p>Retention and loss balance. The structure exists at the threshold of persistence.</p>
+<p><strong>Supercritical regime</strong> — <span class="arithmatex">\(S_\sigma &gt; 1\)</span></p>
+<p>Retention dominates. The structure can accumulate and persist.</p>
+<hr />
 <h2 id="117-why-origin-narratives-are-incomplete">1.1.7 Why origin narratives are incomplete<a class="headerlink" href="#117-why-origin-narratives-are-incomplete" title="Permanent link">&para;</a></h2>
-<p>An origin narrative typically describes
-FσF_\sigmaFσ​
-but not the ratio
-RσR˙σ.\frac{R_\sigma}{\dot R_\sigma}.R˙σ​Rσ​​.
-Thus it answers the question
-How can a structure appear? <span class="arithmatex">\(\text{How can a structure appear?}How can a structure appear?\)</span>
-but not
-Why does the structure remain? <span class="arithmatex">\(\text{Why does the structure remain?}Why does the structure remain?\)</span>
-Two structures produced by the same process may have drastically different survival outcomes depending on their loss rates.
-For example:
-Structure A
-Structure B
-Thus the less frequently produced structure dominates because it survives better.</p>
+<p>An origin narrative typically describes <span class="arithmatex">\(F_\sigma\)</span> but not the ratio</p>
+<div class="arithmatex">\[
+\frac{R_\sigma}{\dot{R}_\sigma}.
+\]</div>
+<p>Thus it answers the question <em>How can a structure appear?</em> but not <em>Why does the structure remain?</em></p>
+<p>Two structures produced by the same process may have drastically different survival outcomes
+depending on their loss rates. For example:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><span class="arithmatex">\(F\)</span></th>
+<th><span class="arithmatex">\(L\)</span></th>
+<th><span class="arithmatex">\(dN/dt\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Structure A</td>
+<td>100</td>
+<td>99</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Structure B</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>Structure B dominates despite being produced less frequently, because it survives better.</p>
+<hr />
 <h2 id="118-persistence-filtering">1.1.8 Persistence filtering<a class="headerlink" href="#118-persistence-filtering" title="Permanent link">&para;</a></h2>
-<p>be the space of all possible configurations of the substrate.
-Each configuration
-has a selection number
-Si.S_i.Si​.
-Define the persistence subset
-Ωpersist={σi∈Ω∣Si≥1}.\Omega_{persist} = { \sigma_i \in \Omega \mid S_i \ge 1 }.Ωpersist​={σi​∈Ω∣Si​≥1}.
-The structures that populate the observable world are drawn from this subset.
-Thus
-This means the universe of observed structures is a filtered subset of the universe of possible structures.</p>
+<p>Let <span class="arithmatex">\(\Omega\)</span> be the space of all possible configurations of the substrate.
+Each configuration <span class="arithmatex">\(\sigma_i \in \Omega\)</span> has a selection number <span class="arithmatex">\(S_i\)</span>.</p>
+<p>Define the persistence subset</p>
+<div class="arithmatex">\[
+\Omega_{persist} = \{ \sigma_i \in \Omega \mid S_i \ge 1 \}.
+\]</div>
+<p>The structures that populate the observable world are drawn from this subset. Thus</p>
+<div class="arithmatex">\[
+\Omega_{obs} \subseteq \Omega_{persist}.
+\]</div>
+<p>This means the universe of observed structures is a filtered subset of the universe of possible
+structures.</p>
+<hr />
 <h2 id="119-limiting-cases">1.1.9 Limiting cases<a class="headerlink" href="#119-limiting-cases" title="Permanent link">&para;</a></h2>
-<p>Infinite retention
-If
-$$
-R0\dot{R} \rightarrow 0R
-$$
-then
-$$
-S.S\rightarrow \infty.S
-$$
+<p><strong>Infinite retention</strong> — If <span class="arithmatex">\(\dot{R} \rightarrow 0\)</span>, then <span class="arithmatex">\(S \rightarrow \infty\)</span>.
 Such structures would be perfectly stable.</p>
-<p>Rapid decay
-$$
-R\dot{R} \rightarrow \inftyR
-$$
-$$
-S0.S\rightarrow 0.S
-$$
+<p><strong>Rapid decay</strong> — If <span class="arithmatex">\(\dot{R} \rightarrow \infty\)</span>, then <span class="arithmatex">\(S \rightarrow 0\)</span>.
 Such structures cannot persist.</p>
-<p>Vanishing structure
-$$
-R0R\rightarrow 0R
-$$
-$$
-S0.S\rightarrow 0.S
-$$
+<p><strong>Vanishing structure</strong> — If <span class="arithmatex">\(R \rightarrow 0\)</span>, then <span class="arithmatex">\(S \rightarrow 0\)</span>.
 Fluctuations without organized structure cannot survive.</p>
+<hr />
 <h2 id="1110-the-persistence-principle">1.1.10 The persistence principle<a class="headerlink" href="#1110-the-persistence-principle" title="Permanent link">&para;</a></h2>
-<p>We can now state the central principle of the framework:
-Emergence is controlled by persistence rather than by formation alone.
-Formally,
-with threshold
-Structures with
-S&lt;1S &lt; 1S&lt;1
-remain ephemeral fluctuations.
-Structures with
-$$
-S1S\ge 1S
-$$
-enter the domain of durable existence.</p>
+<p>We can now state the central principle of the framework:</p>
+<blockquote>
+<p><em>Emergence is controlled by persistence rather than by formation alone.</em></p>
+</blockquote>
+<p>Formally,</p>
+<div class="arithmatex">\[
+\boxed{S = \frac{R}{\dot{R}\, t_{ref}}}
+\]</div>
+<p>with threshold</p>
+<div class="arithmatex">\[
+\boxed{S_{crit} = 1.}
+\]</div>
+<p>Structures with <span class="arithmatex">\(S &lt; 1\)</span> remain ephemeral fluctuations.
+Structures with <span class="arithmatex">\(S \ge 1\)</span> enter the domain of durable existence.</p>
+<hr />
 <h2 id="1111-implication-for-physical-theory">1.1.11 Implication for physical theory<a class="headerlink" href="#1111-implication-for-physical-theory" title="Permanent link">&para;</a></h2>
-<p>If persistence determines which structures populate reality, then the task of an emergence theory is to determine
-the space of possible structures</p>
-<p>the retention mechanisms available to them</p>
-<p>the loss processes acting against them</p>
-<p>the resulting selection numbers.</p>
+<p>If persistence determines which structures populate reality, then the task of an emergence theory
+is to determine:</p>
+<ol>
+<li>The space of possible structures</li>
+<li>The retention mechanisms available to them</li>
+<li>The loss processes acting against them</li>
+<li>The resulting selection numbers</li>
+</ol>
 <p>Thus the problem of emergence becomes a quantitative survival problem.</p>
-<p>Transition to Section 1.2
-The next section applies this logic to one of the most common assumptions in physics: the idea that particles are the fundamental starting point of explanation.
-If persistence determines which structures endure, then particles themselves must satisfy the persistence condition.
-Thus particles cannot be the beginning of the story—they must be solutions to the survival filter.</p>
+<hr />
+<p><em>Transition to §1.2:</em> The next section applies this logic to one of the most common assumptions
+in physics — that particles are the fundamental starting point of explanation. If persistence
+determines which structures endure, then particles themselves must satisfy the persistence
+condition. Particles cannot be the beginning of the story — they must be solutions to the
+survival filter.</p>
 
 
 
@@ -6699,6 +6793,8 @@ Thus particles cannot be the beginning of the story—they must be solutions to 
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../js/print-site.js"></script>
       
         <script src="../../../_static/mathjax.js"></script>
       
