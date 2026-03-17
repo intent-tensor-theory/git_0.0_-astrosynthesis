@@ -4,149 +4,179 @@
 
 All physical structures exist within environments that degrade organization.
 Examples include:
-system
-loss mechanism
-dispersion
-viscous diffusion
-ionization
-chemical reaction
+
+| System    | Loss mechanism     |
+|-----------|--------------------|
+| wave      | dispersion         |
+| fluid     | viscous diffusion  |
+| atom      | ionization         |
+| molecule  | chemical reaction  |
 
 Thus any theory of emergence must account for loss processes.
 Mathematically, loss acts as a sink for organized structure.
-Let
-R(t)R(t)R(t)
-be the retained structural content of a configuration.
+Let $R(t)$ be the retained structural content of a configuration.
 The rate of loss is
-R˙=−dRdt.\dot{R} = -\frac{dR}{dt}.R˙=−dtdR​.
+
+$$
+\dot{R} = -\frac{dR}{dt}.
+$$
+
 This quantity represents the destruction of structural organization.
 
 ## 1.4.2 Loss as an entropy-like process
 
 Many loss mechanisms correspond to the increase of entropy.
-Let
-represent thermodynamic entropy.
-In irreversible processes,
+Let $S_{thermo}$ represent thermodynamic entropy.
+In irreversible processes, $dS_{thermo}/dt \geq 0$.
 Increasing entropy corresponds to the degradation of organized structure.
 Thus we can interpret structural loss as the conversion of organized energy into disordered states.
-If
-represents the energy contained in structured form, then dissipation causes
-dEstructdt<0.\frac{dE_{struct}}{dt} < 0.dtdEstruct​​<0.
+If $E_{struct}$ represents the energy contained in structured form, then dissipation causes
+
+$$
+\frac{dE_{struct}}{dt} < 0.
+$$
 
 ## 1.4.3 Example: diffusive loss
 
-Consider a scalar field
-$$
-(x,t).\Phi$\mathbf{x},t$.
-$$
+Consider a scalar field $\Phi(\mathbf{x}, t)$.
 Diffusion causes spatial structure to smooth out according to
-∂tΦ=D∇2Φ.\partial_t \Phi = D \nabla^2 \Phi.∂t​Φ=D∇2Φ.
-is the diffusion coefficient.
+
+$$
+\partial_t \Phi = D \nabla^2 \Phi,
+$$
+
+where $D$ is the diffusion coefficient.
 Fourier transforming,
+
 $$
-(x,t)=~(k,t)eikxd3k.\Phi$\mathbf{x},t$ = \int \tilde{\Phi}$\mathbf{k},t$ e^{i\mathbf{k}\cdot\mathbf{x}} d^3k.
+\Phi(\mathbf{x}, t) = \int \tilde{\Phi}(\mathbf{k}, t)\, e^{i\mathbf{k}\cdot\mathbf{x}} \, d^3k.
 $$
+
 Substituting into the diffusion equation yields
-dΦ~dt=−Dk2Φ~.\frac{d\tilde{\Phi}}{dt} = - D k^2 \tilde{\Phi}.dtdΦ~​=−Dk2Φ~.
-Small-scale structure (large kkk) disappears fastest.
+
+$$
+\frac{d\tilde{\Phi}}{dt} = -D k^2 \tilde{\Phi}.
+$$
+
+Small-scale structure (large $k$) disappears fastest.
 Thus diffusion is a powerful structural loss mechanism.
 
 ## 1.4.4 Structural measure under diffusion
 
 Define structural content as
+
 $$
-R=2(x,t)d3x.R =\int \Phi^2$\mathbf{x},t$ d^3x.R=
+R = \int \Phi^2(\mathbf{x}, t) \, d^3x.
 $$
+
 Taking the time derivative,
-dRdt=2∫Φ∂tΦ d3x.\frac{dR}{dt} = 2\int \Phi \partial_t \Phi \, d^3x.dtdR​=2∫Φ∂t​Φd3x.
-Substituting the diffusion equation,
-∂tΦ=D∇2Φ\partial_t \Phi = D\nabla^2\Phi∂t​Φ=D∇2Φ
-Using integration by parts,
+
 $$
-2d3x=2d3x.\int \Phi\nabla^2\Phi d^3x = -\int |\nabla\Phi|^2 d^3x.
+\frac{dR}{dt} = 2\int \Phi \, \partial_t \Phi \, d^3x.
 $$
+
+Substituting $\partial_t \Phi = D \nabla^2 \Phi$ and using integration by parts,
+
+$$
+\int \Phi \nabla^2 \Phi \, d^3x = -\int |\nabla\Phi|^2 \, d^3x.
+$$
+
 Therefore
+
 $$
-R=2D2d3x.\dot R = 2D\int |\nabla\Phi|^2 d^3x.R
+\dot{R} = -2D \int |\nabla\Phi|^2 \, d^3x.
 $$
+
 This shows that gradients directly drive structural loss.
 
 ## 1.4.5 Characteristic loss timescale
 
-For a structure of characteristic size
-LLL
-the dominant wavenumber is approximately
-k∼1L.k \sim \frac{1}{L}.k∼L1​.
+For a structure of characteristic size $L$, the dominant wavenumber is approximately
+
+$$
+k \sim \frac{1}{L}.
+$$
+
 Thus diffusion causes decay with rate
+
 $$
-Dk2.\gamma \sim Dk^2.
+\gamma \sim D k^2 \sim \frac{D}{L^2}.
 $$
-Substituting,
+
 Thus the lifetime of the structure is approximately
-τ∼L2D.\tau \sim \frac{L^2}{D}.τ∼DL2​.
+
+$$
+\tau \sim \frac{L^2}{D}.
+$$
+
 Small structures therefore decay rapidly.
 Large structures persist longer.
 
 ## 1.4.6 General form of loss equations
 
 Many physical loss processes take the general form
-dRdt=−ΓR.\frac{dR}{dt} = -\Gamma R.dtdR​=−ΓR.
-is the effective decay rate.
+
+$$
+\frac{dR}{dt} = -\Gamma R,
+$$
+
+where $\Gamma$ is the effective decay rate.
 The solution is
+
+$$
+R(t) = R(0)\, e^{-\Gamma t}.
+$$
+
 Thus the structural lifetime is
-τ=1Γ.\tau = \frac{1}{\Gamma}.τ=Γ1​.
+
+$$
+\tau = \frac{1}{\Gamma}.
+$$
+
 This form appears in many contexts:
-radioactive decay
 
-damping
-
-radiative losses
-
-chemical reactions.
+- radioactive decay
+- damping
+- radiative losses
+- chemical reactions
 
 ## 1.4.7 Loss-limited persistence
 
-Substituting this decay law into the selection number
-S=RR˙trefS = \frac{R}{\dot R t_{ref}}S=R˙tref​R​
+Substituting this decay law into the selection number with $\dot{R} = \Gamma R$:
+
 $$
-R=R.\dot R = \Gamma R.R
+S = \frac{R}{\dot{R} \, t_{ref}} = \frac{R}{\Gamma R \, t_{ref}} = \frac{1}{\Gamma \, t_{ref}}.
 $$
-Simplifying,
+
 Thus persistence depends only on the ratio of decay rate to observation horizon.
 
 ## 1.4.8 Interpretation
 
-The persistence threshold
+The persistence threshold $S \geq 1$ becomes
+
 $$
-S1S\ge 1S
+\frac{1}{\Gamma \, t_{ref}} \geq 1 \quad \Longleftrightarrow \quad \tau \geq t_{ref}.
 $$
+
 Thus a structure persists only if its decay time exceeds the relevant timescale of observation.
 
 ## 1.4.9 Competition between retention and loss
 
 In general, structural persistence arises from competition between two processes:
-process
-retention mechanisms
-stabilize structure
-loss mechanisms
-destroy structure
+
+| Process             | Effect               |
+|---------------------|----------------------|
+| retention mechanisms | stabilize structure |
+| loss mechanisms      | destroy structure   |
 
 The selection number measures the balance between these processes.
-If retention dominates,
-S>1S > 1S>1
-and the structure survives.
-If loss dominates,
-S<1S < 1S<1
-and the structure disappears.
+If retention dominates, $S > 1$, and the structure survives.
+If loss dominates, $S < 1$, and the structure disappears.
 
 ## 1.4.10 Loss landscape
 
-Every configuration in the substrate experiences a specific loss rate
-Γi.\Gamma_i.Γi​.
-Thus the configuration space
-$$
-\Omega
-$$
-can be mapped into a loss landscape.
+Every configuration in the substrate experiences a specific loss rate $\Gamma_i$.
+Thus the configuration space $\Omega$ can be mapped into a loss landscape.
 Regions of configuration space with high loss rates correspond to ephemeral fluctuations.
 Regions with low loss rates correspond to persistent structures.
 Thus emergence depends strongly on the topology of this landscape.
@@ -154,15 +184,15 @@ Thus emergence depends strongly on the topology of this landscape.
 ## 1.4.11 Implication for emergence theory
 
 An emergence theory must therefore include:
-the mechanisms that generate structure
 
-the mechanisms that destroy structure
-
-the balance between the two.
+1. the mechanisms that generate structure
+2. the mechanisms that destroy structure
+3. the balance between the two
 
 Without the second component, explanations of emergence remain incomplete.
 
-Transition to Section 1.5
+---
+
+*Transition to Section 1.5:*
 The persistence framework developed so far connects naturally to several established areas of physics, including thermodynamics, information theory, and field theory.
 The next section examines these connections and shows how the persistence approach relates to existing theoretical frameworks.
-

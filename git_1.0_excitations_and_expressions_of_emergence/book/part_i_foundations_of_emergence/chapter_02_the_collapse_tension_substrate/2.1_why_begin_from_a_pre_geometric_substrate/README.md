@@ -4,14 +4,12 @@
 
 Most physical theories begin by assuming a background geometry.
 Examples include:
-theory
-assumed structure
-Newtonian mechanics
-absolute space
-General relativity
-spacetime manifold
-Quantum field theory
-Minkowski spacetime
+
+| Theory              | Assumed structure   |
+|---------------------|---------------------|
+| Newtonian mechanics | absolute space      |
+| General relativity  | spacetime manifold  |
+| Quantum field theory| Minkowski spacetime |
 
 Mathematically, these frameworks assume the existence of coordinates
 $$
@@ -206,8 +204,8 @@ Geometry becomes a derived property of persistent structural relations.
 
 Beginning from a pre-geometric substrate allows emergence theory to address the origin of spatial relations themselves.
 The Collapse Tension Substrate provides a minimal dynamical framework containing two competing processes:
-collapse (structural loss)
-tension (structural stabilization).
+- collapse (structural loss)
+- tension (structural stabilization)
 Persistent configurations arise when tension mechanisms dominate collapse.
 These persistent configurations later give rise to gradients, flows, and geometric relations.
 
