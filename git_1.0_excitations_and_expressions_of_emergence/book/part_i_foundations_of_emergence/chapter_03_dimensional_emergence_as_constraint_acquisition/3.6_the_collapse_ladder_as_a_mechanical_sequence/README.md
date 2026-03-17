@@ -3,16 +3,13 @@
 ## 3.6.1 Emergence as a cascade
 
 The previous sections described four structural regimes of the Collapse Tension Substrate:
-stage
-structural form
-0D
-scalar variation
-1D
-gradients
-2D
-circulation
-3D
-closure
+
+| Stage | Structural form |
+|-------|----------------|
+| 0D | scalar variation |
+| 1D | gradients |
+| 2D | circulation |
+| 3D | closure |
 
 These stages are not independent phenomena. Instead they form a cascade of constraint acquisition.
 Each stage introduces new dynamical constraints that restrict how structural energy can dissipate.
@@ -22,19 +19,19 @@ Thus emergence proceeds through a mechanical ladder of increasing persistence.
 
 Recall the persistence condition derived earlier:
 $$
-S = \frac{R}{\dot R,t_{ref}}
+S = \frac{R}{\dot{R}\,t_{ref}}
 $$
 where
-(R) = retained structure
-$$
-$\dot R$ = loss rate
-$$
-(t_{ref}) = persistence horizon.
+
+- $R$ = retained structure
+- $\dot{R}$ = loss rate
+- $t_{ref}$ = persistence horizon.
+
 Emergent structures appear when
 $$
-S \ge 1.
+S \geq 1.
 $$
-Each stage of the collapse ladder modifies either (R) or ( $\dot R).$
+Each stage of the collapse ladder modifies either $R$ or $\dot{R}$.
 
 ## 3.6.3 Stage 0: scalar regime
 
@@ -52,11 +49,11 @@ $$
 $$
 The selection number becomes
 $$
-S_0 = \frac{1}{r t_{ref}}.
+S_0 = \frac{1}{r \, t_{ref}}.
 $$
 If
 $$
-r t_{ref} > 1
+r \, t_{ref} > 1
 $$
 scalar fluctuations disappear rapidly.
 
@@ -80,9 +77,9 @@ $$
 $$
 Thus
 $$
-S_1 = \frac{1}{Dk^2 t_{ref}}.
+S_1 = \frac{1}{Dk^2 \, t_{ref}}.
 $$
-Large-scale gradients (small (k)) persist longer.
+Large-scale gradients (small $k$) persist longer.
 
 ## 3.6.5 Stage 2: circulation regime
 
@@ -141,16 +138,13 @@ Each stage provides stronger resistance to structural loss.
 ## 3.6.8 Constraint acquisition
 
 The sequence of emergence can be interpreted as the accumulation of constraints.
-stage
-constraint type
-scalar
-nonlinear amplitude stabilization
-gradient
-spatial tension
-circulation
-rotational conservation
-closure
-boundary confinement
+
+| Stage | Constraint type |
+|-----------|--------------------------|
+| scalar | nonlinear amplitude stabilization |
+| gradient | spatial tension |
+| circulation | rotational conservation |
+| closure | boundary confinement |
 
 These constraints progressively reduce the accessible phase space of structural decay.
 
@@ -174,11 +168,10 @@ Let
 $$
 \mathcal{C}_n
 $$
-represent configurations at stage (n).
+represent configurations at stage $n$.
 The persistence filter selects
 $$
-\mathcal{C}_{n+1}
-{\sigma \in \mathcal{C}_n \mid S_n \ge 1}.
+\mathcal{C}_{n+1} = \{\, \sigma \in \mathcal{C}_n \mid S_n \geq 1 \,\}.
 $$
 Thus each stage emerges from the subset of previous configurations that survive collapse.
 
@@ -186,14 +179,12 @@ Thus each stage emerges from the subset of previous configurations that survive 
 
 Closed structures produced by the collapse ladder become the seeds of higher-order physical structures.
 Examples include:
-CTS structure
-later interpretation
-localized closure
-particle-like excitation
-stable vortex ring
-topological defect
-closed scalar domain
-bounded field region
+
+| CTS structure | Later interpretation |
+|----------------------|--------------------------|
+| localized closure | particle-like excitation |
+| stable vortex ring | topological defect |
+| closed scalar domain | bounded field region |
 
 These seeds will later participate in composite structures and shell formation.
 
@@ -206,18 +197,19 @@ $$
 where each transition introduces a new structural constraint that reduces the rate of collapse.
 This cascade forms the mechanical backbone of emergence within the Collapse Tension Substrate.
 
-Summary of Chapter 3
+## 3.6.13 Summary of Chapter 3
+
 Chapter 3 derived the dimensional ladder of emergence:
-scalar variation
-gradient formation
-circulation
-curvature closure.
+
+- scalar variation
+- gradient formation
+- circulation
+- curvature closure
+
 Each stage introduces a new retention mechanism that increases the selection number
 $$
-S = \frac{R}{\dot R t_{ref}}.
+S = \frac{R}{\dot{R} \, t_{ref}}.
 $$
 Thus emergence proceeds through a hierarchy of increasing resistance to structural loss.
 
-Defining Retained Structure
-Chapter 4 begins the formal mathematics of persistence mechanics, starting with the definition of structural retention (R).
-
+*Transition to Chapter 4:* Chapter 4 begins the formal mathematics of persistence mechanics, starting with the definition of structural retention $R$.
