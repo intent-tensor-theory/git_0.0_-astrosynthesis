@@ -1,0 +1,51 @@
+/* Astrosynthesis Book — extra styles */
+
+/* Equation display: give display math breathing room */
+.arithmatex {
+  overflow-x: auto;
+}
+
+/* Content width: give math equations space */
+.md-grid {
+  max-width: 1200px;
+}
+
+/* Chapter heading style */
+h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--md-primary-fg-color);
+  padding-bottom: 0.4rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+/* Equation blocks: center and add margin */
+.md-typeset .arithmatex.m-display {
+  text-align: center;
+  margin: 1.5em auto;
+}
+
+/* Table formatting for ledger tables */
+.md-typeset table {
+  font-size: 0.85rem;
+}
+
+/* Navigation: part headers */
+.md-nav__item--section > .md-nav__link {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: var(--md-primary-fg-color);
+}
+
+/* Preface / intro block quote styling */
+blockquote {
+  border-left: 4px solid var(--md-accent-fg-color);
+  font-style: italic;
+  padding-left: 1rem;
+  color: var(--md-default-fg-color--light);
+}
