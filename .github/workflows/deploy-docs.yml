@@ -1,0 +1,42 @@
+name: Deploy Astrosynthesis Book to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'git_1.0_excitations_and_expressions_of_emergence/book/**'
+      - 'mkdocs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install MkDocs and dependencies
+        run: |
+          pip install --upgrade pip
+          pip install \
+            mkdocs-material \
+            mkdocs-material[imaging] \
+            pymdown-extensions \
+            mkdocs>=1.5
+
+      - name: Build and deploy MkDocs site
+        run: |
+          mkdocs gh-deploy --force --clean --verbose
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
