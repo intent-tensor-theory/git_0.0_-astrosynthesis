@@ -1,0 +1,80 @@
+site_name: "Inverse Heisenberg Cartesian Tensor Box"
+site_description: "A framework for recursive field emergence from an imaginary center."
+site_author: "intent-tensor-theory"
+site_url: "https://intent-tensor-theory.github.io/git_0.0_-astrosynthesis/book2/"
+
+repo_url: "https://github.com/intent-tensor-theory/git_0.0_-astrosynthesis"
+repo_name: "intent-tensor-theory/git_0.0_-astrosynthesis"
+edit_uri: ""
+
+docs_dir: git_2.0_ICHTB/ichtb_paper
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: Crimson Pro
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_javascript:
+  - _static/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.min.js
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this page
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search:
+      lang: en
+
+nav:
+  - Overview: index.md
+  - 'Ch 1: Construction': 01_construction.md
+  - 'Ch 2: The Six Zones': 02_zones.md
+  - 'Ch 3: The Master Equation': 03_master_equation.md
+  - 'Ch 4: Hat Counting': 04_hat_counting.md
+  - 'Ch 5: Closure': 05_closure.md
+  - 'Ch 6: Connection to CTS': 06_connection_to_cts.md
