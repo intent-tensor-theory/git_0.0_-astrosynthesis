@@ -28,26 +28,18 @@ These shells interact through internal forces and energy exchange.
 
 The total energy of a nested shell system is the sum of individual shell energies and interaction energies.
 $$
-E_{total}
+E_{total} =
 \sum_{i=1}^{n} E_i
 +
 \sum_{i<j} E_{ij}.
 $$
-Here
-$$
-E_i
-$$
-represents the curvature energy of shell (i), while
-$$
-E_{ij}
-$$
-represents interaction energy between shells.
+Here $E_i$ represents the curvature energy of shell $i$, while $E_{ij}$ represents interaction energy between shells.
 
 ## 13.4.4 Curvature energy of each shell
 
 Each shell contributes curvature energy
 $$
-E_i
+E_i =
 \int_{S_i}
 \left[
 \frac{\kappa_i}{2}(2H_i)^2
@@ -60,17 +52,14 @@ Different shells may possess different curvature stiffness values.
 ## 13.4.5 Radial spacing
 
 The spacing between shells plays a crucial role in stability.
-Let
-$$
-d_i = R_{i+1} - R_i.
-$$
+Let $d_i = R_{i+1} - R_i$.
 If spacing becomes too small, shells interact strongly and may merge.
 If spacing becomes too large, shells become dynamically independent.
 Stable nested shells satisfy
 $$
 d_i \sim \lambda_{corr}
 $$
-where ( $\lambda_{corr}) is the correlation length of the substrate.$
+where $\lambda_{corr}$ is the correlation length of the substrate.
 
 ## 13.4.6 Interaction energy between shells
 
@@ -88,12 +77,12 @@ This interaction stabilizes relative positions of shells.
 Nested shells reinforce structural stability through distributed locking.
 Total locking energy becomes
 $$
-E_{lock}^{(total)}
+E_{lock}^{(total)} =
 \sum_{i=1}^{n} E_{lock}^{(i)}.
 $$
 Thus the lock ratio increases with the number of shells:
 $$
-\Lambda_{lock}
+\Lambda_{lock} =
 \frac{E_{lock}^{(total)}}{E_{form}}.
 $$
 This greatly increases persistence.
@@ -101,20 +90,21 @@ This greatly increases persistence.
 ## 13.4.8 Mode suppression
 
 Nested shells suppress many instability modes.
-Single-shell structures permit
-radial breathing modes
-surface deformation modes.
+Single-shell structures permit:
+- radial breathing modes
+- surface deformation modes.
+
 Nested shells damp these modes through inter-shell coupling.
 
 ## 13.4.9 Radial oscillations
 
 Consider radial displacement
 $$
-R_i(t) = R_i + \delta R_i(t).
+R_i(t) = R_i^{(0)} + \delta R_i(t).
 $$
 The oscillation dynamics satisfy
 $$
-m_i \frac{d^2}{dt^2}\delta R_i
+m_i \frac{d^2}{dt^2}\delta R_i =
 -\frac{\partial E_{total}}{\partial R_i}.
 $$
 Coupling between shells modifies these oscillations and enhances stability.
@@ -131,11 +121,7 @@ They therefore lie deep within the persistent region of the survival map.
 
 Nested shells also enhance energy confinement.
 Energy becomes trapped within layered regions.
-Let
-$$
-V_i
-$$
-represent the volume between shells.
+Let $V_i$ represent the volume between shells.
 Energy density becomes stratified across these layers.
 
 ## 13.4.12 Structural hierarchy
@@ -148,9 +134,10 @@ The system becomes a multi-layer persistence architecture.
 
 Nested shells may represent the structural template for complex matter architectures.
 Layered structures allow:
-internal excitations
-protected internal regions
-stable interaction boundaries.
+- internal excitations
+- protected internal regions
+- stable interaction boundaries.
+
 This greatly expands the structural complexity possible within the CTS substrate.
 
 ## 13.4.14 Phase-chart interpretation
@@ -170,7 +157,3 @@ These coordinates lie deep in the shell survival region and may approach composi
 Nested shells consist of multiple closed surfaces arranged concentrically.
 Through inter-shell coupling and distributed locking they greatly increase structural persistence and energy confinement.
 These layered architectures represent a powerful structural solution within the Collapse Tension Substrate.
-
-Orbital-like Persistence from Shell Logic
-This section derives how nested shells naturally produce orbit-like excitation states around persistent structures.
-

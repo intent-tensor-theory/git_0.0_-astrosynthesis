@@ -26,28 +26,20 @@ $$
 $$
 which implies that stabilization mechanisms are weaker than loss processes.
 Thus any excitation that appears in this region experiences one or more of the following:
-insufficient structural locking
-excessive environmental dissipation
-insufficient persistence time.
+- insufficient structural locking
+- excessive environmental dissipation
+- insufficient persistence time.
 As a result these excitations decay before forming durable structures.
 
 ## 10.3.3 Classes of ephemeral excitations
 
 The ephemeral region is dominated by the lowest levels of the excitation hierarchy:
-excitation
-typical values
-wave modes
-$$
-(x\approx0,;y\ll1)
-$$
-phase-locked packets
-$$
-(x\sim0.1
-$$
-weak vortices
-$$
-(x\sim1,;y<1)
-$$
+
+| Excitation | Typical coordinates |
+|---|---|
+| wave modes | $(x\approx0,\;y\ll1)$ |
+| phase-locked packets | $(x\sim0.1)$ |
+| weak vortices | $(x\sim1,\;y<1)$ |
 
 These excitations represent transient expressions of the substrate rather than stable objects.
 
@@ -123,15 +115,9 @@ Because excitations decay rapidly, the ephemeral region acts as a dynamic energy
 Energy injected into the substrate flows through successive excitation states.
 Mathematically this can be described as
 $$
-\frac{dN_i}{dt}
-\sum_j W_{ji} N_j
-\sum_k W_{ik} N_i
+\frac{dN_i}{dt} = \sum_j W_{ji} N_j - \sum_k W_{ik} N_i
 $$
-where
-$$
-W_{ij}
-$$
-represents transition rates between excitation states.
+where $W_{ij}$ represents transition rates between excitation states.
 
 ## 10.3.9 Population characteristics
 
@@ -144,9 +130,9 @@ $$
 S_* < 1
 $$
 reveals that ephemeral excitations are
-extremely abundant
-short-lived
-continuously regenerated.
+- extremely abundant
+- short-lived
+- continuously regenerated.
 Thus the substrate contains a dense background of transient structures.
 
 ## 10.3.10 Role in emergence
@@ -154,18 +140,18 @@ Thus the substrate contains a dense background of transient structures.
 Although ephemeral excitations do not persist individually, they play a crucial role in emergence.
 They provide the dynamic substrate activity that allows higher-order structures to form.
 Examples include
-wave interactions creating vortices
-vortex collisions forming rings
-ring interactions producing chiral structures.
+- wave interactions creating vortices
+- vortex collisions forming rings
+- ring interactions producing chiral structures.
 Thus persistent structures emerge from interactions within the ephemeral region.
 
 ## 10.3.11 Structural interpretation
 
 The ephemeral region corresponds to the background propagation layer of the CTS survival map.
 This region contains
-wave propagation
-weak nonlinear structures
-transient vortices.
+- wave propagation
+- weak nonlinear structures
+- transient vortices.
 These structures represent the raw activity of the substrate.
 
 ## 10.3.12 Visual location on the phase chart
@@ -191,7 +177,3 @@ xy < 1.
 $$
 Excitations in this region cannot overcome structural loss and therefore decay rapidly.
 This region is dominated by waves and weak coherent structures that form the dynamic background of the Collapse Tension Substrate.
-
-What Lies Above Threshold
-This section analyzes the persistent region of the phase chart and derives the structural classes capable of long-term survival.
-

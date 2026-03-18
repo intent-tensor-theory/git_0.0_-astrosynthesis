@@ -22,13 +22,7 @@ H =
 (\nabla \times \mathbf{v})
 , d^3x.
 $$
-Here:
-$$
-$\mathbf{v}$ represents the circulation field
-$$
-$$
-$\nabla \times \mathbf{v}$ represents vorticity.
-$$
+Here $\mathbf{v}$ represents the circulation field and $\nabla \times \mathbf{v}$ represents vorticity.
 
 ## 11.4.3 Helicity as a conserved quantity
 
@@ -45,14 +39,9 @@ Thus chirality produces topological persistence.
 Chirality typically arises when a vortex ring becomes twisted.
 The circulation path becomes a helical trajectory
 $$
-\mathbf{r}(s)
-(R\cos s,,
-R\sin s,,
-p s)
+\mathbf{r}(s) = (R\cos s,\; R\sin s,\; p s)
 $$
-where
-(R) = radius of the helix
-(p) = pitch.
+where $R$ is the radius of the helix and $p$ is the pitch.
 This helical deformation introduces handedness into the structure.
 
 ## 11.4.5 Energetic cost of chirality
@@ -70,13 +59,7 @@ E
 \right)
 ds
 $$
-where
-$$
-$\kappa$ = curvature
-$$
-$$
-$\tau$ = torsion.
-$$
+where $\kappa$ is the curvature and $\tau$ is the torsion.
 Although this increases formation energy, it also increases locking energy.
 
 ## 11.4.6 Lock ratio in the chirality region
@@ -100,10 +83,10 @@ $$
 Substituting into the persistence equation
 $$
 y =
-\mathcal{E}{shell}
+\mathcal{E}_{shell}
 \mathcal{E}
 D
-T{obj}
+T_{obj}
 \frac{R}{\dot{R} t_{ref}},
 $$
 we obtain
@@ -126,25 +109,23 @@ These coordinates place chirality structures well above the threshold curve.
 ## 11.4.9 Stability mechanisms
 
 Chiral structures benefit from several stabilization mechanisms simultaneously.
-mechanism
-effect
-closure
-removes endpoints
-circulation conservation
-prevents collapse
-helicity conservation
-prevents untwisting
-torsional rigidity
-stabilizes geometry
+
+| Mechanism | Effect |
+|---|---|
+| closure | removes endpoints |
+| circulation conservation | prevents collapse |
+| helicity conservation | prevents untwisting |
+| torsional rigidity | stabilizes geometry |
 
 The combination of these mechanisms produces dramatically increased persistence.
 
 ## 11.4.10 Structural dynamics
 
 Chiral excitations exhibit characteristic dynamics including
-helical propagation
-rotational drift
-torsional oscillations.
+- helical propagation
+- rotational drift
+- torsional oscillations.
+
 Their velocity can be approximated by
 $$
 v
@@ -158,14 +139,12 @@ However, torsion modifies the propagation direction, producing helical motion.
 
 Chiral structures interact differently than simple rings.
 Possible interactions include
-interaction
-outcome
-twist amplification
-stronger chirality
-chiral pairing
-braid formation
-chiral stacking
-shell nucleation
+
+| Interaction | Outcome |
+|---|---|
+| twist amplification | stronger chirality |
+| chiral pairing | braid formation |
+| chiral stacking | shell nucleation |
 
 Thus chirality provides a bridge between simple closure structures and more complex composite excitations.
 
@@ -175,9 +154,10 @@ From the abundance law
 $$
 N_i \propto S_* e^{-E_{total}/T_{eff}},
 $$
-chiral structures exhibit
-high persistence (S_*)
-moderate-to-high formation energy.
+chiral structures exhibit:
+- high persistence $S_*$
+- moderate-to-high formation energy.
+
 Thus they are less abundant than rings but far more durable.
 
 ## 11.4.13 Structural significance
@@ -196,7 +176,3 @@ y \gg 1.
 $$
 Structures in this region possess nonzero helicity and torsional rigidity, producing strong topological stabilization.
 Chiral excitations therefore represent the next major stage in the CTS emergence hierarchy beyond simple closure structures.
-
-Shell Survival
-This section examines how multi-axis locking and curvature closure produce extremely persistent shell structures within the CTS survival map.
-

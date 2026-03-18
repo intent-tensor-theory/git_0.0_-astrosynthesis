@@ -22,9 +22,10 @@ They represent the most durable excitations in the CTS hierarchy.
 Composite structures arise when multiple persistent excitations become topologically linked or braided.
 Instead of existing as isolated objects, the excitations interlock to form a larger structural entity.
 Examples include:
-linked vortex rings
-braided filaments
-nested shell systems.
+- linked vortex rings
+- braided filaments
+- nested shell systems.
+
 These composite excitations possess multiple stabilization layers simultaneously.
 
 ## 11.6.3 Topological invariants
@@ -51,7 +52,7 @@ A braid consists of strands whose trajectories satisfy
 $$
 \mathbf{r}_i(t) \neq \mathbf{r}_j(t)
 $$
-for all (i $\neq j).$
+for all $i \neq j$.
 The braid group describes the topological structure of such configurations.
 Braid operations satisfy relations
 $$
@@ -59,8 +60,7 @@ $$
 \quad (|i-j|>1)
 $$
 $$
-\sigma_i \sigma_{i+1} \sigma_i
-\sigma_{i+1} \sigma_i \sigma_{i+1}.
+\sigma_i \sigma_{i+1} \sigma_i = \sigma_{i+1} \sigma_i \sigma_{i+1}.
 $$
 These relations define the algebraic structure of braid topology.
 
@@ -76,18 +76,16 @@ N E_{unit}
 E_{interaction}.
 $$
 The interaction energy includes contributions from
-linking tension
-torsional strain
-curvature coupling.
+- linking tension
+- torsional strain
+- curvature coupling.
 
 ## 11.6.6 Lock ratio for composites
 
 Because multiple structural constraints act simultaneously, the locking energy becomes extremely large.
 Typical estimates give
 $$
-\Lambda_{lock}
-\frac{E_{lock}}{E_{form}}
-\gg 50.
+\Lambda_{lock} = \frac{E_{lock}}{E_{form}} \gg 50.
 $$
 Thus composite structures occupy the far-right region of the phase chart.
 
@@ -97,10 +95,10 @@ Composite structures also possess enormous topology factors.
 The persistence equation
 $$
 y =
-\mathcal{E}{shell}
+\mathcal{E}_{shell}
 \mathcal{E}
 D
-T{obj}
+T_{obj}
 \frac{R}{\dot{R} t_{ref}}
 $$
 includes a topology factor
@@ -172,9 +170,10 @@ Thus composite excitations represent the highest structural organization achieva
 
 Composite structures act as structural hubs within the substrate.
 They can
-bind smaller excitations
-generate complex interaction networks
-act as cores of larger structural systems.
+- bind smaller excitations
+- generate complex interaction networks
+- act as cores of larger structural systems.
+
 Thus they play a central role in the formation of highly organized matter-like systems.
 
 ## 11.6.13 Location in the survival map
@@ -201,7 +200,3 @@ y
 The composite survival region occupies the far upper-right domain of the CTS survival map.
 Structures in this region are stabilized by multiple mechanisms simultaneously, including closure, chirality, shell locking, and topological linking.
 These excitations possess extremely large locking strength and persistence capacity, making them the most durable structures in the Collapse Tension Substrate.
-
-Transition Rules Between Regions
-This section derives the mathematical conditions under which excitations migrate from one structural region of the survival map to another.
-

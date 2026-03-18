@@ -11,9 +11,7 @@ $$
 x = \Lambda_{lock}
 $$
 $$
-y =
-\mathcal{E}{shell}\mathcal{E}D T{obj}
-\frac{R}{\dot{R} t_{ref}}.
+y = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\,t_{ref}}.
 $$
 Chapter 11 now examines each structural region of the survival map in detail.
 The first and most fundamental region is the background propagation layer.
@@ -40,8 +38,7 @@ All excitations in this region lie far below the persistence threshold.
 The dominant excitations in the background propagation region are wave modes.
 Recall from Chapter 8 that wave solutions satisfy
 $$
-\Phi(\mathbf{x},t)
-A e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}.
+\Phi(\mathbf{x},t) = A e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}.
 $$
 These excitations represent linear disturbances of the CTS field.
 Their formation energy is extremely small.
@@ -50,12 +47,7 @@ Their formation energy is extremely small.
 
 From the linearized field equation the dispersion relation is
 $$
-\omega(k) =
-2ak^2
-+
-2uk^4
-+
-2r.
+\omega(k) = \sqrt{2ak^2 + 2uk^4 + 2r}.
 $$
 This relation determines how wave frequency depends on spatial scale.
 Long wavelength modes satisfy
@@ -71,26 +63,21 @@ $$
 
 The energy of a wave excitation is approximately
 $$
-E_{wave}
-\sim
-(a k^2 + u k^4 + r) A^2 V.
+E_{wave} = (ak^2 + uk^4 + r)A^2 V.
 $$
-Because the amplitude (A) can be arbitrarily small, the formation energy can approach zero.
+Because the amplitude $A$ can be arbitrarily small, the formation energy can approach zero.
 Thus waves appear extremely frequently within the substrate.
 
 ## 11.1.6 Structural properties
 
 Background propagation excitations possess several defining properties:
-property
-value
-formation energy
-minimal
-locking energy
-negligible
-topology factor
-(T_{obj}=1)
-persistence
-very low
+
+| Property | Value |
+|---|---|
+| formation energy | minimal |
+| locking energy | negligible |
+| topology factor | $T_{obj}=1$ |
+| persistence | very low |
 
 Because these excitations lack structural locking, they decay rapidly.
 
@@ -100,10 +87,7 @@ Despite their instability, propagation modes perform a critical function.
 They act as transport channels for energy and structural perturbations.
 The energy density of the wave field satisfies
 $$
-\frac{\partial E}{\partial t}
-+
-\nabla \cdot \mathbf{J}
-\gamma E
+\frac{\partial E}{\partial t} + \nabla \cdot \mathbf{J} = -\gamma E
 $$
 where
 $$
@@ -122,7 +106,7 @@ The characteristic lifetime is
 $$
 \tau = \frac{1}{\gamma}.
 $$
-Because ( $\gamma) is generally nonzero, waves remain short-lived structures.$
+Because $\gamma$ is generally nonzero, waves remain short-lived structures.
 
 ## 11.1.9 Population density
 
@@ -131,8 +115,8 @@ $$
 N_i \propto S_* e^{-E_{total}/T_{eff}},
 $$
 we observe that wave excitations possess:
-extremely small (E_{total})
-very small (S_*).
+- extremely small $E_{total}$
+- very small $S_*$.
 Thus they remain extremely abundant but transient.
 
 ## 11.1.10 Role in structural emergence
@@ -140,14 +124,12 @@ Thus they remain extremely abundant but transient.
 Although wave modes do not persist individually, they play a crucial role in emergence.
 Their interactions generate higher-order excitations.
 Examples include:
-interaction
-result
-wave interference
-coherent packets
-nonlinear coupling
-phase locking
-circulation formation
-vortices
+
+| Interaction | Result |
+|---|---|
+| wave interference | coherent packets |
+| nonlinear coupling | phase locking |
+| circulation formation | vortices |
 
 Thus the background propagation layer acts as the dynamic engine of emergence.
 
@@ -176,7 +158,3 @@ x \approx 0, \qquad y \ll 1.
 $$
 This region is dominated by wave excitations with extremely low formation energy and negligible structural locking.
 Although these excitations are short-lived, they provide the dynamic energy flow that drives the emergence of higher-order structures.
-
-Localized Precursors
-This section analyzes the next structural region of the survival map, where nonlinear wave interactions produce coherent excitations that act as precursors to persistent structures.
-

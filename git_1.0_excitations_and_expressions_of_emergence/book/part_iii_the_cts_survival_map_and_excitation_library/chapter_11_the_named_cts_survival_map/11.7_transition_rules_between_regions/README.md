@@ -3,12 +3,13 @@
 ## 11.7.1 Motivation
 
 Sections 11.1–11.6 defined the six structural regions of the CTS survival map:
-Background propagation
-Localized precursors
-Closure survival
-Chirality survival
-Shell survival
-Composite survival
+- Background propagation
+- Localized precursors
+- Closure survival
+- Chirality survival
+- Shell survival
+- Composite survival
+
 However, excitations are not static objects within the phase chart.
 Instead they evolve dynamically as environmental conditions and internal structure change.
 Thus excitations move through the phase chart according to transition rules.
@@ -26,13 +27,11 @@ x = \Lambda_{lock}
 $$
 $$
 y =
-\mathcal{E}{shell}
-\mathcal{E}
-D
-T{obj}
-\frac{R}{\dot{R}t_{ref}}.
+\frac{\mathcal{E}_{shell}}{\mathcal{E}_D}\,
+T_{obj}
+\frac{R}{\dot{R}\,t_{ref}}.
 $$
-Transitions occur whenever the parameters controlling (x) or (y) change.
+Transitions occur whenever the parameters controlling $x$ or $y$ change.
 
 ## 11.7.3 Evolution equations
 
@@ -83,7 +82,7 @@ The helicity then becomes nonzero
 $$
 H =
 \int
-\mathbf{v}\cdot(\nabla\times\mathbf{v}),d^3x
+\mathbf{v}\cdot(\nabla\times\mathbf{v})\,d^3x
 \neq 0.
 $$
 Once helicity becomes significant, the structure enters the chirality survival region.
@@ -104,7 +103,7 @@ The defining condition is
 $$
 Lk \neq 0
 $$
-where (Lk) is the linking number.
+where $Lk$ is the linking number.
 Once linking occurs, the structure becomes a topological composite and moves into the composite region.
 
 ## 11.7.9 Reverse transitions
@@ -112,38 +111,33 @@ Once linking occurs, the structure becomes a topological composite and moves int
 Transitions are not strictly one-directional.
 Strong perturbations may drive structures back into lower regions.
 Examples include:
-transition
-cause
-composite → shell
-reconnection
-shell → chirality
-surface rupture
-chirality → closure
-torsion loss
-closure → precursor
-ring collapse
 
-These reverse transitions correspond to decreases in (x) or (y).
+| Transition | Cause |
+|---|---|
+| composite → shell | reconnection |
+| shell → chirality | surface rupture |
+| chirality → closure | torsion loss |
+| closure → precursor | ring collapse |
+
+These reverse transitions correspond to decreases in $x$ or $y$.
 
 ## 11.7.10 Environmental control parameters
 
 Several environmental parameters influence transitions:
-parameter
-effect
-(T_{eff})
-fluctuation energy
-$$
-$\gamma$
-$$
-dissipation rate
-(a,u,r,s)
-field constants
+
+| Parameter | Effect |
+|---|---|
+| $T_{eff}$ | fluctuation energy |
+| $\gamma$ | dissipation rate |
+| $a,u,r,s$ | field constants |
 
 Changes in these parameters alter the phase-space trajectories of excitations.
 
 ## 11.7.11 Transition diagram
 
 The hierarchical transition structure can be summarized as
+
+```
 waves
   ↓
 localized precursors
@@ -155,6 +149,7 @@ chirality
 shell formation
   ↓
 composite structures
+```
 
 Each transition corresponds to the introduction of a new stabilization mechanism.
 
@@ -182,18 +177,14 @@ The excitation crosses the survival boundary and becomes persistent.
 
 Transitions between survival-map regions represent qualitative structural changes.
 They correspond to the appearance of new structural invariants:
-transition
-new invariant
-waves → precursors
-coherence
-precursors → closure
-circulation
-closure → chirality
-helicity
-chirality → shell
-curvature closure
-shell → composite
-linking number
+
+| Transition | New invariant |
+|---|---|
+| waves → precursors | coherence |
+| precursors → closure | circulation |
+| closure → chirality | helicity |
+| chirality → shell | curvature closure |
+| shell → composite | linking number |
 
 Each invariant increases persistence.
 
@@ -206,8 +197,3 @@ $$
 cross the boundaries separating regions of the phase chart.
 Each transition introduces a new stabilization mechanism that increases persistence.
 These rules define the dynamical pathway through which emergence proceeds within the Collapse Tension Substrate.
-
-Interpreting the Survival Map as an Atlas of Emergence
-This final section of Chapter 11 synthesizes the regional structure of the survival map and explains how it organizes the full hierarchy of CTS excitations.
-
-This completes Chapter 11.
