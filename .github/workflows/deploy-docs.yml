@@ -1,4 +1,4 @@
-name: Deploy Astrosynthesis Book to GitHub Pages
+name: Deploy Astrosynthesis — Dual Book + ICHTB Model
 
 on:
   push:
@@ -6,7 +6,10 @@ on:
       - main
     paths:
       - 'git_1.0_excitations_and_expressions_of_emergence/book/**'
+      - 'git_2.0_ICHTB/ichtb_paper/**'
       - 'mkdocs.yml'
+      - 'mkdocs_ichtb.yml'
+      - 'site_wrapper/**'
   workflow_dispatch:
 
 permissions:
@@ -36,8 +39,21 @@ jobs:
             mkdocs>=1.5 \
             mkdocs-print-site-plugin
 
-      - name: Build and deploy MkDocs site
+      - name: Build Book 1 — CTS (light theme → /book1/)
+        run: mkdocs build -f mkdocs.yml -d site/book1
+
+      - name: Build Book 2 — ICHTB (dark theme → /book2/)
+        run: mkdocs build -f mkdocs_ichtb.yml -d site/book2
+
+      - name: Assemble site root
         run: |
-          mkdocs gh-deploy --force --clean --verbose
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          cp site_wrapper/index.html site/index.html
+          touch site/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: gh-pages
+          force_orphan: false

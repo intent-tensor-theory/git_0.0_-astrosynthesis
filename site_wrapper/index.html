@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astrosynthesis — Two Books, One Model</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      background: #0a0a14;
+      font-family: 'Crimson Pro', 'Georgia', serif;
+    }
+
+    .three-panel {
+      display: grid;
+      grid-template-rows: 1fr 440px 1fr;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    /* ── BOOK PANELS ── */
+    .book-panel {
+      position: relative;
+      overflow: hidden;
+      min-height: 0;
+    }
+
+    .book-panel iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    /* ── MODEL PANEL ── */
+    .model-panel {
+      position: relative;
+      background: #07070f;
+      border-top: 1px solid #1e1e3a;
+      border-bottom: 1px solid #1e1e3a;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .model-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 18px;
+      background: #0d0d22;
+      border-bottom: 1px solid #1e1e3a;
+      flex-shrink: 0;
+    }
+
+    .model-title {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #8888cc;
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+    }
+
+    .model-subtitle {
+      font-size: 11px;
+      color: #444466;
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+    }
+
+    #ichtb-model {
+      flex: 1;
+      min-height: 0;
+    }
+
+    /* ── BOOK SEPARATORS (label strips) ── */
+    .book-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .book-label-top { background: linear-gradient(90deg, #7c4dff, #b388ff, #7c4dff); }
+    .book-label-bottom { background: linear-gradient(90deg, #1a237e, #283593, #1a237e); }
+
+    /* ── RESIZE HANDLE ── */
+    .resize-handle {
+      position: absolute;
+      left: 0; right: 0;
+      height: 6px;
+      cursor: ns-resize;
+      z-index: 20;
+      background: transparent;
+    }
+
+    .resize-handle:hover {
+      background: rgba(100, 100, 200, 0.15);
+    }
+
+    .resize-handle-top { top: 0; }
+    .resize-handle-bottom { bottom: 0; }
+  </style>
+</head>
+<body>
+
+<div class="three-panel" id="three-panel">
+
+  <!-- BOOK 1: CTS (top, lighter) -->
+  <div class="book-panel" id="panel-top">
+    <div class="book-label book-label-top"></div>
+    <iframe src="./book1/" id="frame-book1" title="Book 1.0 — Excitations and Expressions of Emergence"></iframe>
+  </div>
+
+  <!-- 3D ICHTB MODEL (middle, always visible) -->
+  <div class="model-panel">
+    <div class="resize-handle resize-handle-top" id="rh-top"></div>
+    <div class="model-header">
+      <span class="model-title">⬡ Inverse Heisenberg Cartesian Tensor Box — Interactive</span>
+      <span class="model-subtitle">i₀ ∈ ℂ &nbsp;|&nbsp; six recursive collapse zones &nbsp;|&nbsp; rotate / zoom / toggle</span>
+    </div>
+    <div id="ichtb-model"></div>
+    <div class="resize-handle resize-handle-bottom" id="rh-bottom"></div>
+  </div>
+
+  <!-- BOOK 2: ICHTB (bottom, darker) -->
+  <div class="book-panel" id="panel-bottom">
+    <div class="book-label book-label-bottom"></div>
+    <iframe src="./book2/" id="frame-book2" title="Book 2.0 — Inverse Heisenberg Cartesian Tensor Box"></iframe>
+  </div>
+
+</div>
+
+<!-- Plotly CDN -->
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+
+<script>
+// ─────────────────────────────────────────────
+//  ICHTB 3D Model — pure JavaScript
+//  Mirrors the Python/Plotly code in ichtb_cubePlot.ipynb exactly
+// ─────────────────────────────────────────────
+
+(function buildICHTBModel() {
+  const size = 4;
+  const sp = 1;
+
+  // ── Nodes ──────────────────────────────────
+  const nx = [], ny = [], nz = [];
+  for (let i = -size; i <= size; i += sp)
+    for (let j = -size; j <= size; j += sp)
+      for (let k = -size; k <= size; k += sp)
+        { nx.push(i); ny.push(j); nz.push(k); }
+
+  const nodeTrace = {
+    type: 'scatter3d', mode: 'markers',
+    x: nx, y: ny, z: nz,
+    marker: { size: 2, color: 'rgba(20,20,60,0.5)' },
+    name: 'Nodes', visible: true
+  };
+
+  // ── Edges ──────────────────────────────────
+  const ex = [], ey = [], ez = [];
+  const coords = [];
+  for (let c = -size; c <= size; c += sp) coords.push(c);
+  for (const i of coords) for (const j of coords) for (const k of coords) {
+    if (i < size) { ex.push(i,i+sp,null); ey.push(j,j,null); ez.push(k,k,null); }
+    if (j < size) { ex.push(i,i,null); ey.push(j,j+sp,null); ez.push(k,k,null); }
+    if (k < size) { ex.push(i,i,null); ey.push(j,j,null); ez.push(k,k+sp,null); }
+  }
+  const edgeTrace = {
+    type: 'scatter3d', mode: 'lines',
+    x: ex, y: ey, z: ez,
+    line: { color: 'cornflowerblue', width: 1 },
+    name: 'Grid Edges', visible: false
+  };
+
+  // ── Pyramids ────────────────────────────────
+  // base: 4 vertices of the cube face, apex: [0,0,0] = i₀
+  const pyramidDefs = [
+    { face: '+X  Expansion  (Δ₃)',  color: 'darkred',
+      base: [[ size,-size,-size],[ size, size,-size],[ size, size, size],[ size,-size, size]] },
+    { face: '−X  Compression (Δ₄)', color: 'lightcoral',
+      base: [[-size,-size,-size],[-size, size,-size],[-size, size, size],[-size,-size, size]] },
+    { face: '+Y  Forward     (Δ₁)', color: 'darkgreen',
+      base: [[-size, size,-size],[ size, size,-size],[ size, size, size],[-size, size, size]] },
+    { face: '−Y  Memory      (Δ₂)', color: 'lightgreen',
+      base: [[-size,-size,-size],[ size,-size,-size],[ size,-size, size],[-size,-size, size]] },
+    { face: '+Z  Apex        (Δ₅)', color: 'darkblue',
+      base: [[-size,-size, size],[ size,-size, size],[ size, size, size],[-size, size, size]] },
+    { face: '−Z  Core        (Δ₆)', color: 'lightskyblue',
+      base: [[-size,-size,-size],[ size,-size,-size],[ size, size,-size],[-size, size,-size]] },
+  ];
+
+  const meshes = pyramidDefs.map(({ face, color, base }) => {
+    // 4 triangles: base[0]-base[1]-apex, base[1]-base[2]-apex, etc.
+    const vx=[], vy=[], vz=[], ii=[], jj=[], kk=[];
+    [[0,1],[1,2],[2,3],[3,0]].forEach(([a,b], t) => {
+      const off = t * 3;
+      vx.push(base[a][0], base[b][0], 0);
+      vy.push(base[a][1], base[b][1], 0);
+      vz.push(base[a][2], base[b][2], 0);
+      ii.push(off); jj.push(off+1); kk.push(off+2);
+    });
+    return {
+      type: 'mesh3d',
+      x: vx, y: vy, z: vz,
+      i: ii, j: jj, k: kk,
+      color, opacity: 0.55,
+      name: face, visible: true
+    };
+  });
+
+  // ── Zone labels (text at face centers) ─────
+  const labelTrace = {
+    type: 'scatter3d', mode: 'text',
+    x: [ size+0.5, -(size+0.5),  0,           0,         0,          0],
+    y: [ 0,          0,          size+0.5, -(size+0.5), 0,          0],
+    z: [ 0,          0,          0,           0,        size+0.5, -(size+0.5)],
+    text: [
+      '∇²Φ Expansion',
+      '−∇²Φ Compression',
+      '∇Φ Forward',
+      '∇×F Memory',
+      '∂Φ/∂t Apex',
+      'Φ=i₀ Core'
+    ],
+    textfont: { size: 9, color: 'rgba(200,200,255,0.85)' },
+    name: 'Zone Labels', visible: true
+  };
+
+  // ── Anchor: i₀ ─────────────────────────────
+  const anchorTrace = {
+    type: 'scatter3d', mode: 'markers+text',
+    x: [0], y: [0], z: [0],
+    marker: { size: 8, color: '#ff4466', symbol: 'diamond' },
+    text: ['  i₀'], textfont: { size: 13, color: '#ff4466' },
+    textposition: 'top center',
+    name: 'i₀ Anchor', visible: true
+  };
+
+  // ── Assemble ────────────────────────────────
+  const data = [nodeTrace, edgeTrace, ...meshes, labelTrace, anchorTrace];
+  const nTotal = data.length;
+
+  // ── Toggle button helpers ───────────────────
+  function vis(show) {
+    const v = new Array(nTotal).fill(false);
+    show.forEach(idx => { v[idx] = true; });
+    return v;
+  }
+
+  // indices: 0=nodes, 1=edges, 2..7=pyramids, 8=labels, 9=anchor
+  const buttons = [
+    { label: 'All On',      method: 'update', args: [{ visible: new Array(nTotal).fill(true) }] },
+    { label: 'Pyramids',    method: 'update', args: [{ visible: vis([2,3,4,5,6,7,8,9]) }] },
+    { label: '+ Labels',    method: 'update', args: [{ visible: vis([2,3,4,5,6,7,8,9]) }] },
+    { label: 'Grid',        method: 'update', args: [{ visible: vis([0,1]) }] },
+    { label: 'Anchor Only', method: 'update', args: [{ visible: vis([9]) }] },
+    { label: 'All Off',     method: 'update', args: [{ visible: new Array(nTotal).fill(false) }] },
+  ];
+
+  const layout = {
+    paper_bgcolor: '#07070f',
+    plot_bgcolor:  '#07070f',
+    margin: { l: 0, r: 0, t: 0, b: 0 },
+    scene: {
+      aspectmode: 'cube',
+      bgcolor: '#07070f',
+      xaxis: { showgrid: false, zeroline: false, showticklabels: false, title: '' },
+      yaxis: { showgrid: false, zeroline: false, showticklabels: false, title: '' },
+      zaxis: { showgrid: false, zeroline: false, showticklabels: false, title: '' },
+      camera: { eye: { x: 1.6, y: 1.2, z: 0.9 } },
+      annotations: [
+        { x: 0, y: 0, z: 0.3, text: 'i₀', showarrow: false,
+          font: { color: '#ff4466', size: 14 } }
+      ]
+    },
+    legend: {
+      bgcolor: 'rgba(7,7,15,0.85)', bordercolor: '#1e1e3a', borderwidth: 1,
+      font: { color: '#8888cc', size: 10 },
+      x: 0.01, y: 0.99, xanchor: 'left', yanchor: 'top'
+    },
+    updatemenus: [{
+      type: 'buttons', direction: 'right',
+      buttons,
+      x: 0.5, xanchor: 'center', y: -0.02, yanchor: 'top',
+      bgcolor: '#0d0d22', bordercolor: '#333355',
+      font: { color: '#aaaadd', size: 10 }
+    }],
+    showlegend: true
+  };
+
+  const config = {
+    responsive: true,
+    displayModeBar: true,
+    modeBarButtonsToRemove: ['toImage', 'sendDataToCloud'],
+    displaylogo: false
+  };
+
+  Plotly.newPlot('ichtb-model', data, layout, config);
+})();
+
+// ─────────────────────────────────────────────
+//  Drag-to-resize the model panel
+// ─────────────────────────────────────────────
+(function setupResize() {
+  const panel    = document.getElementById('three-panel');
+  const topBook  = document.getElementById('panel-top');
+  const modelDiv = panel.querySelector('.model-panel');
+  const botBook  = document.getElementById('panel-bottom');
+
+  function makeResizable(handle, isTop) {
+    let startY, startModelH, startBookH;
+
+    handle.addEventListener('mousedown', e => {
+      e.preventDefault();
+      startY      = e.clientY;
+      startModelH = modelDiv.getBoundingClientRect().height;
+      startBookH  = isTop
+        ? topBook.getBoundingClientRect().height
+        : botBook.getBoundingClientRect().height;
+
+      function onMove(e) {
+        const dy = e.clientY - startY;
+        const newModelH = Math.max(200, Math.min(700, startModelH + (isTop ? -dy : dy)));
+        const newBookH  = Math.max(120, startBookH  + (isTop ?  dy : -dy));
+
+        if (isTop) {
+          panel.style.gridTemplateRows = `${newBookH}px ${newModelH}px 1fr`;
+        } else {
+          panel.style.gridTemplateRows = `1fr ${newModelH}px ${newBookH}px`;
+        }
+        // Trigger Plotly resize
+        Plotly.Plots.resize(document.getElementById('ichtb-model'));
+      }
+
+      function onUp() {
+        document.removeEventListener('mousemove', onMove);
+        document.removeEventListener('mouseup', onUp);
+      }
+
+      document.addEventListener('mousemove', onMove);
+      document.addEventListener('mouseup', onUp);
+    });
+  }
+
+  makeResizable(document.getElementById('rh-top'),    true);
+  makeResizable(document.getElementById('rh-bottom'), false);
+})();
+</script>
+</body>
+</html>
