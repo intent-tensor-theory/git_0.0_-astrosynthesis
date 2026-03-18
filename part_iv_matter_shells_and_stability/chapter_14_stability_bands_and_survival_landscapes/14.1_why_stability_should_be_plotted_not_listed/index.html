@@ -6670,11 +6670,11 @@ This allows prediction of how structures evolve under perturbations.</p>
 Within a basin the system evolves toward the local minimum.
 Mathematically
 $$
-\mathbf{x}(t+dt)
+\mathbf{x}(t+dt) =
 \mathbf{x}(t)
-\eta \nabla E(\mathbf{x})
+- \eta \nabla E(\mathbf{x})
 $$
-where ( <span class="arithmatex">\(\eta) is a relaxation parameter.\)</span>
+where <span class="arithmatex">\(\eta\)</span> is a relaxation parameter.
 Thus the system naturally settles into stable configurations.</p>
 <h2 id="1418-structural-phase-diagrams">14.1.8 Structural phase diagrams<a class="headerlink" href="#1418-structural-phase-diagrams" title="Permanent link">&para;</a></h2>
 <p>Plotting stability landscapes produces phase diagrams.
@@ -6690,20 +6690,19 @@ $$
 (Z,N)
 $$
 where
-• (Z) = proton number
-• (N) = neutron number.
+- <span class="arithmatex">\(Z\)</span> = proton number
+- <span class="arithmatex">\(N\)</span> = neutron number.
 Instead of listing stable nuclei, plotting this plane reveals a valley of stability.</p>
 <h2 id="14110-stability-valley-equation">14.1.10 Stability valley equation<a class="headerlink" href="#14110-stability-valley-equation" title="Permanent link">&para;</a></h2>
 <p>The approximate location of the stability band can be derived from the semi-empirical mass formula.
 Binding energy
 $$
-B(A,Z)
+B(A,Z) =
 a_v A
-a_s A^{2/3}
-a_c \frac{Z^2}{A^{1/3}}
-a_a \frac{(A-2Z)^2}{A}
-+
-\delta(A,Z).
+- a_s A^{2/3}
+- a_c \frac{Z^2}{A^{1/3}}
+- a_a \frac{(A-2Z)^2}{A}
++ \delta(A,Z).
 $$
 Maximizing binding energy yields the approximate stability relation
 $$

@@ -6592,7 +6592,7 @@ Thus we must determine the mathematical condition under which a multi-body syste
 <p>Consider a system of (N) interacting persistent objects.
 The total energy can be written
 $$
-E_N
+E_N =
 \sum_{i=1}^{N} E_i
 +
 \sum_{i&lt;j} V_{ij}
@@ -6601,14 +6601,14 @@ E_N
 +\dots
 $$
 where
-(E_i) = internal energy of each structure
-(V_{ij}) = pair interactions
-(V_{ijk}) = higher-order interactions.
+- <span class="arithmatex">\(E_i\)</span> = internal energy of each structure
+- <span class="arithmatex">\(V_{ij}\)</span> = pair interactions
+- <span class="arithmatex">\(V_{ijk}\)</span> = higher-order interactions.
 Composite formation requires that interaction energy produces additional stabilization.</p>
 <h2 id="1533-composite-locking-energy">15.3.3 Composite locking energy<a class="headerlink" href="#1533-composite-locking-energy" title="Permanent link">&para;</a></h2>
 <p>Define the composite locking energy
 $$
-E_{lock}^{(N)}
+E_{lock}^{(N)} =
 \sum_{i&lt;j} |V_{ij}|
 +
 \sum_{i&lt;j&lt;k} |V_{ijk}|.
@@ -6629,7 +6629,7 @@ This includes
 <h2 id="1535-composite-lock-ratio">15.3.5 Composite lock ratio<a class="headerlink" href="#1535-composite-lock-ratio" title="Permanent link">&para;</a></h2>
 <p>The composite lock ratio becomes
 $$
-\Lambda_{lock}^{(N)}
+\Lambda_{lock}^{(N)} =
 \frac{E_{lock}^{(N)}}{E_{form}^{(N)}}.
 $$
 If
@@ -6645,11 +6645,9 @@ the structure is unstable.</p>
 <h2 id="1536-composite-persistence-condition">15.3.6 Composite persistence condition<a class="headerlink" href="#1536-composite-persistence-condition" title="Permanent link">&para;</a></h2>
 <p>Substituting this into the CTS persistence expression gives
 $$
-S_<em>^{(N)}
-\mathcal{E}
-D
-T_{obj}
-\frac{E_{lock}^{(N)}}{\dot{R}N t{ref}}.
+S_<em>^{(N)} =
+\mathcal{E}<em obj="obj">{shell} \cdot \mathcal{E}_D \cdot T</em> \cdot
+\frac{E_{lock}^{(N)}}{\dot{R}\,N\,t_{ref}}.
 $$
 A stable composite requires
 $$
@@ -6680,15 +6678,29 @@ $$
 $$
 Larger systems can therefore become more stable.</p>
 <h2 id="1539-composite-instability-modes">15.3.9 Composite instability modes<a class="headerlink" href="#1539-composite-instability-modes" title="Permanent link">&para;</a></h2>
-<p>Composite structures may fail through several modes.
-instability
-mechanism
-bond rupture
-interaction breakdown
-topology change
-braid reconnection
-thermal dissociation
-energy injection</p>
+<p>Composite structures may fail through several modes.</p>
+<table>
+<thead>
+<tr>
+<th>Instability</th>
+<th>Mechanism</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bond rupture</td>
+<td>interaction breakdown</td>
+</tr>
+<tr>
+<td>topology change</td>
+<td>braid reconnection</td>
+</tr>
+<tr>
+<td>thermal dissociation</td>
+<td>energy injection</td>
+</tr>
+</tbody>
+</table>
 <p>Persistence requires that locking energy exceeds these destabilizing processes.</p>
 <h2 id="15310-composite-phase-boundary">15.3.10 Composite phase boundary<a class="headerlink" href="#15310-composite-phase-boundary" title="Permanent link">&para;</a></h2>
 <p>Within the CTS phase chart the composite threshold corresponds to
@@ -6699,7 +6711,7 @@ crossing a critical value
 $$
 x_{crit}.
 $$
-Similarly persistence parameter (y) must satisfy
+Similarly persistence parameter <span class="arithmatex">\(y\)</span> must satisfy
 $$
 xy &gt; 1.
 $$
@@ -6708,17 +6720,33 @@ This defines the region where composites remain stable.</p>
 <p>When a composite crosses the persistence threshold, it enters a structural basin of attraction.
 Within this basin the structure resists dissociation and remains stable under perturbations.</p>
 <h2 id="15312-hierarchical-persistence">15.3.12 Hierarchical persistence<a class="headerlink" href="#15312-hierarchical-persistence" title="Permanent link">&para;</a></h2>
-<p>Composite formation creates a hierarchy of stability levels:
-level
-structure
-single
-persistent object
-pair
-two-body composite
-braid
-three-body topology
-network
-multi-body architecture</p>
+<p>Composite formation creates a hierarchy of stability levels:</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Structure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>single</td>
+<td>persistent object</td>
+</tr>
+<tr>
+<td>pair</td>
+<td>two-body composite</td>
+</tr>
+<tr>
+<td>braid</td>
+<td>three-body topology</td>
+</tr>
+<tr>
+<td>network</td>
+<td>multi-body architecture</td>
+</tr>
+</tbody>
+</table>
 <p>Each level introduces stronger persistence mechanisms.</p>
 <h2 id="15313-energy-landscape-view">15.3.13 Energy landscape view<a class="headerlink" href="#15313-energy-landscape-view" title="Permanent link">&para;</a></h2>
 <p>Composite structures correspond to deeper minima in the energy landscape.

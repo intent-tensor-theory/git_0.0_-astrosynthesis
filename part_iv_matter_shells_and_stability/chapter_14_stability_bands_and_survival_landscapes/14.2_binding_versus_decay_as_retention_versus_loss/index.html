@@ -6585,12 +6585,12 @@
 <p>The CTS framework defines persistence through the competition between retention and loss.
 Earlier we defined the selection number
 $$
-S = \frac{R}{\dot{R},t_{ref}}
+S = \frac{R}{\dot{R}\,t_{ref}}
 $$
 where
-• (R) = retained structure
-• ( <span class="arithmatex">\(\dot{R}) = rate of structural loss\)</span>
-• (t_{ref}) = persistence horizon.
+- <span class="arithmatex">\(R\)</span> = retained structure
+- <span class="arithmatex">\(\dot{R}\)</span> = rate of structural loss
+- <span class="arithmatex">\(t_{ref}\)</span> = persistence horizon.
 This equation captures a universal principle:
 structures survive when retention mechanisms dominate loss mechanisms.
 In physical systems this principle appears as the competition between binding energy and decay processes.</p>
@@ -6601,7 +6601,7 @@ $$
 B =
 \left(\sum_i m_i - M\right)c^2
 $$
-where (M) is the mass of the bound system.
+where <span class="arithmatex">\(M\)</span> is the mass of the bound system.
 Binding energy therefore measures the strength of structural retention.</p>
 <h2 id="1423-decay-processes">14.2.3 Decay processes<a class="headerlink" href="#1423-decay-processes" title="Permanent link">&para;</a></h2>
 <p>Structures may lose integrity through decay mechanisms such as
@@ -6701,11 +6701,8 @@ $$</p>
 <p>Substituting these quantities into the selection equation yields
 $$
 S_* =
-\mathcal{E}{shell}
-\mathcal{E}
-D
-T{obj}
-\frac{E_{lock}}{\dot{R}t_{ref}}.
+\mathcal{E}<em obj="obj">{shell} \cdot \mathcal{E}_D \cdot T</em> \cdot
+\frac{E_{lock}}{\dot{R}\,t_{ref}}.
 $$
 This generalized expression describes persistence across structural scales.</p>
 <h2 id="14212-stability-boundaries">14.2.12 Stability boundaries<a class="headerlink" href="#14212-stability-boundaries" title="Permanent link">&para;</a></h2>
@@ -6728,22 +6725,38 @@ structures persist.</p>
 Small changes in parameters alter the balance between retention and loss.
 Thus stability appears as continuous regions within parameter space.</p>
 <h2 id="14214-universal-principle">14.2.14 Universal principle<a class="headerlink" href="#14214-universal-principle" title="Permanent link">&para;</a></h2>
-<p>The retention-versus-loss balance applies across many systems:
-system
-retention
-loss
-atoms
-binding energy
-ionization
-nuclei
-nuclear binding
-radioactive decay
-vortices
-circulation
-dissipation
-shells
-curvature locking
-deformation</p>
+<p>The retention-versus-loss balance applies across many systems:</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Retention</th>
+<th>Loss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>atoms</td>
+<td>binding energy</td>
+<td>ionization</td>
+</tr>
+<tr>
+<td>nuclei</td>
+<td>nuclear binding</td>
+<td>radioactive decay</td>
+</tr>
+<tr>
+<td>vortices</td>
+<td>circulation</td>
+<td>dissipation</td>
+</tr>
+<tr>
+<td>shells</td>
+<td>curvature locking</td>
+<td>deformation</td>
+</tr>
+</tbody>
+</table>
 <p>Each system survives when retention exceeds loss.</p>
 <h2 id="14215-summary">14.2.15 Summary<a class="headerlink" href="#14215-summary" title="Permanent link">&para;</a></h2>
 <p>Stability arises from the competition between retention energy and decay mechanisms.

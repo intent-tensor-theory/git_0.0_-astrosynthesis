@@ -23094,11 +23094,11 @@ This allows prediction of how structures evolve under perturbations.</p>
 Within a basin the system evolves toward the local minimum.
 Mathematically
 $$
-\mathbf{x}(t+dt)
+\mathbf{x}(t+dt) =
 \mathbf{x}(t)
-\eta \nabla E(\mathbf{x})
+- \eta \nabla E(\mathbf{x})
 $$
-where ( <span class="arithmatex">\(\eta) is a relaxation parameter.\)</span>
+where <span class="arithmatex">\(\eta\)</span> is a relaxation parameter.
 Thus the system naturally settles into stable configurations.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.1_why_stability_should_be_plotted_not_listed-1418-structural-phase-diagrams">14.1.8 Structural phase diagrams<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.1_why_stability_should_be_plotted_not_listed-1418-structural-phase-diagrams" title="Permanent link">&para;</a></h2>
 <p>Plotting stability landscapes produces phase diagrams.
@@ -23114,20 +23114,19 @@ $$
 (Z,N)
 $$
 where
-• (Z) = proton number
-• (N) = neutron number.
+- <span class="arithmatex">\(Z\)</span> = proton number
+- <span class="arithmatex">\(N\)</span> = neutron number.
 Instead of listing stable nuclei, plotting this plane reveals a valley of stability.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.1_why_stability_should_be_plotted_not_listed-14110-stability-valley-equation">14.1.10 Stability valley equation<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.1_why_stability_should_be_plotted_not_listed-14110-stability-valley-equation" title="Permanent link">&para;</a></h2>
 <p>The approximate location of the stability band can be derived from the semi-empirical mass formula.
 Binding energy
 $$
-B(A,Z)
+B(A,Z) =
 a_v A
-a_s A^{2/3}
-a_c \frac{Z^2}{A^{1/3}}
-a_a \frac{(A-2Z)^2}{A}
-+
-\delta(A,Z).
+- a_s A^{2/3}
+- a_c \frac{Z^2}{A^{1/3}}
+- a_a \frac{(A-2Z)^2}{A}
++ \delta(A,Z).
 $$
 Maximizing binding energy yields the approximate stability relation
 $$
@@ -23166,12 +23165,12 @@ This section derives how the competition between retention energy and decay mech
 <p>The CTS framework defines persistence through the competition between retention and loss.
 Earlier we defined the selection number
 $$
-S = \frac{R}{\dot{R},t_{ref}}
+S = \frac{R}{\dot{R}\,t_{ref}}
 $$
 where
-• (R) = retained structure
-• ( <span class="arithmatex">\(\dot{R}) = rate of structural loss\)</span>
-• (t_{ref}) = persistence horizon.
+- <span class="arithmatex">\(R\)</span> = retained structure
+- <span class="arithmatex">\(\dot{R}\)</span> = rate of structural loss
+- <span class="arithmatex">\(t_{ref}\)</span> = persistence horizon.
 This equation captures a universal principle:
 structures survive when retention mechanisms dominate loss mechanisms.
 In physical systems this principle appears as the competition between binding energy and decay processes.</p>
@@ -23182,7 +23181,7 @@ $$
 B =
 \left(\sum_i m_i - M\right)c^2
 $$
-where (M) is the mass of the bound system.
+where <span class="arithmatex">\(M\)</span> is the mass of the bound system.
 Binding energy therefore measures the strength of structural retention.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.2_binding_versus_decay_as_retention_versus_loss-1423-decay-processes">14.2.3 Decay processes<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.2_binding_versus_decay_as_retention_versus_loss-1423-decay-processes" title="Permanent link">&para;</a></h2>
 <p>Structures may lose integrity through decay mechanisms such as
@@ -23282,11 +23281,8 @@ $$</p>
 <p>Substituting these quantities into the selection equation yields
 $$
 S_* =
-\mathcal{E}{shell}
-\mathcal{E}
-D
-T{obj}
-\frac{E_{lock}}{\dot{R}t_{ref}}.
+\mathcal{E}<em obj="obj">{shell} \cdot \mathcal{E}_D \cdot T</em> \cdot
+\frac{E_{lock}}{\dot{R}\,t_{ref}}.
 $$
 This generalized expression describes persistence across structural scales.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.2_binding_versus_decay_as_retention_versus_loss-14212-stability-boundaries">14.2.12 Stability boundaries<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.2_binding_versus_decay_as_retention_versus_loss-14212-stability-boundaries" title="Permanent link">&para;</a></h2>
@@ -23309,22 +23305,38 @@ structures persist.</p>
 Small changes in parameters alter the balance between retention and loss.
 Thus stability appears as continuous regions within parameter space.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.2_binding_versus_decay_as_retention_versus_loss-14214-universal-principle">14.2.14 Universal principle<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.2_binding_versus_decay_as_retention_versus_loss-14214-universal-principle" title="Permanent link">&para;</a></h2>
-<p>The retention-versus-loss balance applies across many systems:
-system
-retention
-loss
-atoms
-binding energy
-ionization
-nuclei
-nuclear binding
-radioactive decay
-vortices
-circulation
-dissipation
-shells
-curvature locking
-deformation</p>
+<p>The retention-versus-loss balance applies across many systems:</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Retention</th>
+<th>Loss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>atoms</td>
+<td>binding energy</td>
+<td>ionization</td>
+</tr>
+<tr>
+<td>nuclei</td>
+<td>nuclear binding</td>
+<td>radioactive decay</td>
+</tr>
+<tr>
+<td>vortices</td>
+<td>circulation</td>
+<td>dissipation</td>
+</tr>
+<tr>
+<td>shells</td>
+<td>curvature locking</td>
+<td>deformation</td>
+</tr>
+</tbody>
+</table>
 <p>Each system survives when retention exceeds loss.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.2_binding_versus_decay_as_retention_versus_loss-14215-summary">14.2.15 Summary<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.2_binding_versus_decay_as_retention_versus_loss-14215-summary" title="Permanent link">&para;</a></h2>
 <p>Stability arises from the competition between retention energy and decay mechanisms.
@@ -23346,25 +23358,20 @@ Remarkably, this formula can be interpreted directly as a persistence equation i
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.3_the_semi_empirical_mass_formula_as_a_survival_equation-1432-the-semi-empirical-mass-formula">14.3.2 The semi-empirical mass formula<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.3_the_semi_empirical_mass_formula_as_a_survival_equation-1432-the-semi-empirical-mass-formula" title="Permanent link">&para;</a></h2>
 <p>The SEMF expresses nuclear binding energy as
 $$
-B(A,Z)
+B(A,Z) =
 a_v A
-a_s A^{2/3}
-a_c \frac{Z^2}{A^{1/3}}
-a_a \frac{(A-2Z)^2}{A}
-+
-\delta(A,Z)
+- a_s A^{2/3}
+- a_c \frac{Z^2}{A^{1/3}}
+- a_a \frac{(A-2Z)^2}{A}
++ \delta(A,Z)
 $$
-where
-(A) = total nucleons
-(Z) = proton number
+where <span class="arithmatex">\(A\)</span> = total nucleons, <span class="arithmatex">\(Z\)</span> = proton number.
 Constants:
-(a_v) = volume term
-(a_s) = surface term
-(a_c) = Coulomb term
-(a_a) = asymmetry term
-$$
-<span class="arithmatex">\(\delta\)</span> = pairing correction.
-$$
+- <span class="arithmatex">\(a_v\)</span> = volume term
+- <span class="arithmatex">\(a_s\)</span> = surface term
+- <span class="arithmatex">\(a_c\)</span> = Coulomb term
+- <span class="arithmatex">\(a_a\)</span> = asymmetry term
+- <span class="arithmatex">\(\delta\)</span> = pairing correction.
 Each term represents a physical mechanism influencing nuclear stability.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.3_the_semi_empirical_mass_formula_as_a_survival_equation-1433-volume-retention-term">14.3.3 Volume retention term<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.3_the_semi_empirical_mass_formula_as_a_survival_equation-1433-volume-retention-term" title="Permanent link">&para;</a></h2>
 <p>The first term
@@ -23385,7 +23392,7 @@ The surface correction is
 $$
 B_s = a_s A^{2/3}.
 $$
-Because surface area scales as (A^{2/3}), this term represents a loss mechanism.
+Because surface area scales as <span class="arithmatex">\(A^{2/3}\)</span>, this term represents a loss mechanism.
 Within CTS language
 $$
 \dot{R}_{surface} \sim A^{2/3}.
@@ -23415,11 +23422,11 @@ $$
 accounts for the tendency of nucleons to form pairs.
 Typical form:
 $$
-\delta(A,Z)
+\delta(A,Z) =
 \begin{cases}
-a_p A^{-1/2} &amp; \text{even-even nuclei} \
++a_p A^{-1/2} &amp; \text{even-even nuclei} \
 0 &amp; \text{odd } A \
-a_p A^{-1/2} &amp; \text{odd-odd nuclei}
+-a_p A^{-1/2} &amp; \text{odd-odd nuclei}
 \end{cases}
 $$
 Pairing increases structural stability.</p>
@@ -23446,7 +23453,7 @@ $$</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.3_the_semi_empirical_mass_formula_as_a_survival_equation-1439-persistence-form-of-semf">14.3.9 Persistence form of SEMF<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.3_the_semi_empirical_mass_formula_as_a_survival_equation-1439-persistence-form-of-semf" title="Permanent link">&para;</a></h2>
 <p>Substituting retention and loss terms gives
 $$
-S(A,Z)
+S(A,Z) =
 \frac{a_v A + \delta}
 {t_{ref}
 \left(
@@ -23518,9 +23525,7 @@ This band appears as the valley of stability when nuclei are plotted in the plan
 $$
 (Z,N)
 $$
-where
-(Z) = proton number
-(N) = neutron number.
+where <span class="arithmatex">\(Z\)</span> = proton number and <span class="arithmatex">\(N\)</span> = neutron number.
 Within the CTS framework this stability valley can be interpreted as a persistence optimum — a region where the retention–loss balance is maximized.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.4_valley_of_stability_as_a_persistence_optimum-1442-binding-energy-per-nucleon">14.4.2 Binding energy per nucleon<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.4_valley_of_stability_as_a_persistence_optimum-1442-binding-energy-per-nucleon" title="Permanent link">&para;</a></h2>
 <p>To understand the stability valley we examine the binding energy per nucleon
@@ -23529,13 +23534,12 @@ $$
 $$
 Substituting the SEMF expression gives
 $$
-\frac{B}{A}
+\frac{B}{A} =
 a_v
-a_s A^{-1/3}
-a_c \frac{Z^2}{A^{4/3}}
-a_a \frac{(A-2Z)^2}{A^2}
-+
-\frac{\delta}{A}.
+- a_s A^{-1/3}
+- a_c \frac{Z^2}{A^{4/3}}
+- a_a \frac{(A-2Z)^2}{A^2}
++ \frac{\delta}{A}.
 $$
 Stable nuclei maximize this quantity.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.4_valley_of_stability_as_a_persistence_optimum-1443-optimization-condition">14.4.3 Optimization condition<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.4_valley_of_stability_as_a_persistence_optimum-1443-optimization-condition" title="Permanent link">&para;</a></h2>
@@ -23572,8 +23576,7 @@ This curve traces the center of the nuclear stability valley.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.4_valley_of_stability_as_a_persistence_optimum-1445-persistence-interpretation">14.4.5 Persistence interpretation<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.4_valley_of_stability_as_a_persistence_optimum-1445-persistence-interpretation" title="Permanent link">&para;</a></h2>
 <p>Within CTS language the valley corresponds to the region where
 $$
-S(A,Z)
-\frac{R}{\dot{R}t_{ref}}
+S(A,Z) = \frac{R}{\dot{R}\,t_{ref}}
 $$
 is maximized.
 Retention contributions:
@@ -23614,9 +23617,9 @@ Mathematically
 $$
 \frac{dZ}{dt} \propto -\frac{\partial S}{\partial Z}.
 $$
-Thus unstable nuclei evolve toward the region where (S) is largest.</p>
+Thus unstable nuclei evolve toward the region where <span class="arithmatex">\(S\)</span> is largest.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.4_valley_of_stability_as_a_persistence_optimum-1449-heavy-nuclei-deviation">14.4.9 Heavy nuclei deviation<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.4_valley_of_stability_as_a_persistence_optimum-1449-heavy-nuclei-deviation" title="Permanent link">&para;</a></h2>
-<p>For very large (A), the Coulomb term becomes dominant.
+<p>For very large <span class="arithmatex">\(A\)</span>, the Coulomb term becomes dominant.
 Electrostatic repulsion increases rapidly
 $$
 B_c \sim \frac{Z^2}{A^{1/3}}.
@@ -23635,12 +23638,12 @@ $$
 This defines the persistence optimum.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.4_valley_of_stability_as_a_persistence_optimum-14411-stability-width">14.4.11 Stability width<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.4_valley_of_stability_as_a_persistence_optimum-14411-stability-width" title="Permanent link">&para;</a></h2>
 <p>The width of the valley is determined by how rapidly persistence decreases away from the optimum.
-Expanding (S) near the optimum gives
+Expanding <span class="arithmatex">\(S\)</span> near the optimum gives
 $$
 S(A,Z)
 \approx
 S_{max}
-\frac{1}{2}
+- \frac{1}{2}
 k(Z-Z_0)^2.
 $$
 This quadratic form defines the basin of stability.</p>
@@ -23653,17 +23656,33 @@ Unstable nuclei lie on the slopes and decay toward the minimum.</p>
 structures evolve toward regions where retention most strongly exceeds loss.
 The stability valley therefore represents a persistence optimum within the nuclear survival landscape.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.4_valley_of_stability_as_a_persistence_optimum-14414-broader-implications">14.4.14 Broader implications<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.4_valley_of_stability_as_a_persistence_optimum-14414-broader-implications" title="Permanent link">&para;</a></h2>
-<p>Similar persistence basins appear in many physical systems:
-system
-persistence basin
-nuclear physics
-valley of stability
-atoms
-electron shell stability
-vortices
-circulation conservation
-shell structures
-curvature locking</p>
+<p>Similar persistence basins appear in many physical systems:</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Persistence basin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nuclear physics</td>
+<td>valley of stability</td>
+</tr>
+<tr>
+<td>atoms</td>
+<td>electron shell stability</td>
+</tr>
+<tr>
+<td>vortices</td>
+<td>circulation conservation</td>
+</tr>
+<tr>
+<td>shell structures</td>
+<td>curvature locking</td>
+</tr>
+</tbody>
+</table>
 <p>Thus the valley-of-stability concept generalizes across scales.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.4_valley_of_stability_as_a_persistence_optimum-14415-summary">14.4.15 Summary<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.4_valley_of_stability_as_a_persistence_optimum-14415-summary" title="Permanent link">&para;</a></h2>
 <p>The nuclear valley of stability emerges as the region where binding energy maximizes persistence.
@@ -23877,21 +23896,37 @@ These quantum numbers define orbital shapes such as
 • d orbitals.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.6_the_periodic_table_as_a_survival_chart-1466-degeneracy-and-shell-capacity">14.6.6 Degeneracy and shell capacity<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.6_the_periodic_table_as_a_survival_chart-1466-degeneracy-and-shell-capacity" title="Permanent link">&para;</a></h2>
 <p>Each shell can accommodate a limited number of electrons.
-The degeneracy of the (n)-th shell is
+The degeneracy of the <span class="arithmatex">\(n\)</span>-th shell is
 $$
 g_n = 2n^2.
 $$
-Thus
-shell
-capacity
-n=1
-2
-n=2
-8
-n=3
-18
-n=4
-32</p>
+Thus</p>
+<table>
+<thead>
+<tr>
+<th>Shell</th>
+<th>Capacity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(n=1\)</span></td>
+<td>2</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(n=2\)</span></td>
+<td>8</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(n=3\)</span></td>
+<td>18</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(n=4\)</span></td>
+<td>32</td>
+</tr>
+</tbody>
+</table>
 <p>These capacities determine the periodic structure of the elements.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.6_the_periodic_table_as_a_survival_chart-1467-stability-of-filled-shells">14.6.7 Stability of filled shells<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.6_the_periodic_table_as_a_survival_chart-1467-stability-of-filled-shells" title="Permanent link">&para;</a></h2>
 <p>Atoms with filled electron shells exhibit enhanced stability.
@@ -23915,7 +23950,7 @@ The ionization energy is
 $$
 I = E_{free} - E_{bound}.
 $$
-If environmental energy exceeds (I), the electron becomes unbound.
+If environmental energy exceeds <span class="arithmatex">\(I\)</span>, the electron becomes unbound.
 This threshold corresponds to a persistence boundary similar to nuclear drip lines.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.6_the_periodic_table_as_a_survival_chart-14611-cts-persistence-interpretation">14.6.11 CTS persistence interpretation<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.6_the_periodic_table_as_a_survival_chart-14611-cts-persistence-interpretation" title="Permanent link">&para;</a></h2>
 <p>Within the CTS framework:
@@ -23938,15 +23973,29 @@ Regions of high persistence correspond to filled-shell configurations.
 Regions of lower persistence correspond to partially filled shells.
 Thus the periodic table can be viewed as a map of atomic persistence states.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.6_the_periodic_table_as_a_survival_chart-14613-structural-hierarchy">14.6.13 Structural hierarchy<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.6_the_periodic_table_as_a_survival_chart-14613-structural-hierarchy" title="Permanent link">&para;</a></h2>
-<p>Combining nuclear and atomic persistence yields a layered hierarchy:
-level
-persistence mechanism
-nuclear core
-strong-force binding
-atomic shells
-Coulomb orbital locking
-molecular structures
-electron sharing</p>
+<p>Combining nuclear and atomic persistence yields a layered hierarchy:</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Persistence mechanism</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nuclear core</td>
+<td>strong-force binding</td>
+</tr>
+<tr>
+<td>atomic shells</td>
+<td>Coulomb orbital locking</td>
+</tr>
+<tr>
+<td>molecular structures</td>
+<td>electron sharing</td>
+</tr>
+</tbody>
+</table>
 <p>Each layer introduces additional structural complexity.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.6_the_periodic_table_as_a_survival_chart-14614-emergence-interpretation">14.6.14 Emergence interpretation<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_14_stability_bands_and_survival_landscapes-14.6_the_periodic_table_as_a_survival_chart-14614-emergence-interpretation" title="Permanent link">&para;</a></h2>
 <p>Within the CTS framework the periodic table represents a catalog of persistence solutions produced by shell architectures interacting with nuclear cores.
@@ -24133,7 +24182,7 @@ r</em>}=|\mathbf{r<em 3="3">3-\mathbf{r}_1|.
 $$
 The total interaction energy becomes
 $$
-E</em>
+E</em> =
 E_1+E_2+E_3
 +
 V(r_{12})+V(r_{23})+V(r_{31})
@@ -24149,10 +24198,9 @@ represents collective interactions not reducible to pair potentials.</p>
 <p>Three-body systems permit topological linking.
 The linking number between two trajectories is defined as
 $$
-Lk
+Lk =
 \frac{1}{4\pi}
-\oint
-\oint
+\oint!\oint
 \frac{(\mathbf{r}_1-\mathbf{r}_2)\cdot(d\mathbf{r}_1\times d\mathbf{r}_2)}
 {|\mathbf{r}_1-\mathbf{r}_2|^3}.
 $$
@@ -24170,11 +24218,11 @@ $$
 \quad
 (i\neq j)
 $$
-for all (t).
+for all <span class="arithmatex">\(t\)</span>.
 This ensures the strands do not intersect.
 The topology of these trajectories defines the braid.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.2_three_body_braid_structures-1525-braid-group-structure">15.2.5 Braid group structure<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.2_three_body_braid_structures-1525-braid-group-structure" title="Permanent link">&para;</a></h2>
-<p>Braids are classified by the braid group (B_n).
+<p>Braids are classified by the braid group <span class="arithmatex">\(B_n\)</span>.
 For three strands the generators are
 $$
 \sigma_1,\quad \sigma_2.
@@ -24182,7 +24230,7 @@ $$
 These represent elementary strand crossings.
 They satisfy the braid relation
 $$
-\sigma_1\sigma_2\sigma_1
+\sigma_1\sigma_2\sigma_1 =
 \sigma_2\sigma_1\sigma_2.
 $$
 These algebraic rules classify all possible three-strand braids.</p>
@@ -24197,11 +24245,9 @@ $$</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.2_three_body_braid_structures-1527-persistence-condition">15.2.7 Persistence condition<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.2_three_body_braid_structures-1527-persistence-condition" title="Permanent link">&para;</a></h2>
 <p>For a braid to remain stable we require
 $$
-S_*^{braid}
-\mathcal{E}
-D
-T_{obj}
-\frac{E_{lock}^{braid}}{\dot{R}t_{ref}}
+S_*^{braid} =
+\mathcal{E}<em obj="obj">{shell} \cdot \mathcal{E}_D \cdot T</em> \cdot
+\frac{E_{lock}^{braid}}{\dot{R}\,t_{ref}}
 $$
 The topology factor
 $$
@@ -24213,37 +24259,58 @@ Thus braids often exhibit extremely strong persistence.</p>
 <p>The energy of a braid grows with strand tension and curvature.
 A simple estimate is
 $$
-E_{braid}
-\sim
-T L + \kappa \int k^2 ds
+E_{braid} \sim T L + \kappa \int k^2\, ds
 $$
-where
-(T) = strand tension
-(L) = strand length
-(k) = curvature.
+where <span class="arithmatex">\(T\)</span> = strand tension, <span class="arithmatex">\(L\)</span> = strand length, <span class="arithmatex">\(k\)</span> = curvature.
 Higher curvature increases energy cost, stabilizing smooth braid configurations.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.2_three_body_braid_structures-1529-braided-oscillation-modes">15.2.9 Braided oscillation modes<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.2_three_body_braid_structures-1529-braided-oscillation-modes" title="Permanent link">&para;</a></h2>
 <p>Braids support several dynamical modes.
-Examples include
-mode
-description
-twist modes
-strands rotate around axis
-stretch modes
-braid length oscillates
-kink modes
-localized bending</p>
+Examples include</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>twist modes</td>
+<td>strands rotate around axis</td>
+</tr>
+<tr>
+<td>stretch modes</td>
+<td>braid length oscillates</td>
+</tr>
+<tr>
+<td>kink modes</td>
+<td>localized bending</td>
+</tr>
+</tbody>
+</table>
 <p>These modes allow braids to store energy without breaking topology.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.2_three_body_braid_structures-15210-comparison-with-pair-structures">15.2.10 Comparison with pair structures<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.2_three_body_braid_structures-15210-comparison-with-pair-structures" title="Permanent link">&para;</a></h2>
 <p>Pairs rely on energy minima for stability.
 Braids rely on topological constraints.
-Thus braids are typically more persistent.
-structure
-stabilization
-pair
-energy minimum
-braid
-topology</p>
+Thus braids are typically more persistent.</p>
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Stabilization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pair</td>
+<td>energy minimum</td>
+</tr>
+<tr>
+<td>braid</td>
+<td>topology</td>
+</tr>
+</tbody>
+</table>
 <p>This distinction is important for composite persistence.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.2_three_body_braid_structures-15211-phase-chart-interpretation">15.2.11 Phase chart interpretation<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.2_three_body_braid_structures-15211-phase-chart-interpretation" title="Permanent link">&para;</a></h2>
 <p>Within the CTS survival map, braided structures lie in the upper extreme of the composite persistence region.
@@ -24298,7 +24365,7 @@ Thus we must determine the mathematical condition under which a multi-body syste
 <p>Consider a system of (N) interacting persistent objects.
 The total energy can be written
 $$
-E_N
+E_N =
 \sum_{i=1}^{N} E_i
 +
 \sum_{i&lt;j} V_{ij}
@@ -24307,14 +24374,14 @@ E_N
 +\dots
 $$
 where
-(E_i) = internal energy of each structure
-(V_{ij}) = pair interactions
-(V_{ijk}) = higher-order interactions.
+- <span class="arithmatex">\(E_i\)</span> = internal energy of each structure
+- <span class="arithmatex">\(V_{ij}\)</span> = pair interactions
+- <span class="arithmatex">\(V_{ijk}\)</span> = higher-order interactions.
 Composite formation requires that interaction energy produces additional stabilization.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.3_composite_thresholds-1533-composite-locking-energy">15.3.3 Composite locking energy<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.3_composite_thresholds-1533-composite-locking-energy" title="Permanent link">&para;</a></h2>
 <p>Define the composite locking energy
 $$
-E_{lock}^{(N)}
+E_{lock}^{(N)} =
 \sum_{i&lt;j} |V_{ij}|
 +
 \sum_{i&lt;j&lt;k} |V_{ijk}|.
@@ -24335,7 +24402,7 @@ This includes
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.3_composite_thresholds-1535-composite-lock-ratio">15.3.5 Composite lock ratio<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.3_composite_thresholds-1535-composite-lock-ratio" title="Permanent link">&para;</a></h2>
 <p>The composite lock ratio becomes
 $$
-\Lambda_{lock}^{(N)}
+\Lambda_{lock}^{(N)} =
 \frac{E_{lock}^{(N)}}{E_{form}^{(N)}}.
 $$
 If
@@ -24351,11 +24418,9 @@ the structure is unstable.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.3_composite_thresholds-1536-composite-persistence-condition">15.3.6 Composite persistence condition<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.3_composite_thresholds-1536-composite-persistence-condition" title="Permanent link">&para;</a></h2>
 <p>Substituting this into the CTS persistence expression gives
 $$
-S_<em>^{(N)}
-\mathcal{E}
-D
-T_{obj}
-\frac{E_{lock}^{(N)}}{\dot{R}N t{ref}}.
+S_<em>^{(N)} =
+\mathcal{E}<em obj="obj">{shell} \cdot \mathcal{E}_D \cdot T</em> \cdot
+\frac{E_{lock}^{(N)}}{\dot{R}\,N\,t_{ref}}.
 $$
 A stable composite requires
 $$
@@ -24386,15 +24451,29 @@ $$
 $$
 Larger systems can therefore become more stable.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.3_composite_thresholds-1539-composite-instability-modes">15.3.9 Composite instability modes<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.3_composite_thresholds-1539-composite-instability-modes" title="Permanent link">&para;</a></h2>
-<p>Composite structures may fail through several modes.
-instability
-mechanism
-bond rupture
-interaction breakdown
-topology change
-braid reconnection
-thermal dissociation
-energy injection</p>
+<p>Composite structures may fail through several modes.</p>
+<table>
+<thead>
+<tr>
+<th>Instability</th>
+<th>Mechanism</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bond rupture</td>
+<td>interaction breakdown</td>
+</tr>
+<tr>
+<td>topology change</td>
+<td>braid reconnection</td>
+</tr>
+<tr>
+<td>thermal dissociation</td>
+<td>energy injection</td>
+</tr>
+</tbody>
+</table>
 <p>Persistence requires that locking energy exceeds these destabilizing processes.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.3_composite_thresholds-15310-composite-phase-boundary">15.3.10 Composite phase boundary<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.3_composite_thresholds-15310-composite-phase-boundary" title="Permanent link">&para;</a></h2>
 <p>Within the CTS phase chart the composite threshold corresponds to
@@ -24405,7 +24484,7 @@ crossing a critical value
 $$
 x_{crit}.
 $$
-Similarly persistence parameter (y) must satisfy
+Similarly persistence parameter <span class="arithmatex">\(y\)</span> must satisfy
 $$
 xy &gt; 1.
 $$
@@ -24414,17 +24493,33 @@ This defines the region where composites remain stable.</p>
 <p>When a composite crosses the persistence threshold, it enters a structural basin of attraction.
 Within this basin the structure resists dissociation and remains stable under perturbations.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.3_composite_thresholds-15312-hierarchical-persistence">15.3.12 Hierarchical persistence<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.3_composite_thresholds-15312-hierarchical-persistence" title="Permanent link">&para;</a></h2>
-<p>Composite formation creates a hierarchy of stability levels:
-level
-structure
-single
-persistent object
-pair
-two-body composite
-braid
-three-body topology
-network
-multi-body architecture</p>
+<p>Composite formation creates a hierarchy of stability levels:</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Structure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>single</td>
+<td>persistent object</td>
+</tr>
+<tr>
+<td>pair</td>
+<td>two-body composite</td>
+</tr>
+<tr>
+<td>braid</td>
+<td>three-body topology</td>
+</tr>
+<tr>
+<td>network</td>
+<td>multi-body architecture</td>
+</tr>
+</tbody>
+</table>
 <p>Each level introduces stronger persistence mechanisms.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.3_composite_thresholds-15313-energy-landscape-view">15.3.13 Energy landscape view<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.3_composite_thresholds-15313-energy-landscape-view" title="Permanent link">&para;</a></h2>
 <p>Composite structures correspond to deeper minima in the energy landscape.
@@ -24801,11 +24896,9 @@ Larger composites therefore possess increasing structural stability.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.6_toward_matter_architecture-1564-persistence-amplification">15.6.4 Persistence amplification<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.6_toward_matter_architecture-1564-persistence-amplification" title="Permanent link">&para;</a></h2>
 <p>Substituting into the persistence equation
 $$
-S_<em>^{(N)}
-\mathcal{E}
-D
-T_{obj}
-\frac{E_{lock}^{(N)}}{\dot{R}N t{ref}}
+S_<em>^{(N)} =
+\mathcal{E}<em obj="obj">{shell} \cdot \mathcal{E}_D \cdot T</em> \cdot
+\frac{E_{lock}^{(N)}}{\dot{R}\,N\,t_{ref}}
 $$
 gives
 $$
@@ -24823,7 +24916,7 @@ These networks represent the next level of persistence.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.6_toward_matter_architecture-1566-network-interaction-energy">15.6.6 Network interaction energy<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.6_toward_matter_architecture-1566-network-interaction-energy" title="Permanent link">&para;</a></h2>
 <p>For a network of (N) nodes the total interaction energy becomes
 $$
-E_{network}
+E_{network} =
 \sum_{i&lt;j} V_{ij}.
 $$
 In many systems this scales approximately as
@@ -24842,7 +24935,7 @@ n_2\mathbf{a}_2
 +
 n_3\mathbf{a}_3.
 $$
-Here ( <span class="arithmatex">\(\mathbf{a}_i) are lattice vectors.\)</span>
+Here <span class="arithmatex">\(\mathbf{a}_i\)</span> are lattice vectors.
 Lattice order minimizes interaction energy.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.6_toward_matter_architecture-1568-collective-excitation-modes">15.6.8 Collective excitation modes<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.6_toward_matter_architecture-1568-collective-excitation-modes" title="Permanent link">&para;</a></h2>
 <p>Large composite systems support collective modes such as
@@ -24866,29 +24959,38 @@ Such systems resist perturbations and behave as stable macroscopic matter.</p>
 <p>Large composites may develop rigidity.
 Elastic energy can be expressed as
 $$
-E_{elastic}
+E_{elastic} =
 \frac{1}{2}
 \int
-C_{ijkl}
-\epsilon_{ij}\epsilon_{kl}
-, dV.
+C_{ijkl}\,
+\epsilon_{ij}\epsilon_{kl}\, dV.
 $$
-Here
-$$
-<span class="arithmatex">\(\epsilon_{ij}\)</span> = strain tensor
-$$
-(C_{ijkl}) = elastic constants.
+Here <span class="arithmatex">\(\epsilon_{ij}\)</span> = strain tensor and <span class="arithmatex">\(C_{ijkl}\)</span> = elastic constants.
 Rigidity further increases persistence.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.6_toward_matter_architecture-15611-emergent-material-properties">15.6.11 Emergent material properties<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.6_toward_matter_architecture-15611-emergent-material-properties" title="Permanent link">&para;</a></h2>
-<p>Once network structures form, new physical properties emerge:
-property
-origin
-elasticity
-lattice locking
-conductivity
-mobile excitations
-thermal transport
-phonon propagation</p>
+<p>Once network structures form, new physical properties emerge:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Origin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>elasticity</td>
+<td>lattice locking</td>
+</tr>
+<tr>
+<td>conductivity</td>
+<td>mobile excitations</td>
+</tr>
+<tr>
+<td>thermal transport</td>
+<td>phonon propagation</td>
+</tr>
+</tbody>
+</table>
 <p>These properties arise from collective persistence mechanisms.</p>
 <h2 id="part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.6_toward_matter_architecture-15612-structural-phase-transitions">15.6.12 Structural phase transitions<a class="headerlink" href="#part_iv_matter_shells_and_stability-chapter_15_composite_structures_and_braided_persistence-15.6_toward_matter_architecture-15612-structural-phase-transitions" title="Permanent link">&para;</a></h2>
 <p>Changes in environmental conditions may transform one architecture into another.
