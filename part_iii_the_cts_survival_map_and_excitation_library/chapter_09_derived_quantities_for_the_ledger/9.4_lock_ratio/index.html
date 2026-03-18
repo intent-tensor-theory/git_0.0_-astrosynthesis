@@ -6552,175 +6552,169 @@
 
 <h1 id="94-lock-ratio">9.4 Lock Ratio<a class="headerlink" href="#94-lock-ratio" title="Permanent link">&para;</a></h1>
 <h2 id="941-motivation">9.4.1 Motivation<a class="headerlink" href="#941-motivation" title="Permanent link">&para;</a></h2>
-<p>Chapters 9.1–9.3 introduced three energy quantities for CTS excitations:
-$$
+<p>Sections 9.1–9.3 introduced three energy quantities for CTS excitations:</p>
+<div class="arithmatex">\[
 E_{form}, \quad E_{lock}, \quad E_{total}.
-$$
-However, absolute energies alone are not sufficient to compare different structures.
+\]</div>
+<p>However, absolute energies alone are not sufficient to compare different structures.
 Two excitations with very different formation energies may have similar structural stability if their relative locking strength is comparable.
 To compare structures across scales we introduce a dimensionless stability parameter.
 This parameter is the lock ratio.</p>
 <h2 id="942-definition">9.4.2 Definition<a class="headerlink" href="#942-definition" title="Permanent link">&para;</a></h2>
-<p>The lock ratio is defined as
-$$
-\boxed{
-\Lambda_{lock} = \frac{E_{lock}}{E_{form}}
-}
-$$
-This quantity measures the strength of structural stabilization relative to the cost of forming the structure.</p>
+<p>The lock ratio is defined as</p>
+<div class="arithmatex">\[
+\boxed{\Lambda_{lock} = \frac{E_{lock}}{E_{form}}}
+\]</div>
+<p>This quantity measures the strength of structural stabilization relative to the cost of forming the structure.</p>
 <h2 id="943-interpretation">9.4.3 Interpretation<a class="headerlink" href="#943-interpretation" title="Permanent link">&para;</a></h2>
 <p>The lock ratio determines the structural character of the excitation.
-Three regimes appear:
-Weak locking
-$$
-\Lambda_{lock} \ll 1
-$$
-Formation energy dominates.
-Structures appear easily but decay quickly.
+Three regimes appear:</p>
+<p><strong>Weak locking</strong> (<span class="arithmatex">\(\Lambda_{lock} \ll 1\)</span>): Formation energy dominates. Structures appear easily but decay quickly.
 Examples:
-linear waves
-weak coherent packets.</p>
-<p>Balanced locking
-$$
-\Lambda_{lock} \sim 1
-$$
-Formation and stabilization energies are comparable.
+- Linear waves
+- Weak coherent packets</p>
+<p><strong>Balanced locking</strong> (<span class="arithmatex">\(\Lambda_{lock} \sim 1\)</span>): Formation and stabilization energies are comparable.
 Examples:
-vortices
-vortex rings.</p>
-<p>Strong locking
-$$
-\Lambda_{lock} \gg 1
-$$
-Stabilization energy dominates.
+- Vortices
+- Vortex rings</p>
+<p><strong>Strong locking</strong> (<span class="arithmatex">\(\Lambda_{lock} \gg 1\)</span>): Stabilization energy dominates.
 Examples:
-shells
-braid structures.</p>
+- Shells
+- Braid structures</p>
 <h2 id="944-lock-ratio-for-common-cts-excitations">9.4.4 Lock ratio for common CTS excitations<a class="headerlink" href="#944-lock-ratio-for-common-cts-excitations" title="Permanent link">&para;</a></h2>
-<p>Approximate values for major excitation classes are shown below.
-excitation
-(E_{form})
-(E_{lock})
-$$
-<span class="arithmatex">\(\Lambda_{lock}\)</span>
-$$
-wave
-very small
-≈0
-≈0
-phase-locked mode
-small
-small
-~0.1–0.5
-vortex
-moderate
-moderate
-~1
-ring
-moderate
-high
-~2–5
-chiral primitive
-high
-high
-~5–10
-shell
-very high
-very high
-~10–50
-braid
-extremely high
-extremely high
-≫10</p>
+<p>Approximate values for major excitation classes are shown below.</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th><span class="arithmatex">\(E_{form}\)</span></th>
+<th><span class="arithmatex">\(E_{lock}\)</span></th>
+<th><span class="arithmatex">\(\Lambda_{lock}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave</td>
+<td>Very small</td>
+<td><span class="arithmatex">\(\approx 0\)</span></td>
+<td><span class="arithmatex">\(\approx 0\)</span></td>
+</tr>
+<tr>
+<td>Phase-locked mode</td>
+<td>Small</td>
+<td>Small</td>
+<td><span class="arithmatex">\(\sim 0.1\)</span>–<span class="arithmatex">\(0.5\)</span></td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td>Moderate</td>
+<td>Moderate</td>
+<td><span class="arithmatex">\(\sim 1\)</span></td>
+</tr>
+<tr>
+<td>Ring</td>
+<td>Moderate</td>
+<td>High</td>
+<td><span class="arithmatex">\(\sim 2\)</span>–<span class="arithmatex">\(5\)</span></td>
+</tr>
+<tr>
+<td>Chiral primitive</td>
+<td>High</td>
+<td>High</td>
+<td><span class="arithmatex">\(\sim 5\)</span>–<span class="arithmatex">\(10\)</span></td>
+</tr>
+<tr>
+<td>Shell</td>
+<td>Very high</td>
+<td>Very high</td>
+<td><span class="arithmatex">\(\sim 10\)</span>–<span class="arithmatex">\(50\)</span></td>
+</tr>
+<tr>
+<td>Braid</td>
+<td>Extremely high</td>
+<td>Extremely high</td>
+<td><span class="arithmatex">\(\gg 10\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>Thus structural locking increases dramatically along the excitation hierarchy.</p>
 <h2 id="945-structural-interpretation">9.4.5 Structural interpretation<a class="headerlink" href="#945-structural-interpretation" title="Permanent link">&para;</a></h2>
 <p>The lock ratio reveals a fundamental structural pattern.
 Early excitations are cheap expressions of the substrate.
 Later excitations are expensive but strongly stabilized structures.
-Thus the CTS substrate naturally divides into two structural populations:
-class
-characteristics
-cheap expressions
-low (E_{form}), low (E_{lock})
-durable structures
-high (E_{lock}), high persistence</p>
+Thus the CTS substrate naturally divides into two structural populations:</p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Characteristics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cheap expressions</td>
+<td>Low <span class="arithmatex">\(E_{form}\)</span>, low <span class="arithmatex">\(E_{lock}\)</span></td>
+</tr>
+<tr>
+<td>Durable structures</td>
+<td>High <span class="arithmatex">\(E_{lock}\)</span>, high persistence</td>
+</tr>
+</tbody>
+</table>
 <h2 id="946-lock-ratio-and-structural-resistance">9.4.6 Lock ratio and structural resistance<a class="headerlink" href="#946-lock-ratio-and-structural-resistance" title="Permanent link">&para;</a></h2>
 <p>The physical meaning of the lock ratio can also be interpreted as a resistance parameter.
-Suppose the environment introduces perturbation energy (E_p).
-A structure remains stable if
-$$
+Suppose the environment introduces perturbation energy <span class="arithmatex">\(E_p\)</span>.
+A structure remains stable if</p>
+<div class="arithmatex">\[
 E_p &lt; E_{lock}.
-$$
-Thus structures with large lock ratio resist environmental disturbances more effectively.</p>
+\]</div>
+<p>Thus structures with large lock ratio resist environmental disturbances more effectively.</p>
 <h2 id="947-lock-ratio-and-structural-lifetime">9.4.7 Lock ratio and structural lifetime<a class="headerlink" href="#947-lock-ratio-and-structural-lifetime" title="Permanent link">&para;</a></h2>
-<p>Structural lifetime can be approximated as
-$$
-\tau
-\sim
-\tau_0
-\exp!\left(
-\frac{E_{lock}}{T_{eff}}
-\right).
-$$
-Substituting the definition of lock ratio gives
-$$
-\tau
-\sim
-\tau_0
-\exp!\left(
-\frac{\Lambda_{lock}E_{form}}{T_{eff}}
-\right).
-$$
-Thus lifetime grows exponentially with lock ratio.</p>
+<p>Structural lifetime can be approximated as</p>
+<div class="arithmatex">\[
+\tau \sim \tau_0 \exp\!\left(\frac{E_{lock}}{T_{eff}}\right).
+\]</div>
+<p>Substituting the definition of lock ratio gives</p>
+<div class="arithmatex">\[
+\tau \sim \tau_0 \exp\!\left(\frac{\Lambda_{lock}\, E_{form}}{T_{eff}}\right).
+\]</div>
+<p>Thus lifetime grows exponentially with lock ratio.</p>
 <h2 id="948-role-in-the-cts-survival-map">9.4.8 Role in the CTS survival map<a class="headerlink" href="#948-role-in-the-cts-survival-map" title="Permanent link">&para;</a></h2>
 <p>The lock ratio becomes the horizontal axis of the CTS survival phase chart.
-Define
-$$
+Define</p>
+<div class="arithmatex">\[
 x = \Lambda_{lock}.
-$$
-Small (x) corresponds to weakly stabilized excitations.
-Large (x) corresponds to strongly stabilized structures.
+\]</div>
+<p>Small <span class="arithmatex">\(x\)</span> corresponds to weakly stabilized excitations.
+Large <span class="arithmatex">\(x\)</span> corresponds to strongly stabilized structures.
 Thus the horizontal axis of the survival map represents structural locking strength.</p>
 <h2 id="949-relation-to-persistence-threshold">9.4.9 Relation to persistence threshold<a class="headerlink" href="#949-relation-to-persistence-threshold" title="Permanent link">&para;</a></h2>
-<p>The persistence threshold derived earlier is
-$$
-S_* =
-\mathcal{E}{shell}
-\mathcal{E}
-D
-T{obj}
-\frac{R}{\dot R,t_{ref}}.
-$$
-Because (R) includes stabilizing energy contributions, structures with large lock ratio tend to produce larger persistence numbers.
+<p>The persistence threshold derived earlier is</p>
+<div class="arithmatex">\[
+S_* = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>Because <span class="arithmatex">\(R\)</span> includes stabilizing energy contributions, structures with large lock ratio tend to produce larger persistence numbers.
 Thus the lock ratio strongly influences whether an excitation crosses the survival boundary.</p>
 <h2 id="9410-structural-selection">9.4.10 Structural selection<a class="headerlink" href="#9410-structural-selection" title="Permanent link">&para;</a></h2>
-<p>Combining lock ratio with formation energy leads to an important selection principle:
-Structures that form easily dominate the background.
-Structures that lock strongly dominate persistence.
-This dual selection principle shapes the population of CTS excitations.</p>
+<p>Combining lock ratio with formation energy leads to an important selection principle:</p>
+<ul>
+<li>Structures that form easily dominate the background.</li>
+<li>Structures that lock strongly dominate persistence.</li>
+</ul>
+<p>This dual selection principle shapes the population of CTS excitations.</p>
 <h2 id="9411-ledger-entry">9.4.11 Ledger entry<a class="headerlink" href="#9411-ledger-entry" title="Permanent link">&para;</a></h2>
-<p>The lock ratio therefore becomes a key entry in the CTS excitation ledger:
-$$
-\mathcal{L}i =
-(
-\text{type},
-E{form},
-E_{lock},
-E_{total},
-\Lambda_{lock},
-\dots
-).
-$$
-This dimensionless parameter allows structures of very different scales to be compared directly.</p>
+<p>The lock ratio therefore becomes a key entry in the CTS excitation ledger:</p>
+<div class="arithmatex">\[
+\mathcal{L}_i = (\text{type},\, E_{form},\, E_{lock},\, E_{total},\, \Lambda_{lock},\, \dots).
+\]</div>
+<p>This dimensionless parameter allows structures of very different scales to be compared directly.</p>
 <h2 id="9412-summary">9.4.12 Summary<a class="headerlink" href="#9412-summary" title="Permanent link">&para;</a></h2>
-<p>The lock ratio
-$$
+<p>The lock ratio</p>
+<div class="arithmatex">\[
 \Lambda_{lock} = \frac{E_{lock}}{E_{form}}
-$$
-measures the strength of structural stabilization relative to formation cost.
+\]</div>
+<p>measures the strength of structural stabilization relative to formation cost.
 It distinguishes fragile excitations from highly persistent structures and serves as the primary horizontal coordinate of the CTS survival map.</p>
-<p>Expression Ratio
-This section introduces the complementary dimensionless quantity that measures how easily an excitation forms relative to its locking energy.</p>
 
 
 

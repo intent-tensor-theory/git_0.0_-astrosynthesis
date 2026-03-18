@@ -2864,6 +2864,72 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#858-topology-factor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.8 Topology factor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#859-shrinkage-and-collapse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.9 Shrinkage and collapse
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8510-energetics-of-ring-collapse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.10 Energetics of ring collapse
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8511-role-in-the-excitation-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.11 Role in the excitation hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8512-ledger-entry-for-closed-rings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.12 Ledger entry for closed rings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8513-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.13 Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -6501,55 +6567,123 @@
 A vortex filament can reduce its energy by closing into a loop, forming a vortex ring.
 Closed rings represent the first fully localized topological objects in the CTS excitation ledger.</p>
 <h2 id="852-geometry-of-a-vortex-ring">8.5.2 Geometry of a vortex ring<a class="headerlink" href="#852-geometry-of-a-vortex-ring" title="Permanent link">&para;</a></h2>
-<p>Consider a vortex filament bent into a circular loop of radius RRR.
-Let the ring lie in the x-yx <span class="arithmatex">\(\text{-}yx-y plane.\)</span>
-The position of a point on the ring can be parameterized as
-$$
-X()=R(cos,sin,0).\mathbf{X}<span class="arithmatex">\(\phi\)</span> = R<span class="arithmatex">\(\cos\phi,\sin\phi,0\)</span>.X(
-$$
-The vortex core has thickness approximately equal to the correlation length
-ξ=a∣r∣.\xi = \sqrt{\frac{a}{|r|}}.ξ=∣r∣a​​.
-Thus the ring consists of a toroidal region of radius RRR and core thickness ξ <span class="arithmatex">\(\xi\)</span></p>
+<p>Consider a vortex filament bent into a circular loop of radius <span class="arithmatex">\(R\)</span>.
+Let the ring lie in the <span class="arithmatex">\(x\)</span>-<span class="arithmatex">\(y\)</span> plane.
+The position of a point on the ring can be parameterized as</p>
+<div class="arithmatex">\[
+\mathbf{X}(\phi) = R(\cos\phi,\,\sin\phi,\,0).
+\]</div>
+<p>The vortex core has thickness approximately equal to the correlation length</p>
+<div class="arithmatex">\[
+\xi = \sqrt{\frac{a}{|r|}}.
+\]</div>
+<p>Thus the ring consists of a toroidal region of major radius <span class="arithmatex">\(R\)</span> and core thickness <span class="arithmatex">\(\xi\)</span>.</p>
 <h2 id="853-circulation-of-the-ring">8.5.3 Circulation of the ring<a class="headerlink" href="#853-circulation-of-the-ring" title="Permanent link">&para;</a></h2>
-<p>The vortex ring inherits the circulation of the original filament.
-The circulation is
-nnn is the winding number</p>
-<p>CCC is a loop around the vortex core.</p>
+<p>The vortex ring inherits the circulation of the original filament:</p>
+<div class="arithmatex">\[
+\Gamma = \oint_C \nabla\theta \cdot d\mathbf{l} = 2\pi n,
+\]</div>
+<p>where <span class="arithmatex">\(n\)</span> is the winding number and <span class="arithmatex">\(C\)</span> is a loop around the vortex core.</p>
 <p>Thus the ring carries a conserved circulation invariant.</p>
 <h2 id="854-energy-of-a-vortex-ring">8.5.4 Energy of a vortex ring<a class="headerlink" href="#854-energy-of-a-vortex-ring" title="Permanent link">&para;</a></h2>
-<p>The energy of a vortex ring arises from two contributions:
-vortex line tension</p>
-<p>kinetic energy of the circulating flow.</p>
-<p>A useful approximation for the ring energy is
-Ering≈ρΓ2Rln⁡ ⁣(8Rξ).E_{ring} \approx \rho \Gamma^2 R \ln!\left<span class="arithmatex">\(\frac{8R}{\xi}\right\)</span>.Ering​≈ρΓ2Rln(ξ8R​).
-Here
-$$
-\rho
-$$</p>
+<p>The energy of a vortex ring arises from two contributions:</p>
+<ul>
+<li>vortex line tension</li>
+<li>kinetic energy of the circulating flow.</li>
+</ul>
+<p>A useful approximation for the ring energy is</p>
 <div class="arithmatex">\[
-\Gamma
+E_{ring} \approx \rho\,\Gamma^2\,R\,\ln\!\left(\frac{8R}{\xi}\right).
 \]</div>
-<p>RRR is the ring radius.</p>
-<p>This expression shows that ring energy grows approximately linearly with RRR.</p>
+<p>Here <span class="arithmatex">\(\rho\)</span> is the effective substrate density, <span class="arithmatex">\(\Gamma\)</span> is the circulation, and <span class="arithmatex">\(R\)</span> is the ring radius.</p>
+<p>This expression shows that ring energy grows approximately linearly with <span class="arithmatex">\(R\)</span>.</p>
 <h2 id="855-ring-tension">8.5.5 Ring tension<a class="headerlink" href="#855-ring-tension" title="Permanent link">&para;</a></h2>
 <p>The vortex filament behaves like a string under tension.
-The tension is approximately
-$$
-T2.T\sim \rho\Gamma^2.T
-$$
-This tension causes the ring to contract.
-However, the ring’s circulation generates motion that stabilizes the structure dynamically.</p>
+The tension is approximately</p>
+<div class="arithmatex">\[
+T \sim \rho\Gamma^2.
+\]</div>
+<p>This tension causes the ring to contract.
+However, the ring's circulation generates motion that stabilizes the structure dynamically.</p>
 <h2 id="856-self-propagation-of-vortex-rings">8.5.6 Self-propagation of vortex rings<a class="headerlink" href="#856-self-propagation-of-vortex-rings" title="Permanent link">&para;</a></h2>
 <p>Unlike static structures, vortex rings propagate through the medium.
-The ring velocity is approximately
-v≈Γ4πRln⁡ ⁣(8Rξ).v \approx \frac{\Gamma}{4\pi R} \ln!\left<span class="arithmatex">\(\frac{8R}{\xi}\right\)</span>.v≈4πRΓ​ln(ξ8R​).
-Thus smaller rings move faster.
+The ring velocity is approximately</p>
+<div class="arithmatex">\[
+v \approx \frac{\Gamma}{4\pi R} \ln\!\left(\frac{8R}{\xi}\right).
+\]</div>
+<p>Thus smaller rings move faster.
 This property allows rings to transport energy and momentum through the substrate.</p>
 <h2 id="857-topological-stability">8.5.7 Topological stability<a class="headerlink" href="#857-topological-stability" title="Permanent link">&para;</a></h2>
 <p>The ring possesses a conserved winding number inherited from the vortex filament.
 Because the circulation cannot change continuously, the ring cannot simply dissolve into the vacuum.
 Decay requires reconnection or annihilation with another vortex.
-Thus rings possess stronger topological protection than open vortices</p>
+Thus rings possess stronger topological protection than open vortices.</p>
+<h2 id="858-topology-factor">8.5.8 Topology factor<a class="headerlink" href="#858-topology-factor" title="Permanent link">&para;</a></h2>
+<p>Because vortex rings are closed and carry conserved circulation, their topology factor is elevated:</p>
+<div class="arithmatex">\[
+T_{obj} &gt; 1.
+\]</div>
+<p>The closure of the vortex line prevents the endpoints from diffusing away, providing an additional stabilization mechanism beyond that of open vortices.</p>
+<h2 id="859-shrinkage-and-collapse">8.5.9 Shrinkage and collapse<a class="headerlink" href="#859-shrinkage-and-collapse" title="Permanent link">&para;</a></h2>
+<p>Without internal pressure or external support, a ring under pure line tension will shrink.
+The collapse timescale is</p>
+<div class="arithmatex">\[
+\tau_{collapse} \sim \frac{R^2}{\Gamma}.
+\]</div>
+<p>Thus a large ring collapses more slowly than a small ring.
+Persistent rings require a stabilizing mechanism such as internal pressure or nonlinear coupling.</p>
+<h2 id="8510-energetics-of-ring-collapse">8.5.10 Energetics of ring collapse<a class="headerlink" href="#8510-energetics-of-ring-collapse" title="Permanent link">&para;</a></h2>
+<p>As the ring shrinks, its energy changes as</p>
+<div class="arithmatex">\[
+\frac{dE_{ring}}{dR} \approx \rho\,\Gamma^2 \left[\ln\!\left(\frac{8R}{\xi}\right) + 1\right].
+\]</div>
+<p>This quantity is always positive, so the ring must release energy as it contracts.
+The released energy propagates as radiation into the substrate.</p>
+<h2 id="8511-role-in-the-excitation-hierarchy">8.5.11 Role in the excitation hierarchy<a class="headerlink" href="#8511-role-in-the-excitation-hierarchy" title="Permanent link">&para;</a></h2>
+<p>Closed rings represent a distinct structural level above open vortices because</p>
+<ul>
+<li>they are fully localized</li>
+<li>they carry conserved circulation without open endpoints</li>
+<li>they can propagate independently through the substrate.</li>
+</ul>
+<p>Thus rings form a key intermediate structure between vortex filaments and more complex topological objects.</p>
+<h2 id="8512-ledger-entry-for-closed-rings">8.5.12 Ledger entry for closed rings<a class="headerlink" href="#8512-ledger-entry-for-closed-rings" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Approximate value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>excitation type</td>
+<td>closed ring</td>
+</tr>
+<tr>
+<td>formation energy</td>
+<td>moderate</td>
+</tr>
+<tr>
+<td>locking energy</td>
+<td>high</td>
+</tr>
+<tr>
+<td>topology factor</td>
+<td><span class="arithmatex">\(T_{obj} &gt; 1\)</span></td>
+</tr>
+<tr>
+<td>persistence</td>
+<td>high</td>
+</tr>
+</tbody>
+</table>
+<p>Rings therefore populate the localized topology tier of the CTS survival map.</p>
+<h2 id="8513-summary">8.5.13 Summary<a class="headerlink" href="#8513-summary" title="Permanent link">&para;</a></h2>
+<p>Closed vortex rings arise when open vortex filaments bend and reconnect to form loops.
+The ring inherits quantized circulation from the original filament.
+Because the ring is fully localized and topologically protected, it represents a substantially more persistent excitation than an open vortex line.
+Rings serve as the topological precursor to chiral primitives and shell structures in the CTS excitation hierarchy.</p>
 
 
 

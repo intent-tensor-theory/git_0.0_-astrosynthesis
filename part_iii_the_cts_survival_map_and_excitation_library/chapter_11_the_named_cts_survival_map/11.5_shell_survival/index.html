@@ -6596,9 +6596,7 @@ This places them well above the survival threshold.</p>
 <p>A shell is a structure in which the excitation closes not along a line but across a two-dimensional surface.
 The defining geometric condition is surface closure
 $$
-\mathbf{r}(u,v)
-\mathbf{r}(u+U,v)
-\mathbf{r}(u,v+V).
+\mathbf{r}(u,v) = \mathbf{r}(u+U,v) = \mathbf{r}(u,v+V).
 $$
 This produces a closed manifold surface.</p>
 <h2 id="1154-curvature-closure">11.5.4 Curvature closure<a class="headerlink" href="#1154-curvature-closure" title="Permanent link">&para;</a></h2>
@@ -6615,8 +6613,7 @@ Shell stability arises when curvature energy reaches equilibrium.</p>
 <h2 id="1155-shell-elastic-energy">11.5.5 Shell elastic energy<a class="headerlink" href="#1155-shell-elastic-energy" title="Permanent link">&para;</a></h2>
 <p>The elastic energy of a shell can be approximated by the Helfrich curvature energy
 $$
-E_{shell}
-\int
+E_{shell} = \int
 \left(
 \frac{\kappa}{2}(2H)^2
 +
@@ -6624,25 +6621,20 @@ E_{shell}
 \right)
 dA
 $$
-where
-(H) = mean curvature
-(K) = Gaussian curvature
-$$
-<span class="arithmatex">\(\kappa\)</span> = bending rigidity.
-$$
+where <span class="arithmatex">\(H\)</span> is the mean curvature, <span class="arithmatex">\(K\)</span> is the Gaussian curvature, and <span class="arithmatex">\(\kappa\)</span> is the bending rigidity.
 This energy penalizes curvature distortions.</p>
 <h2 id="1156-multi-axis-locking">11.5.6 Multi-axis locking<a class="headerlink" href="#1156-multi-axis-locking" title="Permanent link">&para;</a></h2>
 <p>Unlike rings or helices, shells distribute structural forces across multiple directions.
 Let the structural locking forces be
 $$
-\mathbf{F}<em i="1">1,\mathbf{F}2,\dots,\mathbf{F}{N_f}.
+\mathbf{F}<em N_f="N_f">1, \mathbf{F}_2, \dots, \mathbf{F}</em>.
 $$
 Equilibrium requires
 $$
-\sum</em>_i = 0.
+\sum_{i=1}^{N_f} \mathbf{F}_i = 0.
 $$
 This condition is known as multi-fan locking.
-It dramatically increases structural stability.}^{N_f} \mathbf{F</p>
+It dramatically increases structural stability.</p>
 <h2 id="1157-shell-locking-energy">11.5.7 Shell locking energy<a class="headerlink" href="#1157-shell-locking-energy" title="Permanent link">&para;</a></h2>
 <p>Because many structural channels contribute to stabilization, shell locking energy grows rapidly.
 Typical scaling is
@@ -6660,7 +6652,7 @@ becomes large.</p>
 <p>Substituting shell stabilization into the persistence equation
 $$
 y =
-\mathcal{E}{shell}\mathcal{E}D T{obj}
+\mathcal{E}<em obj="obj">{shell}\mathcal{E}D T</em>
 \frac{R}{\dot{R} t_{ref}},
 $$
 we see that shells introduce a large shell factor
@@ -6673,33 +6665,49 @@ y \gg 10.
 $$
 This explains the extreme persistence of shell structures.</p>
 <h2 id="1159-shell-stability-conditions">11.5.9 Shell stability conditions<a class="headerlink" href="#1159-shell-stability-conditions" title="Permanent link">&para;</a></h2>
-<p>Shell stability requires two primary conditions.
-curvature equilibrium
+<p>Shell stability requires two primary conditions.</p>
+<ol>
+<li><strong>Curvature equilibrium:</strong>
 $$
 \delta E_{shell} = 0
-$$</p>
-<p>structural locking
+$$</li>
+<li><strong>Structural locking:</strong>
 $$
 \Lambda_{lock} \gg 1.
-$$
-When both conditions are satisfied, shells become extremely resistant to deformation.</p>
+$$</li>
+</ol>
+<p>When both conditions are satisfied, shells become extremely resistant to deformation.</p>
 <h2 id="11510-dynamics-of-shell-structures">11.5.10 Dynamics of shell structures<a class="headerlink" href="#11510-dynamics-of-shell-structures" title="Permanent link">&para;</a></h2>
 <p>Although shells are highly stable, they are not static.
 Possible dynamical modes include
-radial oscillations
-surface wave propagation
-rotational drift.
-These motions do not destroy the shell because structural locking maintains curvature balance.</p>
+- radial oscillations
+- surface wave propagation
+- rotational drift.</p>
+<p>These motions do not destroy the shell because structural locking maintains curvature balance.</p>
 <h2 id="11511-interaction-pathways">11.5.11 Interaction pathways<a class="headerlink" href="#11511-interaction-pathways" title="Permanent link">&para;</a></h2>
-<p>Shell structures interact with other excitations in several ways.
-interaction
-result
-shell collision
-composite shells
-shell twisting
-chiral shells
-shell stacking
-layered structures</p>
+<p>Shell structures interact with other excitations in several ways.</p>
+<table>
+<thead>
+<tr>
+<th>Interaction</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>shell collision</td>
+<td>composite shells</td>
+</tr>
+<tr>
+<td>shell twisting</td>
+<td>chiral shells</td>
+</tr>
+<tr>
+<td>shell stacking</td>
+<td>layered structures</td>
+</tr>
+</tbody>
+</table>
 <p>These interactions lead to increasingly complex structural architectures.</p>
 <h2 id="11512-population-characteristics">11.5.12 Population characteristics<a class="headerlink" href="#11512-population-characteristics" title="Permanent link">&para;</a></h2>
 <p>From the abundance relation
@@ -6707,16 +6715,16 @@ $$
 N_i \propto S_* e^{-E_{total}/T_{eff}},
 $$
 shell structures exhibit
-extremely high persistence
-relatively large formation energy.
-Thus shells are rare but extraordinarily durable.</p>
+- extremely high persistence
+- relatively large formation energy.</p>
+<p>Thus shells are rare but extraordinarily durable.</p>
 <h2 id="11513-structural-significance">11.5.13 Structural significance<a class="headerlink" href="#11513-structural-significance" title="Permanent link">&para;</a></h2>
 <p>Shell survival represents a major milestone in the CTS emergence hierarchy.
 For the first time, structures possess
-full surface closure
-multi-axis locking
-strong persistence.
-These properties allow shells to act as stable containers for internal excitations.</p>
+- full surface closure
+- multi-axis locking
+- strong persistence.</p>
+<p>These properties allow shells to act as stable containers for internal excitations.</p>
 <h2 id="11514-summary">11.5.14 Summary<a class="headerlink" href="#11514-summary" title="Permanent link">&para;</a></h2>
 <p>The shell survival region occupies the phase-space domain
 $$
@@ -6726,8 +6734,6 @@ y \gg 10.
 $$
 Structures in this region are stabilized by curvature equilibrium and multi-axis locking across a closed surface.
 Shell architectures therefore represent one of the most persistent structural classes within the Collapse Tension Substrate.</p>
-<p>Composite Survival
-This section examines the highest stability region of the CTS survival map, where topological linking and braided structures produce extremely persistent composite excitations.</p>
 
 
 

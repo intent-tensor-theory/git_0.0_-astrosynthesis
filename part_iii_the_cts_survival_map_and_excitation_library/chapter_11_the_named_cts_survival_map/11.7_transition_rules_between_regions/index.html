@@ -6575,13 +6575,13 @@
 <h1 id="117-transition-rules-between-regions">11.7 Transition Rules Between Regions<a class="headerlink" href="#117-transition-rules-between-regions" title="Permanent link">&para;</a></h1>
 <h2 id="1171-motivation">11.7.1 Motivation<a class="headerlink" href="#1171-motivation" title="Permanent link">&para;</a></h2>
 <p>Sections 11.1–11.6 defined the six structural regions of the CTS survival map:
-Background propagation
-Localized precursors
-Closure survival
-Chirality survival
-Shell survival
-Composite survival
-However, excitations are not static objects within the phase chart.
+- Background propagation
+- Localized precursors
+- Closure survival
+- Chirality survival
+- Shell survival
+- Composite survival</p>
+<p>However, excitations are not static objects within the phase chart.
 Instead they evolve dynamically as environmental conditions and internal structure change.
 Thus excitations move through the phase chart according to transition rules.
 These rules determine when a structure migrates from one region to another.</p>
@@ -6596,13 +6596,11 @@ x = \Lambda_{lock}
 $$
 $$
 y =
-\mathcal{E}{shell}
-\mathcal{E}
-D
-T{obj}
-\frac{R}{\dot{R}t_{ref}}.
+\frac{\mathcal{E}<em obj="obj">{shell}}{\mathcal{E}_D}\,
+T</em>
+\frac{R}{\dot{R}\,t_{ref}}.
 $$
-Transitions occur whenever the parameters controlling (x) or (y) change.</p>
+Transitions occur whenever the parameters controlling <span class="arithmatex">\(x\)</span> or <span class="arithmatex">\(y\)</span> change.</p>
 <h2 id="1173-evolution-equations">11.7.3 Evolution equations<a class="headerlink" href="#1173-evolution-equations" title="Permanent link">&para;</a></h2>
 <p>Let the excitation coordinates evolve in time
 $$
@@ -6645,7 +6643,7 @@ The helicity then becomes nonzero
 $$
 H =
 \int
-\mathbf{v}\cdot(\nabla\times\mathbf{v}),d^3x
+\mathbf{v}\cdot(\nabla\times\mathbf{v})\,d^3x
 \neq 0.
 $$
 Once helicity becomes significant, the structure enters the chirality survival region.</p>
@@ -6662,49 +6660,78 @@ The defining condition is
 $$
 Lk \neq 0
 $$
-where (Lk) is the linking number.
+where <span class="arithmatex">\(Lk\)</span> is the linking number.
 Once linking occurs, the structure becomes a topological composite and moves into the composite region.</p>
 <h2 id="1179-reverse-transitions">11.7.9 Reverse transitions<a class="headerlink" href="#1179-reverse-transitions" title="Permanent link">&para;</a></h2>
 <p>Transitions are not strictly one-directional.
 Strong perturbations may drive structures back into lower regions.
-Examples include:
-transition
-cause
-composite → shell
-reconnection
-shell → chirality
-surface rupture
-chirality → closure
-torsion loss
-closure → precursor
-ring collapse</p>
-<p>These reverse transitions correspond to decreases in (x) or (y).</p>
+Examples include:</p>
+<table>
+<thead>
+<tr>
+<th>Transition</th>
+<th>Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>composite → shell</td>
+<td>reconnection</td>
+</tr>
+<tr>
+<td>shell → chirality</td>
+<td>surface rupture</td>
+</tr>
+<tr>
+<td>chirality → closure</td>
+<td>torsion loss</td>
+</tr>
+<tr>
+<td>closure → precursor</td>
+<td>ring collapse</td>
+</tr>
+</tbody>
+</table>
+<p>These reverse transitions correspond to decreases in <span class="arithmatex">\(x\)</span> or <span class="arithmatex">\(y\)</span>.</p>
 <h2 id="11710-environmental-control-parameters">11.7.10 Environmental control parameters<a class="headerlink" href="#11710-environmental-control-parameters" title="Permanent link">&para;</a></h2>
-<p>Several environmental parameters influence transitions:
-parameter
-effect
-(T_{eff})
-fluctuation energy
-$$
-<span class="arithmatex">\(\gamma\)</span>
-$$
-dissipation rate
-(a,u,r,s)
-field constants</p>
+<p>Several environmental parameters influence transitions:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(T_{eff}\)</span></td>
+<td>fluctuation energy</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\gamma\)</span></td>
+<td>dissipation rate</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(a,u,r,s\)</span></td>
+<td>field constants</td>
+</tr>
+</tbody>
+</table>
 <p>Changes in these parameters alter the phase-space trajectories of excitations.</p>
 <h2 id="11711-transition-diagram">11.7.11 Transition diagram<a class="headerlink" href="#11711-transition-diagram" title="Permanent link">&para;</a></h2>
-<p>The hierarchical transition structure can be summarized as
-waves
-  ↓
-localized precursors
-  ↓
-vortex closure
-  ↓
-chirality
-  ↓
-shell formation
-  ↓
-composite structures</p>
+<p>The hierarchical transition structure can be summarized as</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>waves
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  ↓
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>localized precursors
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  ↓
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>vortex closure
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  ↓
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>chirality
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  ↓
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>shell formation
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  ↓
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>composite structures
+</code></pre></div>
 <p>Each transition corresponds to the introduction of a new stabilization mechanism.</p>
 <h2 id="11712-phase-space-trajectory-example">11.7.12 Phase-space trajectory example<a class="headerlink" href="#11712-phase-space-trajectory-example" title="Permanent link">&para;</a></h2>
 <p>Consider a precursor excitation with coordinates
@@ -6726,19 +6753,37 @@ $$
 The excitation crosses the survival boundary and becomes persistent.</p>
 <h2 id="11713-structural-interpretation">11.7.13 Structural interpretation<a class="headerlink" href="#11713-structural-interpretation" title="Permanent link">&para;</a></h2>
 <p>Transitions between survival-map regions represent qualitative structural changes.
-They correspond to the appearance of new structural invariants:
-transition
-new invariant
-waves → precursors
-coherence
-precursors → closure
-circulation
-closure → chirality
-helicity
-chirality → shell
-curvature closure
-shell → composite
-linking number</p>
+They correspond to the appearance of new structural invariants:</p>
+<table>
+<thead>
+<tr>
+<th>Transition</th>
+<th>New invariant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>waves → precursors</td>
+<td>coherence</td>
+</tr>
+<tr>
+<td>precursors → closure</td>
+<td>circulation</td>
+</tr>
+<tr>
+<td>closure → chirality</td>
+<td>helicity</td>
+</tr>
+<tr>
+<td>chirality → shell</td>
+<td>curvature closure</td>
+</tr>
+<tr>
+<td>shell → composite</td>
+<td>linking number</td>
+</tr>
+</tbody>
+</table>
 <p>Each invariant increases persistence.</p>
 <h2 id="11714-summary">11.7.14 Summary<a class="headerlink" href="#11714-summary" title="Permanent link">&para;</a></h2>
 <p>Transitions between CTS survival regions occur when structural parameters evolve such that
@@ -6748,9 +6793,6 @@ $$
 cross the boundaries separating regions of the phase chart.
 Each transition introduces a new stabilization mechanism that increases persistence.
 These rules define the dynamical pathway through which emergence proceeds within the Collapse Tension Substrate.</p>
-<p>Interpreting the Survival Map as an Atlas of Emergence
-This final section of Chapter 11 synthesizes the regional structure of the survival map and explains how it organizes the full hierarchy of CTS excitations.</p>
-<p>This completes Chapter 11.</p>
 
 
 

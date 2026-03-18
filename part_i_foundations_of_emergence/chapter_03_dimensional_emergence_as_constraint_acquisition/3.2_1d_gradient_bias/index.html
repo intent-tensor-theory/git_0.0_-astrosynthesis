@@ -1404,10 +1404,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#327-onedimensional-bias" class="md-nav__link">
+  <a href="#327-one-dimensional-bias" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.2.7 One–dimensional bias
+        3.2.7 One-dimensional bias
       
     </span>
   </a>
@@ -1463,6 +1463,17 @@
     <span class="md-ellipsis">
       
         3.2.12 Transition to circulation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3213-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.13 Summary
       
     </span>
   </a>
@@ -6569,7 +6580,7 @@ $$
 $$
 The magnitude of the gradient is
 $$
-|\nabla \Phi|
+|\nabla \Phi| =
 \sqrt{
 \left(\frac{\partial \Phi}{\partial x}\right)^2
 +
@@ -6583,7 +6594,7 @@ This quantity measures how rapidly the field varies across space.</p>
 <p>Gradients store structural energy in the field.
 From the CTS energy functional,
 $$
-E[\Phi]
+E[\Phi] =
 \int
 \left(
 a |\nabla \Phi|^2
@@ -6598,8 +6609,7 @@ d^3x,
 $$
 the gradient contribution is
 $$
-E_{grad}
-a \int |\nabla \Phi|^2 d^3x.
+E_{grad} = a \int |\nabla \Phi|^2 d^3x.
 $$
 This energy represents the structural tension associated with spatial variation.</p>
 <h2 id="324-gradient-driven-dynamics">3.2.4 Gradient-driven dynamics<a class="headerlink" href="#324-gradient-driven-dynamics" title="Permanent link">&para;</a></h2>
@@ -6609,7 +6619,7 @@ a\nabla^2\Phi.
 $$
 The Laplacian operator
 $$
-\nabla^2 \Phi
+\nabla^2 \Phi =
 \frac{\partial^2 \Phi}{\partial x^2}
 +
 \frac{\partial^2 \Phi}{\partial y^2}
@@ -6619,11 +6629,7 @@ $$
 describes how gradients evolve.
 Substituting into the field equation,
 $$
-\partial_t \Phi
-r\Phi</p>
-<p>a\nabla^2\Phi
-u\nabla^4\Phi
-s\Phi^3,
+\partial_t \Phi = -r\Phi + a\nabla^2\Phi - u\nabla^4\Phi - s\Phi^3,
 $$
 we see that spatial variation influences the evolution of the field.</p>
 <h2 id="325-linear-perturbation-analysis">3.2.5 Linear perturbation analysis<a class="headerlink" href="#325-linear-perturbation-analysis" title="Permanent link">&para;</a></h2>
@@ -6633,13 +6639,11 @@ $$
 $$
 Express this perturbation as a Fourier mode
 $$
-\delta\Phi
-A e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}.
+\delta\Phi = A e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}.
 $$
 Substituting into the linearized CTS equation gives the dispersion relation
 $$
-\omega(k)
-r + a k^2 + u k^4.
+\omega(k) = r + a k^2 + u k^4.
 $$
 Here
 $$
@@ -6656,15 +6660,14 @@ This growth produces spatial variation in the field.
 Thus gradients become amplified.
 The direction of the gradient defines the first spatial axis of organization in the substrate.
 This marks the transition from scalar variation to directional structure.</p>
-<h2 id="327-onedimensional-bias">3.2.7 One–dimensional bias<a class="headerlink" href="#327-onedimensional-bias" title="Permanent link">&para;</a></h2>
+<h2 id="327-one-dimensional-bias">3.2.7 One-dimensional bias<a class="headerlink" href="#327-one-dimensional-bias" title="Permanent link">&para;</a></h2>
 <p>When a dominant gradient forms along a particular direction
 $$
 \hat{n},
 $$
 the field becomes approximately
 $$
-\Phi(\mathbf{x})
-\Phi(n)
+\Phi(\mathbf{x}) \approx \Phi(n)
 $$
 where
 $$
@@ -6699,29 +6702,30 @@ Larger structures have longer lifetimes.</p>
 <h2 id="3210-selection-number-with-gradients">3.2.10 Selection number with gradients<a class="headerlink" href="#3210-selection-number-with-gradients" title="Permanent link">&para;</a></h2>
 <p>Using the persistence condition
 $$
-S =
-\frac{R}{\dot R, t_{ref}},
+S = \frac{R}{\dot{R}\,t_{ref}},
 $$
 and the gradient-based retention measure,
 $$
 R =
-\alpha_0 ||\Phi||^2
+\alpha_0 |\Phi|^2
 +
-\alpha_1 ||\nabla\Phi||^2,
+\alpha_1 |\nabla\Phi|^2,
 $$
 we see that gradient energy increases the numerator of the selection number.
 Thus sufficiently strong gradients may allow
 $$
-S \ge 1.
+S \geq 1.
 $$
 In this case the directional structure persists.</p>
 <h2 id="3211-physical-interpretation">3.2.11 Physical interpretation<a class="headerlink" href="#3211-physical-interpretation" title="Permanent link">&para;</a></h2>
 <p>The gradient regime introduces the first form of spatial organization in the CTS.
-Key features include:
-directional bias
-spatial differentiation
-storage of structural energy in gradients.
-These properties allow the substrate to support more complex dynamical behavior.</p>
+Key features include:</p>
+<ul>
+<li>directional bias</li>
+<li>spatial differentiation</li>
+<li>storage of structural energy in gradients</li>
+</ul>
+<p>These properties allow the substrate to support more complex dynamical behavior.</p>
 <h2 id="3212-transition-to-circulation">3.2.12 Transition to circulation<a class="headerlink" href="#3212-transition-to-circulation" title="Permanent link">&para;</a></h2>
 <p>Gradients alone do not produce closed structures.
 However interacting gradients can generate rotational flows.
@@ -6731,16 +6735,14 @@ $$
 \nabla \times \mathbf{v} \neq 0.
 $$
 This marks the transition from the 1D gradient regime to the 2D circulation regime.</p>
-<p>Summary
-The second stage of dimensional emergence occurs when scalar fluctuations develop spatial gradients.
+<h2 id="3213-summary">3.2.13 Summary<a class="headerlink" href="#3213-summary" title="Permanent link">&para;</a></h2>
+<p>The second stage of dimensional emergence occurs when scalar fluctuations develop spatial gradients.
 These gradients introduce directional structure and store energy through
 $$
 E_{grad} = a\int |\nabla\Phi|^2 d^3x.
 $$
 If gradient energy is sufficiently large relative to loss processes, the configuration satisfies the persistence condition and becomes a stable directional structure.</p>
-<p>2D: Circulation and Recursive Memory
-This section derives how interacting gradients produce rotational structures and persistent circulation in the CTS.</p>
-<p>No extra sections beyond the Table of Contents.</p>
+<p><em>Transition to Section 3.3:</em> The next section derives how interacting gradients produce rotational structures and persistent circulation in the CTS.</p>
 
 
 

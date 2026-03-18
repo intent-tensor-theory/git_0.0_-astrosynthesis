@@ -2642,6 +2642,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#721-minimal-scalar-functional-construction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2.1 Minimal Scalar Functional Construction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#722-field-variable" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6762,212 +6773,226 @@
 <h1 id="71-why-emergence-needs-an-energy-functional">7.1 Why Emergence Needs an Energy Functional<a class="headerlink" href="#71-why-emergence-needs-an-energy-functional" title="Permanent link">&para;</a></h1>
 <h2 id="711-motivation">7.1.1 Motivation<a class="headerlink" href="#711-motivation" title="Permanent link">&para;</a></h2>
 <p>Previous chapters developed the persistence mechanics governing the survival of structures within the Collapse Tension Substrate.
-The corrected persistence condition was derived as
-S∗=EshellEDTobjRR˙ tref.S_* = \mathcal{E}<em obj="obj">{shell}\mathcal{E}D T</em>.S∗​=Eshell​EDTobj​R˙tref​R​.
-This equation determines whether a configuration survives long enough to become a persistent structure.
+The corrected persistence condition was derived as</p>
+<div class="arithmatex">\[
+S_* = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>This equation determines whether a configuration survives long enough to become a persistent structure.
 However, the persistence equation alone does not determine which configurations actually form.
 To determine the formation of structures we require a dynamical principle governing the evolution of the substrate itself.
-In physics, such evolution is typically described by an energy functional.} \frac{R}{\dot R\,t_{ref}</p>
+In physics, such evolution is typically described by an energy functional.</p>
 <h2 id="712-energy-landscapes">7.1.2 Energy landscapes<a class="headerlink" href="#712-energy-landscapes" title="Permanent link">&para;</a></h2>
-<p>An energy functional defines a scalar quantity
-$$
-E[]E[\Phi]E[
-$$
-that depends on the configuration of the field Φ <span class="arithmatex">\(\Phi\)</span>
+<p>An energy functional defines a scalar quantity <span class="arithmatex">\(E[\Phi]\)</span> that depends on the configuration of the field <span class="arithmatex">\(\Phi\)</span>.
 The system evolves in a way that reduces this energy.
-Thus the dynamics follow the gradient descent rule
-∂tΦ=−δEδΦ.\partial_t \Phi = -\frac{\delta E}{\delta \Phi}.∂t​Φ=−δΦδE​.
-is the functional derivative of the energy with respect to the field.</p>
+Thus the dynamics follow the gradient descent rule</p>
+<div class="arithmatex">\[
+\partial_t \Phi = -\frac{\delta E}{\delta \Phi},
+\]</div>
+<p>where <span class="arithmatex">\(\delta E / \delta \Phi\)</span> is the functional derivative of the energy with respect to the field.</p>
 <h2 id="713-energy-minimization-and-structure-formation">7.1.3 Energy minimization and structure formation<a class="headerlink" href="#713-energy-minimization-and-structure-formation" title="Permanent link">&para;</a></h2>
 <p>Energy functionals determine which configurations are stable.
 Stable structures correspond to local minima of the energy landscape.
-If
-is a stationary configuration satisfying
-δEδΦ∣Φ0=0,\frac{\delta E}{\delta \Phi}\bigg|_{\Phi_0} = 0,δΦδE​​Φ0​​=0,
-The stability of this structure depends on the second variation of the energy.</p>
+If <span class="arithmatex">\(\Phi_0\)</span> is a stationary configuration satisfying</p>
+<div class="arithmatex">\[
+\frac{\delta E}{\delta \Phi}\bigg|_{\Phi_0} = 0,
+\]</div>
+<p>then the stability of this structure depends on the second variation of the energy.</p>
 <h2 id="714-stability-criterion">7.1.4 Stability criterion<a class="headerlink" href="#714-stability-criterion" title="Permanent link">&para;</a></h2>
-<p>$$
-\delta \Phi
-$$
-represent a small perturbation.
-The second variation of the energy is
-δ2E=∫δΦ(δ2EδΦ2)δΦ d3x.\delta^2 E = \int \delta \Phi \left<span class="arithmatex">\(\frac{\delta^2 E}{\delta \Phi^2} \right\)</span> \delta \Phi \, d^3x.δ2E=∫δΦ(δΦ2δ2E​)δΦd3x.
-$$
-2E&gt;0\delta^2 E &gt; 0
-$$
-for all perturbations, the configuration is stable.
+<p>Let <span class="arithmatex">\(\delta \Phi\)</span> represent a small perturbation.
+The second variation of the energy is</p>
+<div class="arithmatex">\[
+\delta^2 E = \int \delta\Phi \left( \frac{\delta^2 E}{\delta \Phi^2} \right) \delta\Phi \, d^3x.
+\]</div>
+<p>If <span class="arithmatex">\(\delta^2 E &gt; 0\)</span> for all perturbations, the configuration is stable.
 Thus stable structures correspond to local minima of the energy functional.</p>
 <h2 id="715-relation-to-persistence-mechanics">7.1.5 Relation to persistence mechanics<a class="headerlink" href="#715-relation-to-persistence-mechanics" title="Permanent link">&para;</a></h2>
 <p>The persistence framework developed earlier can now be connected to the energy landscape.
-The retained structure can be interpreted as structural energy:
-R=E[Φ].R = E[ <span class="arithmatex">\(\Phi].R=E[\)</span>
-Loss processes correspond to energy dissipation:
-R˙=−dEdt.\dot R = -\frac{dE}{dt}.R˙=−dtdE​.
-Thus the persistence number becomes
-S=E(−dE/dt) tref.S = \frac{E}{(-dE/dt)\,t_{ref}}.S=(−dE/dt)tref​E​.
-Energy landscapes therefore determine both retention and loss dynamics.</p>
+The retained structure can be interpreted as structural energy:</p>
+<div class="arithmatex">\[
+R = E[\Phi].
+\]</div>
+<p>Loss processes correspond to energy dissipation:</p>
+<div class="arithmatex">\[
+\dot{R} = -\frac{dE}{dt}.
+\]</div>
+<p>Thus the persistence number becomes</p>
+<div class="arithmatex">\[
+S = \frac{E}{(-dE/dt)\,t_{ref}}.
+\]</div>
+<p>Energy landscapes therefore determine both retention and loss dynamics.</p>
 <h2 id="716-structural-excitations">7.1.6 Structural excitations<a class="headerlink" href="#716-structural-excitations" title="Permanent link">&para;</a></h2>
 <p>Solutions of the energy functional correspond to excitations of the substrate.
-Examples include:
-excitation type
-description
-wave mode
-oscillatory solution
-soliton
-localized nonlinear wave
-vortex
-rotational structure
-domain wall
-boundary between phases</p>
+Examples include:</p>
+<table>
+<thead>
+<tr>
+<th>Excitation type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wave mode</td>
+<td>oscillatory solution</td>
+</tr>
+<tr>
+<td>soliton</td>
+<td>localized nonlinear wave</td>
+</tr>
+<tr>
+<td>vortex</td>
+<td>rotational structure</td>
+</tr>
+<tr>
+<td>domain wall</td>
+<td>boundary between phases</td>
+</tr>
+</tbody>
+</table>
 <p>These excitations form the structural library of the CTS.</p>
 <h2 id="717-why-a-minimal-functional-is-needed">7.1.7 Why a minimal functional is needed<a class="headerlink" href="#717-why-a-minimal-functional-is-needed" title="Permanent link">&para;</a></h2>
-<p>The Collapse Tension Substrate must support several key structural behaviors:
-scalar field fluctuations</p>
-<p>gradient formation</p>
-<p>circulation</p>
-<p>curvature stabilization</p>
-<p>topological defects.</p>
+<p>The Collapse Tension Substrate must support several key structural behaviors:</p>
+<ul>
+<li>scalar field fluctuations</li>
+<li>gradient formation</li>
+<li>circulation</li>
+<li>curvature stabilization</li>
+<li>topological defects.</li>
+</ul>
 <p>Thus the energy functional must contain terms capable of producing each of these phenomena.
 This requirement guides the construction of the CTS energy functional.</p>
 <h2 id="718-generic-field-functional">7.1.8 Generic field functional<a class="headerlink" href="#718-generic-field-functional" title="Permanent link">&para;</a></h2>
-<p>The most general energy functional for a scalar field can be written
-$$
-E[]=L(,,2,)d3x.E[\Phi] = \int \mathcal{L}<span class="arithmatex">\(\Phi,\nabla\Phi,\nabla^2\Phi,\dots\)</span> \, d^3x.E[
-$$
-The integrand
-$$
-L\mathcal{L}L
-$$
-represents the structural energy density.
+<p>The most general energy functional for a scalar field can be written</p>
+<div class="arithmatex">\[
+E[\Phi] = \int \mathcal{L}\!\left(\Phi,\nabla\Phi,\nabla^2\Phi,\dots\right) d^3x.
+\]</div>
+<p>The integrand <span class="arithmatex">\(\mathcal{L}\)</span> represents the structural energy density.
 Terms are added to the functional to capture different physical effects.</p>
 <h2 id="719-gradient-energy">7.1.9 Gradient energy<a class="headerlink" href="#719-gradient-energy" title="Permanent link">&para;</a></h2>
-<p>The simplest structural term arises from spatial variation of the field.
-Egrad=∫a∣∇Φ∣2d3x.E_{grad} = \int a |\nabla \Phi|^2 d^3x.Egrad​=∫a∣∇Φ∣2d3x.
-This term penalizes sharp gradients and generates tension in the field.
+<p>The simplest structural term arises from spatial variation of the field.</p>
+<div class="arithmatex">\[
+E_{grad} = \int a |\nabla \Phi|^2 \, d^3x.
+\]</div>
+<p>This term penalizes sharp gradients and generates tension in the field.
 Gradient energy is responsible for wave propagation and diffusion.</p>
 <h2 id="7110-potential-energy">7.1.10 Potential energy<a class="headerlink" href="#7110-potential-energy" title="Permanent link">&para;</a></h2>
-<p>Local field values contribute potential energy
-Epot=∫(rΦ2+sΦ4)d3x.E_{pot} = \int \left( r \Phi^2 + s \Phi^4 \right) d^3x.Epot​=∫(rΦ2+sΦ4)d3x.
-These terms determine whether the system favors
-symmetric states</p>
-<p>broken symmetry states.</p>
+<p>Local field values contribute potential energy</p>
+<div class="arithmatex">\[
+E_{pot} = \int \left( r \Phi^2 + s \Phi^4 \right) d^3x.
+\]</div>
+<p>These terms determine whether the system favors</p>
+<ul>
+<li>symmetric states</li>
+<li>broken symmetry states.</li>
+</ul>
 <h2 id="7111-higher-order-curvature-terms">7.1.11 Higher-order curvature terms<a class="headerlink" href="#7111-higher-order-curvature-terms" title="Permanent link">&para;</a></h2>
 <p>To support stable localized structures such as solitons, higher-order spatial derivatives must be included.
-A common term is
-Ecurv=∫u(∇2Φ)2d3x.E_{curv} = \int u <span class="arithmatex">\(\nabla^2 \Phi\)</span>^2 d^3x.Ecurv​=∫u(∇2Φ)2d3x.
-This term stabilizes structures that would otherwise collapse.</p>
+A common term is</p>
+<div class="arithmatex">\[
+E_{curv} = \int u \left(\nabla^2 \Phi\right)^2 d^3x.
+\]</div>
+<p>This term stabilizes structures that would otherwise collapse.</p>
 <h2 id="7112-gauge-interaction-terms">7.1.12 Gauge interaction terms<a class="headerlink" href="#7112-gauge-interaction-terms" title="Permanent link">&para;</a></h2>
 <p>Many physical systems involve vector fields.
-Introduce a vector potential
-$$
-A.\mathbf{A}.A.
-$$
-The coupling between the scalar field and vector field is
-$$
-(iqA)2.|<span class="arithmatex">\(\nabla - iq\mathbf{A}\)</span>\Phi|^2.
-$$
-This term allows the formation of vortices and gauge structures.</p>
+Introduce a vector potential <span class="arithmatex">\(\mathbf{A}\)</span>.
+The coupling between the scalar field and vector field is</p>
+<div class="arithmatex">\[
+\left|(\nabla - iq\mathbf{A})\Phi\right|^2.
+\]</div>
+<p>This term allows the formation of vortices and gauge structures.</p>
 <h2 id="7113-minimal-cts-functional">7.1.13 Minimal CTS functional<a class="headerlink" href="#7113-minimal-cts-functional" title="Permanent link">&para;</a></h2>
-<p>Combining these ingredients leads to the minimal CTS energy functional
-$$
-E[,A]=d3x[a(iqA)2+bA2+u(2)2+r2+s4].E[\Phi,\mathbf{A}] = \int d^3x \left[ a |<span class="arithmatex">\(\nabla - iq\mathbf{A}\)</span>\Phi|^2 + b |\nabla \times \mathbf{A}|^2 + u <span class="arithmatex">\(\nabla^2\Phi\)</span>^2 + r|\Phi|^2 + s|\Phi|^4 \right].E[
-$$
-This functional contains the minimum set of terms required to produce the structural phenomena described earlier.</p>
+<p>Combining these ingredients leads to the minimal CTS energy functional</p>
+<div class="arithmatex">\[
+E[\Phi,\mathbf{A}] = \int d^3x \left[ a \left|(\nabla - iq\mathbf{A})\Phi\right|^2 + b |\nabla \times \mathbf{A}|^2 + u \left(\nabla^2\Phi\right)^2 + r|\Phi|^2 + s|\Phi|^4 \right].
+\]</div>
+<p>This functional contains the minimum set of terms required to produce the structural phenomena described earlier.</p>
 <h2 id="7114-interpretation">7.1.14 Interpretation<a class="headerlink" href="#7114-interpretation" title="Permanent link">&para;</a></h2>
-<p>Each term of the functional corresponds to a structural mechanism:
-term
-structural effect
-(r
-$$
-\Phi
-$$
-(s
-$$
-\Phi
-$$
-(
-$$
-\nabla\Phi
-$$
-$$
-(2)2<span class="arithmatex">\(\nabla^2\Phi\)</span>^2(
-$$
-curvature stabilization
-(
-$$
-\nabla\times\mathbf{A}
-$$</p>
+<p>Each term of the functional corresponds to a structural mechanism:</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Structural effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(r\Phi^2\)</span></td>
+<td>scalar amplitude energy</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(s\Phi^4\)</span></td>
+<td>nonlinear self-interaction</td>
+</tr>
+<tr>
+<td>$a</td>
+<td>\nabla\Phi</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(u(\nabla^2\Phi)^2\)</span></td>
+<td>curvature stabilization</td>
+</tr>
+<tr>
+<td>$b</td>
+<td>\nabla\times\mathbf{A}</td>
+</tr>
+</tbody>
+</table>
 <p>Thus the energy functional encodes the mechanical rules of emergence.</p>
 <h2 id="7115-role-in-the-cts-framework">7.1.15 Role in the CTS framework<a class="headerlink" href="#7115-role-in-the-cts-framework" title="Permanent link">&para;</a></h2>
 <p>The CTS energy functional provides the dynamical engine that generates the structural excitations studied earlier.
 Solutions of this functional determine which patterns appear in the substrate.
 Persistence mechanics then determines which of those patterns survive.
-Thus emergence is governed by two layers:
-energy dynamics (formation of patterns)</p>
-<p>persistence selection (survival of patterns).</p>
+Thus emergence is governed by two layers:</p>
+<ul>
+<li>energy dynamics (formation of patterns)</li>
+<li>persistence selection (survival of patterns).</li>
+</ul>
 <h2 id="7116-summary">7.1.16 Summary<a class="headerlink" href="#7116-summary" title="Permanent link">&para;</a></h2>
 <p>An energy functional is required to describe the dynamical evolution of the Collapse Tension Substrate.
-The minimal CTS functional includes terms describing
-gradient energy</p>
-<p>nonlinear potential energy</p>
-<p>curvature stabilization</p>
-<p>gauge interactions.</p>
+The minimal CTS functional includes terms describing</p>
+<ul>
+<li>gradient energy</li>
+<li>nonlinear potential energy</li>
+<li>curvature stabilization</li>
+<li>gauge interactions.</li>
+</ul>
 <p>These terms allow the substrate to produce the structural excitations that later become persistent objects.</p>
-<p>Minimal Scalar Functional Construction
-This section derives the CTS energy functional step by step from symmetry and stability principles</p>
+<hr />
+<h2 id="721-minimal-scalar-functional-construction">7.2.1 Minimal Scalar Functional Construction<a class="headerlink" href="#721-minimal-scalar-functional-construction" title="Permanent link">&para;</a></h2>
+<p>This section derives the CTS energy functional step by step from symmetry and stability principles.</p>
 <p>These constraints determine which terms can appear in the energy functional.</p>
 <h2 id="722-field-variable">7.2.2 Field variable<a class="headerlink" href="#722-field-variable" title="Permanent link">&para;</a></h2>
-<p>Let the Collapse Tension Substrate be described by a scalar field
-$$
-(x)\Phi<span class="arithmatex">\(\mathbf{x}\)</span>
-$$
-defined over space.
-The total energy is written as a functional
-$$
-E[].E[\Phi].E[
-$$
+<p>Let the Collapse Tension Substrate be described by a scalar field <span class="arithmatex">\(\Phi(\mathbf{x})\)</span> defined over space.
+The total energy is written as a functional <span class="arithmatex">\(E[\Phi]\)</span>.
 We construct this functional using terms involving the field and its spatial derivatives.</p>
 <h2 id="723-local-potential-energy">7.2.3 Local potential energy<a class="headerlink" href="#723-local-potential-energy" title="Permanent link">&para;</a></h2>
 <p>The simplest contribution to the energy depends only on the local value of the field.
-The lowest-order polynomial consistent with symmetry is
-$$
-V()=r2+s4.V<span class="arithmatex">\(\Phi\)</span> = r\Phi^2 + s\Phi^4.V(
-$$
-Thus the potential energy becomes
-Epot=∫(rΦ2+sΦ4)d3x.E_{pot} = \int \left( r\Phi^2 + s\Phi^4 \right)d^3x.Epot​=∫(rΦ2+sΦ4)d3x.</p>
+The lowest-order polynomial consistent with symmetry is</p>
+<div class="arithmatex">\[
+V(\Phi) = r\Phi^2 + s\Phi^4.
+\]</div>
+<p>Thus the potential energy becomes</p>
+<div class="arithmatex">\[
+E_{pot} = \int \left( r\Phi^2 + s\Phi^4 \right) d^3x.
+\]</div>
 <h2 id="724-stability-of-the-potential">7.2.4 Stability of the potential<a class="headerlink" href="#724-stability-of-the-potential" title="Permanent link">&para;</a></h2>
-<p>For the energy to remain bounded below, the quartic coefficient must satisfy
-s&gt;0.s &gt; 0.s&gt;0.
-The quadratic coefficient rrr determines the phase structure.
-If
-r&gt;0r &gt; 0r&gt;0
-the minimum occurs at
-$$
-=0.\Phi = 0.
-$$
-r&lt;0r &lt; 0r&lt;0
-the system exhibits spontaneous symmetry breaking.</p>
+<p>For the energy to remain bounded below, the quartic coefficient must satisfy <span class="arithmatex">\(s &gt; 0\)</span>.
+The quadratic coefficient <span class="arithmatex">\(r\)</span> determines the phase structure.
+If <span class="arithmatex">\(r &gt; 0\)</span>, the minimum occurs at <span class="arithmatex">\(\Phi = 0\)</span>.
+If <span class="arithmatex">\(r &lt; 0\)</span>, the system exhibits spontaneous symmetry breaking.</p>
 <h2 id="725-gradient-energy">7.2.5 Gradient energy<a class="headerlink" href="#725-gradient-energy" title="Permanent link">&para;</a></h2>
 <p>Spatial variation of the field introduces gradient energy.
-The simplest gradient term is
-Egrad=∫a∣∇Φ∣2d3x.E_{grad} = \int a|\nabla \Phi|^2 d^3x.Egrad​=∫a∣∇Φ∣2d3x.
-Here aaa is a positive constant.
+The simplest gradient term is</p>
+<div class="arithmatex">\[
+E_{grad} = \int a|\nabla \Phi|^2 \, d^3x.
+\]</div>
+<p>Here <span class="arithmatex">\(a\)</span> is a positive constant.
 This term penalizes rapid spatial changes in the field.</p>
 <h2 id="726-gradient-symmetry">7.2.6 Gradient symmetry<a class="headerlink" href="#726-gradient-symmetry" title="Permanent link">&para;</a></h2>
 <p>The gradient term must respect rotational symmetry.
-Under spatial rotation
-$$
-xRx,\mathbf{x} \rightarrow R\mathbf{x},x
-$$
-the gradient transforms as
-$$
-R().\nabla \Phi \rightarrow R<span class="arithmatex">\(\nabla \Phi\)</span>.
-$$
-The magnitude
-$$
-2|\nabla \Phi|^2
-$$
-remains invariant.
+Under spatial rotation <span class="arithmatex">\(\mathbf{x} \rightarrow R\mathbf{x}\)</span>, the gradient transforms as <span class="arithmatex">\(\nabla \Phi \rightarrow R(\nabla \Phi)\)</span>.
+The magnitude <span class="arithmatex">\(|\nabla \Phi|^2\)</span> remains invariant.
 Thus the term satisfies rotational symmetry.</p>
 <h2 id="727-need-for-higher-order-derivatives">7.2.7 Need for higher-order derivatives<a class="headerlink" href="#727-need-for-higher-order-derivatives" title="Permanent link">&para;</a></h2>
 <p>A functional containing only gradient and potential terms can produce waves and domain structures.
@@ -6975,86 +7000,100 @@ However, it cannot stabilize certain localized configurations.
 For example, localized solitons tend to collapse due to gradient tension.
 To prevent collapse we introduce a higher-order derivative term.</p>
 <h2 id="728-curvature-stabilization-term">7.2.8 Curvature stabilization term<a class="headerlink" href="#728-curvature-stabilization-term" title="Permanent link">&para;</a></h2>
-<p>The simplest higher-order derivative term is
-$$
-(2)2.<span class="arithmatex">\(\nabla^2\Phi\)</span>^2.(
-$$
-The corresponding energy contribution becomes
-Ecurv=∫u(∇2Φ)2d3x.E_{curv} = \int u<span class="arithmatex">\(\nabla^2\Phi\)</span>^2 d^3x.Ecurv​=∫u(∇2Φ)2d3x.
-Here u&gt;0u&gt;0u&gt;0 ensures stability.
+<p>The simplest higher-order derivative term is <span class="arithmatex">\((\nabla^2\Phi)^2\)</span>.
+The corresponding energy contribution becomes</p>
+<div class="arithmatex">\[
+E_{curv} = \int u\left(\nabla^2\Phi\right)^2 d^3x.
+\]</div>
+<p>Here <span class="arithmatex">\(u &gt; 0\)</span> ensures stability.
 This term penalizes extreme curvature of the field.</p>
 <h2 id="729-combined-scalar-functional">7.2.9 Combined scalar functional<a class="headerlink" href="#729-combined-scalar-functional" title="Permanent link">&para;</a></h2>
-<p>Combining the potential, gradient, and curvature terms yields
-$$
-E[]=d3x[a2+u(2)2+r2+s4].E[\Phi] = \int d^3x \left[ a|\nabla\Phi|^2 + u<span class="arithmatex">\(\nabla^2\Phi\)</span>^2 + r\Phi^2 + s\Phi^4 \right].E[
-$$
-This represents the minimal scalar functional for the CTS.</p>
+<p>Combining the potential, gradient, and curvature terms yields</p>
+<div class="arithmatex">\[
+E[\Phi] = \int d^3x \left[ a|\nabla\Phi|^2 + u\left(\nabla^2\Phi\right)^2 + r\Phi^2 + s\Phi^4 \right].
+\]</div>
+<p>This represents the minimal scalar functional for the CTS.</p>
 <h2 id="7210-functional-derivative">7.2.10 Functional derivative<a class="headerlink" href="#7210-functional-derivative" title="Permanent link">&para;</a></h2>
 <p>To determine the field dynamics we compute the functional derivative.
-The variation of the energy is
-δE=∫δEδΦδΦ d3x.\delta E = \int \frac{\delta E}{\delta \Phi} \delta \Phi\, d^3x.δE=∫δΦδE​δΦd3x.
-Computing each term gives
-δEδΦ=−2a∇2Φ+2u∇4Φ+2rΦ+4sΦ3.\frac{\delta E}{\delta \Phi} = -2a\nabla^2\Phi + 2u\nabla^4\Phi + 2r\Phi + 4s\Phi^3.δΦδE​=−2a∇2Φ+2u∇4Φ+2rΦ+4sΦ3.</p>
+The variation of the energy is</p>
+<div class="arithmatex">\[
+\delta E = \int \frac{\delta E}{\delta \Phi} \delta \Phi\, d^3x.
+\]</div>
+<p>Computing each term gives</p>
+<div class="arithmatex">\[
+\frac{\delta E}{\delta \Phi} = -2a\nabla^2\Phi + 2u\nabla^4\Phi + 2r\Phi + 4s\Phi^3.
+\]</div>
 <h2 id="7211-field-evolution-equation">7.2.11 Field evolution equation<a class="headerlink" href="#7211-field-evolution-equation" title="Permanent link">&para;</a></h2>
-<p>Using gradient descent dynamics
-∂tΦ=−δEδΦ,\partial_t \Phi = -\frac{\delta E}{\delta \Phi},∂t​Φ=−δΦδE​,
-we obtain
-This equation governs the evolution of the CTS scalar field.</p>
+<p>Using gradient descent dynamics <span class="arithmatex">\(\partial_t \Phi = -\delta E/\delta \Phi\)</span>, we obtain the CTS field equation:</p>
+<div class="arithmatex">\[
+\partial_t \Phi = -r\Phi + a\nabla^2\Phi - u\nabla^4\Phi - s\Phi^3.
+\]</div>
+<p>This equation governs the evolution of the CTS scalar field.</p>
 <h2 id="7212-linear-stability-analysis">7.2.12 Linear stability analysis<a class="headerlink" href="#7212-linear-stability-analysis" title="Permanent link">&para;</a></h2>
-<p>Consider small perturbations around a uniform state.
-Let
-Substituting into the evolution equation and linearizing gives
-∂tδΦ=2a∇2δΦ−2u∇4δΦ−2rδΦ.\partial_t \delta\Phi = 2a\nabla^2\delta\Phi - 2u\nabla^4\delta\Phi - 2r\delta\Phi.∂t​δΦ=2a∇2δΦ−2u∇4δΦ−2rδΦ.</p>
+<p>Consider small perturbations around a uniform state <span class="arithmatex">\(\Phi = \Phi_0 + \delta\Phi\)</span>.
+Substituting into the evolution equation and linearizing gives</p>
+<div class="arithmatex">\[
+\partial_t \delta\Phi = 2a\nabla^2\delta\Phi - 2u\nabla^4\delta\Phi - 2r\delta\Phi.
+\]</div>
 <h2 id="7213-fourier-mode-analysis">7.2.13 Fourier mode analysis<a class="headerlink" href="#7213-fourier-mode-analysis" title="Permanent link">&para;</a></h2>
-<p>Assume perturbations of the form
-$$
-=Aei(kxt).\delta\Phi = A e^{i<span class="arithmatex">\(\mathbf{k}\cdot\mathbf{x}-\omega t\)</span>}.
-$$
-Substituting into the linearized equation gives the dispersion relation
-$$
-(k)=2ak22uk42r.\omega(k) = 2a k^2 - 2u k^4 - 2r.
-$$</p>
+<p>Assume perturbations of the form</p>
+<div class="arithmatex">\[
+\delta\Phi = A\, e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}.
+\]</div>
+<p>Substituting into the linearized equation gives the dispersion relation</p>
+<div class="arithmatex">\[
+\omega(k) = 2a k^2 - 2u k^4 - 2r.
+\]</div>
 <h2 id="7214-characteristic-wavelength">7.2.14 Characteristic wavelength<a class="headerlink" href="#7214-characteristic-wavelength" title="Permanent link">&para;</a></h2>
-<p>Instabilities occur when
-$$
-(k)&gt;0.\omega(k) &gt; 0.
-$$
-The maximum growth occurs at
-kmax=a2u.k_{max} = \sqrt{\frac{a}{2u}}.kmax​=2ua​​.
-This sets the characteristic length scale
-λ=2πkmax.\lambda = \frac{2\pi}{k_{max}}.λ=kmax​2π​.
-Thus the scalar functional naturally produces structures of finite size.</p>
+<p>Instabilities occur when <span class="arithmatex">\(\omega(k) &gt; 0\)</span>.
+The maximum growth occurs at</p>
+<div class="arithmatex">\[
+k_{max} = \sqrt{\frac{a}{2u}}.
+\]</div>
+<p>This sets the characteristic length scale</p>
+<div class="arithmatex">\[
+\lambda = \frac{2\pi}{k_{max}}.
+\]</div>
+<p>Thus the scalar functional naturally produces structures of finite size.</p>
 <h2 id="7215-physical-interpretation">7.2.15 Physical interpretation<a class="headerlink" href="#7215-physical-interpretation" title="Permanent link">&para;</a></h2>
-<p>Each term in the scalar functional contributes a structural effect:
-term
-physical role
-$$
-r2r\Phi^2r
-$$
-scalar amplitude energy
-$$
-s4s\Phi^4s
-$$
-nonlinear stabilization
-(a
-$$
-\nabla\Phi
-$$
-$$
-u(2)2u<span class="arithmatex">\(\nabla^2\Phi\)</span>^2u(
-$$
-curvature stabilization</p>
+<p>Each term in the scalar functional contributes a structural effect:</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Physical role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(r\Phi^2\)</span></td>
+<td>scalar amplitude energy</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(s\Phi^4\)</span></td>
+<td>nonlinear stabilization</td>
+</tr>
+<tr>
+<td>$a</td>
+<td>\nabla\Phi</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(u(\nabla^2\Phi)^2\)</span></td>
+<td>curvature stabilization</td>
+</tr>
+</tbody>
+</table>
 <p>Together these terms generate rich pattern formation dynamics.</p>
 <h2 id="7216-role-in-cts">7.2.16 Role in CTS<a class="headerlink" href="#7216-role-in-cts" title="Permanent link">&para;</a></h2>
 <p>The minimal scalar functional provides the basic dynamical framework for the Collapse Tension Substrate.
-From this functional emerge
-waves</p>
-<p>localized structures</p>
-<p>domain boundaries</p>
-<p>precursor objects.</p>
+From this functional emerge</p>
+<ul>
+<li>waves</li>
+<li>localized structures</li>
+<li>domain boundaries</li>
+<li>precursor objects.</li>
+</ul>
 <p>More complex phenomena such as vortices and braids arise when additional fields and interactions are included.</p>
-<p>Vacuum Structure and Bifurcation
-This section analyzes how the scalar functional produces multiple stable vacuum states and phase bifurcations within the substrate.</p>
 
 
 

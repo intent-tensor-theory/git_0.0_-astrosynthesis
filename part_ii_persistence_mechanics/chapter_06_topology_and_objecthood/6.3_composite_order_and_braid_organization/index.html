@@ -6557,183 +6557,176 @@
 
 <h1 id="63-composite-order-and-braid-organization">6.3 Composite Order and Braid Organization<a class="headerlink" href="#63-composite-order-and-braid-organization" title="Permanent link">&para;</a></h1>
 <h2 id="631-from-single-objects-to-composite-structures">6.3.1 From single objects to composite structures<a class="headerlink" href="#631-from-single-objects-to-composite-structures" title="Permanent link">&para;</a></h2>
-<p>Sections 6.1 and 6.2 established two requirements for objecthood:
-topological closure
-directional persistence (chirality)
-However, many physical structures are not isolated objects. Instead they form composite systems where multiple closed structures interact and organize into larger stable configurations.
+<p>Sections 6.1 and 6.2 established two requirements for objecthood:</p>
+<ul>
+<li>topological closure</li>
+<li>directional persistence (chirality)</li>
+</ul>
+<p>However, many physical structures are not isolated objects. Instead they form composite systems where multiple closed structures interact and organize into larger stable configurations.
 The simplest mechanism for composite stability is braiding.
 Braiding occurs when multiple structural filaments or circulation paths intertwine in a topologically constrained manner.</p>
 <h2 id="632-mathematical-description-of-braids">6.3.2 Mathematical description of braids<a class="headerlink" href="#632-mathematical-description-of-braids" title="Permanent link">&para;</a></h2>
-<p>A braid consists of (n) strands that extend through a parameter coordinate (often time or axial direction).
-Let
-$$
-\mathbf{x}_i(t)
-$$
-represent the trajectory of strand (i).
-The braid condition requires that the strands never intersect:
-$$
+<p>A braid consists of <span class="arithmatex">\(n\)</span> strands that extend through a parameter coordinate (often time or axial direction).
+Let <span class="arithmatex">\(\mathbf{x}_i(t)\)</span> represent the trajectory of strand <span class="arithmatex">\(i\)</span>.
+The braid condition requires that the strands never intersect:</p>
+<div class="arithmatex">\[
 \mathbf{x}_i(t) \neq \mathbf{x}_j(t) \quad \text{for } i \neq j.
-$$
-The topology of the braid is described by the braid group
-$$
-B_n.
-$$
-The generators of this group are
-$$
-\sigma_i
-$$
-which represent the exchange of neighboring strands.</p>
+\]</div>
+<p>The topology of the braid is described by the braid group <span class="arithmatex">\(B_n\)</span>.
+The generators of this group are <span class="arithmatex">\(\sigma_i\)</span>, which represent the exchange of neighboring strands.</p>
 <h2 id="633-braid-group-relations">6.3.3 Braid group relations<a class="headerlink" href="#633-braid-group-relations" title="Permanent link">&para;</a></h2>
-<p>The braid group obeys the relations
-$$
-\sigma_i \sigma_j = \sigma_j \sigma_i
-\quad \text{for } |i-j|&gt;1
-$$
-and
-$$
-\sigma_i \sigma_{i+1} \sigma_i
-\sigma_{i+1} \sigma_i \sigma_{i+1}.
-$$
-These relations describe how strand crossings combine to form braid structures.</p>
+<p>The braid group obeys the relations</p>
+<div class="arithmatex">\[
+\sigma_i \sigma_j = \sigma_j \sigma_i \quad \text{for } |i-j|&gt;1
+\]</div>
+<p>and</p>
+<div class="arithmatex">\[
+\sigma_i \sigma_{i+1} \sigma_i = \sigma_{i+1} \sigma_i \sigma_{i+1}.
+\]</div>
+<p>These relations describe how strand crossings combine to form braid structures.</p>
 <h2 id="634-physical-interpretation-of-braids">6.3.4 Physical interpretation of braids<a class="headerlink" href="#634-physical-interpretation-of-braids" title="Permanent link">&para;</a></h2>
 <p>In physical systems, braid structures arise when circulating flows or field lines become intertwined.
-Examples include:
-system
-braided structure
-fluid vortices
-vortex braids
-magnetic fields
-flux ropes
-plasma physics
-twisted field lines
-topological quantum systems
-particle worldline braids</p>
+Examples include:</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Braided structure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fluid vortices</td>
+<td>vortex braids</td>
+</tr>
+<tr>
+<td>magnetic fields</td>
+<td>flux ropes</td>
+</tr>
+<tr>
+<td>plasma physics</td>
+<td>twisted field lines</td>
+</tr>
+<tr>
+<td>topological quantum systems</td>
+<td>particle worldline braids</td>
+</tr>
+</tbody>
+</table>
 <p>These structures possess enhanced stability due to their topological constraints.</p>
 <h2 id="635-braid-invariants">6.3.5 Braid invariants<a class="headerlink" href="#635-braid-invariants" title="Permanent link">&para;</a></h2>
 <p>Braided configurations are characterized by topological invariants.
-One important invariant is the linking number
-$$
+One important invariant is the linking number</p>
+<div class="arithmatex">\[
 Lk = \frac{1}{4\pi} \oint \oint
 \frac{(\mathbf{r}_1 - \mathbf{r}_2) \cdot (d\mathbf{r}_1 \times d\mathbf{r}_2)}
 {|\mathbf{r}_1 - \mathbf{r}_2|^3}.
-$$
-This quantity measures how many times two strands wind around each other.
+\]</div>
+<p>This quantity measures how many times two strands wind around each other.
 Because linking number is conserved under continuous deformations, braided structures possess topological protection.</p>
 <h2 id="636-energy-of-braided-structures">6.3.6 Energy of braided structures<a class="headerlink" href="#636-energy-of-braided-structures" title="Permanent link">&para;</a></h2>
 <p>Braiding introduces additional structural energy due to twisting and interaction between strands.
-Let
-$$
-\theta(s)
-$$
-represent the local twist angle along a strand.
-The twist energy can be written
-$$
-E_{twist} =
-\frac{k_t}{2}
-\int
-\left(\frac{d\theta}{ds}\right)^2 ds.
-$$
-Interactions between strands contribute additional energy
-$$
-E_{int} =
-\int V(|\mathbf{r}<em single="single">i - \mathbf{r}_j|),ds.
-$$
-Thus total composite energy becomes
-$$
-R =
-R</em>
-+
-E_{twist}
-+
-E_{int}.
-$$</p>
+Let <span class="arithmatex">\(\theta(s)\)</span> represent the local twist angle along a strand.
+The twist energy can be written</p>
+<div class="arithmatex">\[
+E_{twist} = \frac{k_t}{2} \int \left(\frac{d\theta}{ds}\right)^2 ds.
+\]</div>
+<p>Interactions between strands contribute additional energy</p>
+<div class="arithmatex">\[
+E_{int} = \int V(|\mathbf{r}_i - \mathbf{r}_j|)\,ds.
+\]</div>
+<p>Thus total composite energy becomes</p>
+<div class="arithmatex">\[
+R = R_{single} + E_{twist} + E_{int}.
+\]</div>
 <h2 id="637-composite-persistence">6.3.7 Composite persistence<a class="headerlink" href="#637-composite-persistence" title="Permanent link">&para;</a></h2>
 <p>Because braided structures contain multiple interacting components, they often possess larger retained structure.
 At the same time their topological invariants restrict structural decay.
-Thus the persistence number becomes
-$$
-S_* =
-\mathcal{E}{shell}
-\mathcal{E}
-D
-\chi_c
-\chi_b
-\frac{R}{\dot R,t{ref}}
-$$
-where
-$$
-\chi_b
-$$
-represents braid stability.</p>
+Thus the persistence number becomes</p>
+<div class="arithmatex">\[
+S_* = \mathcal{E}_{shell}\,\mathcal{E}\,D\,\chi_c\,\chi_b\,\frac{R}{\dot{R}\,t_{ref}}
+\]</div>
+<p>where <span class="arithmatex">\(\chi_b\)</span> represents braid stability.</p>
 <h2 id="638-braid-stability-condition">6.3.8 Braid stability condition<a class="headerlink" href="#638-braid-stability-condition" title="Permanent link">&para;</a></h2>
 <p>For a braid to persist, twisting and interaction forces must exceed dissipative forces.
-Let
-$$
-k_t
-$$
-be twist stiffness and
-$$
-\gamma
-$$
-be dissipation.
-The braid stability condition becomes
-$$
+Let <span class="arithmatex">\(k_t\)</span> be twist stiffness and <span class="arithmatex">\(\gamma\)</span> be dissipation.
+The braid stability condition becomes</p>
+<div class="arithmatex">\[
 k_t &gt; \gamma.
-$$
-If this condition holds, braided structures resist unwinding.</p>
+\]</div>
+<p>If this condition holds, braided structures resist unwinding.</p>
 <h2 id="639-composite-order">6.3.9 Composite order<a class="headerlink" href="#639-composite-order" title="Permanent link">&para;</a></h2>
 <p>Braids introduce composite order, meaning the structure depends on the arrangement of multiple components.
-Define
-$$
-N
-$$
-as the number of strands in the braid.
-The structural complexity grows approximately as
-$$
+Define <span class="arithmatex">\(N\)</span> as the number of strands in the braid.
+The structural complexity grows approximately as</p>
+<div class="arithmatex">\[
 C \sim N^2.
-$$
-This reflects the increasing number of interactions between strands.</p>
+\]</div>
+<p>This reflects the increasing number of interactions between strands.</p>
 <h2 id="6310-braid-entropy-reduction">6.3.10 Braid entropy reduction<a class="headerlink" href="#6310-braid-entropy-reduction" title="Permanent link">&para;</a></h2>
 <p>Braiding restricts the number of possible configurations of the system.
-Let
-$$
-\Omega
-$$
-represent the number of accessible configurations.
-Braiding reduces this number:
-$$
+Let <span class="arithmatex">\(\Omega\)</span> represent the number of accessible configurations.
+Braiding reduces this number:</p>
+<div class="arithmatex">\[
 \Omega_{braid} &lt; \Omega_{free}.
-$$
-This reduction in configuration space increases structural persistence.</p>
+\]</div>
+<p>This reduction in configuration space increases structural persistence.</p>
 <h2 id="6311-braids-as-composite-objects">6.3.11 Braids as composite objects<a class="headerlink" href="#6311-braids-as-composite-objects" title="Permanent link">&para;</a></h2>
 <p>Braided configurations can behave as single composite objects.
-Examples include:
-structure
-composite behavior
-vortex braid
-stable vortex bundle
-magnetic flux rope
-coherent plasma structure
-topological braid
-quasi-particle</p>
+Examples include:</p>
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Composite behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vortex braid</td>
+<td>stable vortex bundle</td>
+</tr>
+<tr>
+<td>magnetic flux rope</td>
+<td>coherent plasma structure</td>
+</tr>
+<tr>
+<td>topological braid</td>
+<td>quasi-particle</td>
+</tr>
+</tbody>
+</table>
 <p>Thus braids represent the first level of multi-object organization.</p>
 <h2 id="6312-role-in-emergence-hierarchy">6.3.12 Role in emergence hierarchy<a class="headerlink" href="#6312-role-in-emergence-hierarchy" title="Permanent link">&para;</a></h2>
-<p>The emergence sequence now becomes:
-stage
-structure
-closure
-single object
-chirality
-directional object
-braid
-composite object</p>
+<p>The emergence sequence now becomes:</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Structure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>closure</td>
+<td>single object</td>
+</tr>
+<tr>
+<td>chirality</td>
+<td>directional object</td>
+</tr>
+<tr>
+<td>braid</td>
+<td>composite object</td>
+</tr>
+</tbody>
+</table>
 <p>Each stage increases structural persistence.</p>
 <h2 id="6313-summary">6.3.13 Summary<a class="headerlink" href="#6313-summary" title="Permanent link">&para;</a></h2>
 <p>Braided configurations arise when multiple closed structures intertwine in a topologically constrained manner.
-These structures are described mathematically by the braid group (B_n) and possess invariants such as linking number.
+These structures are described mathematically by the braid group <span class="arithmatex">\(B_n\)</span> and possess invariants such as linking number.
 Because braids introduce additional retention channels and topological protection, they represent a key mechanism for composite structural persistence.</p>
-<p>Shell Coherence and Multi-Fan Survival
-This section derives the conditions under which shell structures maintain coherence through multi-axis fan locking and curvature stabilization.</p>
+<p><em>Transition to Section 6.4:</em> This section derives the conditions under which shell structures maintain coherence through multi-axis fan locking and curvature stabilization.</p>
 
 
 

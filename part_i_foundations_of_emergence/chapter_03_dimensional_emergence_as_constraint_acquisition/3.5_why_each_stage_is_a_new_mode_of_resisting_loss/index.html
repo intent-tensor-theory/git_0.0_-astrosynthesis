@@ -1531,6 +1531,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#3511-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.11 Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -6524,12 +6535,14 @@
 
 <h1 id="35-why-each-stage-is-a-new-mode-of-resisting-loss">3.5 Why Each Stage Is a New Mode of Resisting Loss<a class="headerlink" href="#35-why-each-stage-is-a-new-mode-of-resisting-loss" title="Permanent link">&para;</a></h1>
 <h2 id="351-the-role-of-loss-in-emergence">3.5.1 The role of loss in emergence<a class="headerlink" href="#351-the-role-of-loss-in-emergence" title="Permanent link">&para;</a></h2>
-<p>The previous sections described a sequence of structural stages in the Collapse Tension Substrate:
-scalar variation
-gradients
-circulation
-curvature closure
-These stages represent increasing structural complexity. However the key feature of this progression is not merely geometric complexity.
+<p>The previous sections described a sequence of structural stages in the Collapse Tension Substrate:</p>
+<ul>
+<li>scalar variation</li>
+<li>gradients</li>
+<li>circulation</li>
+<li>curvature closure</li>
+</ul>
+<p>These stages represent increasing structural complexity. However the key feature of this progression is not merely geometric complexity.
 Each stage introduces a new mechanism for resisting structural loss.
 To understand this formally we must compare the loss dynamics at each stage.</p>
 <h2 id="352-scalar-loss-dynamics">3.5.2 Scalar loss dynamics<a class="headerlink" href="#352-scalar-loss-dynamics" title="Permanent link">&para;</a></h2>
@@ -6543,21 +6556,19 @@ R_0 = \Phi^2.
 $$
 The rate of loss becomes
 $$
-\dot R_0
-2\Phi \frac{d\Phi}{dt}.
+\dot{R}<em ref="ref">0 = 2\Phi \frac{d\Phi}{dt}.
 $$
 Substituting the scalar equation gives
 $$
-\dot R_0
--2r\Phi^2 - 2s\Phi^4.
+\dot{R}_0 = -2r\Phi^2 - 2s\Phi^4.
 $$
 Thus scalar configurations lose structure through amplitude decay.
 The persistence condition is
 $$
 S_0 =
-\frac{\Phi^2}{| -2r\Phi^2 - 2s\Phi^4 | t_{ref}}.
+\frac{\Phi^2}{| -2r\Phi^2 - 2s\Phi^4 | \, t</em>.
 $$
-Scalar states can persist only if nonlinear stabilization reduces the effective decay rate.</p>
+Scalar states can persist only if nonlinear stabilization reduces the effective decay rate.}</p>
 <h2 id="353-gradient-loss-dynamics">3.5.3 Gradient loss dynamics<a class="headerlink" href="#353-gradient-loss-dynamics" title="Permanent link">&para;</a></h2>
 <p>When spatial gradients appear, structural energy becomes
 $$
@@ -6582,10 +6593,10 @@ $$
 The persistence number becomes
 $$
 S_1 =
-\frac{R_1}{\Gamma_1 R_1 t_{ref}}
-\frac{1}{Dk^2 t_{ref}}.
+\frac{R_1}{\Gamma_1 R_1 \, t_{ref}}
+= \frac{1}{Dk^2 \, t_{ref}}.
 $$
-Large-scale gradients (small (k)) persist longer.</p>
+Large-scale gradients (small <span class="arithmatex">\(k\)</span>) persist longer.</p>
 <h2 id="354-circulation-loss-dynamics">3.5.4 Circulation loss dynamics<a class="headerlink" href="#354-circulation-loss-dynamics" title="Permanent link">&para;</a></h2>
 <p>In the circulation regime structural energy includes kinetic energy of rotational flow:
 $$
@@ -6599,7 +6610,7 @@ $$
 Viscous dissipation governs the decay of circulation.
 The Navier–Stokes vorticity equation is
 $$
-\partial_t \boldsymbol{\omega}
+\partial_t \boldsymbol{\omega} =
 \nabla \times (\mathbf{v} \times \boldsymbol{\omega})
 +
 \nu \nabla^2 \boldsymbol{\omega}.
@@ -6628,11 +6639,13 @@ R_3 =
 +
 \alpha_3 \int H^2 dA.
 $$
-Loss mechanisms now include
-surface tension relaxation
-curvature diffusion
-internal dissipation.
-However closed boundaries limit the leakage of structural energy.
+Loss mechanisms now include:</p>
+<ul>
+<li>surface tension relaxation</li>
+<li>curvature diffusion</li>
+<li>internal dissipation</li>
+</ul>
+<p>However closed boundaries limit the leakage of structural energy.
 For example surface energy evolves according to
 $$
 \partial_t H = -\kappa \nabla^2 H.
@@ -6640,35 +6653,43 @@ $$
 Thus curvature smoothing occurs gradually.
 Closed geometry significantly reduces energy loss.</p>
 <h2 id="356-comparison-of-decay-rates">3.5.6 Comparison of decay rates<a class="headerlink" href="#356-comparison-of-decay-rates" title="Permanent link">&para;</a></h2>
-<p>The effective decay rates of each structural stage can be summarized as:
-stage
-decay rate
-scalar
-$$
-<span class="arithmatex">\(\Gamma_0 \sim r\)</span>
-$$
-gradient
-$$
-<span class="arithmatex">\(\Gamma_1 \sim Dk^2\)</span>
-$$
-circulation
-$$
-<span class="arithmatex">\(\Gamma_2 \sim \nu/L^2\)</span>
-$$
-closure
-$$
-<span class="arithmatex">\(\Gamma_3 \sim \kappa/L^3\)</span>
-$$</p>
+<p>The effective decay rates of each structural stage can be summarized as:</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Decay rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar</td>
+<td><span class="arithmatex">\(\Gamma_0 \sim r\)</span></td>
+</tr>
+<tr>
+<td>gradient</td>
+<td><span class="arithmatex">\(\Gamma_1 \sim Dk^2\)</span></td>
+</tr>
+<tr>
+<td>circulation</td>
+<td><span class="arithmatex">\(\Gamma_2 \sim \nu/L^2\)</span></td>
+</tr>
+<tr>
+<td>closure</td>
+<td><span class="arithmatex">\(\Gamma_3 \sim \kappa/L^3\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>Each successive stage decreases the effective rate of structural loss.
 Thus higher-order structures persist longer.</p>
 <h2 id="357-hierarchy-of-persistence">3.5.7 Hierarchy of persistence<a class="headerlink" href="#357-hierarchy-of-persistence" title="Permanent link">&para;</a></h2>
 <p>Substituting these decay rates into the selection number
 $$
-S = \frac{R}{\dot R t_{ref}}
+S = \frac{R}{\dot{R} \, t_{ref}}
 $$
 gives
 $$
-S_n = \frac{1}{\Gamma_n t_{ref}}.
+S_n = \frac{1}{\Gamma_n \, t_{ref}}.
 $$
 Thus
 $$
@@ -6677,17 +6698,33 @@ $$
 for comparable structural scales.
 This establishes a hierarchy of persistence.</p>
 <h2 id="358-structural-ladder">3.5.8 Structural ladder<a class="headerlink" href="#358-structural-ladder" title="Permanent link">&para;</a></h2>
-<p>The sequence of emergence can therefore be interpreted as a ladder of increasing resistance to collapse.
-stage
-resistance mechanism
-scalar
-nonlinear amplitude stabilization
-gradient
-spatial tension
-circulation
-rotational coherence
-closure
-boundary protection</p>
+<p>The sequence of emergence can therefore be interpreted as a ladder of increasing resistance to collapse.</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Resistance mechanism</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar</td>
+<td>nonlinear amplitude stabilization</td>
+</tr>
+<tr>
+<td>gradient</td>
+<td>spatial tension</td>
+</tr>
+<tr>
+<td>circulation</td>
+<td>rotational coherence</td>
+</tr>
+<tr>
+<td>closure</td>
+<td>boundary protection</td>
+</tr>
+</tbody>
+</table>
 <p>Each stage adds a new retention channel.</p>
 <h2 id="359-structural-robustness">3.5.9 Structural robustness<a class="headerlink" href="#359-structural-robustness" title="Permanent link">&para;</a></h2>
 <p>The robustness of a configuration depends on how many retention channels it possesses.
@@ -6701,13 +6738,11 @@ Thus structural complexity correlates with persistence.</p>
 <p>The dimensional sequence derived in this chapter is therefore not merely geometric.
 It reflects the progressive introduction of mechanisms that reduce structural loss.
 This explains why more complex structures can survive longer than simple fluctuations.</p>
-<p>Summary
-Each stage of dimensional emergence introduces a new retention mechanism that reduces the effective loss rate.
+<h2 id="3511-summary">3.5.11 Summary<a class="headerlink" href="#3511-summary" title="Permanent link">&para;</a></h2>
+<p>Each stage of dimensional emergence introduces a new retention mechanism that reduces the effective loss rate.
 The resulting hierarchy of persistence explains why scalar fluctuations vanish rapidly while closed structures can endure for long periods.
 This progression forms the structural ladder of the Collapse Tension Substrate.</p>
-<p>The Collapse Ladder as a Mechanical Sequence
-This final section of Chapter 3 formalizes the dimensional emergence sequence as a dynamical cascade within the CTS.</p>
-<p>This completes Chapter 3.</p>
+<p><em>Transition to Section 3.6:</em> The final section of Chapter 3 formalizes the dimensional emergence sequence as a dynamical cascade within the CTS.</p>
 
 
 

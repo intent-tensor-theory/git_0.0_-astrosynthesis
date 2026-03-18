@@ -6577,115 +6577,184 @@
 <p>However, formation energy alone does not determine whether a structure will persist.
 Many structures are cheap to form but decay quickly.
 Persistence instead depends on stabilizing mechanisms that resist structural loss.
-These stabilizing contributions collectively define the lock energy
-Elock.E_{lock}.Elock​.</p>
+These stabilizing contributions collectively define the lock energy <span class="arithmatex">\(E_{lock}\)</span>.</p>
 <h2 id="922-definition-of-lock-energy">9.2.2 Definition of lock energy<a class="headerlink" href="#922-definition-of-lock-energy" title="Permanent link">&para;</a></h2>
-<p>Let
-be the total energy of the excitation.
-We define lock energy as the portion of energy associated with stabilizing structural constraints.
-Thus
-Lock energy represents the energetic barrier that must be overcome to destroy the structure.</p>
+<p>Let <span class="arithmatex">\(E_{total}\)</span> be the total energy of the excitation.
+We define lock energy as the portion of energy associated with stabilizing structural constraints.</p>
+<div class="arithmatex">\[
+E_{lock} = E_{total} - E_{form}.
+\]</div>
+<p>Lock energy represents the energetic barrier that must be overcome to destroy the structure.</p>
 <h2 id="923-locking-mechanisms">9.2.3 Locking mechanisms<a class="headerlink" href="#923-locking-mechanisms" title="Permanent link">&para;</a></h2>
 <p>Different excitation classes possess different stabilization mechanisms.
-The major locking mechanisms in CTS include:
-mechanism
-description
-circulation
-phase winding
-geometric confinement
-chirality
-twist stabilization
-shell locking
-multi-axis balance
-braid topology
-strand linking</p>
+The major locking mechanisms in CTS include:</p>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Circulation</td>
+<td>Phase winding</td>
+</tr>
+<tr>
+<td>Geometric confinement</td>
+<td>Closed-loop topology</td>
+</tr>
+<tr>
+<td>Chirality</td>
+<td>Twist stabilization</td>
+</tr>
+<tr>
+<td>Shell locking</td>
+<td>Multi-axis balance</td>
+</tr>
+<tr>
+<td>Braid topology</td>
+<td>Strand linking</td>
+</tr>
+</tbody>
+</table>
 <p>Each mechanism contributes energy that resists structural decay.</p>
 <h2 id="924-circulation-locking">9.2.4 Circulation locking<a class="headerlink" href="#924-circulation-locking" title="Permanent link">&para;</a></h2>
 <p>For vortex excitations the locking mechanism arises from circulation conservation.
-The circulation invariant is
-Γ=∮Cv⋅dl=2πn.\Gamma = \oint_C \mathbf{v}\cdot d\mathbf{l} = 2\pi n.Γ=∮C​v⋅dl=2πn.
-To remove the vortex this circulation must vanish.
+The circulation invariant is</p>
+<div class="arithmatex">\[
+\Gamma = \oint_C \mathbf{v}\cdot d\mathbf{l} = 2\pi n.
+\]</div>
+<p>To remove the vortex this circulation must vanish.
 The energy required to eliminate the vortex core contributes to the lock energy.
-Approximate locking energy for a vortex line is
-Elockvortex∼πan2Φ02.E_{lock}^{vortex} \sim \pi a n^2 \Phi_0^2.Elockvortex​∼πan2Φ02​.</p>
+Approximate locking energy for a vortex line is</p>
+<div class="arithmatex">\[
+E_{lock}^{vortex} \sim \pi a n^2 \Phi_0^2.
+\]</div>
 <h2 id="925-closure-locking">9.2.5 Closure locking<a class="headerlink" href="#925-closure-locking" title="Permanent link">&para;</a></h2>
 <p>Closed structures such as vortex rings possess additional stabilization from geometric closure.
 Breaking the ring requires opening the loop, which increases energy.
-For a ring of radius RRR
-Elockring∼ρΓ2R.E_{lock}^{ring} \sim \rho \Gamma^2 R.Elockring​∼ρΓ2R.
-This energy represents the cost of disrupting the circulation loop.</p>
+For a ring of radius <span class="arithmatex">\(R\)</span></p>
+<div class="arithmatex">\[
+E_{lock}^{ring} \sim \rho \Gamma^2 R.
+\]</div>
+<p>This energy represents the cost of disrupting the circulation loop.</p>
 <h2 id="926-chirality-locking">9.2.6 Chirality locking<a class="headerlink" href="#926-chirality-locking" title="Permanent link">&para;</a></h2>
 <p>Chiral excitations possess stabilization due to twist.
-The twist energy is
-Etwist=kt2∫(dθds)2ds.E_{twist} = \frac{k_t}{2} \int \left<span class="arithmatex">\(\frac{d\theta}{ds}\right\)</span>^2 ds.Etwist​=2kt​​∫(dsdθ​)2ds.
-This energy penalizes untwisting of the structure.
-Thus
+The twist energy is</p>
+<div class="arithmatex">\[
+E_{twist} = \frac{k_t}{2} \int \left(\frac{d\theta}{ds}\right)^2 ds.
+\]</div>
+<p>This energy penalizes untwisting of the structure.
 The energy barrier between left- and right-handed states contributes to persistence.</p>
 <h2 id="927-shell-locking">9.2.7 Shell locking<a class="headerlink" href="#927-shell-locking" title="Permanent link">&para;</a></h2>
 <p>Shell structures are stabilized by balanced structural flows along their surface.
-Recall the multi-fan locking condition
-∑i=1NfFi=0.\sum_{i=1}^{N_f} \mathbf{F}<em lock="lock">i = 0.i=1∑Nf​​Fi​=0.
-Disrupting the shell requires breaking this balance.
-The shell locking energy can be approximated as
-Elockshell=κc∫ΣH2dA.E</em> = \kappa_c \int_\Sigma H^2 dA.Elockshell​=κc​∫Σ​H2dA.
-HHH is mean curvature}^{shell</p>
-<p>κc\kappa_cκc​ is curvature stiffness.</p>
+Recall the multi-fan locking condition</p>
+<div class="arithmatex">\[
+\sum_{i=1}^{N_f} \mathbf{F}_i = 0.
+\]</div>
+<p>Disrupting the shell requires breaking this balance.
+The shell locking energy can be approximated as</p>
+<div class="arithmatex">\[
+E_{lock}^{shell} = \kappa_c \int_\Sigma H^2 \, dA,
+\]</div>
+<p>where <span class="arithmatex">\(H\)</span> is the mean curvature and <span class="arithmatex">\(\kappa_c\)</span> is the curvature stiffness.</p>
 <h2 id="928-braid-locking">9.2.8 Braid locking<a class="headerlink" href="#928-braid-locking" title="Permanent link">&para;</a></h2>
 <p>Braids derive stability from topological linking.
-The linking number between strands
-LkLkLk
-cannot change without reconnection.
+The linking number <span class="arithmatex">\(Lk\)</span> cannot change without reconnection.
 The energy required for reconnection defines the braid locking energy.
-A simplified expression is
-Elockbraid=kbLk2.E_{lock}^{braid} = k_b Lk^2.Elockbraid​=kb​Lk2.</p>
+A simplified expression is</p>
+<div class="arithmatex">\[
+E_{lock}^{braid} = k_b Lk^2.
+\]</div>
 <h2 id="929-lock-energy-hierarchy">9.2.9 Lock energy hierarchy<a class="headerlink" href="#929-lock-energy-hierarchy" title="Permanent link">&para;</a></h2>
-<p>Different excitation classes therefore exhibit different lock energies.
-excitation
-lock mechanism
-phase-locked mode
-coherence
-low
-vortex
-circulation
-chiral primitive
-multi-fan locking
-very high
-extremely high</p>
+<p>Different excitation classes therefore exhibit different lock energies.</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th>Lock mechanism</th>
+<th>Relative magnitude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase-locked mode</td>
+<td>Coherence</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td>Circulation</td>
+<td>Moderate</td>
+</tr>
+<tr>
+<td>Chiral primitive</td>
+<td>Multi-fan locking</td>
+<td>Very high</td>
+</tr>
+<tr>
+<td>Shell</td>
+<td>Curvature balance</td>
+<td>Extremely high</td>
+</tr>
+</tbody>
+</table>
 <p>Thus lock energy generally increases with structural complexity.</p>
 <h2 id="9210-lock-ratio">9.2.10 Lock ratio<a class="headerlink" href="#9210-lock-ratio" title="Permanent link">&para;</a></h2>
-<p>To compare structures we introduce the lock ratio
-Λlock=ElockEform\boxed{ \Lambda_{lock} = \frac{E_{lock}}{E_{form}} }Λlock​=Eform​Elock​​​
-This dimensionless quantity measures how strongly a structure is stabilized relative to the cost of forming it.
+<p>To compare structures we introduce the lock ratio</p>
+<div class="arithmatex">\[
+\boxed{ \Lambda_{lock} = \frac{E_{lock}}{E_{form}} }
+\]</div>
+<p>This dimensionless quantity measures how strongly a structure is stabilized relative to the cost of forming it.
 Large values indicate strong persistence potential.</p>
 <h2 id="9211-lock-ratio-interpretation">9.2.11 Lock ratio interpretation<a class="headerlink" href="#9211-lock-ratio-interpretation" title="Permanent link">&para;</a></h2>
-<p>The lock ratio provides a useful classification of excitations.
-regime
-condition
-interpretation
-weak lock
-easy to destroy
-moderate stability
-strong lock
-highly persistent</p>
+<p>The lock ratio provides a useful classification of excitations.</p>
+<table>
+<thead>
+<tr>
+<th>Regime</th>
+<th>Condition</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Weak lock</td>
+<td><span class="arithmatex">\(\Lambda_{lock} \ll 1\)</span></td>
+<td>Easy to destroy</td>
+</tr>
+<tr>
+<td>Moderate lock</td>
+<td><span class="arithmatex">\(\Lambda_{lock} \sim 1\)</span></td>
+<td>Moderate stability</td>
+</tr>
+<tr>
+<td>Strong lock</td>
+<td><span class="arithmatex">\(\Lambda_{lock} \gg 1\)</span></td>
+<td>Highly persistent</td>
+</tr>
+</tbody>
+</table>
 <p>Shells and braids typically fall into the strong-lock regime.</p>
 <h2 id="9212-relation-to-persistence-number">9.2.12 Relation to persistence number<a class="headerlink" href="#9212-relation-to-persistence-number" title="Permanent link">&para;</a></h2>
 <p>The persistence threshold derived earlier depends strongly on locking energy.
-Recall
-Because RRR includes stabilizing energy contributions, structures with large lock energy tend to produce larger persistence numbers.</p>
+Recall the selection number</p>
+<div class="arithmatex">\[
+S = \frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>Because <span class="arithmatex">\(R\)</span> includes stabilizing energy contributions, structures with large lock energy tend to produce larger persistence numbers.</p>
 <h2 id="9213-role-in-the-excitation-ledger">9.2.13 Role in the excitation ledger<a class="headerlink" href="#9213-role-in-the-excitation-ledger" title="Permanent link">&para;</a></h2>
-<p>Each ledger entry therefore records
-ElockE_{lock}Elock​
-alongside formation energy.
-The combination
-determines both the abundance and persistence of the excitation.</p>
+<p>Each ledger entry therefore records <span class="arithmatex">\(E_{lock}\)</span> alongside formation energy.
+The combination <span class="arithmatex">\((E_{form}, E_{lock})\)</span> determines both the abundance and persistence of the excitation.</p>
 <h2 id="9214-summary">9.2.14 Summary<a class="headerlink" href="#9214-summary" title="Permanent link">&para;</a></h2>
 <p>Lock energy measures the stabilizing energy that protects an excitation from structural decay.
 It arises from mechanisms such as circulation, closure, chirality, shell locking, and braid topology.
-Comparing lock energy to formation energy yields the lock ratio
-Λlock=ElockEform.\Lambda_{lock}=\frac{E_{lock}}{E_{form}}.Λlock​=Eform​Elock​​.
-This quantity plays a central role in determining whether excitations survive in the CTS survival landscape.</p>
-<p>Total Energy
-This section derives the total excitation energy and its role in determining excitation abundance within the Collapse Tension Substrate.</p>
+Comparing lock energy to formation energy yields the lock ratio</p>
+<div class="arithmatex">\[
+\Lambda_{lock} = \frac{E_{lock}}{E_{form}}.
+\]</div>
+<p>This quantity plays a central role in determining whether excitations survive in the CTS survival landscape.</p>
 
 
 

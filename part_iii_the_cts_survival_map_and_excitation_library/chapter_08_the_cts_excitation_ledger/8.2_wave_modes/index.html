@@ -6564,94 +6564,157 @@
 <h1 id="82-wave-modes">8.2 Wave Modes<a class="headerlink" href="#82-wave-modes" title="Permanent link">&para;</a></h1>
 <h2 id="821-the-simplest-excitation-class">8.2.1 The simplest excitation class<a class="headerlink" href="#821-the-simplest-excitation-class" title="Permanent link">&para;</a></h2>
 <p>The simplest excitations supported by the Collapse Tension Substrate are wave modes.
-These excitations correspond to small-amplitude oscillations of the scalar field around the vacuum state
-Φ(x,t)=Φ0+δΦ(x,t).\Phi<span class="arithmatex">\(\mathbf{x},t\)</span>=\Phi_0+\delta\Phi<span class="arithmatex">\(\mathbf{x},t\)</span>.Φ(x,t)=Φ0​+δΦ(x,t).
-Wave modes represent linear excitations of the substrate and therefore appear as the lowest-energy entries in the excitation ledger.
+These excitations correspond to small-amplitude oscillations of the scalar field around the vacuum state</p>
+<div class="arithmatex">\[
+\Phi(\mathbf{x},t) = \Phi_0 + \delta\Phi(\mathbf{x},t).
+\]</div>
+<p>Wave modes represent linear excitations of the substrate and therefore appear as the lowest-energy entries in the excitation ledger.
 Because their formation energy is minimal, wave modes dominate the background structure of the substrate.</p>
 <h2 id="822-linearized-field-equation">8.2.2 Linearized field equation<a class="headerlink" href="#822-linearized-field-equation" title="Permanent link">&para;</a></h2>
-<p>Starting from the CTS scalar evolution equation derived earlier
-∂tΦ=2a∇2Φ−2u∇4Φ−2rΦ−4sΦ3,\partial_t \Phi = 2a\nabla^2\Phi - 2u\nabla^4\Phi - 2r\Phi - 4s\Phi^3,∂t​Φ=2a∇2Φ−2u∇4Φ−2rΦ−4sΦ3,
-we expand around the vacuum value
-Φ=Φ0+δΦ.\Phi = \Phi_0 + \delta\Phi.Φ=Φ0​+δΦ.
-Keeping only linear terms in the fluctuation yields
-∂tδΦ=2a∇2δΦ−2u∇4δΦ−2rδΦ.\partial_t \delta\Phi = 2a\nabla^2\delta\Phi - 2u\nabla^4\delta\Phi - 2r\delta\Phi.∂t​δΦ=2a∇2δΦ−2u∇4δΦ−2rδΦ.
-This equation governs small-amplitude wave excitations.</p>
+<p>Starting from the CTS scalar evolution equation derived earlier</p>
+<div class="arithmatex">\[
+\partial_t \Phi = -r\Phi + a\nabla^2\Phi - u\nabla^4\Phi - s\Phi^3,
+\]</div>
+<p>we expand around the vacuum value</p>
+<div class="arithmatex">\[
+\Phi = \Phi_0 + \delta\Phi.
+\]</div>
+<p>Keeping only linear terms in the fluctuation yields</p>
+<div class="arithmatex">\[
+\partial_t \delta\Phi = -r\,\delta\Phi + a\nabla^2\delta\Phi - u\nabla^4\delta\Phi.
+\]</div>
+<p>This equation governs small-amplitude wave excitations.</p>
 <h2 id="823-plane-wave-solutions">8.2.3 Plane-wave solutions<a class="headerlink" href="#823-plane-wave-solutions" title="Permanent link">&para;</a></h2>
-<p>Assume a plane-wave ansatz
-$$
-(x,t)=Aei(kxt).\delta\Phi<span class="arithmatex">\(\mathbf{x},t\)</span> = A e^{i<span class="arithmatex">\(\mathbf{k}\cdot\mathbf{x}-\omega t\)</span>}.
-$$
-Substituting into the linearized equation yields
-$$
-i=2ak22uk42r.-i\omega = -2ak^2 - 2uk^4 - 2r.
-$$
-Thus the dispersion relation becomes
-ω(k)=2ak2+2uk4+2r\boxed{ \omega(k) = 2ak^2 + 2uk^4 + 2r }ω(k)=2ak2+2uk4+2r​
-which determines how frequency depends on wavelength.</p>
+<p>Assume a plane-wave ansatz</p>
+<div class="arithmatex">\[
+\delta\Phi(\mathbf{x},t) = A e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}.
+\]</div>
+<p>Substituting into the linearized equation yields</p>
+<div class="arithmatex">\[
+-i\omega = -r - ak^2 - uk^4.
+\]</div>
+<p>Thus the dispersion relation becomes</p>
+<div class="arithmatex">\[
+\boxed{\omega(k) = r + ak^2 + uk^4}
+\]</div>
+<p>which determines how frequency depends on wavelength.</p>
 <h2 id="824-long-wavelength-limit">8.2.4 Long-wavelength limit<a class="headerlink" href="#824-long-wavelength-limit" title="Permanent link">&para;</a></h2>
-<p>For long wavelengths
-the quartic term becomes negligible.
-The dispersion simplifies to
-$$
-(k)2ak2+2r.\omega(k) \approx 2ak^2 + 2r.
-$$
-Thus long-wavelength excitations behave like diffusive or wave-like modes depending on the sign of rrr.</p>
+<p>For long wavelengths the quartic term becomes negligible.
+The dispersion simplifies to</p>
+<div class="arithmatex">\[
+\omega(k) \approx r + ak^2.
+\]</div>
+<p>Thus long-wavelength excitations behave like diffusive or wave-like modes depending on the sign of <span class="arithmatex">\(r\)</span>.</p>
 <h2 id="825-short-wavelength-limit">8.2.5 Short-wavelength limit<a class="headerlink" href="#825-short-wavelength-limit" title="Permanent link">&para;</a></h2>
-<p>For very large kkk
-k≫au,k \gg \sqrt{\frac{a}{u}},k≫ua​​,
-the curvature term dominates.
-Thus
-$$
-(k)2uk4.\omega(k) \approx 2uk^4.
-$$
-This quartic dispersion suppresses extremely small-scale fluctuations.
+<p>For very large <span class="arithmatex">\(k\)</span>,</p>
+<div class="arithmatex">\[
+k \gg \sqrt{\frac{a}{u}},
+\]</div>
+<p>the curvature term dominates. Thus</p>
+<div class="arithmatex">\[
+\omega(k) \approx uk^4.
+\]</div>
+<p>This quartic dispersion suppresses extremely small-scale fluctuations.
 Thus the curvature term acts as an ultraviolet stabilizer for the substrate.</p>
 <h2 id="826-group-velocity">8.2.6 Group velocity<a class="headerlink" href="#826-group-velocity" title="Permanent link">&para;</a></h2>
-<p>The propagation speed of wave packets is determined by the group velocity
-vg=dωdk.v_g = \frac{d\omega}{dk}.vg​=dkdω​.
-Using the dispersion relation gives
-vg=4ak+8uk3.v_g = 4ak + 8uk^3.vg​=4ak+8uk3.
-Thus wave propagation speed increases with wavenumber.
+<p>The propagation speed of wave packets is determined by the group velocity</p>
+<div class="arithmatex">\[
+v_g = \frac{d\omega}{dk}.
+\]</div>
+<p>Using the dispersion relation gives</p>
+<div class="arithmatex">\[
+v_g = 2ak + 4uk^3.
+\]</div>
+<p>Thus wave propagation speed increases with wavenumber.
 This property reflects the increasing influence of gradient and curvature energies at smaller spatial scales.</p>
 <h2 id="827-energy-of-a-wave-mode">8.2.7 Energy of a wave mode<a class="headerlink" href="#827-energy-of-a-wave-mode" title="Permanent link">&para;</a></h2>
 <p>The energy stored in a wave excitation can be computed from the quadratic energy density.
-For a mode of amplitude AAA,
-Ewave∼(ak2+uk4+r)A2VE_{wave} \sim (a k^2 + u k^4 + r) A^2 VEwave​∼(ak2+uk4+r)A2V
-where VVV is the spatial volume occupied by the wave.
+For a mode of amplitude <span class="arithmatex">\(A\)</span>,</p>
+<div class="arithmatex">\[
+E_{wave} \sim (ak^2 + uk^4 + r)\,A^2\,V
+\]</div>
+<p>where <span class="arithmatex">\(V\)</span> is the spatial volume occupied by the wave.
 Because the amplitude can be arbitrarily small, wave excitations can possess extremely low formation energy.</p>
 <h2 id="828-wave-persistence">8.2.8 Wave persistence<a class="headerlink" href="#828-wave-persistence" title="Permanent link">&para;</a></h2>
 <p>Despite their low energy, wave modes generally fail to become persistent objects.
-This occurs because they lack several persistence mechanisms:
-mechanism
-presence in waves
-shell locking</p>
-<p>Thus wave excitations typically have
-Tobj≈1.T_{obj} \approx 1.Tobj​≈1.
-Without topological protection, wave modes dissipate easily.</p>
+This occurs because they lack several persistence mechanisms:</p>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Presence in waves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>shell locking</td>
+<td>absent</td>
+</tr>
+<tr>
+<td>topological protection</td>
+<td>absent</td>
+</tr>
+<tr>
+<td>chirality</td>
+<td>absent</td>
+</tr>
+</tbody>
+</table>
+<p>Thus wave excitations typically have</p>
+<div class="arithmatex">\[
+T_{obj} \approx 1.
+\]</div>
+<p>Without topological protection, wave modes dissipate easily.</p>
 <h2 id="829-wave-contribution-to-the-substrate-background">8.2.9 Wave contribution to the substrate background<a class="headerlink" href="#829-wave-contribution-to-the-substrate-background" title="Permanent link">&para;</a></h2>
 <p>Because wave excitations require minimal energy to form, they occur frequently.
-From the abundance relation
-Ai∝e−Ei/Teff,A_i \propto e^{-E_i/T_{eff}},Ai​∝e−Ei​/Teff​,
-low-energy modes dominate the excitation population.
+From the abundance relation</p>
+<div class="arithmatex">\[
+A_i \propto e^{-E_i/T_{eff}},
+\]</div>
+<p>low-energy modes dominate the excitation population.
 Thus the CTS substrate is expected to contain a dense background of propagating wave modes.</p>
 <h2 id="8210-role-in-structural-emergence">8.2.10 Role in structural emergence<a class="headerlink" href="#8210-role-in-structural-emergence" title="Permanent link">&para;</a></h2>
 <p>Although wave modes rarely become persistent objects, they play an important role in emergence.
 They serve as the transport mechanism for energy and information across the substrate.
-Wave interactions can generate higher-order excitations such as:
-vortices</p>
-<p>solitons</p>
-<p>domain walls.</p>
+Wave interactions can generate higher-order excitations such as:</p>
+<ul>
+<li>vortices</li>
+<li>solitons</li>
+<li>domain walls.</li>
+</ul>
 <p>Thus wave modes provide the dynamical background from which more complex structures arise.</p>
 <h2 id="8211-wave-modes-in-the-excitation-ledger">8.2.11 Wave modes in the excitation ledger<a class="headerlink" href="#8211-wave-modes-in-the-excitation-ledger" title="Permanent link">&para;</a></h2>
-<p>The ledger entry for wave modes can be summarized as:
-parameter
-approximate value
-excitation type
-formation energy
-locking energy
-topology factor
-persistence
-low</p>
+<p>The ledger entry for wave modes can be summarized as:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Approximate value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>excitation type</td>
+<td>wave mode</td>
+</tr>
+<tr>
+<td>formation energy</td>
+<td>very low</td>
+</tr>
+<tr>
+<td>locking energy</td>
+<td>none</td>
+</tr>
+<tr>
+<td>topology factor</td>
+<td><span class="arithmatex">\(T_{obj} \approx 1\)</span></td>
+</tr>
+<tr>
+<td>persistence</td>
+<td>low</td>
+</tr>
+</tbody>
+</table>
 <p>Thus waves occupy the lowest-energy tier of the CTS excitation hierarchy.</p>
 <h2 id="8212-interpretation-within-the-cts-framework">8.2.12 Interpretation within the CTS framework<a class="headerlink" href="#8212-interpretation-within-the-cts-framework" title="Permanent link">&para;</a></h2>
 <p>Within the Collapse Tension Substrate interpretation, wave modes represent the simplest expression of structural tension in the substrate.
@@ -6660,13 +6723,11 @@ Thus waves form the background propagation layer of the CTS survival map.</p>
 <h2 id="8213-summary">8.2.13 Summary<a class="headerlink" href="#8213-summary" title="Permanent link">&para;</a></h2>
 <p>Wave modes are the simplest excitations of the Collapse Tension Substrate.
 They arise as linear oscillations of the scalar field around the vacuum state.
-Their dispersion relation is
-$$
-(k)=2ak2+2uk4+2r.\omega(k) = 2ak^2 + 2uk^4 + 2r.
-$$
-Because their formation energy is minimal but their topological protection is absent, wave modes dominate the background but rarely become persistent structures.</p>
-<p>Phase-Locked Modes
-This section derives how nonlinear interactions produce coherent wave structures capable of surviving longer than ordinary wave excitations.</p>
+Their dispersion relation is</p>
+<div class="arithmatex">\[
+\omega(k) = r + ak^2 + uk^4.
+\]</div>
+<p>Because their formation energy is minimal but their topological protection is absent, wave modes dominate the background but rarely become persistent structures.</p>
 
 
 

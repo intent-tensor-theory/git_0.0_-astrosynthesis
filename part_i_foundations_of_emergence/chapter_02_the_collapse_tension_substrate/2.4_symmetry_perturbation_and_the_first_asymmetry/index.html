@@ -6546,187 +6546,106 @@
 
 <h1 id="24-symmetry-perturbation-and-the-first-asymmetry">2.4 Symmetry, Perturbation, and the First Asymmetry<a class="headerlink" href="#24-symmetry-perturbation-and-the-first-asymmetry" title="Permanent link">&para;</a></h1>
 <h2 id="241-symmetric-scalar-state">2.4.1 Symmetric scalar state<a class="headerlink" href="#241-symmetric-scalar-state" title="Permanent link">&para;</a></h2>
-<p>The previous section showed that the CTS can exist in a homogeneous scalar regime where
-$$
-\Phi(\mathbf{x},t) = \Phi_0
-$$
-is spatially uniform.
-In this state
-$$
-\nabla \Phi = 0
-$$
-and no spatial directions are distinguished.
+<p>The previous section showed that the CTS can exist in a homogeneous scalar regime where <span class="arithmatex">\(\Phi(\mathbf{x}, t) = \Phi_0\)</span> is spatially uniform.
+In this state <span class="arithmatex">\(\nabla \Phi = 0\)</span> and no spatial directions are distinguished.
 The substrate therefore possesses continuous spatial symmetry.
-Mathematically this symmetry means that the system is invariant under translations:
-$$
+Mathematically this symmetry means that the system is invariant under translations:</p>
+<div class="arithmatex">\[
 \Phi(\mathbf{x}) = \Phi(\mathbf{x} + \mathbf{a})
-$$
-for any displacement vector
-$$
-\mathbf{a}.
-$$
+\]</div>
+<p>for any displacement vector <span class="arithmatex">\(\mathbf{a}\)</span>.
 As long as this symmetry holds, no directional structure exists.</p>
 <h2 id="242-perturbations-of-the-symmetric-state">2.4.2 Perturbations of the symmetric state<a class="headerlink" href="#242-perturbations-of-the-symmetric-state" title="Permanent link">&para;</a></h2>
-<p>Consider a small perturbation
-$$
-\delta\Phi(\mathbf{x},t)
-$$
-added to the homogeneous state.
-The total field becomes
-$$
+<p>Consider a small perturbation <span class="arithmatex">\(\delta\Phi(\mathbf{x}, t)\)</span> added to the homogeneous state.
+The total field becomes</p>
+<div class="arithmatex">\[
 \Phi(\mathbf{x},t) = \Phi_0 + \delta\Phi(\mathbf{x},t).
-$$
-To analyze the evolution of the perturbation we linearize the CTS equation around the equilibrium state.</p>
+\]</div>
+<p>To analyze the evolution of the perturbation we linearize the CTS equation around the equilibrium state.</p>
 <h2 id="243-linearized-cts-dynamics">2.4.3 Linearized CTS dynamics<a class="headerlink" href="#243-linearized-cts-dynamics" title="Permanent link">&para;</a></h2>
-<p>The CTS field equation is
-$$
-\partial_t \Phi
-r\Phi</p>
-<p>a\nabla^2\Phi
-u\nabla^4\Phi
-s\Phi^3.
-$$
-Substitute
-$$
-\Phi = \Phi_0 + \delta\Phi.
-$$
-Expanding to first order in ( <span class="arithmatex">\(\delta\Phi) gives\)</span>
-$$
-\partial_t (\delta\Phi)
-r,\delta\Phi</p>
-<p>a\nabla^2(\delta\Phi)
-u\nabla^4(\delta\Phi)
-3s\Phi_0^2,\delta\Phi.
-$$
-Thus the linearized equation becomes
-$$
-\partial_t (\delta\Phi)
--(r+3s\Phi_0^2)\delta\Phi
-+
-a\nabla^2(\delta\Phi)
-u\nabla^4(\delta\Phi).
-$$</p>
+<p>The CTS field equation is</p>
+<div class="arithmatex">\[
+\partial_t \Phi = -r\Phi + a\nabla^2\Phi - u\nabla^4\Phi - s\Phi^3.
+\]</div>
+<p>Substituting <span class="arithmatex">\(\Phi = \Phi_0 + \delta\Phi\)</span> and expanding to first order in <span class="arithmatex">\(\delta\Phi\)</span> gives</p>
+<div class="arithmatex">\[
+\partial_t (\delta\Phi) = -(r + 3s\Phi_0^2)\,\delta\Phi + a\nabla^2(\delta\Phi) - u\nabla^4(\delta\Phi).
+\]</div>
 <h2 id="244-fourier-mode-analysis">2.4.4 Fourier mode analysis<a class="headerlink" href="#244-fourier-mode-analysis" title="Permanent link">&para;</a></h2>
-<p>To analyze stability we decompose the perturbation into Fourier modes:
-$$
-\delta\Phi(\mathbf{x},t)
-\int
-\tilde{\Phi}(\mathbf{k},t)
-e^{i\mathbf{k}\cdot\mathbf{x}}
-d^3k.
-$$
-Substituting into the linearized equation yields
-$$
-\frac{d\tilde{\Phi}}{dt}
-\omega(k)\tilde{\Phi}.
-$$
-The growth rate is
-$$
-\omega(k)
--(r+3s\Phi_0^2)
-a k^2
-u k^4.
-$$</p>
+<p>To analyze stability we decompose the perturbation into Fourier modes:</p>
+<div class="arithmatex">\[
+\delta\Phi(\mathbf{x},t) = \int \tilde{\Phi}(\mathbf{k},t)\, e^{i\mathbf{k}\cdot\mathbf{x}} \, d^3k.
+\]</div>
+<p>Substituting into the linearized equation yields</p>
+<div class="arithmatex">\[
+\frac{d\tilde{\Phi}}{dt} = \omega(k)\, \tilde{\Phi}.
+\]</div>
+<p>The growth rate is</p>
+<div class="arithmatex">\[
+\omega(k) = -(r + 3s\Phi_0^2) - ak^2 - uk^4.
+\]</div>
 <h2 id="245-instability-condition">2.4.5 Instability condition<a class="headerlink" href="#245-instability-condition" title="Permanent link">&para;</a></h2>
-<p>For perturbations to grow we require
-$$
-\omega(k) &gt; 0.
-$$
-Thus instability occurs when
-$$
--(r+3s\Phi_0^2) - ak^2 - uk^4 &gt; 0.
-$$
-If this condition is satisfied for some value of
-$$
-k,
-$$
-then the symmetric state becomes unstable.
+<p>For perturbations to grow we require <span class="arithmatex">\(\omega(k) &gt; 0\)</span>.
+Thus instability occurs when</p>
+<div class="arithmatex">\[
+-(r + 3s\Phi_0^2) - ak^2 - uk^4 &gt; 0.
+\]</div>
+<p>If this condition is satisfied for some value of <span class="arithmatex">\(k\)</span>, then the symmetric state becomes unstable.
 A particular spatial wavelength becomes amplified.</p>
 <h2 id="246-first-asymmetry">2.4.6 First asymmetry<a class="headerlink" href="#246-first-asymmetry" title="Permanent link">&para;</a></h2>
 <p>When a particular Fourier mode grows faster than others, the substrate develops spatial variation.
-The gradient becomes
-$$
+The gradient becomes</p>
+<div class="arithmatex">\[
 \nabla\Phi \neq 0.
-$$
-This represents the first asymmetry in the substrate.
+\]</div>
+<p>This represents the first asymmetry in the substrate.
 Spatial locations become distinguishable because the scalar field now varies across space.
 Thus directional structure begins to emerge.</p>
 <h2 id="247-characteristic-wavelength">2.4.7 Characteristic wavelength<a class="headerlink" href="#247-characteristic-wavelength" title="Permanent link">&para;</a></h2>
-<p>The fastest-growing mode corresponds to the value of
-$$
-k
-$$
-that maximizes the growth rate.
-Set
-$$
-\frac{d\omega}{dk} = 0.
-$$
-This yields
-$$
+<p>The fastest-growing mode corresponds to the value of <span class="arithmatex">\(k\)</span> that maximizes the growth rate.
+Setting <span class="arithmatex">\(d\omega/dk = 0\)</span> yields</p>
+<div class="arithmatex">\[
 -2ak - 4uk^3 = 0.
-$$
-Thus
-$$
+\]</div>
+<p>Thus</p>
+<div class="arithmatex">\[
 k(2a + 4uk^2) = 0.
-$$
-The nontrivial solution gives
-$$
+\]</div>
+<p>The nontrivial solution gives</p>
+<div class="arithmatex">\[
 k^2 = -\frac{a}{2u}.
-$$
-Thus the characteristic wavelength becomes
-$$
-\lambda_c = \frac{2\pi}{k}.
-$$
-This wavelength determines the scale of the first spatial structures.</p>
+\]</div>
+<p>Thus the characteristic wavelength is</p>
+<div class="arithmatex">\[
+\lambda_c = \frac{2\pi}{k_c} = 2\pi\sqrt{-\frac{2u}{a}}.
+\]</div>
+<p>This wavelength determines the scale of the first spatial structures.</p>
 <h2 id="248-gradient-formation">2.4.8 Gradient formation<a class="headerlink" href="#248-gradient-formation" title="Permanent link">&para;</a></h2>
-<p>Once perturbations grow, the field develops gradients:
-$$
-\nabla\Phi(\mathbf{x}) \neq 0.
-$$
+<p>Once perturbations grow, the field develops gradients <span class="arithmatex">\(\nabla\Phi(\mathbf{x}) \neq 0\)</span>.
 Gradients represent directional bias in the substrate.
-Energy stored in gradients is
-$$
-E_{grad}
-\int |\nabla\Phi|^2 d^3x.
-$$
-This energy contributes to structural retention.</p>
+Energy stored in gradients is</p>
+<div class="arithmatex">\[
+E_{grad} = \int |\nabla\Phi|^2 \, d^3x.
+\]</div>
+<p>This energy contributes to structural retention.</p>
 <h2 id="249-structural-retention-from-gradients">2.4.9 Structural retention from gradients<a class="headerlink" href="#249-structural-retention-from-gradients" title="Permanent link">&para;</a></h2>
-<p>The retained structure now becomes
-$$
-R =
-\alpha_0 \int \Phi^2 d^3x
-+
-\alpha_1 \int |\nabla\Phi|^2 d^3x.
-$$
-Thus gradients add a new retention channel.
+<p>The retained structure now becomes</p>
+<div class="arithmatex">\[
+R = \alpha_0 \int \Phi^2 \, d^3x + \alpha_1 \int |\nabla\Phi|^2 \, d^3x.
+\]</div>
+<p>Thus gradients add a new retention channel.
 Configurations with stronger gradients can resist collapse more effectively.</p>
 <h2 id="2410-selection-number-with-gradients">2.4.10 Selection number with gradients<a class="headerlink" href="#2410-selection-number-with-gradients" title="Permanent link">&para;</a></h2>
-<p>Using the persistence condition
-$$
-S = \frac{R}{\dot R t_{ref}},
-$$
-we now have
-$$
-R =
-\alpha_0 ||\Phi||^2
-+
-\alpha_1 ||\nabla\Phi||^2.
-$$
-If gradient retention grows large enough relative to loss mechanisms, the configuration may satisfy
-$$
-S \ge 1.
-$$
+<p>Using the persistence condition <span class="arithmatex">\(S = R / (\dot{R} \, t_{ref})\)</span>, we now have</p>
+<div class="arithmatex">\[
+R = \alpha_0 \|\Phi\|^2 + \alpha_1 \|\nabla\Phi\|^2.
+\]</div>
+<p>If gradient retention grows large enough relative to loss mechanisms, the configuration may satisfy <span class="arithmatex">\(S \geq 1\)</span>.
 This marks the first stage at which spatial structures can persist.</p>
 <h2 id="2411-interpretation">2.4.11 Interpretation<a class="headerlink" href="#2411-interpretation" title="Permanent link">&para;</a></h2>
 <p>The emergence of gradients breaks the symmetry of the homogeneous scalar state.
-Before perturbation growth:
-$$
-\nabla\Phi = 0.
-$$
-After instability:
-$$
-\nabla\Phi \neq 0.
-$$
+Before perturbation growth: <span class="arithmatex">\(\nabla\Phi = 0\)</span>.
+After instability: <span class="arithmatex">\(\nabla\Phi \neq 0\)</span>.
 Thus the system develops directional structure.
 This is the earliest stage at which spatial organization begins to appear within the CTS.</p>
 <h2 id="2412-summary">2.4.12 Summary<a class="headerlink" href="#2412-summary" title="Permanent link">&para;</a></h2>
@@ -6734,9 +6653,9 @@ This is the earliest stage at which spatial organization begins to appear within
 This instability produces spatial gradients and breaks translational symmetry.
 Gradients introduce the first directional structure in the substrate and contribute to structural retention.
 These processes mark the transition from purely scalar dynamics to spatially structured dynamics.</p>
-<p>The CTS as a Persistence-Bearing Field
+<hr />
+<p><em>Transition to Section 2.5:</em>
 This section will derive how the CTS field stores and distributes retained structure across its configurations.</p>
-<p>No additional sections beyond the Table of Contents.</p>
 
 
 

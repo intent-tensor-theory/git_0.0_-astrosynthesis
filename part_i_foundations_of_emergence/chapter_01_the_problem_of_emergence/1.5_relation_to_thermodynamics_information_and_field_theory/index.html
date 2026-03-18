@@ -6558,148 +6558,143 @@
 <h1 id="15-relation-to-thermodynamics-information-and-field-theory">1.5 Relation to Thermodynamics, Information, and Field Theory<a class="headerlink" href="#15-relation-to-thermodynamics-information-and-field-theory" title="Permanent link">&para;</a></h1>
 <h2 id="151-purpose-of-the-comparison">1.5.1 Purpose of the comparison<a class="headerlink" href="#151-purpose-of-the-comparison" title="Permanent link">&para;</a></h2>
 <p>The persistence framework introduced in the previous sections does not attempt to replace existing physical theories. Instead, it reframes certain questions that already appear within them.
-Three established frameworks are particularly relevant:
-thermodynamics</p>
-<p>information theory</p>
-<p>field theory</p>
+Three established frameworks are particularly relevant:</p>
+<ul>
+<li>thermodynamics</li>
+<li>information theory</li>
+<li>field theory</li>
+</ul>
 <p>Each of these disciplines contains mathematical structures that describe the formation and degradation of order. The persistence framework can therefore be understood as a way of connecting these structures through a common survival criterion.</p>
 <h2 id="152-thermodynamic-perspective">1.5.2 Thermodynamic perspective<a class="headerlink" href="#152-thermodynamic-perspective" title="Permanent link">&para;</a></h2>
 <p>In thermodynamics, systems evolve toward states of higher entropy.
-Let
-denote thermodynamic entropy.
-The second law states
-dSthermdt≥0.\frac{dS_{therm}}{dt} \ge 0.dtdStherm​​≥0.
-Increasing entropy corresponds to the spreading of energy across accessible microstates.
-If a system contains organized structure with energy
-Estruct,E_{struct},Estruct​,
-dissipation tends to reduce that organized component over time.
-Thus
-This process corresponds to structural loss.</p>
+Let <span class="arithmatex">\(S_{therm}\)</span> denote thermodynamic entropy.
+The second law states</p>
+<div class="arithmatex">\[
+\frac{dS_{therm}}{dt} \geq 0.
+\]</div>
+<p>Increasing entropy corresponds to the spreading of energy across accessible microstates.
+If a system contains organized structure with energy <span class="arithmatex">\(E_{struct}\)</span>, dissipation tends to reduce that organized component over time.
+Thus <span class="arithmatex">\(dE_{struct}/dt &lt; 0\)</span> corresponds to structural loss.</p>
 <h2 id="153-free-energy-and-structural-retention">1.5.3 Free energy and structural retention<a class="headerlink" href="#153-free-energy-and-structural-retention" title="Permanent link">&para;</a></h2>
 <p>Thermodynamics introduces the concept of free energy.
-For a system at temperature TTT,
-F=E−TStherm.F = E - TS_{therm}.F=E−TStherm​.
-Structures that persist correspond to configurations with locally minimized free energy.
-Mathematically, equilibrium states satisfy
-$$
-F=0.\delta F = 0.
-$$
-In the persistence framework, retained structure RRR can often be interpreted as the portion of free energy stored in organized form.
-Thus
+For a system at temperature <span class="arithmatex">\(T\)</span>,</p>
+<div class="arithmatex">\[
+F = E - T S_{therm}.
+\]</div>
+<p>Structures that persist correspond to configurations with locally minimized free energy.
+Mathematically, equilibrium states satisfy</p>
+<div class="arithmatex">\[
+\delta F = 0.
+\]</div>
+<p>In the persistence framework, retained structure <span class="arithmatex">\(R\)</span> can often be interpreted as the portion of free energy stored in organized form.
 Loss processes correspond to the conversion of this energy into thermal entropy.</p>
 <h2 id="154-thermodynamic-stability-condition">1.5.4 Thermodynamic stability condition<a class="headerlink" href="#154-thermodynamic-stability-condition" title="Permanent link">&para;</a></h2>
 <p>For a structure to remain stable, fluctuations around the equilibrium state must increase the free energy.
-This condition can be written
-d2Fdx2&gt;0.\frac{d^2F}{dx^2} &gt; 0.dx2d2F​&gt;0.
-Thus stable structures correspond to local minima in free energy landscapes.
-Within the persistence framework, these minima correspond to regions where
-$$
-R\dot RR
-$$
-is small.
-Thus thermodynamic stability naturally contributes to large selection numbers
-S=RR˙tref.S = \frac{R}{\dot R t_{ref}}.S=R˙tref​R​.</p>
+This condition can be written</p>
+<div class="arithmatex">\[
+\frac{d^2 F}{dx^2} &gt; 0.
+\]</div>
+<p>Thus stable structures correspond to local minima in free energy landscapes.
+Within the persistence framework, these minima correspond to regions where <span class="arithmatex">\(\dot{R}\)</span> is small.
+Thus thermodynamic stability naturally contributes to large selection numbers</p>
+<div class="arithmatex">\[
+S = \frac{R}{\dot{R} \, t_{ref}}.
+\]</div>
 <h2 id="155-information-theory">1.5.5 Information theory<a class="headerlink" href="#155-information-theory" title="Permanent link">&para;</a></h2>
 <p>Information theory provides another perspective on structural organization.
-Let
-represent Shannon entropy,
-A highly ordered structure corresponds to a probability distribution concentrated on a small set of states.
-Thus
-is relatively small.
-When disorder increases, the distribution spreads across many states, and
-HHH
-increases.</p>
+Let <span class="arithmatex">\(H\)</span> represent Shannon entropy,</p>
+<div class="arithmatex">\[
+H = -\sum_i p_i \ln p_i.
+\]</div>
+<p>A highly ordered structure corresponds to a probability distribution concentrated on a small set of states.
+Thus <span class="arithmatex">\(H\)</span> is relatively small.
+When disorder increases, the distribution spreads across many states, and <span class="arithmatex">\(H\)</span> increases.</p>
 <h2 id="156-information-degradation">1.5.6 Information degradation<a class="headerlink" href="#156-information-degradation" title="Permanent link">&para;</a></h2>
 <p>Loss of structure corresponds to the loss of information.
-Let
-represent the information content of a structure.
+Let <span class="arithmatex">\(I\)</span> represent the information content of a structure.
 Noise processes reduce information over time.
-A common model is
-dIdt=−λI.\frac{dI}{dt} = -\lambda I.dtdI​=−λI.
-The solution is
-Thus information decays exponentially.
+A common model is</p>
+<div class="arithmatex">\[
+\frac{dI}{dt} = -\lambda I.
+\]</div>
+<p>The solution is</p>
+<div class="arithmatex">\[
+I(t) = I(0)\, e^{-\lambda t}.
+\]</div>
+<p>Thus information decays exponentially.
 This behavior mirrors the decay laws discussed earlier for structural retention.</p>
 <h2 id="157-persistence-and-information">1.5.7 Persistence and information<a class="headerlink" href="#157-persistence-and-information" title="Permanent link">&para;</a></h2>
-<p>If structural organization corresponds to stored information, then
-$$
-RI.R\propto I.R
-$$
-Loss of information therefore corresponds to
-$$
-R.\dot R.R
-$$
-Thus the selection number becomes
-S=IλItref.S = \frac{I}{\lambda I t_{ref}}.S=λItref​I​.
-Simplifying,
-Once again persistence depends on the ratio between information decay rate and observation horizon.</p>
+<p>If structural organization corresponds to stored information, then <span class="arithmatex">\(R \propto I\)</span>.
+Loss of information therefore corresponds to <span class="arithmatex">\(\dot{R} \propto \lambda I\)</span>.
+Thus the selection number becomes</p>
+<div class="arithmatex">\[
+S = \frac{I}{\lambda I \, t_{ref}} = \frac{1}{\lambda \, t_{ref}}.
+\]</div>
+<p>Once again persistence depends on the ratio between information decay rate and observation horizon.</p>
 <h2 id="158-field-theory">1.5.8 Field theory<a class="headerlink" href="#158-field-theory" title="Permanent link">&para;</a></h2>
 <p>Field theory describes physical systems in terms of fields distributed across space and time.
-Let
-$$
-(x,t)\Phi<span class="arithmatex">\(\mathbf{x},t\)</span>
-$$
-represent a field.
-The dynamics of the field are derived from a Lagrangian density
-L(Φ,∂μΦ).\mathcal{L}<span class="arithmatex">\(\Phi,\partial_\mu \Phi\)</span>.L(Φ,∂μ​Φ).
-The action is
-$$
-S=Ld4x.S =\int \mathcal{L} \, d^4x.S=
-$$
-The Euler-Lagrange equation yields
-∂L∂Φ−∂μ(∂L∂(∂μΦ))=0.\frac{\partial \mathcal{L}}{\partial \Phi} - \partial_\mu \left<span class="arithmatex">\(\frac{\partial \mathcal{L}}{\partial (\partial_\mu \Phi\)</span>} \right) = 0.∂Φ∂L​−∂μ​(∂(∂μ​Φ)∂L​)=0.
-Solutions to this equation correspond to allowed field configurations.</p>
+Let <span class="arithmatex">\(\Phi(\mathbf{x}, t)\)</span> represent a field.
+The dynamics of the field are derived from a Lagrangian density <span class="arithmatex">\(\mathcal{L}(\Phi, \partial_\mu \Phi)\)</span>.
+The action is</p>
+<div class="arithmatex">\[
+S = \int \mathcal{L} \, d^4x.
+\]</div>
+<p>The Euler–Lagrange equation yields</p>
+<div class="arithmatex">\[
+\frac{\partial \mathcal{L}}{\partial \Phi} - \partial_\mu \left( \frac{\partial \mathcal{L}}{\partial(\partial_\mu \Phi)} \right) = 0.
+\]</div>
+<p>Solutions to this equation correspond to allowed field configurations.</p>
 <h2 id="159-energy-functional">1.5.9 Energy functional<a class="headerlink" href="#159-energy-functional" title="Permanent link">&para;</a></h2>
-<p>Field configurations possess energy described by an energy functional
-$$
-E[].E[\Phi].E[
-$$
-For example,
-Stable structures correspond to configurations that minimize this functional.
-Thus</p>
+<p>Field configurations possess energy described by an energy functional <span class="arithmatex">\(E[\Phi]\)</span>.
+For example,</p>
+<div class="arithmatex">\[
+E[\Phi] = \int \left[ \frac{1}{2}(\partial_t \Phi)^2 + \frac{1}{2}|\nabla\Phi|^2 + V(\Phi) \right] d^3x.
+\]</div>
+<p>Stable structures correspond to configurations that minimize this functional.</p>
 <h2 id="1510-field-excitations">1.5.10 Field excitations<a class="headerlink" href="#1510-field-excitations" title="Permanent link">&para;</a></h2>
 <p>Localized solutions of field equations correspond to excitations.
-Examples include:
-wave packets</p>
-<p>solitons</p>
-<p>vortices</p>
-<p>topological defects.</p>
-<p>Each excitation contains a certain amount of structural energy
-Eexc.E_{exc}.Eexc​.
+Examples include:</p>
+<ul>
+<li>wave packets</li>
+<li>solitons</li>
+<li>vortices</li>
+<li>topological defects</li>
+</ul>
+<p>Each excitation contains a certain amount of structural energy <span class="arithmatex">\(E_{exc}\)</span>.
 Loss mechanisms cause these excitations to decay or disperse.
 Thus field theory naturally contains the same balance between retention and loss.</p>
 <h2 id="1511-persistence-interpretation-of-field-solutions">1.5.11 Persistence interpretation of field solutions<a class="headerlink" href="#1511-persistence-interpretation-of-field-solutions" title="Permanent link">&para;</a></h2>
-<p>Let
-represent the energy stored in a field excitation.
-Let
-represent the rate at which that energy dissipates.
-Then
-Thus the selection number becomes
-S=EexcPlosstref.S = \frac{E_{exc}}{P_{loss} t_{ref}}.S=Ploss​tref​Eexc​​.
-Persistent excitations correspond to solutions satisfying
-$$
-S1.S\ge 1.S
-$$
+<p>Let <span class="arithmatex">\(E_{exc}\)</span> represent the energy stored in a field excitation.
+Let <span class="arithmatex">\(P_{loss}\)</span> represent the rate at which that energy dissipates.
+Then <span class="arithmatex">\(\dot{R} \equiv P_{loss}\)</span> and <span class="arithmatex">\(R \equiv E_{exc}\)</span>.
+Thus the selection number becomes</p>
+<div class="arithmatex">\[
+S = \frac{E_{exc}}{P_{loss} \, t_{ref}}.
+\]</div>
+<p>Persistent excitations correspond to solutions satisfying <span class="arithmatex">\(S \geq 1\)</span>.
 Thus field theory solutions may be interpreted as points in a persistence landscape.</p>
 <h2 id="1512-unifying-interpretation">1.5.12 Unifying interpretation<a class="headerlink" href="#1512-unifying-interpretation" title="Permanent link">&para;</a></h2>
 <p>Across thermodynamics, information theory, and field theory, a common mathematical pattern appears.
-Each framework contains:
-a measure of organized structure</p>
-<p>a mechanism that degrades that structure</p>
-<p>a characteristic timescale of decay.</p>
-<p>These correspond precisely to the quantities
-R,R˙,tref.R, \quad \dot R, \quad t_{ref}.R,R˙,tref​.
-Thus the persistence condition
-S=RR˙trefS = \frac{R}{\dot R t_{ref}}S=R˙tref​R​
-is consistent with the mathematical structures already present in these disciplines.</p>
+Each framework contains:</p>
+<ul>
+<li>a measure of organized structure</li>
+<li>a mechanism that degrades that structure</li>
+<li>a characteristic timescale of decay</li>
+</ul>
+<p>These correspond precisely to the quantities <span class="arithmatex">\(R\)</span>, <span class="arithmatex">\(\dot{R}\)</span>, <span class="arithmatex">\(t_{ref}\)</span>.
+Thus the persistence condition</p>
+<div class="arithmatex">\[
+S = \frac{R}{\dot{R} \, t_{ref}} \geq 1
+\]</div>
+<p>is consistent with the mathematical structures already present in these disciplines.</p>
 <h2 id="1513-implication">1.5.13 Implication<a class="headerlink" href="#1513-implication" title="Permanent link">&para;</a></h2>
 <p>The persistence framework should therefore be viewed as a unifying perspective rather than a competing theory.
 It identifies a common survival condition underlying several existing physical descriptions.
 The role of the Collapse Tension Substrate introduced later in this book is to provide a concrete dynamical environment in which this persistence logic operates.</p>
-<p>Transition to Section 1.6
+<hr />
+<p><em>Transition to Section 1.6:</em>
 The final section of this chapter clarifies the scope of the framework.
-It specifies which claims the theory attempts to establish and which questions remain open</p>
-<p>Continuing exactly on the tracker.
-This completes Chapter 1 and we then move to Chapter 2.</p>
+It specifies which claims the theory attempts to establish and which questions remain open.</p>
 
 
 

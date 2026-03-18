@@ -6574,241 +6574,216 @@
 
 <h1 id="96-structural-persistence">9.6 Structural Persistence<a class="headerlink" href="#96-structural-persistence" title="Permanent link">&para;</a></h1>
 <h2 id="961-motivation">9.6.1 Motivation<a class="headerlink" href="#961-motivation" title="Permanent link">&para;</a></h2>
-<p>The previous sections introduced energetic quantities that describe the creation and stabilization of excitations:
-formation energy (E_{form})
-lock energy (E_{lock})
-total energy (E_{total})
-lock ratio ( <span class="arithmatex">\(\Lambda_{lock})\)</span>
-expression ratio ( <span class="arithmatex">\(\Lambda_{expr})\)</span>
-However, these quantities alone do not determine whether a structure will survive long enough to become observable.
+<p>The previous sections introduced energetic quantities that describe the creation and stabilization of excitations:</p>
+<ul>
+<li>Formation energy <span class="arithmatex">\(E_{form}\)</span></li>
+<li>Lock energy <span class="arithmatex">\(E_{lock}\)</span></li>
+<li>Total energy <span class="arithmatex">\(E_{total}\)</span></li>
+<li>Lock ratio <span class="arithmatex">\(\Lambda_{lock}\)</span></li>
+<li>Expression ratio <span class="arithmatex">\(\Lambda_{expr}\)</span></li>
+</ul>
+<p>However, these quantities alone do not determine whether a structure will survive long enough to become observable.
 For this we require a persistence metric that measures the ability of an excitation to resist structural loss.
 This metric is called structural persistence.</p>
 <h2 id="962-retention-and-loss">9.6.2 Retention and loss<a class="headerlink" href="#962-retention-and-loss" title="Permanent link">&para;</a></h2>
-<p>Let
-$$
-R
-$$
-represent the retained structural energy of an excitation.
-Let
-$$
-\dot{R}
-$$
-represent the rate of structural loss due to dissipation, drift, or perturbation.
+<p>Let <span class="arithmatex">\(R\)</span> represent the retained structural energy of an excitation.
+Let <span class="arithmatex">\(\dot{R}\)</span> represent the rate of structural loss due to dissipation, drift, or perturbation.
 If loss dominates retention, the structure disappears.
 If retention dominates loss, the structure persists.</p>
 <h2 id="963-persistence-horizon">9.6.3 Persistence horizon<a class="headerlink" href="#963-persistence-horizon" title="Permanent link">&para;</a></h2>
-<p>Persistence must be evaluated relative to a characteristic timescale
-$$
-t_{ref}.
-$$
+<p>Persistence must be evaluated relative to a characteristic timescale <span class="arithmatex">\(t_{ref}\)</span>.
 This timescale defines the persistence horizon over which the structure must survive.
-Examples include:
-system
-typical horizon
-wave packet
-oscillation period
-vortex
-circulation lifetime
-shell
-structural relaxation time</p>
+Examples include:</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Typical horizon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave packet</td>
+<td>Oscillation period</td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td>Circulation lifetime</td>
+</tr>
+<tr>
+<td>Shell</td>
+<td>Structural relaxation time</td>
+</tr>
+</tbody>
+</table>
 <h2 id="964-basic-persistence-number">9.6.4 Basic persistence number<a class="headerlink" href="#964-basic-persistence-number" title="Permanent link">&para;</a></h2>
-<p>The simplest persistence measure is the dimensionless ratio
-$$
-S = \frac{R}{\dot{R} t_{ref}}.
-$$
-Interpretation:
-condition
-interpretation
-(S&lt;1)
-decay dominates
-$$
-(S\approx1)
-$$
-marginal stability
-(S&gt;1)
-persistence dominates</p>
-<p>Thus (S=1) defines the critical persistence threshold.</p>
+<p>The simplest persistence measure is the dimensionless ratio</p>
+<div class="arithmatex">\[
+S = \frac{R}{\dot{R}\, t_{ref}}.
+\]</div>
+<p>Interpretation:</p>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(S &lt; 1\)</span></td>
+<td>Decay dominates</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(S \approx 1\)</span></td>
+<td>Marginal stability</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(S &gt; 1\)</span></td>
+<td>Persistence dominates</td>
+</tr>
+</tbody>
+</table>
+<p>Thus <span class="arithmatex">\(S = 1\)</span> defines the critical persistence threshold.</p>
 <h2 id="965-structural-modifiers">9.6.5 Structural modifiers<a class="headerlink" href="#965-structural-modifiers" title="Permanent link">&para;</a></h2>
 <p>In real CTS excitations several structural factors enhance persistence.
-These include
-factor
-meaning
-(D)
-drift stability
-(T_{obj})
-topology factor
-$$
-<span class="arithmatex">\(\mathcal{E}\)</span>
-$$
-coherence factor
-$$
-<span class="arithmatex">\(\mathcal{E}_{shell}\)</span>
-$$
-shell locking factor</p>
+These include:</p>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(D\)</span></td>
+<td>Drift stability</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(T_{obj}\)</span></td>
+<td>Topology factor</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\mathcal{E}\)</span></td>
+<td>Coherence factor</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\mathcal{E}_{shell}\)</span></td>
+<td>Shell locking factor</td>
+</tr>
+</tbody>
+</table>
 <p>Each of these parameters modifies the effective retention of the structure.</p>
 <h2 id="966-corrected-persistence-number">9.6.6 Corrected persistence number<a class="headerlink" href="#966-corrected-persistence-number" title="Permanent link">&para;</a></h2>
-<p>Including these modifiers yields the corrected persistence number
-$$
-\boxed{
-S_* =
-\mathcal{E}{shell}
-\mathcal{E}
-D
-T{obj}
-\frac{R}{\dot{R} t_{ref}}
-}
-$$
-This expression represents the full CTS persistence condition.</p>
+<p>Including these modifiers yields the corrected persistence number</p>
+<div class="arithmatex">\[
+\boxed{S_* = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\, t_{ref}}}
+\]</div>
+<p>This expression represents the full CTS persistence condition.</p>
 <h2 id="967-physical-meaning-of-persistence-factors">9.6.7 Physical meaning of persistence factors<a class="headerlink" href="#967-physical-meaning-of-persistence-factors" title="Permanent link">&para;</a></h2>
-<p>Each multiplier corresponds to a structural stabilization mechanism.
-Coherence factor
-$$
-\mathcal{E}
-$$
-Measures phase coherence between structural channels.
-Low coherence leads to destructive interference and structural decay.</p>
-<p>Shell factor
-$$
-\mathcal{E}_{shell}
-$$
-Measures multi-fan locking efficiency in shell structures.
-Shell closure dramatically increases persistence.</p>
-<p>Drift stability
-$$
-D
-$$
-Represents resistance to translational drift or diffusion.
-Structures with large (D) remain spatially localized.</p>
-<p>Topology factor
-$$
-T_{obj}
-$$
-Measures topological protection.
-Examples:
-excitation
-(T_{obj})
-wave
-1
-vortex</p>
-<blockquote>
-<p>1
-ring
-1
-braid
-≫1</p>
-</blockquote>
+<p>Each multiplier corresponds to a structural stabilization mechanism.</p>
+<p><strong>Coherence factor <span class="arithmatex">\(\mathcal{E}\)</span>:</strong> Measures phase coherence between structural channels. Low coherence leads to destructive interference and structural decay.</p>
+<p><strong>Shell factor <span class="arithmatex">\(\mathcal{E}_{shell}\)</span>:</strong> Measures multi-fan locking efficiency in shell structures. Shell closure dramatically increases persistence.</p>
+<p><strong>Drift stability <span class="arithmatex">\(D\)</span>:</strong> Represents resistance to translational drift or diffusion. Structures with large <span class="arithmatex">\(D\)</span> remain spatially localized.</p>
+<p><strong>Topology factor <span class="arithmatex">\(T_{obj}\)</span>:</strong> Measures topological protection.</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th><span class="arithmatex">\(T_{obj}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td><span class="arithmatex">\(&gt; 1\)</span></td>
+</tr>
+<tr>
+<td>Ring</td>
+<td><span class="arithmatex">\(&gt; 1\)</span></td>
+</tr>
+<tr>
+<td>Braid</td>
+<td><span class="arithmatex">\(\gg 1\)</span></td>
+</tr>
+</tbody>
+</table>
 <h2 id="968-persistence-threshold">9.6.8 Persistence threshold<a class="headerlink" href="#968-persistence-threshold" title="Permanent link">&para;</a></h2>
-<p>The persistence threshold occurs when
-$$
-S_<em> = 1.
-$$
-Thus
-$$
-\mathcal{E}{shell}
-\mathcal{E}
-D
-T{obj}
-\frac{R}{\dot{R} t_{ref}}
-= 1.
-$$
-Structures with
-$$
-S_</em> &gt; 1
-$$
-persist.
-Structures with
-$$
-S_* &lt; 1
-$$
-decay.</p>
+<p>The persistence threshold occurs when</p>
+<div class="arithmatex">\[
+S_* = 1.
+\]</div>
+<p>Thus</p>
+<div class="arithmatex">\[
+\mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\, t_{ref}} = 1.
+\]</div>
+<p>Structures with <span class="arithmatex">\(S_* &gt; 1\)</span> persist.
+Structures with <span class="arithmatex">\(S_* &lt; 1\)</span> decay.</p>
 <h2 id="969-relation-to-survival-map">9.6.9 Relation to survival map<a class="headerlink" href="#969-relation-to-survival-map" title="Permanent link">&para;</a></h2>
 <p>The persistence number forms the vertical coordinate of the CTS survival map.
-Define
-$$
-y =
-\mathcal{E}{shell}
-\mathcal{E}
-D
-T{obj}
-\frac{R}{\dot{R} t_{ref}}.
-$$
-Then
-$$
-y = S_*.
-$$
+Define</p>
+<div class="arithmatex">\[
+y = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\, t_{ref}}.
+\]</div>
+<p>Then <span class="arithmatex">\(y = S_*\)</span>.
 Thus the vertical axis of the survival chart represents structural persistence strength.</p>
 <h2 id="9610-combined-survival-condition">9.6.10 Combined survival condition<a class="headerlink" href="#9610-combined-survival-condition" title="Permanent link">&para;</a></h2>
-<p>Combining persistence with the lock ratio gives the survival number
-$$
-S_* = x y
-$$
-where
-$$
-x = \Lambda_{lock}
-$$
-and
-$$
-y =
-\mathcal{E}{shell}
-\mathcal{E}
-D
-T{obj}
-\frac{R}{\dot{R} t_{ref}}.
-$$
-The survival boundary is therefore
-$$
+<p>Combining persistence with the lock ratio gives the survival number</p>
+<div class="arithmatex">\[
+S_{surv} = x\, y
+\]</div>
+<p>where <span class="arithmatex">\(x = \Lambda_{lock}\)</span> and</p>
+<div class="arithmatex">\[
+y = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\, t_{ref}}.
+\]</div>
+<p>The survival boundary is therefore</p>
+<div class="arithmatex">\[
 xy = 1.
-$$</p>
+\]</div>
 <h2 id="9611-structural-regions">9.6.11 Structural regions<a class="headerlink" href="#9611-structural-regions" title="Permanent link">&para;</a></h2>
-<p>This boundary divides the excitation landscape into two regimes.
-region
-condition
-ephemeral
-(xy &lt; 1)
-persistent
-(xy &gt; 1)</p>
+<p>This boundary divides the excitation landscape into two regimes.</p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ephemeral</td>
+<td><span class="arithmatex">\(xy &lt; 1\)</span></td>
+</tr>
+<tr>
+<td>Persistent</td>
+<td><span class="arithmatex">\(xy &gt; 1\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>Thus the survival map identifies which structures cross the persistence threshold.</p>
 <h2 id="9612-ledger-entry">9.6.12 Ledger entry<a class="headerlink" href="#9612-ledger-entry" title="Permanent link">&para;</a></h2>
-<p>Each excitation entry must therefore record the persistence number
-$$
-S_<em>.
-$$
-The ledger entry becomes
-$$
-\mathcal{L}i =
-(
-\text{type},
-E{form},
-E_{lock},
-E_{total},
-\Lambda_{lock},
-\Lambda_{expr},
-S_</em>
-).
-$$
-This quantity determines whether the excitation survives.</p>
+<p>Each excitation entry must therefore record the persistence number <span class="arithmatex">\(S_*\)</span>.
+The ledger entry becomes</p>
+<div class="arithmatex">\[
+\mathcal{L}_i = (\text{type},\, E_{form},\, E_{lock},\, E_{total},\, \Lambda_{lock},\, \Lambda_{expr},\, S_*).
+\]</div>
+<p>This quantity determines whether the excitation survives.</p>
 <h2 id="9613-interpretation-within-cts-theory">9.6.13 Interpretation within CTS theory<a class="headerlink" href="#9613-interpretation-within-cts-theory" title="Permanent link">&para;</a></h2>
 <p>The persistence number represents the central selection mechanism of the CTS framework.
 While the energy functional determines which structures can exist, the persistence number determines which structures survive.
 Thus emergence becomes a selection process among possible excitations.</p>
 <h2 id="9614-summary">9.6.14 Summary<a class="headerlink" href="#9614-summary" title="Permanent link">&para;</a></h2>
-<p>Structural persistence is measured by the corrected persistence number
-$$
-S_<em> =
-\mathcal{E}{shell}
-\mathcal{E}
-D
-T{obj}
-\frac{R}{\dot{R} t_{ref}}.
-$$
-The threshold
-$$
-S_</em> = 1
-$$
-separates ephemeral excitations from persistent structures.
+<p>Structural persistence is measured by the corrected persistence number</p>
+<div class="arithmatex">\[
+S_* = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\, t_{ref}}.
+\]</div>
+<p>The threshold <span class="arithmatex">\(S_* = 1\)</span> separates ephemeral excitations from persistent structures.
 This quantity forms the vertical coordinate of the CTS survival map and determines which excitations survive within the substrate.</p>
-<p>Structural Persistence Scaling
-This section derives how persistence scales with excitation size, topology, and environmental fluctuation energy.</p>
 
 
 

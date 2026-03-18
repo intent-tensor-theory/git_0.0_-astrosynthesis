@@ -6546,164 +6546,195 @@
 
 <h1 id="51-why-raw-persistence-is-not-enough">5.1 Why Raw Persistence Is Not Enough<a class="headerlink" href="#51-why-raw-persistence-is-not-enough" title="Permanent link">&para;</a></h1>
 <h2 id="511-persistence-alone-does-not-guarantee-survival">5.1.1 Persistence alone does not guarantee survival<a class="headerlink" href="#511-persistence-alone-does-not-guarantee-survival" title="Permanent link">&para;</a></h2>
-<p>In Chapter 4 we derived the persistence condition
-$$
-S = \frac{R}{\dot R,t_{ref}}.
-$$
-This equation determines whether retained structure exceeds structural loss during the persistence horizon.
+<p>In Chapter 4 we derived the persistence condition</p>
+<div class="arithmatex">\[
+S = \frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>This equation determines whether retained structure exceeds structural loss during the persistence horizon.
 However, persistence alone does not determine whether a structure can exist within the substrate.
-Many configurations may satisfy
-$$
+Many configurations may satisfy</p>
+<div class="arithmatex">\[
 S &gt; 1
-$$
-yet never appear in the physical system.
+\]</div>
+<p>yet never appear in the physical system.
 This observation indicates that persistence must be supplemented by additional constraints.</p>
 <h2 id="512-the-admissibility-problem">5.1.2 The admissibility problem<a class="headerlink" href="#512-the-admissibility-problem" title="Permanent link">&para;</a></h2>
-<p>Consider a configuration
-$$
-\sigma
-$$
-with retained structure (R_ <span class="arithmatex">\(\sigma).\)</span>
-If
-$$
+<p>Consider a configuration <span class="arithmatex">\(\sigma\)</span> with retained structure <span class="arithmatex">\(R_\sigma\)</span>.
+If</p>
+<div class="arithmatex">\[
 S_\sigma &gt; 1
-$$
-then the configuration should persist according to the persistence equation.
+\]</div>
+<p>then the configuration should persist according to the persistence equation.
 However, the configuration must also satisfy the structural rules of the substrate.
-These rules may include
-geometric compatibility
-topological admissibility
-conservation constraints
-boundary conditions.
-Configurations that violate these constraints cannot exist even if persistence is large.</p>
+These rules may include:</p>
+<ul>
+<li>geometric compatibility</li>
+<li>topological admissibility</li>
+<li>conservation constraints</li>
+<li>boundary conditions</li>
+</ul>
+<p>Configurations that violate these constraints cannot exist even if persistence is large.</p>
 <h2 id="513-configuration-space">5.1.3 Configuration space<a class="headerlink" href="#513-configuration-space" title="Permanent link">&para;</a></h2>
-<p>Let
-$$
-\Omega
-$$
-represent the set of all possible configurations of the system.
-Within this space, define the subset
-$$
-\Omega_{phys}
-$$
-that satisfies the physical constraints of the substrate.
+<p>Let <span class="arithmatex">\(\Omega\)</span> represent the set of all possible configurations of the system.
+Within this space, define the subset <span class="arithmatex">\(\Omega_{phys}\)</span> that satisfies the physical constraints of the substrate.
 Only configurations within this subset can appear in the system.
-Thus
-$$
+Thus</p>
+<div class="arithmatex">\[
 \Omega_{phys} \subseteq \Omega.
-$$</p>
+\]</div>
 <h2 id="514-persistence-filtering">5.1.4 Persistence filtering<a class="headerlink" href="#514-persistence-filtering" title="Permanent link">&para;</a></h2>
 <p>Persistence acts as a filter on configuration space.
-Define the persistent set
-$$
-\Omega_{persist}
-{\sigma_i \in \Omega \mid S_i \ge 1}.
-$$
-However, physical configurations must also satisfy admissibility constraints.
-Thus the observable set becomes
-$$
-\Omega_{obs}
-\Omega_{phys} \cap \Omega_{persist}.
-$$
-Only configurations in this intersection appear as real structures.</p>
+Define the persistent set</p>
+<div class="arithmatex">\[
+\Omega_{persist} = \{\sigma_i \in \Omega \mid S_i \geq 1\}.
+\]</div>
+<p>However, physical configurations must also satisfy admissibility constraints.
+Thus the observable set becomes</p>
+<div class="arithmatex">\[
+\Omega_{obs} = \Omega_{phys} \cap \Omega_{persist}.
+\]</div>
+<p>Only configurations in this intersection appear as real structures.</p>
 <h2 id="515-example-forbidden-configurations">5.1.5 Example: forbidden configurations<a class="headerlink" href="#515-example-forbidden-configurations" title="Permanent link">&para;</a></h2>
 <p>Many systems exhibit configurations that are energetically stable but physically forbidden.
-Examples include:
-system
-forbidden configuration
-fluid flow
-discontinuous velocity fields
-electromagnetism
-violation of Gauss’s law
-quantum mechanics
-forbidden spin states
-topological systems
-broken invariants</p>
+Examples include:</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Forbidden configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fluid flow</td>
+<td>discontinuous velocity fields</td>
+</tr>
+<tr>
+<td>electromagnetism</td>
+<td>violation of Gauss's law</td>
+</tr>
+<tr>
+<td>quantum mechanics</td>
+<td>forbidden spin states</td>
+</tr>
+<tr>
+<td>topological systems</td>
+<td>broken invariants</td>
+</tr>
+</tbody>
+</table>
 <p>These configurations cannot occur even if their energy suggests stability.</p>
 <h2 id="516-structural-compatibility">5.1.6 Structural compatibility<a class="headerlink" href="#516-structural-compatibility" title="Permanent link">&para;</a></h2>
 <p>Admissibility conditions arise from the underlying structure of the substrate.
 For field systems these constraints often take the form of differential equations.
-For example,
-$$
+For example,</p>
+<div class="arithmatex">\[
 \nabla \cdot \mathbf{B} = 0
-$$
-in electromagnetism.
+\]</div>
+<p>in electromagnetism.
 Only field configurations satisfying this condition are allowed.
 Thus admissibility acts as a structural filter.</p>
 <h2 id="517-stability-versus-eligibility">5.1.7 Stability versus eligibility<a class="headerlink" href="#517-stability-versus-eligibility" title="Permanent link">&para;</a></h2>
 <p>Persistence measures stability, but stability does not guarantee eligibility.
-We therefore distinguish two properties:
-property
-meaning
-stability
-structure resists decay
-eligibility
-structure satisfies substrate rules</p>
+We therefore distinguish two properties:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>stability</td>
+<td>structure resists decay</td>
+</tr>
+<tr>
+<td>eligibility</td>
+<td>structure satisfies substrate rules</td>
+</tr>
+</tbody>
+</table>
 <p>Both properties must be satisfied for a configuration to exist.</p>
 <h2 id="518-structural-gates">5.1.8 Structural gates<a class="headerlink" href="#518-structural-gates" title="Permanent link">&para;</a></h2>
 <p>The constraints that determine admissibility can be interpreted as structural gates.
-Define a gate function
-$$
-G(\sigma)
-$$
-that evaluates whether a configuration passes the necessary constraints.
-If
-$$
+Define a gate function <span class="arithmatex">\(G(\sigma)\)</span> that evaluates whether a configuration passes the necessary constraints.
+If</p>
+<div class="arithmatex">\[
 G(\sigma) = 1
-$$
-the configuration is allowed.
-If
-$$
+\]</div>
+<p>the configuration is allowed.
+If</p>
+<div class="arithmatex">\[
 G(\sigma) = 0
-$$
-the configuration is forbidden.</p>
+\]</div>
+<p>the configuration is forbidden.</p>
 <h2 id="519-sequential-filtering">5.1.9 Sequential filtering<a class="headerlink" href="#519-sequential-filtering" title="Permanent link">&para;</a></h2>
-<p>Emergence therefore occurs through sequential filters.
-structural gate filtering
-persistence filtering.
-The configuration must first satisfy
-$$
+<p>Emergence therefore occurs through sequential filters:</p>
+<ul>
+<li>structural gate filtering</li>
+<li>persistence filtering</li>
+</ul>
+<p>The configuration must first satisfy</p>
+<div class="arithmatex">\[
 G(\sigma) = 1
-$$
-and then satisfy
-$$
-S \ge 1.
-$$
-Only configurations satisfying both conditions become persistent structures.</p>
+\]</div>
+<p>and then satisfy</p>
+<div class="arithmatex">\[
+S \geq 1.
+\]</div>
+<p>Only configurations satisfying both conditions become persistent structures.</p>
 <h2 id="5110-structural-gates-in-the-collapse-ladder">5.1.10 Structural gates in the collapse ladder<a class="headerlink" href="#5110-structural-gates-in-the-collapse-ladder" title="Permanent link">&para;</a></h2>
-<p>The collapse ladder described earlier naturally introduces structural gates.
-ladder stage
-gate condition
-scalar
-amplitude stability
-gradient
-spatial compatibility
-circulation
-rotational coherence
-closure
-boundary integrity</p>
+<p>The collapse ladder described earlier naturally introduces structural gates.</p>
+<table>
+<thead>
+<tr>
+<th>Ladder stage</th>
+<th>Gate condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar</td>
+<td>amplitude stability</td>
+</tr>
+<tr>
+<td>gradient</td>
+<td>spatial compatibility</td>
+</tr>
+<tr>
+<td>circulation</td>
+<td>rotational coherence</td>
+</tr>
+<tr>
+<td>closure</td>
+<td>boundary integrity</td>
+</tr>
+</tbody>
+</table>
 <p>Each stage imposes additional constraints on admissible configurations.</p>
 <h2 id="5111-structural-filtering-and-emergence">5.1.11 Structural filtering and emergence<a class="headerlink" href="#5111-structural-filtering-and-emergence" title="Permanent link">&para;</a></h2>
 <p>The combined filtering process explains why many possible configurations never appear in physical systems.
 The substrate continuously generates fluctuations across configuration space.
-However, only a small subset of configurations satisfy both
-$$
+However, only a small subset of configurations satisfy both</p>
+<div class="arithmatex">\[
 G(\sigma) = 1
-$$
-and
-$$
-S \ge 1.
-$$
-These configurations form the set of persistent structures.</p>
+\]</div>
+<p>and</p>
+<div class="arithmatex">\[
+S \geq 1.
+\]</div>
+<p>These configurations form the set of persistent structures.</p>
 <h2 id="5112-summary">5.1.12 Summary<a class="headerlink" href="#5112-summary" title="Permanent link">&para;</a></h2>
 <p>Persistence alone cannot determine structural survival.
 A configuration must also satisfy the admissibility constraints of the substrate.
-Thus emergence occurs through two filters:
-structural eligibility
-persistence selection.
-These concepts will be formalized mathematically in the following sections.</p>
-<p>The Eligibility Operator
-This section introduces a formal operator that determines whether configurations satisfy the structural constraints of the substrate.</p>
+Thus emergence occurs through two filters:</p>
+<ul>
+<li>structural eligibility</li>
+<li>persistence selection</li>
+</ul>
+<p>These concepts will be formalized mathematically in the following sections.</p>
+<p><em>Transition to Section 5.2:</em> The Eligibility Operator introduces a formal operator that determines whether configurations satisfy the structural constraints of the substrate.</p>
 
 
 

@@ -6536,137 +6536,173 @@
 <h1 id="14-emergence-persistence-and-the-problem-of-loss">1.4 Emergence, Persistence, and the Problem of Loss<a class="headerlink" href="#14-emergence-persistence-and-the-problem-of-loss" title="Permanent link">&para;</a></h1>
 <h2 id="141-the-universal-role-of-loss">1.4.1 The universal role of loss<a class="headerlink" href="#141-the-universal-role-of-loss" title="Permanent link">&para;</a></h2>
 <p>All physical structures exist within environments that degrade organization.
-Examples include:
-system
-loss mechanism
-dispersion
-viscous diffusion
-ionization
-chemical reaction</p>
+Examples include:</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Loss mechanism</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wave</td>
+<td>dispersion</td>
+</tr>
+<tr>
+<td>fluid</td>
+<td>viscous diffusion</td>
+</tr>
+<tr>
+<td>atom</td>
+<td>ionization</td>
+</tr>
+<tr>
+<td>molecule</td>
+<td>chemical reaction</td>
+</tr>
+</tbody>
+</table>
 <p>Thus any theory of emergence must account for loss processes.
 Mathematically, loss acts as a sink for organized structure.
-Let
-R(t)R(t)R(t)
-be the retained structural content of a configuration.
-The rate of loss is
-R˙=−dRdt.\dot{R} = -\frac{dR}{dt}.R˙=−dtdR​.
-This quantity represents the destruction of structural organization.</p>
+Let <span class="arithmatex">\(R(t)\)</span> be the retained structural content of a configuration.
+The rate of loss is</p>
+<div class="arithmatex">\[
+\dot{R} = -\frac{dR}{dt}.
+\]</div>
+<p>This quantity represents the destruction of structural organization.</p>
 <h2 id="142-loss-as-an-entropy-like-process">1.4.2 Loss as an entropy-like process<a class="headerlink" href="#142-loss-as-an-entropy-like-process" title="Permanent link">&para;</a></h2>
 <p>Many loss mechanisms correspond to the increase of entropy.
-Let
-represent thermodynamic entropy.
-In irreversible processes,
+Let <span class="arithmatex">\(S_{thermo}\)</span> represent thermodynamic entropy.
+In irreversible processes, <span class="arithmatex">\(dS_{thermo}/dt \geq 0\)</span>.
 Increasing entropy corresponds to the degradation of organized structure.
 Thus we can interpret structural loss as the conversion of organized energy into disordered states.
-If
-represents the energy contained in structured form, then dissipation causes
-dEstructdt&lt;0.\frac{dE_{struct}}{dt} &lt; 0.dtdEstruct​​&lt;0.</p>
+If <span class="arithmatex">\(E_{struct}\)</span> represents the energy contained in structured form, then dissipation causes</p>
+<div class="arithmatex">\[
+\frac{dE_{struct}}{dt} &lt; 0.
+\]</div>
 <h2 id="143-example-diffusive-loss">1.4.3 Example: diffusive loss<a class="headerlink" href="#143-example-diffusive-loss" title="Permanent link">&para;</a></h2>
-<p>Consider a scalar field
-$$
-(x,t).\Phi<span class="arithmatex">\(\mathbf{x},t\)</span>.
-$$
-Diffusion causes spatial structure to smooth out according to
-∂tΦ=D∇2Φ.\partial_t \Phi = D \nabla^2 \Phi.∂t​Φ=D∇2Φ.
-is the diffusion coefficient.
-Fourier transforming,
-$$
-(x,t)=~(k,t)eikxd3k.\Phi<span class="arithmatex">\(\mathbf{x},t\)</span> = \int \tilde{\Phi}<span class="arithmatex">\(\mathbf{k},t\)</span> e^{i\mathbf{k}\cdot\mathbf{x}} d^3k.
-$$
-Substituting into the diffusion equation yields
-dΦ~dt=−Dk2Φ~.\frac{d\tilde{\Phi}}{dt} = - D k^2 \tilde{\Phi}.dtdΦ~​=−Dk2Φ~.
-Small-scale structure (large kkk) disappears fastest.
+<p>Consider a scalar field <span class="arithmatex">\(\Phi(\mathbf{x}, t)\)</span>.
+Diffusion causes spatial structure to smooth out according to</p>
+<div class="arithmatex">\[
+\partial_t \Phi = D \nabla^2 \Phi,
+\]</div>
+<p>where <span class="arithmatex">\(D\)</span> is the diffusion coefficient.
+Fourier transforming,</p>
+<div class="arithmatex">\[
+\Phi(\mathbf{x}, t) = \int \tilde{\Phi}(\mathbf{k}, t)\, e^{i\mathbf{k}\cdot\mathbf{x}} \, d^3k.
+\]</div>
+<p>Substituting into the diffusion equation yields</p>
+<div class="arithmatex">\[
+\frac{d\tilde{\Phi}}{dt} = -D k^2 \tilde{\Phi}.
+\]</div>
+<p>Small-scale structure (large <span class="arithmatex">\(k\)</span>) disappears fastest.
 Thus diffusion is a powerful structural loss mechanism.</p>
 <h2 id="144-structural-measure-under-diffusion">1.4.4 Structural measure under diffusion<a class="headerlink" href="#144-structural-measure-under-diffusion" title="Permanent link">&para;</a></h2>
-<p>Define structural content as
-$$
-R=2(x,t)d3x.R =\int \Phi^2<span class="arithmatex">\(\mathbf{x},t\)</span> d^3x.R=
-$$
-Taking the time derivative,
-dRdt=2∫Φ∂tΦ d3x.\frac{dR}{dt} = 2\int \Phi \partial_t \Phi \, d^3x.dtdR​=2∫Φ∂t​Φd3x.
-Substituting the diffusion equation,
-∂tΦ=D∇2Φ\partial_t \Phi = D\nabla^2\Phi∂t​Φ=D∇2Φ
-Using integration by parts,
-$$
-2d3x=2d3x.\int \Phi\nabla^2\Phi d^3x = -\int |\nabla\Phi|^2 d^3x.
-$$
-Therefore
-$$
-R=2D2d3x.\dot R = 2D\int |\nabla\Phi|^2 d^3x.R
-$$
-This shows that gradients directly drive structural loss.</p>
+<p>Define structural content as</p>
+<div class="arithmatex">\[
+R = \int \Phi^2(\mathbf{x}, t) \, d^3x.
+\]</div>
+<p>Taking the time derivative,</p>
+<div class="arithmatex">\[
+\frac{dR}{dt} = 2\int \Phi \, \partial_t \Phi \, d^3x.
+\]</div>
+<p>Substituting <span class="arithmatex">\(\partial_t \Phi = D \nabla^2 \Phi\)</span> and using integration by parts,</p>
+<div class="arithmatex">\[
+\int \Phi \nabla^2 \Phi \, d^3x = -\int |\nabla\Phi|^2 \, d^3x.
+\]</div>
+<p>Therefore</p>
+<div class="arithmatex">\[
+\dot{R} = -2D \int |\nabla\Phi|^2 \, d^3x.
+\]</div>
+<p>This shows that gradients directly drive structural loss.</p>
 <h2 id="145-characteristic-loss-timescale">1.4.5 Characteristic loss timescale<a class="headerlink" href="#145-characteristic-loss-timescale" title="Permanent link">&para;</a></h2>
-<p>For a structure of characteristic size
-LLL
-the dominant wavenumber is approximately
-k∼1L.k \sim \frac{1}{L}.k∼L1​.
-Thus diffusion causes decay with rate
-$$
-Dk2.\gamma \sim Dk^2.
-$$
-Substituting,
-Thus the lifetime of the structure is approximately
-τ∼L2D.\tau \sim \frac{L^2}{D}.τ∼DL2​.
-Small structures therefore decay rapidly.
+<p>For a structure of characteristic size <span class="arithmatex">\(L\)</span>, the dominant wavenumber is approximately</p>
+<div class="arithmatex">\[
+k \sim \frac{1}{L}.
+\]</div>
+<p>Thus diffusion causes decay with rate</p>
+<div class="arithmatex">\[
+\gamma \sim D k^2 \sim \frac{D}{L^2}.
+\]</div>
+<p>Thus the lifetime of the structure is approximately</p>
+<div class="arithmatex">\[
+\tau \sim \frac{L^2}{D}.
+\]</div>
+<p>Small structures therefore decay rapidly.
 Large structures persist longer.</p>
 <h2 id="146-general-form-of-loss-equations">1.4.6 General form of loss equations<a class="headerlink" href="#146-general-form-of-loss-equations" title="Permanent link">&para;</a></h2>
-<p>Many physical loss processes take the general form
-dRdt=−ΓR.\frac{dR}{dt} = -\Gamma R.dtdR​=−ΓR.
-is the effective decay rate.
-The solution is
-Thus the structural lifetime is
-τ=1Γ.\tau = \frac{1}{\Gamma}.τ=Γ1​.
-This form appears in many contexts:
-radioactive decay</p>
-<p>damping</p>
-<p>radiative losses</p>
-<p>chemical reactions.</p>
+<p>Many physical loss processes take the general form</p>
+<div class="arithmatex">\[
+\frac{dR}{dt} = -\Gamma R,
+\]</div>
+<p>where <span class="arithmatex">\(\Gamma\)</span> is the effective decay rate.
+The solution is</p>
+<div class="arithmatex">\[
+R(t) = R(0)\, e^{-\Gamma t}.
+\]</div>
+<p>Thus the structural lifetime is</p>
+<div class="arithmatex">\[
+\tau = \frac{1}{\Gamma}.
+\]</div>
+<p>This form appears in many contexts:</p>
+<ul>
+<li>radioactive decay</li>
+<li>damping</li>
+<li>radiative losses</li>
+<li>chemical reactions</li>
+</ul>
 <h2 id="147-loss-limited-persistence">1.4.7 Loss-limited persistence<a class="headerlink" href="#147-loss-limited-persistence" title="Permanent link">&para;</a></h2>
-<p>Substituting this decay law into the selection number
-S=RR˙trefS = \frac{R}{\dot R t_{ref}}S=R˙tref​R​
-$$
-R=R.\dot R = \Gamma R.R
-$$
-Simplifying,
-Thus persistence depends only on the ratio of decay rate to observation horizon.</p>
+<p>Substituting this decay law into the selection number with <span class="arithmatex">\(\dot{R} = \Gamma R\)</span>:</p>
+<div class="arithmatex">\[
+S = \frac{R}{\dot{R} \, t_{ref}} = \frac{R}{\Gamma R \, t_{ref}} = \frac{1}{\Gamma \, t_{ref}}.
+\]</div>
+<p>Thus persistence depends only on the ratio of decay rate to observation horizon.</p>
 <h2 id="148-interpretation">1.4.8 Interpretation<a class="headerlink" href="#148-interpretation" title="Permanent link">&para;</a></h2>
-<p>The persistence threshold
-$$
-S1S\ge 1S
-$$
-Thus a structure persists only if its decay time exceeds the relevant timescale of observation.</p>
+<p>The persistence threshold <span class="arithmatex">\(S \geq 1\)</span> becomes</p>
+<div class="arithmatex">\[
+\frac{1}{\Gamma \, t_{ref}} \geq 1 \quad \Longleftrightarrow \quad \tau \geq t_{ref}.
+\]</div>
+<p>Thus a structure persists only if its decay time exceeds the relevant timescale of observation.</p>
 <h2 id="149-competition-between-retention-and-loss">1.4.9 Competition between retention and loss<a class="headerlink" href="#149-competition-between-retention-and-loss" title="Permanent link">&para;</a></h2>
-<p>In general, structural persistence arises from competition between two processes:
-process
-retention mechanisms
-stabilize structure
-loss mechanisms
-destroy structure</p>
+<p>In general, structural persistence arises from competition between two processes:</p>
+<table>
+<thead>
+<tr>
+<th>Process</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>retention mechanisms</td>
+<td>stabilize structure</td>
+</tr>
+<tr>
+<td>loss mechanisms</td>
+<td>destroy structure</td>
+</tr>
+</tbody>
+</table>
 <p>The selection number measures the balance between these processes.
-If retention dominates,
-S&gt;1S &gt; 1S&gt;1
-and the structure survives.
-If loss dominates,
-S&lt;1S &lt; 1S&lt;1
-and the structure disappears.</p>
+If retention dominates, <span class="arithmatex">\(S &gt; 1\)</span>, and the structure survives.
+If loss dominates, <span class="arithmatex">\(S &lt; 1\)</span>, and the structure disappears.</p>
 <h2 id="1410-loss-landscape">1.4.10 Loss landscape<a class="headerlink" href="#1410-loss-landscape" title="Permanent link">&para;</a></h2>
-<p>Every configuration in the substrate experiences a specific loss rate
-Γi.\Gamma_i.Γi​.
-Thus the configuration space
-$$
-\Omega
-$$
-can be mapped into a loss landscape.
+<p>Every configuration in the substrate experiences a specific loss rate <span class="arithmatex">\(\Gamma_i\)</span>.
+Thus the configuration space <span class="arithmatex">\(\Omega\)</span> can be mapped into a loss landscape.
 Regions of configuration space with high loss rates correspond to ephemeral fluctuations.
 Regions with low loss rates correspond to persistent structures.
 Thus emergence depends strongly on the topology of this landscape.</p>
 <h2 id="1411-implication-for-emergence-theory">1.4.11 Implication for emergence theory<a class="headerlink" href="#1411-implication-for-emergence-theory" title="Permanent link">&para;</a></h2>
-<p>An emergence theory must therefore include:
-the mechanisms that generate structure</p>
-<p>the mechanisms that destroy structure</p>
-<p>the balance between the two.</p>
+<p>An emergence theory must therefore include:</p>
+<ol>
+<li>the mechanisms that generate structure</li>
+<li>the mechanisms that destroy structure</li>
+<li>the balance between the two</li>
+</ol>
 <p>Without the second component, explanations of emergence remain incomplete.</p>
-<p>Transition to Section 1.5
+<hr />
+<p><em>Transition to Section 1.5:</em>
 The persistence framework developed so far connects naturally to several established areas of physics, including thermodynamics, information theory, and field theory.
 The next section examines these connections and shows how the persistence approach relates to existing theoretical frameworks.</p>
 

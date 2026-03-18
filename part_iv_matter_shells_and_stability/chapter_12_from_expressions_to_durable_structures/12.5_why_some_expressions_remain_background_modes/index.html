@@ -6578,19 +6578,13 @@ The purpose of this section is to explain mathematically why the majority of exp
 <h2 id="1252-structural-selection-equation">12.5.2 Structural selection equation<a class="headerlink" href="#1252-structural-selection-equation" title="Permanent link">&para;</a></h2>
 <p>Recall the structural population relation derived earlier
 $$
-N_i \propto S_<em> e^{-E_{total}/T_{eff}}.
+N_i \propto S_* e^{-E_{total}/T_{eff}}.
 $$
 This expression determines how frequently an excitation appears within the substrate.
 Two competing mechanisms appear:
-formation accessibility
-$$
-e^{-E_{total}/T_{eff}}
-$$
-structural persistence
-$$
-S_</em>.
-$$
-The balance between these factors determines structural populations.</p>
+- formation accessibility: <span class="arithmatex">\(e^{-E_{total}/T_{eff}}\)</span>
+- structural persistence: <span class="arithmatex">\(S_*\)</span>.</p>
+<p>The balance between these factors determines structural populations.</p>
 <h2 id="1253-low-energy-dominance">12.5.3 Low-energy dominance<a class="headerlink" href="#1253-low-energy-dominance" title="Permanent link">&para;</a></h2>
 <p>Wave-like excitations possess extremely small formation energy
 $$
@@ -6632,7 +6626,7 @@ This places them far below the survival threshold.</p>
 <p>Wave excitations also spread due to dispersion.
 The dispersion relation derived earlier is
 $$
-\omega(k)
+\omega(k) =
 2ak^2
 +
 2uk^4
@@ -6646,17 +6640,14 @@ $$
 Because different wavelengths propagate at different speeds, wave packets spread over time.</p>
 <h2 id="1257-energy-dilution">12.5.7 Energy dilution<a class="headerlink" href="#1257-energy-dilution" title="Permanent link">&para;</a></h2>
 <p>As a wave packet spreads, its energy density decreases.
-Let the packet width be
-$$
-L(t).
-$$
+Let the packet width be <span class="arithmatex">\(L(t)\)</span>.
 Energy density scales approximately as
 $$
 \mathcal{E}(t)
 \sim
 \frac{E_{total}}{L(t)^3}.
 $$
-As (L(t)) increases, energy density decreases.
+As <span class="arithmatex">\(L(t)\)</span> increases, energy density decreases.
 Eventually the excitation becomes indistinguishable from the background.</p>
 <h2 id="1258-lack-of-confinement">12.5.8 Lack of confinement<a class="headerlink" href="#1258-lack-of-confinement" title="Permanent link">&para;</a></h2>
 <p>Unlike shell structures, wave excitations do not confine energy.
@@ -6664,62 +6655,75 @@ Energy flows freely through the substrate according to
 $$
 \frac{\partial E}{\partial t}
 +
-\nabla \cdot \mathbf{J}
-\gamma E.
+\nabla \cdot \mathbf{J} =
+-\gamma E.
 $$
 Thus propagation modes continuously transport energy rather than trapping it.</p>
 <h2 id="1259-absence-of-structural-invariants">12.5.9 Absence of structural invariants<a class="headerlink" href="#1259-absence-of-structural-invariants" title="Permanent link">&para;</a></h2>
-<p>Durable structures possess invariants such as
-circulation
-helicity
-linking number.
-Wave excitations lack such invariants.
+<p>Durable structures possess invariants such as:
+- circulation
+- helicity
+- linking number.</p>
+<p>Wave excitations lack such invariants.
 Because no structural quantity protects them from perturbations, they remain ephemeral.</p>
 <h2 id="12510-statistical-dominance-of-propagation-modes">12.5.10 Statistical dominance of propagation modes<a class="headerlink" href="#12510-statistical-dominance-of-propagation-modes" title="Permanent link">&para;</a></h2>
 <p>Combining formation probability and persistence gives
 $$
 N_{wave}
 \propto
-S_<em>^{wave}
+S_*^{wave}
 e^{-E_{wave}/T_{eff}}.
 $$
-Although
-$$
-S_</em>^{wave} \ll 1,
-$$
-the exponential factor dominates because
-$$
-E_{wave} \approx 0.
-$$
+Although <span class="arithmatex">\(S_*^{wave} \ll 1\)</span>, the exponential factor dominates because <span class="arithmatex">\(E_{wave} \approx 0\)</span>.
 Thus waves remain extremely abundant.</p>
 <h2 id="12511-structural-hierarchy-of-abundance">12.5.11 Structural hierarchy of abundance<a class="headerlink" href="#12511-structural-hierarchy-of-abundance" title="Permanent link">&para;</a></h2>
-<p>The abundance ordering predicted by the CTS framework becomes
-excitation
-abundance
-persistence
-waves
-extremely high
-very low
-precursors
-high
-low
-closure structures
-moderate
-moderate
-chiral structures
-low
-high
-shell structures
-very low
-very high
-composites
-extremely low
-extreme</p>
+<p>The abundance ordering predicted by the CTS framework becomes:</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th>Abundance</th>
+<th>Persistence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>waves</td>
+<td>extremely high</td>
+<td>very low</td>
+</tr>
+<tr>
+<td>precursors</td>
+<td>high</td>
+<td>low</td>
+</tr>
+<tr>
+<td>closure structures</td>
+<td>moderate</td>
+<td>moderate</td>
+</tr>
+<tr>
+<td>chiral structures</td>
+<td>low</td>
+<td>high</td>
+</tr>
+<tr>
+<td>shell structures</td>
+<td>very low</td>
+<td>very high</td>
+</tr>
+<tr>
+<td>composites</td>
+<td>extremely low</td>
+<td>extreme</td>
+</tr>
+</tbody>
+</table>
 <p>Thus background propagation dominates the structural population of the substrate.</p>
 <h2 id="12512-emergence-implication">12.5.12 Emergence implication<a class="headerlink" href="#12512-emergence-implication" title="Permanent link">&para;</a></h2>
 <p>This statistical hierarchy explains a fundamental feature of the universe.
 Most of reality consists of propagating excitations rather than stable objects.
-Durable structures represent only a tiny fraction of the substrate’s structural activity.</p>
+Durable structures represent only a tiny fraction of the substrate's structural activity.</p>
 <h2 id="12513-phase-space-interpretation">12.5.13 Phase-space interpretation<a class="headerlink" href="#12513-phase-space-interpretation" title="Permanent link">&para;</a></h2>
 <p>In phase-space terms, most excitations remain trapped in the region
 $$
@@ -6734,9 +6738,6 @@ $$
 xy = 1.
 $$
 As a result they propagate through the substrate rather than forming durable structures.</p>
-<p>Why Others Become Structural Seeds
-This final section of Chapter 12 explains why certain excitations become the seeds from which durable structures emerge.</p>
-<p>This completes Chapter 12.</p>
 
 
 

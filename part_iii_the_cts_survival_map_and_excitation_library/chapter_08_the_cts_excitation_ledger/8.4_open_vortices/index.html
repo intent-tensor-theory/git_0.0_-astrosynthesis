@@ -6579,122 +6579,163 @@ These excitations arise when the phase of the scalar field winds around a centra
 Such configurations create vortex structures.
 Open vortices represent the first excitations in the CTS ledger that possess topological invariants.</p>
 <h2 id="842-phase-representation-of-the-field">8.4.2 Phase representation of the field<a class="headerlink" href="#842-phase-representation-of-the-field" title="Permanent link">&para;</a></h2>
-<p>Write the scalar field in amplitude–phase form
-$$
-(x)=(x)ei(x).\Phi<span class="arithmatex">\(\mathbf{x}\)</span> = \rho<span class="arithmatex">\(\mathbf{x}\)</span>e^{i\theta<span class="arithmatex">\(\mathbf{x}\)</span>}.
-$$
-$$
-\rho
-$$</p>
+<p>Write the scalar field in amplitude–phase form</p>
 <div class="arithmatex">\[
-\theta
+\Phi(\mathbf{x}) = \rho(\mathbf{x})\,e^{i\theta(\mathbf{x})},
 \]</div>
-<p>Substituting this into the gradient term of the functional yields
-$$
-2=()2+2()2.|\nabla\Phi|^2 = <span class="arithmatex">\(\nabla\rho\)</span>^2 + \rho^2<span class="arithmatex">\(\nabla\theta\)</span>^2.
-$$
-The second term depends on spatial variation of the phase.</p>
+<p>where <span class="arithmatex">\(\rho\)</span> is the amplitude and <span class="arithmatex">\(\theta\)</span> is the phase.</p>
+<p>Substituting this into the gradient term of the functional yields</p>
+<div class="arithmatex">\[
+|\nabla\Phi|^2 = (\nabla\rho)^2 + \rho^2(\nabla\theta)^2.
+\]</div>
+<p>The second term depends on spatial variation of the phase.</p>
 <h2 id="843-circulation-of-the-phase">8.4.3 Circulation of the phase<a class="headerlink" href="#843-circulation-of-the-phase" title="Permanent link">&para;</a></h2>
-<p>Consider a closed loop CCC around a point in space.
-The phase circulation is defined as
-∮C∇θ⋅dl.\oint_C \nabla\theta \cdot d\mathbf{l}.∮C​∇θ⋅dl.
-Because the field must be single-valued, the phase can change only by integer multiples of 2π2 <span class="arithmatex">\(\pi2\)</span>
-Thus
-$$
-nZ.n\in \mathbb{Z}.n
-$$
-This integer nnn is the winding number.</p>
+<p>Consider a closed loop <span class="arithmatex">\(C\)</span> around a point in space.
+The phase circulation is defined as</p>
+<div class="arithmatex">\[
+\oint_C \nabla\theta \cdot d\mathbf{l}.
+\]</div>
+<p>Because the field must be single-valued, the phase can change only by integer multiples of <span class="arithmatex">\(2\pi\)</span>:</p>
+<div class="arithmatex">\[
+\oint_C \nabla\theta \cdot d\mathbf{l} = 2\pi n, \quad n \in \mathbb{Z}.
+\]</div>
+<p>This integer <span class="arithmatex">\(n\)</span> is the winding number.</p>
 <h2 id="844-vortex-core">8.4.4 Vortex core<a class="headerlink" href="#844-vortex-core" title="Permanent link">&para;</a></h2>
 <p>At the center of the vortex the phase becomes undefined.
-To avoid infinite energy the amplitude must vanish:
-$$
-(0)=0.\rho(0) = 0.
-$$
-Thus the field configuration near the vortex center takes the form
-$$
-(r,)=f(r)ein.\Phi(r,\theta) = f(r)e^{in\theta}.
-$$
-The function f(r)f(r)f(r) satisfies
-f(0)=0,f(∞)=Φ0.f(0)=0, \quad f<span class="arithmatex">\(\infty\)</span>=\Phi_0.f(0)=0,f(∞)=Φ0​.</p>
+To avoid infinite energy the amplitude must vanish:</p>
+<div class="arithmatex">\[
+\rho(0) = 0.
+\]</div>
+<p>Thus the field configuration near the vortex center takes the form</p>
+<div class="arithmatex">\[
+\Phi(r,\theta) = f(r)\,e^{in\theta}.
+\]</div>
+<p>The function <span class="arithmatex">\(f(r)\)</span> satisfies</p>
+<div class="arithmatex">\[
+f(0) = 0, \quad f(\infty) = \Phi_0.
+\]</div>
 <h2 id="845-radial-vortex-profile">8.4.5 Radial vortex profile<a class="headerlink" href="#845-radial-vortex-profile" title="Permanent link">&para;</a></h2>
 <p>The vortex profile is determined by minimizing the energy functional.
-Substituting the vortex ansatz into the scalar energy gives
-E=∫[a((dfdr)2+n2r2f2)+rf2+sf4]r dr dθ.E = \int \left[ a\left<span class="arithmatex">\(\left(\frac{df}{dr}\right\)</span>^2 + \frac{n^2}{r^2}f^2 \right) + r f^2 + s f^4 \right] r\,dr\,d\theta.E=∫[a((drdf​)2+r2n2​f2)+rf2+sf4]rdrdθ.
-The equilibrium profile satisfies the Euler–Lagrange equation
-d2fdr2+1rdfdr−n2r2f−raf−2saf3=0.\frac{d^2 f}{dr^2} + \frac{1}{r}\frac{df}{dr} - \frac{n^2}{r^2}f - \frac{r}{a}f - \frac{2s}{a}f^3 =0.dr2d2f​+r1​drdf​−r2n2​f−ar​f−a2s​f3=0.</p>
+Substituting the vortex ansatz into the scalar energy gives</p>
+<div class="arithmatex">\[
+E = \int \left[ a\left(\left(\frac{df}{dr}\right)^2 + \frac{n^2}{r^2}f^2 \right) + r f^2 + s f^4 \right] r\,dr\,d\theta.
+\]</div>
+<p>The equilibrium profile satisfies the Euler–Lagrange equation</p>
+<div class="arithmatex">\[
+\frac{d^2 f}{dr^2} + \frac{1}{r}\frac{df}{dr} - \frac{n^2}{r^2}f - \frac{r}{a}f - \frac{2s}{a}f^3 = 0.
+\]</div>
 <h2 id="846-vortex-core-radius">8.4.6 Vortex core radius<a class="headerlink" href="#846-vortex-core-radius" title="Permanent link">&para;</a></h2>
-<p>The vortex core size is determined by the correlation length derived earlier:
-ξ=a∣r∣.\xi = \sqrt{\frac{a}{|r|}}.ξ=∣r∣a​​.
-Inside the core (r≲ξr <span class="arithmatex">\(\lesssim \xir\)</span>
+<p>The vortex core size is determined by the correlation length derived earlier:</p>
+<div class="arithmatex">\[
+\xi = \sqrt{\frac{a}{|r|}}.
+\]</div>
+<p>Inside the core (<span class="arithmatex">\(r \lesssim \xi\)</span>) the amplitude is suppressed.
 Outside the core the field approaches the vacuum state.</p>
 <h2 id="847-energy-of-a-vortex-line">8.4.7 Energy of a vortex line<a class="headerlink" href="#847-energy-of-a-vortex-line" title="Permanent link">&para;</a></h2>
-<p>The energy per unit length of the vortex can be approximated as
-Evortex≈πan2Φ02ln⁡(Rξ).E_{vortex} \approx \pi a n^2 \Phi_0^2 \ln\left<span class="arithmatex">\(\frac{R}{\xi}\right\)</span>.Evortex​≈πan2Φ02​ln(ξR​).
-Here
-RRR is the system size</p>
+<p>The energy per unit length of the vortex can be approximated as</p>
 <div class="arithmatex">\[
-\xi
+E_{vortex} \approx \pi a n^2 \Phi_0^2 \ln\left(\frac{R}{\xi}\right).
 \]</div>
-<p>Because of the logarithmic factor, vortex energy grows slowly with system size.</p>
+<p>Here <span class="arithmatex">\(R\)</span> is the system size and <span class="arithmatex">\(\xi\)</span> is the core radius.
+Because of the logarithmic factor, vortex energy grows slowly with system size.</p>
 <h2 id="848-topological-protection">8.4.8 Topological protection<a class="headerlink" href="#848-topological-protection" title="Permanent link">&para;</a></h2>
-<p>The winding number
-is a topological invariant.
+<p>The winding number <span class="arithmatex">\(n\)</span> is a topological invariant.
 Continuous deformation cannot change this number.
 Thus the vortex cannot disappear unless the field amplitude vanishes along an entire path.
 This topological constraint provides structural protection.</p>
 <h2 id="849-topology-factor">8.4.9 Topology factor<a class="headerlink" href="#849-topology-factor" title="Permanent link">&para;</a></h2>
-<p>Because vortices possess a conserved winding number, their topology factor becomes
-Tobj&gt;1.T_{obj} &gt; 1.Tobj​&gt;1.
-This distinguishes vortices from wave excitations.
+<p>Because vortices possess a conserved winding number, their topology factor becomes</p>
+<div class="arithmatex">\[
+T_{obj} &gt; 1.
+\]</div>
+<p>This distinguishes vortices from wave excitations.
 Although vortices may still decay through reconnection events, their lifetime is typically much longer than ordinary waves.</p>
 <h2 id="8410-circulation-interpretation">8.4.10 Circulation interpretation<a class="headerlink" href="#8410-circulation-interpretation" title="Permanent link">&para;</a></h2>
 <p>The phase circulation corresponds to a rotational current.
-Define the current
-$$
-J=2.\mathbf{J} = \rho^2\nabla\theta.J=
-$$
-The circulation becomes
-Thus vortices represent quantized circulation channels in the CTS substrate.</p>
+Define the current</p>
+<div class="arithmatex">\[
+\mathbf{J} = \rho^2 \nabla\theta.
+\]</div>
+<p>The circulation becomes</p>
+<div class="arithmatex">\[
+\oint_C \mathbf{J} \cdot d\mathbf{l} = 2\pi n \rho^2.
+\]</div>
+<p>Thus vortices represent quantized circulation channels in the CTS substrate.</p>
 <h2 id="8411-open-vortex-geometry">8.4.11 Open vortex geometry<a class="headerlink" href="#8411-open-vortex-geometry" title="Permanent link">&para;</a></h2>
-<p>Open vortices extend through space as line-like structures.
-Examples include
-vortex filaments</p>
-<p>rotational defects</p>
-<p>circulation tubes.</p>
+<p>Open vortices extend through space as line-like structures. Examples include</p>
+<ul>
+<li>vortex filaments</li>
+<li>rotational defects</li>
+<li>circulation tubes.</li>
+</ul>
 <p>Because their ends terminate at boundaries or other defects, these structures are classified as open topological defects.</p>
 <h2 id="8412-role-in-the-cts-excitation-hierarchy">8.4.12 Role in the CTS excitation hierarchy<a class="headerlink" href="#8412-role-in-the-cts-excitation-hierarchy" title="Permanent link">&para;</a></h2>
 <p>Open vortices represent the first excitation class that possesses nontrivial topology.
 They therefore occupy a higher tier in the excitation hierarchy.
-The hierarchy now becomes:
-excitation
-topology
-waves
-phase-locked waves
-weak coherence
-open vortices
-winding number</p>
+The hierarchy now becomes:</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th>Topology</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>waves</td>
+<td>none</td>
+</tr>
+<tr>
+<td>phase-locked waves</td>
+<td>weak coherence</td>
+</tr>
+<tr>
+<td>open vortices</td>
+<td>winding number</td>
+</tr>
+</tbody>
+</table>
 <p>Thus open vortices represent the transition from coherent waves to topological objects.</p>
 <h2 id="8413-ledger-entry-for-open-vortices">8.4.13 Ledger entry for open vortices<a class="headerlink" href="#8413-ledger-entry-for-open-vortices" title="Permanent link">&para;</a></h2>
-<p>parameter
-approximate value
-excitation type
-open vortex
-formation energy
-locking energy
-topology factor
-persistence
-moderate–high</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Approximate value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>excitation type</td>
+<td>open vortex</td>
+</tr>
+<tr>
+<td>formation energy</td>
+<td>moderate</td>
+</tr>
+<tr>
+<td>locking energy</td>
+<td>moderate</td>
+</tr>
+<tr>
+<td>topology factor</td>
+<td><span class="arithmatex">\(T_{obj} &gt; 1\)</span></td>
+</tr>
+<tr>
+<td>persistence</td>
+<td>moderate–high</td>
+</tr>
+</tbody>
+</table>
 <p>These structures therefore populate the closure survival boundary of the CTS survival map.</p>
 <h2 id="8414-summary">8.4.14 Summary<a class="headerlink" href="#8414-summary" title="Permanent link">&para;</a></h2>
 <p>Open vortices arise when the phase of the CTS scalar field winds around a central axis.
-Their defining property is the quantized circulation
-$$
-dl=2n.\oint \nabla\theta\cdot d\mathbf{l}=2\pi n.
-$$
-Because the winding number is conserved, vortices possess topological protection.
+Their defining property is the quantized circulation</p>
+<div class="arithmatex">\[
+\oint \nabla\theta\cdot d\mathbf{l} = 2\pi n.
+\]</div>
+<p>Because the winding number is conserved, vortices possess topological protection.
 They therefore represent the first excitation class capable of forming long-lived structural objects within the CTS substrate.</p>
-<p>Closed Rings
-This section derives how open vortex filaments can close into loops, producing the first fully localized topological objects in the CTS excitation ledger.</p>
 
 
 

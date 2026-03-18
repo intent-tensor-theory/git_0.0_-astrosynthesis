@@ -6563,210 +6563,258 @@
 
 <h1 id="101-choosing-the-phase-variables">10.1 Choosing the Phase Variables<a class="headerlink" href="#101-choosing-the-phase-variables" title="Permanent link">&para;</a></h1>
 <h2 id="1011-motivation">10.1.1 Motivation<a class="headerlink" href="#1011-motivation" title="Permanent link">&para;</a></h2>
-<p>Chapters 7–9 established the mathematical framework needed to evaluate CTS excitations:
-Energy quantities:
-$$
-E_{form},\quad E_{lock},\quad E_{total}
-$$
-Derived ratios:
-$$
-\Lambda_{lock},\quad \Lambda_{expr}
-$$
-Persistence number:
-$$
-S_<em>
-$$
-Abundance relation:
-$$
-N_i \propto S_</em> e^{-E_{total}/T_{eff}}
-$$
-However, to understand the global structure of emergence, we require a visual representation of these relationships.
+<p>Chapters 7–9 established the mathematical framework needed to evaluate CTS excitations:</p>
+<ul>
+<li>Energy quantities: <span class="arithmatex">\(E_{form}\)</span>, <span class="arithmatex">\(E_{lock}\)</span>, <span class="arithmatex">\(E_{total}\)</span></li>
+<li>Derived ratios: <span class="arithmatex">\(\Lambda_{lock}\)</span>, <span class="arithmatex">\(\Lambda_{expr}\)</span></li>
+<li>Persistence number: <span class="arithmatex">\(S_*\)</span></li>
+<li>Abundance relation: <span class="arithmatex">\(N_i \propto S_*\, e^{-E_{total}/T_{eff}}\)</span></li>
+</ul>
+<p>However, to understand the global structure of emergence, we require a visual representation of these relationships.
 This representation is the CTS Threshold Phase Chart.</p>
 <h2 id="1012-purpose-of-the-phase-chart">10.1.2 Purpose of the phase chart<a class="headerlink" href="#1012-purpose-of-the-phase-chart" title="Permanent link">&para;</a></h2>
 <p>The phase chart maps every excitation class into a two-dimensional structural space.
-The purpose of the chart is to identify:
-which excitations form easily
-which excitations survive
-where the survival threshold lies
-how structural classes are distributed.
-Thus the chart becomes a geometric map of emergence.</p>
+The purpose of the chart is to identify:</p>
+<ul>
+<li>Which excitations form easily</li>
+<li>Which excitations survive</li>
+<li>Where the survival threshold lies</li>
+<li>How structural classes are distributed</li>
+</ul>
+<p>Thus the chart becomes a geometric map of emergence.</p>
 <h2 id="1013-requirements-for-phase-variables">10.1.3 Requirements for phase variables<a class="headerlink" href="#1013-requirements-for-phase-variables" title="Permanent link">&para;</a></h2>
 <p>To construct the chart we must choose two variables that satisfy several conditions.
-The variables must:
-be dimensionless
-apply to all excitation classes
-capture formation vs persistence dynamics
-produce a clear survival threshold.
-From the quantities derived earlier, two parameters satisfy these conditions.</p>
+The variables must:</p>
+<ul>
+<li>Be dimensionless</li>
+<li>Apply to all excitation classes</li>
+<li>Capture formation vs persistence dynamics</li>
+<li>Produce a clear survival threshold</li>
+</ul>
+<p>From the quantities derived earlier, two parameters satisfy these conditions.</p>
 <h2 id="1014-horizontal-coordinate-structural-locking">10.1.4 Horizontal coordinate: structural locking<a class="headerlink" href="#1014-horizontal-coordinate-structural-locking" title="Permanent link">&para;</a></h2>
 <p>The first variable describes structural stabilization strength.
-From Chapter 9 we defined the lock ratio
-$$
-\Lambda_{lock} =
-\frac{E_{lock}}{E_{form}}.
-$$
-This ratio measures how strongly an excitation resists destruction relative to the energy required to create it.
-We therefore define the horizontal coordinate
-$$
-\boxed{
-x = \Lambda_{lock}
-}
-$$</p>
+From Chapter 9 we defined the lock ratio</p>
+<div class="arithmatex">\[
+\Lambda_{lock} = \frac{E_{lock}}{E_{form}}.
+\]</div>
+<p>This ratio measures how strongly an excitation resists destruction relative to the energy required to create it.
+We therefore define the horizontal coordinate</p>
+<div class="arithmatex">\[
+\boxed{x = \Lambda_{lock}}
+\]</div>
 <h2 id="1015-interpretation-of-the-horizontal-axis">10.1.5 Interpretation of the horizontal axis<a class="headerlink" href="#1015-interpretation-of-the-horizontal-axis" title="Permanent link">&para;</a></h2>
 <p>The horizontal axis represents structural locking strength.
-Typical values include:
-excitation
-$$
-(x=\Lambda_{lock})
-$$
-wave
-≈0
-phase-locked mode
-~0.1–0.5
-vortex
-~1
-ring
-~2–5
-chiral primitive
-~5–10
-shell
-~10–50
-braid
-≫50</p>
+Typical values include:</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th><span class="arithmatex">\(x = \Lambda_{lock}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave</td>
+<td><span class="arithmatex">\(\approx 0\)</span></td>
+</tr>
+<tr>
+<td>Phase-locked mode</td>
+<td><span class="arithmatex">\(\sim 0.1\)</span>–<span class="arithmatex">\(0.5\)</span></td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td><span class="arithmatex">\(\sim 1\)</span></td>
+</tr>
+<tr>
+<td>Ring</td>
+<td><span class="arithmatex">\(\sim 2\)</span>–<span class="arithmatex">\(5\)</span></td>
+</tr>
+<tr>
+<td>Chiral primitive</td>
+<td><span class="arithmatex">\(\sim 5\)</span>–<span class="arithmatex">\(10\)</span></td>
+</tr>
+<tr>
+<td>Shell</td>
+<td><span class="arithmatex">\(\sim 10\)</span>–<span class="arithmatex">\(50\)</span></td>
+</tr>
+<tr>
+<td>Braid</td>
+<td><span class="arithmatex">\(\gg 50\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>Moving to the right on the chart corresponds to increasing structural stabilization.</p>
 <h2 id="1016-vertical-coordinate-persistence-strength">10.1.6 Vertical coordinate: persistence strength<a class="headerlink" href="#1016-vertical-coordinate-persistence-strength" title="Permanent link">&para;</a></h2>
 <p>The second variable must measure the ability of a structure to survive environmental loss.
-From Chapter 9 the corrected persistence number was
-$$
-S_<em> =
-\mathcal{E}{shell}\mathcal{E}D T{obj}
-\frac{R}{\dot{R} t_{ref}}.
-$$
-Because this number measures structural survival strength, we define the vertical coordinate as
-$$
-\boxed{
-y =
-\mathcal{E}{shell}\mathcal{E}D T{obj}
-\frac{R}{\dot{R} t_{ref}}
-}
-$$
-Thus
-$$
-y = S_</em>.
-$$</p>
+From Chapter 9 the corrected persistence number was</p>
+<div class="arithmatex">\[
+S_* = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\, t_{ref}}.
+\]</div>
+<p>Because this number measures structural survival strength, we define the vertical coordinate as</p>
+<div class="arithmatex">\[
+\boxed{y = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\, t_{ref}}}
+\]</div>
+<p>Thus <span class="arithmatex">\(y = S_*\)</span>.</p>
 <h2 id="1017-interpretation-of-the-vertical-axis">10.1.7 Interpretation of the vertical axis<a class="headerlink" href="#1017-interpretation-of-the-vertical-axis" title="Permanent link">&para;</a></h2>
 <p>The vertical axis represents persistence strength.
-Typical values:
-excitation
-(y)
-wave
-≪1
-phase-locked mode
-&lt;1
-vortex
-~1
-ring</p>
-<blockquote>
-<p>1
-chiral primitive
-≫1
-shell
-≫10
-braid
-≫100</p>
-</blockquote>
+Typical values:</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th><span class="arithmatex">\(y\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave</td>
+<td><span class="arithmatex">\(\ll 1\)</span></td>
+</tr>
+<tr>
+<td>Phase-locked mode</td>
+<td><span class="arithmatex">\(&lt; 1\)</span></td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td><span class="arithmatex">\(\sim 1\)</span></td>
+</tr>
+<tr>
+<td>Ring</td>
+<td><span class="arithmatex">\(&gt; 1\)</span></td>
+</tr>
+<tr>
+<td>Chiral primitive</td>
+<td><span class="arithmatex">\(\gg 1\)</span></td>
+</tr>
+<tr>
+<td>Shell</td>
+<td><span class="arithmatex">\(\gg 10\)</span></td>
+</tr>
+<tr>
+<td>Braid</td>
+<td><span class="arithmatex">\(\gg 100\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>Moving upward corresponds to increasing persistence.</p>
 <h2 id="1018-combined-survival-number">10.1.8 Combined survival number<a class="headerlink" href="#1018-combined-survival-number" title="Permanent link">&para;</a></h2>
-<p>Earlier derivations showed that survival occurs when
-$$
-S_* \ge 1.
-$$
-In phase chart variables this becomes
-$$
-xy \ge 1.
-$$
-Thus the survival boundary is
-$$
-\boxed{
-xy = 1
-}
-$$
-This curve separates ephemeral and persistent excitations.</p>
+<p>Earlier derivations showed that survival occurs when <span class="arithmatex">\(S_* \geq 1\)</span>.
+In phase chart variables this becomes</p>
+<div class="arithmatex">\[
+xy \geq 1.
+\]</div>
+<p>Thus the survival boundary is</p>
+<div class="arithmatex">\[
+\boxed{xy = 1}
+\]</div>
+<p>This curve separates ephemeral and persistent excitations.</p>
 <h2 id="1019-phase-chart-geometry">10.1.9 Phase chart geometry<a class="headerlink" href="#1019-phase-chart-geometry" title="Permanent link">&para;</a></h2>
-<p>The CTS phase chart therefore has coordinates
-$$
-(x,y) =
-(\Lambda_{lock},;S_*).
-$$
-The chart divides into two fundamental regions:
-region
-condition
-ephemeral region
-(xy &lt; 1)
-persistent region
-(xy &gt; 1)</p>
+<p>The CTS phase chart therefore has coordinates</p>
+<div class="arithmatex">\[
+(x, y) = (\Lambda_{lock},\; S_*).
+\]</div>
+<p>The chart divides into two fundamental regions:</p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ephemeral region</td>
+<td><span class="arithmatex">\(xy &lt; 1\)</span></td>
+</tr>
+<tr>
+<td>Persistent region</td>
+<td><span class="arithmatex">\(xy &gt; 1\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>Excitations that lie above the threshold curve survive.</p>
 <h2 id="10110-structural-interpretation">10.1.10 Structural interpretation<a class="headerlink" href="#10110-structural-interpretation" title="Permanent link">&para;</a></h2>
 <p>The phase chart reveals a geometric interpretation of emergence.
-Structures can survive in two ways:
-high locking strength (large (x))
-high persistence capacity (large (y))
-The most durable structures possess both.</p>
+Structures can survive in two ways:</p>
+<ul>
+<li>High locking strength (large <span class="arithmatex">\(x\)</span>)</li>
+<li>High persistence capacity (large <span class="arithmatex">\(y\)</span>)</li>
+</ul>
+<p>The most durable structures possess both.</p>
 <h2 id="10111-mapping-the-excitation-hierarchy">10.1.11 Mapping the excitation hierarchy<a class="headerlink" href="#10111-mapping-the-excitation-hierarchy" title="Permanent link">&para;</a></h2>
-<p>Using approximate values for CTS excitations, their positions on the chart become
-excitation
-(x)
-(y)
-wave
-≈0
-≪1
-phase-locked mode
-small
-&lt;1
-vortex
-~1
-~1
-ring
-~2–5</p>
-<blockquote>
-<p>1
-chiral primitive
-~5–10
-≫1
-shell
-~10–50
-≫10
-braid
-≫50
-≫100</p>
-</blockquote>
+<p>Using approximate values for CTS excitations, their positions on the chart become:</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th><span class="arithmatex">\(x\)</span></th>
+<th><span class="arithmatex">\(y\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave</td>
+<td><span class="arithmatex">\(\approx 0\)</span></td>
+<td><span class="arithmatex">\(\ll 1\)</span></td>
+</tr>
+<tr>
+<td>Phase-locked mode</td>
+<td>Small</td>
+<td><span class="arithmatex">\(&lt; 1\)</span></td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td><span class="arithmatex">\(\sim 1\)</span></td>
+<td><span class="arithmatex">\(\sim 1\)</span></td>
+</tr>
+<tr>
+<td>Ring</td>
+<td><span class="arithmatex">\(\sim 2\)</span>–<span class="arithmatex">\(5\)</span></td>
+<td><span class="arithmatex">\(&gt; 1\)</span></td>
+</tr>
+<tr>
+<td>Chiral primitive</td>
+<td><span class="arithmatex">\(\sim 5\)</span>–<span class="arithmatex">\(10\)</span></td>
+<td><span class="arithmatex">\(\gg 1\)</span></td>
+</tr>
+<tr>
+<td>Shell</td>
+<td><span class="arithmatex">\(\sim 10\)</span>–<span class="arithmatex">\(50\)</span></td>
+<td><span class="arithmatex">\(\gg 10\)</span></td>
+</tr>
+<tr>
+<td>Braid</td>
+<td><span class="arithmatex">\(\gg 50\)</span></td>
+<td><span class="arithmatex">\(\gg 100\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>This mapping naturally produces the structural regions derived earlier.</p>
 <h2 id="10112-structural-phase-diagram">10.1.12 Structural phase diagram<a class="headerlink" href="#10112-structural-phase-diagram" title="Permanent link">&para;</a></h2>
-<p>Plotting these points produces a phase diagram with regions corresponding to
-background propagation
-localized precursors
-closure survival
-chirality survival
-shell survival
-composite survival.
-The boundaries between these regions will be derived in the following sections.</p>
+<p>Plotting these points produces a phase diagram with regions corresponding to:</p>
+<ul>
+<li>Background propagation</li>
+<li>Localized precursors</li>
+<li>Closure survival</li>
+<li>Chirality survival</li>
+<li>Shell survival</li>
+<li>Composite survival</li>
+</ul>
+<p>The boundaries between these regions will be derived in the following sections.</p>
 <h2 id="10113-summary">10.1.13 Summary<a class="headerlink" href="#10113-summary" title="Permanent link">&para;</a></h2>
-<p>The CTS Threshold Phase Chart uses two dimensionless variables:
-$$
+<p>The CTS Threshold Phase Chart uses two dimensionless variables:</p>
+<div class="arithmatex">\[
 x = \Lambda_{lock}
-$$
-$$
-y =
-\mathcal{E}{shell}\mathcal{E}D T{obj}
-\frac{R}{\dot{R} t_{ref}}
-$$
-The survival boundary is
-$$
+\]</div>
+<div class="arithmatex">\[
+y = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\, t_{ref}}
+\]</div>
+<p>The survival boundary is</p>
+<div class="arithmatex">\[
 xy = 1.
-$$
-This chart provides a geometric representation of structural emergence within the Collapse Tension Substrate.</p>
-<p>Survival Number in Chart Form
-This section rewrites the persistence condition directly in the coordinates of the phase chart and derives the explicit survival boundary.</p>
+\]</div>
+<p>This chart provides a geometric representation of structural emergence within the Collapse Tension Substrate.</p>
 
 
 

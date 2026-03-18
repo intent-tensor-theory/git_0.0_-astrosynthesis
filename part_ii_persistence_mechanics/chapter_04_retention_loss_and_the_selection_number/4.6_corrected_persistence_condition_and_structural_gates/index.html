@@ -6546,166 +6546,120 @@
 
 <h1 id="46-corrected-persistence-condition-and-structural-gates">4.6 Corrected Persistence Condition and Structural Gates<a class="headerlink" href="#46-corrected-persistence-condition-and-structural-gates" title="Permanent link">&para;</a></h1>
 <h2 id="461-motivation-for-a-corrected-persistence-condition">4.6.1 Motivation for a corrected persistence condition<a class="headerlink" href="#461-motivation-for-a-corrected-persistence-condition" title="Permanent link">&para;</a></h2>
-<p>The basic persistence equation
-$$
-S = \frac{R}{\dot R,t_{ref}}
-$$
-captures the balance between retained structure and structural loss. However, real systems often contain additional constraints that determine whether structures are eligible to persist.
-Even when
-$$
-S &gt; 1,
-$$
-a configuration may still fail to survive if it lacks the necessary structural compatibility with its environment.
-Thus persistence requires not only sufficient retained structure but also structural eligibility.</p>
+<p>The basic persistence equation</p>
+<div class="arithmatex">\[
+S = \frac{R}{\dot{R}\,t_{ref}}
+\]</div>
+<p>captures the balance between retained structure and structural loss. However, real systems often contain additional constraints that determine whether structures are eligible to persist. Even when <span class="arithmatex">\(S &gt; 1\)</span>, a configuration may still fail to survive if it lacks the necessary structural compatibility with its environment. Thus persistence requires not only sufficient retained structure but also structural eligibility.</p>
 <h2 id="462-structural-eligibility-factor">4.6.2 Structural eligibility factor<a class="headerlink" href="#462-structural-eligibility-factor" title="Permanent link">&para;</a></h2>
-<p>Define an eligibility factor
-$$
-\chi
-$$
-that measures whether a configuration satisfies the necessary structural constraints of the substrate.
-Examples of such constraints include
-compatibility with boundary conditions
-symmetry constraints
-topological admissibility.
-If
-$$
-\chi = 0
-$$
-the configuration cannot exist regardless of the value of (S).
-If
-$$
-\chi = 1
-$$
-the configuration satisfies the structural requirements.</p>
+<p>Define an eligibility factor <span class="arithmatex">\(\chi\)</span> that measures whether a configuration satisfies the necessary structural constraints of the substrate. Examples of such constraints include:</p>
+<ul>
+<li>Compatibility with boundary conditions</li>
+<li>Symmetry constraints</li>
+<li>Topological admissibility</li>
+</ul>
+<p>If <span class="arithmatex">\(\chi = 0\)</span>, the configuration cannot exist regardless of the value of <span class="arithmatex">\(S\)</span>. If <span class="arithmatex">\(\chi = 1\)</span>, the configuration satisfies the structural requirements.</p>
 <h2 id="463-drift-stability-factor">4.6.3 Drift stability factor<a class="headerlink" href="#463-drift-stability-factor" title="Permanent link">&para;</a></h2>
-<p>Structures that satisfy the persistence condition may still drift through configuration space.
-Define a drift stability factor
-$$
-D
-$$
-which measures resistance to drift.
-This factor depends on how strongly the configuration is anchored within the structural landscape.
-Values range between
-$$
-0 \le D \le 1.
-$$
-Low values correspond to unstable configurations that quickly wander into dissipative regions.
-High values correspond to stable attractor configurations.</p>
+<p>Structures that satisfy the persistence condition may still drift through configuration space. Define a drift stability factor <span class="arithmatex">\(D\)</span> which measures resistance to drift. This factor depends on how strongly the configuration is anchored within the structural landscape. Values range between</p>
+<div class="arithmatex">\[
+0 \leq D \leq 1.
+\]</div>
+<p>Low values correspond to unstable configurations that quickly wander into dissipative regions. High values correspond to stable attractor configurations.</p>
 <h2 id="464-structural-gate-function">4.6.4 Structural gate function<a class="headerlink" href="#464-structural-gate-function" title="Permanent link">&para;</a></h2>
-<p>Combining eligibility and drift stability gives the structural gate condition
-$$
-G = \chi D.
-$$
-If
-$$
-G = 0
-$$
-the configuration fails the gate condition and cannot persist.
-If
-$$
-G &gt; 0
-$$
-the configuration passes the gate and may survive depending on the selection number.</p>
+<p>Combining eligibility and drift stability gives the structural gate condition</p>
+<div class="arithmatex">\[
+G = \chi\,D.
+\]</div>
+<p>If <span class="arithmatex">\(G = 0\)</span>, the configuration fails the gate condition and cannot persist. If <span class="arithmatex">\(G &gt; 0\)</span>, the configuration passes the gate and may survive depending on the selection number.</p>
 <h2 id="465-corrected-persistence-equation">4.6.5 Corrected persistence equation<a class="headerlink" href="#465-corrected-persistence-equation" title="Permanent link">&para;</a></h2>
-<p>Including the structural gate factor modifies the persistence condition.
-Define the corrected persistence number
-$$
-S_<em> = \chi D S.
-$$
-Substituting the original definition of (S) gives
-$$
-S_</em> =
-\chi D
-\frac{R}{\dot R,t_{ref}}.
-$$
-Persistence now requires
-$$
-S_* \ge 1.
-$$</p>
+<p>Including the structural gate factor modifies the persistence condition. Define the corrected persistence number</p>
+<div class="arithmatex">\[
+S_* = \chi\,D\,S.
+\]</div>
+<p>Substituting the original definition of <span class="arithmatex">\(S\)</span> gives</p>
+<div class="arithmatex">\[
+S_* = \chi\,D\,\frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>Persistence now requires</p>
+<div class="arithmatex">\[
+S_* \geq 1.
+\]</div>
 <h2 id="466-structural-interpretation">4.6.6 Structural interpretation<a class="headerlink" href="#466-structural-interpretation" title="Permanent link">&para;</a></h2>
-<p>The corrected persistence condition shows that three factors determine structural survival:
-retained structure (R)
-loss rate ( <span class="arithmatex">\(\dot R)\)</span>
-structural eligibility ( <span class="arithmatex">\(\chi D ).\)</span>
-Even large values of retained structure cannot produce persistence if the configuration fails structural constraints.</p>
+<p>The corrected persistence condition shows that three factors determine structural survival:</p>
+<ul>
+<li>Retained structure <span class="arithmatex">\(R\)</span></li>
+<li>Loss rate <span class="arithmatex">\(\dot{R}\)</span></li>
+<li>Structural eligibility <span class="arithmatex">\(\chi\,D\)</span></li>
+</ul>
+<p>Even large values of retained structure cannot produce persistence if the configuration fails structural constraints.</p>
 <h2 id="467-structural-gates-in-the-collapse-ladder">4.6.7 Structural gates in the collapse ladder<a class="headerlink" href="#467-structural-gates-in-the-collapse-ladder" title="Permanent link">&para;</a></h2>
-<p>The collapse ladder described in Chapter 3 introduces new retention channels at each stage.
-Each stage therefore corresponds to a new structural gate.
-stage
-structural gate
-scalar
-amplitude stability
-gradient
-spatial tension
-circulation
-rotational coherence
-closure
-boundary formation</p>
+<p>The collapse ladder described in Chapter 3 introduces new retention channels at each stage. Each stage therefore corresponds to a new structural gate:</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Structural gate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scalar</td>
+<td>Amplitude stability</td>
+</tr>
+<tr>
+<td>Gradient</td>
+<td>Spatial tension</td>
+</tr>
+<tr>
+<td>Circulation</td>
+<td>Rotational coherence</td>
+</tr>
+<tr>
+<td>Closure</td>
+<td>Boundary formation</td>
+</tr>
+</tbody>
+</table>
 <p>These gates must be satisfied sequentially.</p>
 <h2 id="468-composite-persistence-condition">4.6.8 Composite persistence condition<a class="headerlink" href="#468-composite-persistence-condition" title="Permanent link">&para;</a></h2>
-<p>For a structure containing multiple retention channels
-$$
+<p>For a structure containing multiple retention channels</p>
+<div class="arithmatex">\[
 R = \sum_i R_i,
-$$
-the corrected persistence number becomes
-$$
-S_* =
-\chi D
-\frac{\sum_i R_i}{\dot R,t_{ref}}.
-$$
-This expression shows that multiple retention mechanisms can collectively increase persistence.</p>
+\]</div>
+<p>the corrected persistence number becomes</p>
+<div class="arithmatex">\[
+S_* = \chi\,D\,\frac{\sum_i R_i}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>This expression shows that multiple retention mechanisms can collectively increase persistence.</p>
 <h2 id="469-structural-thresholds">4.6.9 Structural thresholds<a class="headerlink" href="#469-structural-thresholds" title="Permanent link">&para;</a></h2>
-<p>The emergence boundary now becomes
-$$
-S_<em> = 1.
-$$
-Configurations satisfying
-$$
-S_</em> &lt; 1
-$$
-fail to persist.
-Configurations satisfying
-$$
-S_* &gt; 1
-$$
-enter the persistent domain.
-Thus structural eligibility modifies the effective threshold.</p>
+<p>The emergence boundary now becomes <span class="arithmatex">\(S_* = 1\)</span>. Configurations satisfying <span class="arithmatex">\(S_* &lt; 1\)</span> fail to persist. Configurations satisfying <span class="arithmatex">\(S_* &gt; 1\)</span> enter the persistent domain. Thus structural eligibility modifies the effective threshold.</p>
 <h2 id="4610-structural-gating-as-phase-filtering">4.6.10 Structural gating as phase filtering<a class="headerlink" href="#4610-structural-gating-as-phase-filtering" title="Permanent link">&para;</a></h2>
-<p>The gate condition can be interpreted as a filter acting on configuration space.
-Define the gated configuration set
-$$
-\Omega_{gate}
-{\sigma_i \mid \chi_i D_i &gt; 0}.
-$$
-Persistence then selects
-$$
-\Omega_{persist}
-{\sigma_i \in \Omega_{gate} \mid S_i \ge 1}.
-$$
-Thus emergence occurs through two sequential filters:
-structural gating
-persistence selection.</p>
+<p>The gate condition can be interpreted as a filter acting on configuration space. Define the gated configuration set</p>
+<div class="arithmatex">\[
+\Omega_{gate} = \{\,\sigma_i \mid \chi_i\,D_i &gt; 0\,\}.
+\]</div>
+<p>Persistence then selects</p>
+<div class="arithmatex">\[
+\Omega_{persist} = \{\,\sigma_i \in \Omega_{gate} \mid S_i \geq 1\,\}.
+\]</div>
+<p>Thus emergence occurs through two sequential filters:</p>
+<ul>
+<li>Structural gating</li>
+<li>Persistence selection</li>
+</ul>
 <h2 id="4611-implication-for-emergence-theory">4.6.11 Implication for emergence theory<a class="headerlink" href="#4611-implication-for-emergence-theory" title="Permanent link">&para;</a></h2>
-<p>The corrected persistence condition explains why many potential structures never appear in physical systems.
-Even if the persistence number is large, a configuration may fail the structural gate if it violates topological or geometric constraints.
-Thus emergence depends both on energetic stability and structural admissibility.</p>
+<p>The corrected persistence condition explains why many potential structures never appear in physical systems. Even if the persistence number is large, a configuration may fail the structural gate if it violates topological or geometric constraints. Thus emergence depends both on energetic stability and structural admissibility.</p>
 <h2 id="4612-summary">4.6.12 Summary<a class="headerlink" href="#4612-summary" title="Permanent link">&para;</a></h2>
-<p>The persistence condition is refined by introducing structural eligibility and drift stability.
-The corrected persistence number becomes
-$$
-S_<em> =
-\chi D
-\frac{R}{\dot R,t_{ref}}.
-$$
-Structures survive when
-$$
-S_</em> \ge 1.
-$$
-This equation defines the fundamental selection rule governing the survival of configurations within the Collapse Tension Substrate.</p>
-<p>Transition to Chapter 5
-With the persistence condition fully defined, the next chapter analyzes how eligibility and drift stability determine which structural configurations can pass the persistence gate.</p>
-<p>Why Raw Persistence Is Not Enough
-This section begins the formal study of eligibility operators and structural gates in persistence mechanics.</p>
+<p>The persistence condition is refined by introducing structural eligibility and drift stability. The corrected persistence number becomes</p>
+<div class="arithmatex">\[
+S_* = \chi\,D\,\frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>Structures survive when</p>
+<div class="arithmatex">\[
+S_* \geq 1.
+\]</div>
+<p>This equation defines the fundamental selection rule governing the survival of configurations within the Collapse Tension Substrate.</p>
+<p><em>Transition to Chapter 5:</em> With the persistence condition fully defined, the next chapter analyzes how eligibility and drift stability determine which structural configurations can pass the persistence gate.</p>
 
 
 

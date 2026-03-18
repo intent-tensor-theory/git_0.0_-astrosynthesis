@@ -6582,104 +6582,143 @@
 
 <h1 id="173-entropy-as-degradation-of-coherence">17.3 Entropy as Degradation of Coherence<a class="headerlink" href="#173-entropy-as-degradation-of-coherence" title="Permanent link">&para;</a></h1>
 <h2 id="1731-motivation">17.3.1 Motivation<a class="headerlink" href="#1731-motivation" title="Permanent link">&para;</a></h2>
-<p>Sections 17.1–17.2 established:
-• time as ordered loss
-• time as recursive memory decay
-The next step is to formalize entropy within the CTS framework.
+<p>Sections 17.1–17.2 established:</p>
+<ul>
+<li>time as ordered loss</li>
+<li>time as recursive memory decay</li>
+</ul>
+<p>The next step is to formalize entropy within the CTS framework.
 Standard physics defines entropy statistically.
 Here we derive entropy as a geometric and dynamical degradation of structural coherence.</p>
 <h2 id="1732-coherence-definition">17.3.2 Coherence definition<a class="headerlink" href="#1732-coherence-definition" title="Permanent link">&para;</a></h2>
 <p>Let a system be described by a field
-Φ(x,t).
+$$
+\Phi(x,t).
+$$
 Define coherence as the degree of phase and amplitude correlation across the system.
 A natural measure is the two-point correlation function
-C(x,x′)=⟨Φ(x)Φ(x′)⟩.
-)=⟨Φ(x)Φ(x
+$$
+C(x, x') = \langle \Phi(x)\, \Phi(x') \rangle.
+$$
 High coherence implies strong correlation across space.</p>
 <h2 id="1733-coherence-measure">17.3.3 Coherence measure<a class="headerlink" href="#1733-coherence-measure" title="Permanent link">&para;</a></h2>
 <p>Define a global coherence measure
-C=1V2∫d3x d3x′ C(x,x′).
+$$
+\mathcal{C} = \frac{1}{V^2}\int d^3x\, d^3x'\, C(x, x').
+$$
 If the system is perfectly coherent:
-C≈1.
+$$
+\mathcal{C} \approx 1.
+$$
 If the system is random:
-C→0.</p>
+$$
+\mathcal{C} \to 0.
+$$</p>
 <h2 id="1734-entropy-as-inverse-coherence">17.3.4 Entropy as inverse coherence<a class="headerlink" href="#1734-entropy-as-inverse-coherence" title="Permanent link">&para;</a></h2>
 <p>We define entropy as a function of coherence:
-SCTS=−log⁡C.
-• high coherence → low entropy
-• low coherence → high entropy.</p>
+$$
+S_{\text{CTS}} = -\log \mathcal{C}.
+$$</p>
+<ul>
+<li>high coherence <span class="arithmatex">\(\to\)</span> low entropy</li>
+<li>low coherence <span class="arithmatex">\(\to\)</span> high entropy</li>
+</ul>
 <h2 id="1735-time-evolution-of-coherence">17.3.5 Time evolution of coherence<a class="headerlink" href="#1735-time-evolution-of-coherence" title="Permanent link">&para;</a></h2>
 <p>Coherence decays due to interactions and perturbations.
 Assume exponential decay:
-dCdt=−γC.
+$$
+\frac{d\mathcal{C}}{dt} = -\gamma\, \mathcal{C}.
+$$
 Solution:
-C(t)=C0e−γt.</p>
+$$
+\mathcal{C}(t) = \mathcal{C}_0\, e^{-\gamma t}.
+$$</p>
 <h2 id="1736-entropy-growth">17.3.6 Entropy growth<a class="headerlink" href="#1736-entropy-growth" title="Permanent link">&para;</a></h2>
-<p>Substituting into entropy definition:
-SCTS(t)=−log⁡(C0e−γt)=−log⁡C0+γt.
-(t)=−log(C
-dSCTSdt=γ&gt;0.
-Entropy increases linearly with time.</p>
+<p>Substituting into the entropy definition:
+$$
+S_{\text{CTS}}(t) = -\log!\left(\mathcal{C}<em _text_CTS="\text{CTS">0\, e^{-\gamma t}\right) = -\log \mathcal{C}_0 + \gamma t.
+$$
+Thus
+$$
+\frac{dS</em> = \gamma &gt; 0.
+$$
+Entropy increases linearly with time.}}}{dt</p>
 <h2 id="1737-relation-to-thermodynamic-entropy">17.3.7 Relation to thermodynamic entropy<a class="headerlink" href="#1737-relation-to-thermodynamic-entropy" title="Permanent link">&para;</a></h2>
 <p>Standard thermodynamic entropy is
-S=kBlog⁡Ω.
-Ω is the number of accessible microstates.
+$$
+S = k_B \log \Omega,
+$$
+where <span class="arithmatex">\(\Omega\)</span> is the number of accessible microstates.
 Loss of coherence increases the number of accessible states.
 Thus
-SCTS∼log⁡Ω.
+$$
+S_{\text{CTS}} \sim \log \Omega.
+$$
 The CTS entropy definition is consistent with thermodynamics.</p>
 <h2 id="1738-coherence-length">17.3.8 Coherence length<a class="headerlink" href="#1738-coherence-length" title="Permanent link">&para;</a></h2>
-<p>Define coherence length
-ξ
-ξ
-as the scale over which correlations persist.
+<p>Define coherence length <span class="arithmatex">\(\xi\)</span> as the scale over which correlations persist.
 If
-C(r)∼e−r/ξ,
-then decreasing 
-ξ corresponds to increasing entropy.</p>
+$$
+C(r) \sim e^{-r/\xi},
+$$
+then decreasing <span class="arithmatex">\(\xi\)</span> corresponds to increasing entropy.</p>
 <h2 id="1739-entropy-and-persistence">17.3.9 Entropy and persistence<a class="headerlink" href="#1739-entropy-and-persistence" title="Permanent link">&para;</a></h2>
 <p>Persistence requires maintaining coherence.
 Thus high persistence systems satisfy
-C≈1.
-and therefore
+$$
+\mathcal{C} \approx 1,
+$$
+and therefore <span class="arithmatex">\(S_{\text{CTS}} \approx 0\)</span>.
 Low persistence systems exhibit
-C→0,SCTS→∞.</p>
+$$
+\mathcal{C} \to 0,\quad S_{\text{CTS}} \to \infty.
+$$</p>
 <h2 id="17310-energycoherence-relationship">17.3.10 Energy–coherence relationship<a class="headerlink" href="#17310-energycoherence-relationship" title="Permanent link">&para;</a></h2>
 <p>Coherence is stabilized by locking energy.
 Assume
-C∼e−Enoise/Elock.
+$$
+\mathcal{C} \sim e^{-E_{\text{noise}}/E_{\text{lock}}}.
+$$
 Thus entropy becomes
-SCTS∼EnoiseElock.
+$$
+S_{\text{CTS}} \sim \frac{E_{\text{noise}}}{E_{\text{lock}}}.
+$$
 Stronger locking reduces entropy growth.</p>
 <h2 id="17311-entropy-production-rate">17.3.11 Entropy production rate<a class="headerlink" href="#17311-entropy-production-rate" title="Permanent link">&para;</a></h2>
 <p>Entropy production can be expressed as
-dSCTSdt=E˙noiseElock.
-This connects entropy growth directly to energy dissipation.</p>
+$$
+\frac{dS_{\text{CTS}}}{dt} = \frac{\dot{E}<em _text_lock="\text{lock">{\text{noise}}}{E</em>.
+$$
+This connects entropy growth directly to energy dissipation.}}</p>
 <h2 id="17312-coherence-in-composite-systems">17.3.12 Coherence in composite systems<a class="headerlink" href="#17312-coherence-in-composite-systems" title="Permanent link">&para;</a></h2>
 <p>Composite structures maintain coherence through multiple locking channels.
 Thus
-Ccomposite≫Csingle.
-composite
-This explains why complex structures can resist entropy longer.</p>
+$$
+\mathcal{C}<em _text_single="\text{single">{\text{composite}} \gg \mathcal{C}</em>.
+$$
+This explains why complex structures can resist entropy longer.}</p>
 <h2 id="17313-entropy-and-phase-transitions">17.3.13 Entropy and phase transitions<a class="headerlink" href="#17313-entropy-and-phase-transitions" title="Permanent link">&para;</a></h2>
 <p>At critical points coherence changes rapidly.
 For example:
-C→0asT→Tc.
+$$
+\mathcal{C} \to 0 \quad\text{as}\quad T \to T_c.
+$$
 This corresponds to a sharp increase in entropy.</p>
 <h2 id="17314-cts-interpretation">17.3.14 CTS interpretation<a class="headerlink" href="#17314-cts-interpretation" title="Permanent link">&para;</a></h2>
-<p>Within the CTS framework:
-• coherence = structural order
-• entropy = loss of coherence
-• time = accumulation of entropy.
-Thus the three concepts unify:
-time∼loss∼entropy growth.
-time∼loss∼entropy growth.</p>
+<p>Within the CTS framework:</p>
+<ul>
+<li>coherence = structural order</li>
+<li>entropy = loss of coherence</li>
+<li>time = accumulation of entropy</li>
+</ul>
+<p>Thus the three concepts unify:
+$$
+\text{time} \sim \text{loss} \sim \text{entropy growth.}
+$$</p>
 <h2 id="17315-summary">17.3.15 Summary<a class="headerlink" href="#17315-summary" title="Permanent link">&para;</a></h2>
 <p>Entropy can be interpreted as the logarithmic measure of coherence degradation within persistent systems.
 As coherence decays, entropy increases, providing a quantitative measure of structural loss.
 Within the Collapse Tension Substrate framework, entropy represents the fundamental driver of temporal evolution.</p>
-<p>Time, Drift, and Persistence Horizon
-This section derives how drift processes and finite persistence horizons define measurable time scales in the CTS framework.</p>
 
 
 

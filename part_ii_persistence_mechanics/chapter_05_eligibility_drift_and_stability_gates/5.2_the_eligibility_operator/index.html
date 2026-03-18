@@ -6548,197 +6548,208 @@
 <h2 id="521-from-structural-gates-to-operators">5.2.1 From structural gates to operators<a class="headerlink" href="#521-from-structural-gates-to-operators" title="Permanent link">&para;</a></h2>
 <p>In the previous section we introduced the concept of structural gates. These gates determine whether a configuration is admissible within the substrate.
 We now formalize this idea mathematically by introducing an eligibility operator.
-Let
-$$
-\sigma
-$$
-represent a configuration in configuration space ( <span class="arithmatex">\(\Omega).\)</span>
-The eligibility operator
-$$
-\mathcal{E}
-$$
-acts on configurations to determine whether they satisfy the structural constraints of the substrate.</p>
+Let <span class="arithmatex">\(\sigma\)</span> represent a configuration in configuration space <span class="arithmatex">\(\Omega\)</span>.
+The eligibility operator <span class="arithmatex">\(\mathcal{E}\)</span> acts on configurations to determine whether they satisfy the structural constraints of the substrate.</p>
 <h2 id="522-definition-of-the-eligibility-operator">5.2.2 Definition of the eligibility operator<a class="headerlink" href="#522-definition-of-the-eligibility-operator" title="Permanent link">&para;</a></h2>
-<p>The eligibility operator is defined as
-$$
+<p>The eligibility operator is defined as</p>
+<div class="arithmatex">\[
 \mathcal{E}(\sigma) =
 \begin{cases}
-1 &amp; \text{if configuration is admissible} \
+1 &amp; \text{if configuration is admissible} \\
 0 &amp; \text{if configuration violates constraints}
 \end{cases}
-$$
-Thus the operator maps the configuration space into the set
-$$
-{0,1}.
-$$
-Configurations for which
-$$
+\]</div>
+<p>Thus the operator maps the configuration space into the set <span class="arithmatex">\(\{0,1\}\)</span>.
+Configurations for which</p>
+<div class="arithmatex">\[
 \mathcal{E}(\sigma) = 1
-$$
-pass the structural gate.</p>
+\]</div>
+<p>pass the structural gate.</p>
 <h2 id="523-eligible-configuration-set">5.2.3 Eligible configuration set<a class="headerlink" href="#523-eligible-configuration-set" title="Permanent link">&para;</a></h2>
-<p>Using the eligibility operator we define the set of admissible configurations
-$$
-\Omega_{eligible}
-{\sigma \in \Omega \mid \mathcal{E}(\sigma) = 1}.
-$$
-Only configurations belonging to this set can exist in the substrate.
-Thus the physical configuration space becomes
-$$
+<p>Using the eligibility operator we define the set of admissible configurations</p>
+<div class="arithmatex">\[
+\Omega_{eligible} = \{\sigma \in \Omega \mid \mathcal{E}(\sigma) = 1\}.
+\]</div>
+<p>Only configurations belonging to this set can exist in the substrate.
+Thus the physical configuration space becomes</p>
+<div class="arithmatex">\[
 \Omega_{phys} = \Omega_{eligible}.
-$$</p>
+\]</div>
 <h2 id="524-constraints-defining-eligibility">5.2.4 Constraints defining eligibility<a class="headerlink" href="#524-constraints-defining-eligibility" title="Permanent link">&para;</a></h2>
 <p>The eligibility operator encodes the structural constraints imposed by the underlying system.
-Typical constraints include:
-Differential constraints
+Typical constraints include:</p>
+<p><strong>Differential constraints.</strong>
 Field configurations must satisfy differential equations.
-Example:
-$$
+Example:</p>
+<div class="arithmatex">\[
 \nabla \cdot \mathbf{B} = 0
-$$
-in electromagnetism.</p>
-<p>Topological constraints
+\]</div>
+<p>in electromagnetism.</p>
+<p><strong>Topological constraints.</strong>
 Certain structures possess conserved topological invariants.
-Example:
-$$
-Q = \int \mathbf{A} \cdot (\nabla \times \mathbf{A}), d^3x
-$$
-which defines helicity in fluid systems.</p>
-<p>Symmetry constraints
+Example:</p>
+<div class="arithmatex">\[
+Q = \int \mathbf{A} \cdot (\nabla \times \mathbf{A})\, d^3x
+\]</div>
+<p>which defines helicity in fluid systems.</p>
+<p><strong>Symmetry constraints.</strong>
 Configurations must respect the symmetry group of the substrate.
-Example:
-$$
+Example:</p>
+<div class="arithmatex">\[
 \Phi \rightarrow -\Phi
-$$
-in systems with parity symmetry.</p>
-<p>Boundary constraints
+\]</div>
+<p>in systems with parity symmetry.</p>
+<p><strong>Boundary constraints.</strong>
 Structures must satisfy boundary conditions.
-Example:
-$$
+Example:</p>
+<div class="arithmatex">\[
 \Phi|_{\partial V} = 0.
-$$</p>
+\]</div>
 <h2 id="525-eligibility-as-a-projection-operator">5.2.5 Eligibility as a projection operator<a class="headerlink" href="#525-eligibility-as-a-projection-operator" title="Permanent link">&para;</a></h2>
 <p>The eligibility operator can be interpreted as a projection onto the admissible subspace.
-Define
-$$
-\mathcal{P}<em eligible="eligible">{eligible}.
-$$
-Then
-$$
-\mathcal{P}</em>\sigma =
+Define <span class="arithmatex">\(\mathcal{P}_{eligible}\)</span>.
+Then</p>
+<div class="arithmatex">\[
+\mathcal{P}_{eligible}\,\sigma =
 \begin{cases}
-\sigma &amp; \text{if admissible} \
+\sigma &amp; \text{if admissible} \\
 0 &amp; \text{otherwise}
 \end{cases}
-$$
-This operator removes configurations that violate substrate constraints.</p>
+\]</div>
+<p>This operator removes configurations that violate substrate constraints.</p>
 <h2 id="526-eligibility-in-field-systems">5.2.6 Eligibility in field systems<a class="headerlink" href="#526-eligibility-in-field-systems" title="Permanent link">&para;</a></h2>
 <p>For field systems, eligibility may be expressed through functional constraints.
-Let
-$$
+Let</p>
+<div class="arithmatex">\[
 C_i[\Phi] = 0
-$$
-represent a set of constraint equations.
-Then
-$$
+\]</div>
+<p>represent a set of constraint equations.
+Then</p>
+<div class="arithmatex">\[
 \mathcal{E}(\Phi) =
 \prod_i \delta(C_i[\Phi]).
-$$
-Here ( <span class="arithmatex">\(\delta) denotes the Dirac delta function, enforcing the constraint.\)</span>
+\]</div>
+<p>Here <span class="arithmatex">\(\delta\)</span> denotes the Dirac delta function, enforcing the constraint.
 Thus only fields satisfying the constraints contribute to the admissible configuration space.</p>
 <h2 id="527-eligibility-and-structural-complexity">5.2.7 Eligibility and structural complexity<a class="headerlink" href="#527-eligibility-and-structural-complexity" title="Permanent link">&para;</a></h2>
 <p>As the collapse ladder introduces additional structural features, the eligibility operator becomes more restrictive.
-For example:
-structural level
-eligibility condition
-scalar
-amplitude stability
-gradient
-differentiability
-circulation
-vorticity continuity
-closure
-boundary smoothness</p>
+For example:</p>
+<table>
+<thead>
+<tr>
+<th>Structural level</th>
+<th>Eligibility condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar</td>
+<td>amplitude stability</td>
+</tr>
+<tr>
+<td>gradient</td>
+<td>differentiability</td>
+</tr>
+<tr>
+<td>circulation</td>
+<td>vorticity continuity</td>
+</tr>
+<tr>
+<td>closure</td>
+<td>boundary smoothness</td>
+</tr>
+</tbody>
+</table>
 <p>Each level introduces new constraints.</p>
 <h2 id="528-eligibility-and-topology">5.2.8 Eligibility and topology<a class="headerlink" href="#528-eligibility-and-topology" title="Permanent link">&para;</a></h2>
 <p>Topology plays an important role in eligibility.
 Certain structures cannot transform continuously into others.
-For example:
-vortex number
-winding number
-knot number.
-Define the topological invariant
-$$
-Q(\sigma).
-$$
-If the substrate allows only specific values of (Q), the eligibility operator enforces
-$$
+For example:</p>
+<ul>
+<li>vortex number</li>
+<li>winding number</li>
+<li>knot number</li>
+</ul>
+<p>Define the topological invariant <span class="arithmatex">\(Q(\sigma)\)</span>.
+If the substrate allows only specific values of <span class="arithmatex">\(Q\)</span>, the eligibility operator enforces</p>
+<div class="arithmatex">\[
 \mathcal{E}(\sigma) = 0
 \quad
 \text{when}
 \quad
 Q(\sigma) \notin \mathcal{Q}_{allowed}.
-$$</p>
+\]</div>
 <h2 id="529-interaction-with-persistence">5.2.9 Interaction with persistence<a class="headerlink" href="#529-interaction-with-persistence" title="Permanent link">&para;</a></h2>
 <p>Eligibility alone does not guarantee persistence.
 Thus we combine eligibility with the selection number derived earlier.
-The persistence condition becomes
-$$
-S_<em> =
-\mathcal{E}(\sigma)
-\frac{R}{\dot R,t_{ref}}.
-$$
-Thus if
-$$
+The persistence condition becomes</p>
+<div class="arithmatex">\[
+S_* =
+\mathcal{E}(\sigma)\,
+\frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>Thus if</p>
+<div class="arithmatex">\[
 \mathcal{E}(\sigma) = 0
-$$
-then
-$$
-S_</em> = 0
-$$
-regardless of the value of (S).</p>
+\]</div>
+<p>then</p>
+<div class="arithmatex">\[
+S_* = 0
+\]</div>
+<p>regardless of the value of <span class="arithmatex">\(S\)</span>.</p>
 <h2 id="5210-geometric-interpretation">5.2.10 Geometric interpretation<a class="headerlink" href="#5210-geometric-interpretation" title="Permanent link">&para;</a></h2>
 <p>In configuration space, the eligibility operator restricts motion to a subset of allowed configurations.
-The persistent structures therefore lie in the intersection
-$$
-\Omega_{persist}
-{\sigma \mid \mathcal{E}(\sigma)=1}
+The persistent structures therefore lie in the intersection</p>
+<div class="arithmatex">\[
+\Omega_{persist} =
+\{\sigma \mid \mathcal{E}(\sigma)=1\}
 \cap
-{\sigma \mid S \ge 1}.
-$$
-This intersection defines the observable structural manifold.</p>
+\{\sigma \mid S \geq 1\}.
+\]</div>
+<p>This intersection defines the observable structural manifold.</p>
 <h2 id="5211-eligibility-and-emergent-structures">5.2.11 Eligibility and emergent structures<a class="headerlink" href="#5211-eligibility-and-emergent-structures" title="Permanent link">&para;</a></h2>
 <p>Many emergent structures arise precisely because eligibility constraints restrict the system to particular configurations.
-Examples include:
-system
-emergent structure
-fluid dynamics
-vortices
-condensed matter
-solitons
-field theory
-topological defects
-cosmology
-domain walls</p>
+Examples include:</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Emergent structure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fluid dynamics</td>
+<td>vortices</td>
+</tr>
+<tr>
+<td>condensed matter</td>
+<td>solitons</td>
+</tr>
+<tr>
+<td>field theory</td>
+<td>topological defects</td>
+</tr>
+<tr>
+<td>cosmology</td>
+<td>domain walls</td>
+</tr>
+</tbody>
+</table>
 <p>These structures appear when admissible configurations satisfy persistence conditions.</p>
 <h2 id="5212-summary">5.2.12 Summary<a class="headerlink" href="#5212-summary" title="Permanent link">&para;</a></h2>
-<p>The eligibility operator
-$$
-\mathcal{E}
-$$
-defines the admissible configuration space of the substrate.
-Configurations must satisfy
-$$
+<p>The eligibility operator <span class="arithmatex">\(\mathcal{E}\)</span> defines the admissible configuration space of the substrate.
+Configurations must satisfy</p>
+<div class="arithmatex">\[
 \mathcal{E}(\sigma)=1
-$$
-to exist.
-Combined with the persistence condition
-$$
-S = \frac{R}{\dot R,t_{ref}},
-$$
-this operator determines which configurations can survive as persistent structures.</p>
-<p>Drift Stability
-This section derives the mathematical condition under which configurations remain localized in configuration space rather than drifting toward dissipative states.</p>
+\]</div>
+<p>to exist.
+Combined with the persistence condition</p>
+<div class="arithmatex">\[
+S = \frac{R}{\dot{R}\,t_{ref}},
+\]</div>
+<p>this operator determines which configurations can survive as persistent structures.</p>
+<p><em>Transition to Section 5.3:</em> Drift Stability derives the mathematical condition under which configurations remain localized in configuration space rather than drifting toward dissipative states.</p>
 
 
 

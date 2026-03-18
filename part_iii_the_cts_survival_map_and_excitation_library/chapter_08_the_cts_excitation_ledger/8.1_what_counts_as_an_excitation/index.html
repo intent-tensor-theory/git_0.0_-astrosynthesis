@@ -6568,121 +6568,173 @@ However, not every configuration deserves classification as an excitation.
 Many configurations are trivial or correspond merely to background fluctuations.
 Thus we require a precise mathematical definition of what constitutes a CTS excitation.</p>
 <h2 id="812-definition-of-excitation">8.1.2 Definition of excitation<a class="headerlink" href="#812-definition-of-excitation" title="Permanent link">&para;</a></h2>
-<p>Let the CTS vacuum configuration be
-Φ=Φ0.\Phi = \Phi_0.Φ=Φ0​.
-An excitation is a configuration
-Φ=Φ0+δΦ\Phi = \Phi_0 + \delta\PhiΦ=Φ0​+δΦ
-that satisfies the following conditions:
-it solves the field equations derived from the CTS functional,</p>
-<p>it carries finite energy above the vacuum, and</p>
-<p>it possesses a localized or structured energy distribution.</p>
-<p>Thus we define excitation energy as
-Eexc=E[Φ]−E[Φ0].E_{exc} = E[\Phi] - E[\Phi_0].Eexc​=E[Φ]−E[Φ0​].
-An excitation must satisfy
-0&lt;Eexc&lt;∞.0 &lt; E_{exc} &lt; \infty.0&lt;Eexc​&lt;∞.</p>
+<p>Let the CTS vacuum configuration be</p>
+<div class="arithmatex">\[
+\Phi = \Phi_0.
+\]</div>
+<p>An excitation is a configuration</p>
+<div class="arithmatex">\[
+\Phi = \Phi_0 + \delta\Phi
+\]</div>
+<p>that satisfies the following conditions:</p>
+<ul>
+<li>it solves the field equations derived from the CTS functional,</li>
+<li>it carries finite energy above the vacuum, and</li>
+<li>it possesses a localized or structured energy distribution.</li>
+</ul>
+<p>Thus we define excitation energy as</p>
+<div class="arithmatex">\[
+E_{exc} = E[\Phi] - E[\Phi_0].
+\]</div>
+<p>An excitation must satisfy</p>
+<div class="arithmatex">\[
+0 &lt; E_{exc} &lt; \infty.
+\]</div>
 <h2 id="813-localized-versus-delocalized-excitations">8.1.3 Localized versus delocalized excitations<a class="headerlink" href="#813-localized-versus-delocalized-excitations" title="Permanent link">&para;</a></h2>
-<p>Excitations fall into two broad categories.
-Delocalized excitations
-These extend across large regions of the substrate.
-Examples:
-plane waves</p>
-<p>oscillatory modes</p>
-<p>long-wavelength fluctuations.</p>
-<p>Mathematically they satisfy
-∣Φ∣∼constant over large volume.| <span class="arithmatex">\(\Phi| \sim \text{constant over large volume}.\)</span>
-Localized excitations
-These occupy finite spatial regions.
-Examples:</p>
-<p>solitons</p>
-<p>domain walls</p>
-<p>rings.</p>
-<p>Localized excitations satisfy
-Thus their energy density vanishes at infinity.</p>
+<p>Excitations fall into two broad categories.</p>
+<p><strong>Delocalized excitations</strong> extend across large regions of the substrate. Examples:</p>
+<ul>
+<li>plane waves</li>
+<li>oscillatory modes</li>
+<li>long-wavelength fluctuations.</li>
+</ul>
+<p>Mathematically they satisfy</p>
+<div class="arithmatex">\[
+|\Phi| \sim \text{constant over large volume.}
+\]</div>
+<p><strong>Localized excitations</strong> occupy finite spatial regions. Examples:</p>
+<ul>
+<li>solitons</li>
+<li>domain walls</li>
+<li>rings.</li>
+</ul>
+<p>Localized excitations satisfy</p>
+<div class="arithmatex">\[
+\mathcal{E}(\mathbf{x}) \rightarrow 0 \quad \text{as} \quad |\mathbf{x}| \rightarrow \infty.
+\]</div>
+<p>Thus their energy density vanishes at infinity.</p>
 <h2 id="814-energy-density">8.1.4 Energy density<a class="headerlink" href="#814-energy-density" title="Permanent link">&para;</a></h2>
-<p>Define the energy density
-$$
-E(x).\mathcal{E}<span class="arithmatex">\(\mathbf{x}\)</span>.E(x).
-$$
-The total excitation energy is
-Eexc=∫E(x) d3x.E_{exc} = \int \mathcal{E}<span class="arithmatex">\(\mathbf{x}\)</span>\,d^3x.Eexc​=∫E(x)d3x.
-An excitation requires that the integral converges.
-Thus
-$$
-E(x)0asx.\mathcal{E}<span class="arithmatex">\(\mathbf{x}\)</span> \rightarrow 0 \quad \text{as} \quad |\mathbf{x}| \rightarrow \infty.E(x)
-$$</p>
+<p>Define the energy density <span class="arithmatex">\(\mathcal{E}(\mathbf{x})\)</span>.</p>
+<p>The total excitation energy is</p>
+<div class="arithmatex">\[
+E_{exc} = \int \mathcal{E}(\mathbf{x})\,d^3x.
+\]</div>
+<p>An excitation requires that the integral converges. Thus</p>
+<div class="arithmatex">\[
+\mathcal{E}(\mathbf{x}) \rightarrow 0 \quad \text{as} \quad |\mathbf{x}| \rightarrow \infty.
+\]</div>
 <h2 id="815-stationary-versus-dynamic-excitations">8.1.5 Stationary versus dynamic excitations<a class="headerlink" href="#815-stationary-versus-dynamic-excitations" title="Permanent link">&para;</a></h2>
-<p>Excitations can also be classified by temporal behavior.
-Stationary excitations
-These configurations remain static in time.
-∂tΦ=0.\partial_t \Phi = 0.∂t​Φ=0.
-Examples:
-domain walls</p>
-<p>static vortices</p>
-<p>soliton solutions.</p>
-<p>Dynamic excitations
-These configurations evolve in time but maintain coherent structure.
-Examples:
-propagating waves</p>
-<p>traveling solitons</p>
-<p>oscillatory bound states.</p>
-<p>Dynamic excitations satisfy
-$$
-(x,t)=(xvt).\Phi<span class="arithmatex">\(\mathbf{x},t\)</span> = \Phi<span class="arithmatex">\(\mathbf{x}-vt\)</span>.
-$$</p>
+<p>Excitations can also be classified by temporal behavior.</p>
+<p><strong>Stationary excitations</strong> remain static in time:</p>
+<div class="arithmatex">\[
+\partial_t \Phi = 0.
+\]</div>
+<p>Examples:</p>
+<ul>
+<li>domain walls</li>
+<li>static vortices</li>
+<li>soliton solutions.</li>
+</ul>
+<p><strong>Dynamic excitations</strong> evolve in time but maintain coherent structure. Examples:</p>
+<ul>
+<li>propagating waves</li>
+<li>traveling solitons</li>
+<li>oscillatory bound states.</li>
+</ul>
+<p>Dynamic excitations satisfy</p>
+<div class="arithmatex">\[
+\Phi(\mathbf{x},t) = \Phi(\mathbf{x}-vt).
+\]</div>
 <h2 id="816-topological-excitations">8.1.6 Topological excitations<a class="headerlink" href="#816-topological-excitations" title="Permanent link">&para;</a></h2>
 <p>Some excitations are protected by topology.
-These excitations possess conserved invariants such as
-n=12π∮∇θ⋅dl.n = \frac{1}{2\pi}\oint\nabla\theta\cdot dl.n=2π1​∮∇θ⋅dl.
-Such excitations cannot decay continuously into the vacuum.
-Examples include
-vortices</p>
-<p>rings</p>
-<p>knots.</p>
+These excitations possess conserved invariants such as</p>
+<div class="arithmatex">\[
+n = \frac{1}{2\pi}\oint\nabla\theta\cdot d\mathbf{l}.
+\]</div>
+<p>Such excitations cannot decay continuously into the vacuum. Examples include</p>
+<ul>
+<li>vortices</li>
+<li>rings</li>
+<li>knots.</li>
+</ul>
 <h2 id="817-non-topological-excitations">8.1.7 Non-topological excitations<a class="headerlink" href="#817-non-topological-excitations" title="Permanent link">&para;</a></h2>
-<p>Other excitations are stabilized not by topology but by energy balance.
-Examples include</p>
-<p>oscillons</p>
-<p>localized wave packets.</p>
+<p>Other excitations are stabilized not by topology but by energy balance. Examples include</p>
+<ul>
+<li>oscillons</li>
+<li>localized wave packets.</li>
+</ul>
 <p>These structures persist due to nonlinear stabilization mechanisms.</p>
 <h2 id="818-structural-parameters-of-an-excitation">8.1.8 Structural parameters of an excitation<a class="headerlink" href="#818-structural-parameters-of-an-excitation" title="Permanent link">&para;</a></h2>
-<p>Each CTS excitation can be characterized by a set of structural parameters:
-parameter
-formation energy
-structural locking energy
-retained structure
-characteristic size
-topology factor</p>
+<p>Each CTS excitation can be characterized by a set of structural parameters:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(E_{form}\)</span></td>
+<td>formation energy</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(E_{lock}\)</span></td>
+<td>structural locking energy</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(E_{total}\)</span></td>
+<td>retained structure</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(L_*\)</span></td>
+<td>characteristic size</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(T_{obj}\)</span></td>
+<td>topology factor</td>
+</tr>
+</tbody>
+</table>
 <p>These parameters determine whether the excitation survives persistence selection.</p>
 <h2 id="819-persistence-threshold">8.1.9 Persistence threshold<a class="headerlink" href="#819-persistence-threshold" title="Permanent link">&para;</a></h2>
-<p>An excitation becomes a persistent structure when it satisfies
-S∗=EshellEDTobjRR˙ tref≥1.S_* = \mathcal{E}<em obj="obj">{shell}\mathcal{E}D T</em> \ge 1.S∗​=Eshell​EDTobj​R˙tref​R​≥1.
-Thus the excitation ledger must record the parameters required to evaluate this condition.} \frac{R}{\dot R\,t_{ref}</p>
+<p>An excitation becomes a persistent structure when it satisfies</p>
+<div class="arithmatex">\[
+S = \frac{R}{\dot{R}\,t_{ref}} \geq 1.
+\]</div>
+<p>Thus the excitation ledger must record the parameters required to evaluate this condition.</p>
 <h2 id="8110-excitation-classification-problem">8.1.10 Excitation classification problem<a class="headerlink" href="#8110-excitation-classification-problem" title="Permanent link">&para;</a></h2>
 <p>The goal of the CTS excitation ledger is to systematically classify all excitations supported by the substrate.
 Each entry in the ledger corresponds to a solution of the field equations together with its structural parameters.
-This classification allows us to determine
-which excitations appear frequently</p>
-<p>which excitations are rare</p>
-<p>which excitations become persistent objects.</p>
+This classification allows us to determine</p>
+<ul>
+<li>which excitations appear frequently</li>
+<li>which excitations are rare</li>
+<li>which excitations become persistent objects.</li>
+</ul>
 <h2 id="8111-ledger-structure">8.1.11 Ledger structure<a class="headerlink" href="#8111-ledger-structure" title="Permanent link">&para;</a></h2>
-<p>Each entry in the ledger takes the form
-(type,Eform,Elock,Etotal,L,Tobj)<span class="arithmatex">\(\text{type}, E_{form}, E_{lock}, E_{total}, L, T_{obj}\)</span>(type,Eform​,Elock​,Etotal​,L,Tobj​)
-These quantities will be used in later chapters to construct the CTS survival map.</p>
+<p>Each entry in the ledger takes the form</p>
+<div class="arithmatex">\[
+\left(\text{type},\; E_{form},\; E_{lock},\; E_{total},\; L_*,\; T_{obj}\right).
+\]</div>
+<p>These quantities will be used in later chapters to construct the CTS survival map.</p>
 <h2 id="8112-role-of-the-excitation-ledger">8.1.12 Role of the excitation ledger<a class="headerlink" href="#8112-role-of-the-excitation-ledger" title="Permanent link">&para;</a></h2>
-<p>The ledger serves as the bridge between two components of the theory:
-the energy functional, which generates possible excitations,</p>
-<p>the persistence framework, which determines which excitations survive.</p>
+<p>The ledger serves as the bridge between two components of the theory:</p>
+<ul>
+<li>the energy functional, which generates possible excitations,</li>
+<li>the persistence framework, which determines which excitations survive.</li>
+</ul>
 <p>Thus the excitation ledger provides the mathematical inventory of structural possibilities within the substrate.</p>
 <h2 id="8113-summary">8.1.13 Summary<a class="headerlink" href="#8113-summary" title="Permanent link">&para;</a></h2>
 <p>An excitation is a finite-energy field configuration above the vacuum that possesses structured spatial organization.
-Excitations may be
-localized or delocalized</p>
-<p>stationary or dynamic</p>
-<p>topological or non-topological.</p>
+Excitations may be</p>
+<ul>
+<li>localized or delocalized</li>
+<li>stationary or dynamic</li>
+<li>topological or non-topological.</li>
+</ul>
 <p>Each excitation is characterized by parameters such as formation energy, locking energy, size, and topology factor.
 These parameters form the entries of the CTS excitation ledger.</p>
-<p>Wave Modes
-This section derives the mathematical structure of the simplest CTS excitations: propagating substrate waves.</p>
 
 
 

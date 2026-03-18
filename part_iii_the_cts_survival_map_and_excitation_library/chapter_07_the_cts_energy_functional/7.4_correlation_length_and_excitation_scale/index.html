@@ -2687,6 +2687,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#751-relation-to-landau-ginzburg-higgs-like-and-topological-functionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5.1 Relation to Landau, Ginzburg, Higgs-Like, and Topological Functionals
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#7512-connection-to-the-persistence-equation" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6611,177 +6622,210 @@
 To classify CTS excitations, we therefore need to derive the characteristic spatial scale associated with the field parameters.
 That scale is determined by the correlation length.</p>
 <h2 id="742-linearized-fluctuation-equation">7.4.2 Linearized fluctuation equation<a class="headerlink" href="#742-linearized-fluctuation-equation" title="Permanent link">&para;</a></h2>
-<p>Start from the scalar CTS functional
-$$
-E[]=d3x[a2+u(2)2+r2+s4].E[\Phi] = \int d^3x \left[ a|\nabla\Phi|^2 + u<span class="arithmatex">\(\nabla^2\Phi\)</span>^2 + r\Phi^2 + s\Phi^4 \right].E[
-$$
-Let the field fluctuate around a vacuum value
-Φ(x)=Φ0+δΦ(x).\Phi<span class="arithmatex">\(\mathbf{x}\)</span> = \Phi_0 + \delta\Phi<span class="arithmatex">\(\mathbf{x}\)</span>.Φ(x)=Φ0​+δΦ(x).
-To leading order, the fluctuation dynamics are controlled by the quadratic terms in δΦ <span class="arithmatex">\(\delta\Phi\)</span>
-The linearized operator is
-$$
-L=a2+u4+m2\mathcal{L} = - a\nabla^2 + u\nabla^4 + m^2L=
-$$
-where the effective mass parameter is determined by the curvature of the potential at the vacuum.</p>
+<p>Start from the scalar CTS functional</p>
+<div class="arithmatex">\[
+E[\Phi] = \int d^3x \left[ a|\nabla\Phi|^2 + u\left(\nabla^2\Phi\right)^2 + r\Phi^2 + s\Phi^4 \right].
+\]</div>
+<p>Let the field fluctuate around a vacuum value</p>
+<div class="arithmatex">\[
+\Phi(\mathbf{x}) = \Phi_0 + \delta\Phi(\mathbf{x}).
+\]</div>
+<p>To leading order, the fluctuation dynamics are controlled by the quadratic terms in <span class="arithmatex">\(\delta\Phi\)</span>.
+The linearized operator is</p>
+<div class="arithmatex">\[
+\mathcal{L} = -a\nabla^2 + u\nabla^4 + m^2,
+\]</div>
+<p>where the effective mass parameter is determined by the curvature of the potential at the vacuum.</p>
 <h2 id="743-effective-mass">7.4.3 Effective mass<a class="headerlink" href="#743-effective-mass" title="Permanent link">&para;</a></h2>
-<p>The local potential is
-$$
-V()=r2+s4.V<span class="arithmatex">\(\Phi\)</span>=r\Phi^2+s\Phi^4.V(
-$$
-Its second derivative is
-d2VdΦ2=2r+12sΦ2.\frac{d^2V}{d\Phi^2} = 2r+12s\Phi^2.dΦ2d2V​=2r+12sΦ2.
-Evaluating at the vacuum:
-Symmetric phase: Φ0=0\Phi_0=0Φ0​=0
-m2=2r.m^2 = 2r.m2=2r.
-Since the broken phase requires r&lt;0r&lt;0r&lt;0, this gives
-m2=4∣r∣.m^2 = 4|r|.m2=4∣r∣.
+<p>The local potential is <span class="arithmatex">\(V(\Phi) = r\Phi^2 + s\Phi^4\)</span>.
+Its second derivative is</p>
+<div class="arithmatex">\[
+\frac{d^2V}{d\Phi^2} = 2r + 12s\Phi^2.
+\]</div>
+<p>Evaluating at the vacuum:</p>
+<ul>
+<li>Symmetric phase: <span class="arithmatex">\(\Phi_0 = 0\)</span> gives <span class="arithmatex">\(m^2 = 2r\)</span>.</li>
+<li>Broken phase: <span class="arithmatex">\(\Phi_0 = \pm\sqrt{-r/(2s)}\)</span> gives <span class="arithmatex">\(m^2 = 4|r|\)</span>.</li>
+</ul>
+<p>Since the broken phase requires <span class="arithmatex">\(r &lt; 0\)</span>, this gives a positive effective mass.
 Thus the broken vacuum supports stable fluctuations with positive effective mass.</p>
 <h2 id="744-fourier-space-dispersion-relation">7.4.4 Fourier-space dispersion relation<a class="headerlink" href="#744-fourier-space-dispersion-relation" title="Permanent link">&para;</a></h2>
-<p>Expand fluctuations in Fourier modes:
-$$
-(x)=~(k)eikxd3k.\delta\Phi<span class="arithmatex">\(\mathbf{x}\)</span> = \int \tilde{\Phi}<span class="arithmatex">\(\mathbf{k}\)</span> e^{i\mathbf{k}\cdot\mathbf{x}} \,d^3k.
-$$
-Acting on a Fourier mode, the operator becomes
-$$
-L(k)=ak2+uk4+m2.\mathcal{L}(k) = a k^2 + u k^4 + m^2.L(k)=ak2+uk4+m2.
-$$
-Thus the quadratic fluctuation energy is
-$$
-E(2)=d3k(ak2+uk4+m2)~(k)2.E^{(2)} =\int d^3k\; \left( a k^2 + u k^4 + m^2 \right) |\tilde{\Phi}<span class="arithmatex">\(\mathbf{k}\)</span>|^2.E(2)=
-$$
-This expression determines which wavelengths are energetically costly and which are favored.</p>
+<p>Expand fluctuations in Fourier modes:</p>
+<div class="arithmatex">\[
+\delta\Phi(\mathbf{x}) = \int \tilde{\Phi}(\mathbf{k})\, e^{i\mathbf{k}\cdot\mathbf{x}} \, d^3k.
+\]</div>
+<p>Acting on a Fourier mode, the operator becomes</p>
+<div class="arithmatex">\[
+\mathcal{L}(k) = ak^2 + uk^4 + m^2.
+\]</div>
+<p>Thus the quadratic fluctuation energy is</p>
+<div class="arithmatex">\[
+E^{(2)} = \int d^3k\; \left( ak^2 + uk^4 + m^2 \right) |\tilde{\Phi}(\mathbf{k})|^2.
+\]</div>
+<p>This expression determines which wavelengths are energetically costly and which are favored.</p>
 <h2 id="745-correlation-function">7.4.5 Correlation function<a class="headerlink" href="#745-correlation-function" title="Permanent link">&para;</a></h2>
-<p>The two-point correlation function is defined as
-$$
-G(xy)=(x)(y).G<span class="arithmatex">\(\mathbf{x}-\mathbf{y}\)</span> = \langle \delta\Phi<span class="arithmatex">\(\mathbf{x}\)</span>\delta\Phi<span class="arithmatex">\(\mathbf{y}\)</span> \rangle.G(x
-$$
-In Fourier space,
-This is the propagator of scalar fluctuations in the CTS substrate.
+<p>The two-point correlation function is defined as</p>
+<div class="arithmatex">\[
+G(\mathbf{x}-\mathbf{y}) = \langle \delta\Phi(\mathbf{x})\,\delta\Phi(\mathbf{y}) \rangle.
+\]</div>
+<p>In Fourier space, the propagator takes the form</p>
+<div class="arithmatex">\[
+\tilde{G}(k) = \frac{1}{ak^2 + uk^4 + m^2}.
+\]</div>
+<p>This is the propagator of scalar fluctuations in the CTS substrate.
 The characteristic length scale is determined by the location of the poles of this denominator.</p>
 <h2 id="746-correlation-length-without-curvature-term">7.4.6 Correlation length without curvature term<a class="headerlink" href="#746-correlation-length-without-curvature-term" title="Permanent link">&para;</a></h2>
-<p>If the curvature term is neglected at long wavelength, so that
-uk4≪ak2,u k^4 <span class="arithmatex">\(\ll a k^2,uk4\)</span>
-This is the standard Ornstein–Zernike form.
-The correlation length is then
-ξ=am2\boxed{ \xi = \sqrt{\frac{a}{m^2}} }ξ=m2a​​​
-or explicitly:
-Symmetric phase
-Broken phase
-This length gives the typical size over which the field remains coherent.</p>
+<p>If the curvature term is neglected at long wavelength, so that <span class="arithmatex">\(uk^4 \ll ak^2\)</span>, the propagator reduces to the Ornstein–Zernike form.
+The correlation length is then</p>
+<div class="arithmatex">\[
+\boxed{ \xi = \sqrt{\frac{a}{m^2}} }
+\]</div>
+<p>Explicitly:</p>
+<ul>
+<li>Symmetric phase: <span class="arithmatex">\(\xi = \sqrt{a/(2r)}\)</span></li>
+<li>Broken phase: <span class="arithmatex">\(\xi = \sqrt{a/(4|r|)}\)</span></li>
+</ul>
+<p>This length gives the typical size over which the field remains coherent.</p>
 <h2 id="747-critical-divergence">7.4.7 Critical divergence<a class="headerlink" href="#747-critical-divergence" title="Permanent link">&para;</a></h2>
-<p>As the system approaches the bifurcation point,
-$$
-r0,r\to 0,r
-$$
-the effective mass tends to zero:
-$$
-m20.m^2\to 0.m2
-$$
-$$
-.\xi \to \infty.
-$$
-This divergence means fluctuations become correlated across arbitrarily large scales near criticality.
+<p>As the system approaches the bifurcation point <span class="arithmatex">\(r \to 0\)</span>, the effective mass tends to zero: <span class="arithmatex">\(m^2 \to 0\)</span>, and therefore</p>
+<div class="arithmatex">\[
+\xi \to \infty.
+\]</div>
+<p>This divergence means fluctuations become correlated across arbitrarily large scales near criticality.
 This is one of the defining signatures of phase transition behavior in the CTS substrate.</p>
 <h2 id="748-curvature-controlled-excitation-scale">7.4.8 Curvature-controlled excitation scale<a class="headerlink" href="#748-curvature-controlled-excitation-scale" title="Permanent link">&para;</a></h2>
 <p>When the higher-order curvature term is important, the relevant scale is modified.
-The fluctuation denominator becomes
-ak2+uk4+m2.a k^2 + u k^4 + m^2.ak2+uk4+m2.
-To estimate the preferred nonzero scale, compare gradient and curvature terms:
-ak2∼uk4.a k^2 <span class="arithmatex">\(\sim u k^4.ak2\)</span>
-Solving gives
-Thus the associated structural length is
-ℓ∗∼ua\boxed{ \ell_* \sim \sqrt{\frac{u}{a}} }ℓ∗​∼au​​​
-This is the intrinsic curvature-stabilized excitation scale of the substrate.
+The fluctuation denominator becomes</p>
+<div class="arithmatex">\[
+ak^2 + uk^4 + m^2.
+\]</div>
+<p>To estimate the preferred nonzero scale, compare gradient and curvature terms: <span class="arithmatex">\(ak^2 \sim uk^4\)</span>.
+Solving gives <span class="arithmatex">\(k^2 \sim a/u\)</span>, so the associated structural length is</p>
+<div class="arithmatex">\[
+\boxed{ \ell_* \sim \sqrt{\frac{u}{a}} }
+\]</div>
+<p>This is the intrinsic curvature-stabilized excitation scale of the substrate.
 It sets the approximate size of localized patterns and precursor objects.</p>
 <h2 id="749-competing-scales">7.4.9 Competing scales<a class="headerlink" href="#749-competing-scales" title="Permanent link">&para;</a></h2>
-<p>The CTS therefore contains two important length scales:
-Correlation length
-which measures the extent of coherent fluctuations.
-Curvature scale
-which measures the size favored by curvature stabilization.
-These scales play different roles:
-$$
-\xi
-$$</p>
-<p>ℓ∗\ell_*ℓ∗​ controls localized structural size</p>
+<p>The CTS therefore contains two important length scales:</p>
+<ul>
+<li>Correlation length <span class="arithmatex">\(\xi\)</span>, which measures the extent of coherent fluctuations.</li>
+<li>Curvature scale <span class="arithmatex">\(\ell_*\)</span>, which measures the size favored by curvature stabilization.</li>
+</ul>
+<p>These scales play different roles:</p>
+<ul>
+<li><span class="arithmatex">\(\xi\)</span> controls the range of field coherence</li>
+<li><span class="arithmatex">\(\ell_*\)</span> controls localized structural size</li>
+</ul>
 <h2 id="7410-excitation-energy-estimate">7.4.10 Excitation energy estimate<a class="headerlink" href="#7410-excitation-energy-estimate" title="Permanent link">&para;</a></h2>
-<p>For a localized excitation of characteristic size LLL, the various energy contributions scale as
-Egrad∼aΦ02L2L3=aΦ02LE_{grad} \sim a \frac{\Phi_0^2}{L^2} L^3 = a\Phi_0^2 LEgrad​∼aL2Φ02​​L3=aΦ02​L Ecurv∼uΦ02L4L3=uΦ021LE_{curv} \sim u \frac{\Phi_0^2}{L^4} L^3 = u\Phi_0^2 \frac{1}{L}Ecurv​∼uL4Φ02​​L3=uΦ02​L1​ Emass∼m2Φ02L3.E_{mass} \sim m^2 \Phi_0^2 L^3.Emass​∼m2Φ02​L3.
-Thus the total excitation energy scales approximately as
-E(L)∼aΦ02L+uΦ021L+m2Φ02L3.E(L) \sim a\Phi_0^2 L + u\Phi_0^2 \frac{1}{L} + m^2\Phi_0^2 L^3.E(L)∼aΦ02​L+uΦ02​L1​+m2Φ02​L3.
-This equation is extremely important because it shows how different terms dominate at different sizes.</p>
+<p>For a localized excitation of characteristic size <span class="arithmatex">\(L\)</span>, the various energy contributions scale as</p>
+<div class="arithmatex">\[
+E_{grad} \sim a \frac{\Phi_0^2}{L^2} L^3 = a\Phi_0^2 L, \qquad E_{curv} \sim u \frac{\Phi_0^2}{L^4} L^3 = u\Phi_0^2 \frac{1}{L}, \qquad E_{mass} \sim m^2 \Phi_0^2 L^3.
+\]</div>
+<p>Thus the total excitation energy scales approximately as</p>
+<div class="arithmatex">\[
+E(L) \sim a\Phi_0^2 L + u\Phi_0^2 \frac{1}{L} + m^2\Phi_0^2 L^3.
+\]</div>
+<p>This equation shows how different terms dominate at different sizes.</p>
 <h2 id="7411-optimal-excitation-size">7.4.11 Optimal excitation size<a class="headerlink" href="#7411-optimal-excitation-size" title="Permanent link">&para;</a></h2>
-<p>To estimate the preferred excitation size, minimize E(L)E(L)E(L) with respect to LLL:
-dEdL∼aΦ02−uΦ021L2+3m2Φ02L2.\frac{dE}{dL} \sim a\Phi_0^2 - u\Phi_0^2 \frac{1}{L^2} + 3m^2\Phi_0^2 L^2.dLdE​∼aΦ02​−uΦ02​L21​+3m2Φ02​L2.
-Set this equal to zero:
-a−uL2+3m2L2=0.a - \frac{u}{L^2} + 3m^2 L^2 =0.a−L2u​+3m2L2=0.
-Multiplying by L2L^2L2 gives
-3m2L4+aL2−u=0.3m^2 L^4 + aL^2 - u = 0.3m2L4+aL2−u=0.
-X=L2.X=L^2.X=L2.
-3m2X2+aX−u=0.3m^2 X^2 + aX - u = 0.3m2X2+aX−u=0.
-Thus the preferred excitation size is
-L∗2=−a+a2+12m2u6m2\boxed{ L_*^2 = \frac{-a + \sqrt{a^2 + 12m^2u}}{6m^2} }L∗2​=6m2−a+a2+12m2u​​​
-and therefore
-This gives the characteristic size of finite CTS excitations.</p>
+<p>To estimate the preferred excitation size, minimize <span class="arithmatex">\(E(L)\)</span> with respect to <span class="arithmatex">\(L\)</span>:</p>
+<div class="arithmatex">\[
+\frac{dE}{dL} \sim a\Phi_0^2 - u\Phi_0^2 \frac{1}{L^2} + 3m^2\Phi_0^2 L^2.
+\]</div>
+<p>Setting this equal to zero:</p>
+<div class="arithmatex">\[
+a - \frac{u}{L^2} + 3m^2 L^2 = 0.
+\]</div>
+<p>Multiplying by <span class="arithmatex">\(L^2\)</span> gives</p>
+<div class="arithmatex">\[
+3m^2 L^4 + aL^2 - u = 0.
+\]</div>
+<p>Setting <span class="arithmatex">\(X = L^2\)</span>:</p>
+<div class="arithmatex">\[
+3m^2 X^2 + aX - u = 0.
+\]</div>
+<p>Thus the preferred excitation size is</p>
+<div class="arithmatex">\[
+\boxed{ L_*^2 = \frac{-a + \sqrt{a^2 + 12m^2 u}}{6m^2} }
+\]</div>
+<p>This gives the characteristic size of finite CTS excitations.</p>
 <h2 id="7412-limiting-cases">7.4.12 Limiting cases<a class="headerlink" href="#7412-limiting-cases" title="Permanent link">&para;</a></h2>
-<p>$$
-Near-critical regime: m20m^2\to 0m2
-$$
-Expand the square root:
-a2+12m2u≈a+6m2ua.\sqrt{a^2 + 12m^2u} \approx a + \frac{6m^2u}{a}.a2+12m2u​≈a+a6m2u​.
-So near criticality,
-The curvature scale dominates.</p>
-<p>Strong-mass regime: m2≫a2/um^2 <span class="arithmatex">\(\gg a^2/um2\)</span>
-So the excitation shrinks as the mass scale grows.
+<p>Near-critical regime: <span class="arithmatex">\(m^2 \to 0\)</span>.
+Expand the square root:</p>
+<div class="arithmatex">\[
+\sqrt{a^2 + 12m^2 u} \approx a + \frac{6m^2 u}{a}.
+\]</div>
+<p>So near criticality, <span class="arithmatex">\(L_*^2 \approx u/a\)</span>, meaning the curvature scale dominates.</p>
+<p>Strong-mass regime: <span class="arithmatex">\(m^2 \gg a^2/u\)</span>.
+The excitation size <span class="arithmatex">\(L_*\)</span> shrinks as the mass scale grows.
 This means heavier or more strongly restoring phases support smaller localized objects.</p>
 <h2 id="7413-interpretation-in-cts-language">7.4.13 Interpretation in CTS language<a class="headerlink" href="#7413-interpretation-in-cts-language" title="Permanent link">&para;</a></h2>
-<p>The CTS substrate does not support arbitrary excitation sizes. Its parameters select preferred scales.
-aaa controls gradient tension</p>
-<p>uuu controls curvature stabilization</p>
-<p>m2m^2m2 controls vacuum restoring force</p>
-<p>Together these determine:
-how far structural coherence extends</p>
-<p>how large localized excitations can become</p>
-<p>which scales dominate the excitation ledger</p>
+<p>The CTS substrate does not support arbitrary excitation sizes. Its parameters select preferred scales.</p>
+<ul>
+<li><span class="arithmatex">\(a\)</span> controls gradient tension</li>
+<li><span class="arithmatex">\(u\)</span> controls curvature stabilization</li>
+<li><span class="arithmatex">\(m^2\)</span> controls vacuum restoring force</li>
+</ul>
+<p>Together these determine:</p>
+<ul>
+<li>how far structural coherence extends</li>
+<li>how large localized excitations can become</li>
+<li>which scales dominate the excitation ledger</li>
+</ul>
 <p>Thus correlation length and excitation scale are not external assumptions. They are derived directly from the energy functional.</p>
 <h2 id="7414-connection-to-persistence-mechanics">7.4.14 Connection to persistence mechanics<a class="headerlink" href="#7414-connection-to-persistence-mechanics" title="Permanent link">&para;</a></h2>
-<p>Once a characteristic excitation size L∗L_*L∗​ is known, it can be inserted into the retention and loss formulas from earlier chapters.
+<p>Once a characteristic excitation size <span class="arithmatex">\(L_*\)</span> is known, it can be inserted into the retention and loss formulas from earlier chapters.
 For example:</p>
-<p>circulation loss scales like ν/L∗2\nu/L_*^2ν/L∗2​</p>
-<p>curvature relaxation scales like κ/L∗3\kappa/L_*^3κ/L∗3​</p>
+<ul>
+<li>circulation loss scales like <span class="arithmatex">\(\nu/L_*^2\)</span></li>
+<li>curvature relaxation scales like <span class="arithmatex">\(\kappa/L_*^3\)</span></li>
+</ul>
 <p>Thus the energy functional determines the scale, and the scale determines the persistence number.
 This is the bridge between formation mechanics and survival mechanics.</p>
 <h2 id="7415-summary">7.4.15 Summary<a class="headerlink" href="#7415-summary" title="Permanent link">&para;</a></h2>
-<p>The CTS energy functional determines two key structural scales:
-ξ=am2\xi = \sqrt{\frac{a}{m^2}}ξ=m2a​​
-for long-range correlation, and
-for curvature-stabilized localization.
-More generally, the preferred excitation size is
-L∗2=−a+a2+12m2u6m2.L_*^2 = \frac{-a + \sqrt{a^2 + 12m^2u}}{6m^2}.L∗2​=6m2−a+a2+12m2u​​.
-These scales govern the size and energy of emergent CTS excitations.</p>
-<p>Relation to Landau, Ginzburg, Higgs-Like, and Topological Functionals
-This section compares the CTS energy functional to established functional frameworks and shows exactly where it overlaps and where it departs.</p>
-<p>particle fields</p>
-<p>condensed matter phases.</p>
+<p>The CTS energy functional determines two key structural scales:</p>
+<div class="arithmatex">\[
+\xi = \sqrt{\frac{a}{m^2}}
+\]</div>
+<p>for long-range correlation, and</p>
+<div class="arithmatex">\[
+\ell_* \sim \sqrt{\frac{u}{a}}
+\]</div>
+<p>for curvature-stabilized localization.
+More generally, the preferred excitation size is</p>
+<div class="arithmatex">\[
+L_*^2 = \frac{-a + \sqrt{a^2 + 12m^2 u}}{6m^2}.
+\]</div>
+<p>These scales govern the size and energy of emergent CTS excitations.</p>
+<hr />
+<h2 id="751-relation-to-landau-ginzburg-higgs-like-and-topological-functionals">7.5.1 Relation to Landau, Ginzburg, Higgs-Like, and Topological Functionals<a class="headerlink" href="#751-relation-to-landau-ginzburg-higgs-like-and-topological-functionals" title="Permanent link">&para;</a></h2>
+<p>This section compares the CTS energy functional to established functional frameworks and shows exactly where it overlaps and where it departs.</p>
+<p>In standard field theory the same mathematical structure describes:</p>
+<ul>
+<li>particle fields</li>
+<li>condensed matter phases.</li>
+</ul>
 <p>In CTS the same mathematics is interpreted as describing the substrate of emergence itself.
 Thus the excitations of the functional correspond to persistent structural expressions of the substrate.</p>
 <h2 id="7512-connection-to-the-persistence-equation">7.5.12 Connection to the persistence equation<a class="headerlink" href="#7512-connection-to-the-persistence-equation" title="Permanent link">&para;</a></h2>
-<p>Once solutions of the CTS functional are obtained, their energies determine the retained structure RRR.
+<p>Once solutions of the CTS functional are obtained, their energies determine the retained structure <span class="arithmatex">\(R\)</span>.
 The persistence condition then evaluates which excitations survive.
-Thus
-energy functional → candidate structures
-persistence mechanics → survival of structures
-This two-layer process defines the full emergence mechanism.</p>
+Thus:</p>
+<ul>
+<li>energy functional → candidate structures</li>
+<li>persistence mechanics → survival of structures</li>
+</ul>
+<p>This two-layer process defines the full emergence mechanism.</p>
 <h2 id="7513-summary">7.5.13 Summary<a class="headerlink" href="#7513-summary" title="Permanent link">&para;</a></h2>
-<p>The CTS energy functional shares mathematical structure with several major theoretical frameworks:
-Landau phase transitions</p>
-<p>Ginzburg–Landau superconductivity</p>
-<p>Higgs symmetry breaking</p>
-<p>Swift–Hohenberg pattern formation</p>
-<p>topological field theory.</p>
+<p>The CTS energy functional shares mathematical structure with several major theoretical frameworks:</p>
+<ul>
+<li>Landau phase transitions</li>
+<li>Ginzburg–Landau superconductivity</li>
+<li>Higgs symmetry breaking</li>
+<li>Swift–Hohenberg pattern formation</li>
+<li>topological field theory.</li>
+</ul>
 <p>The novel feature of the CTS framework is the interpretation of this unified functional as describing the dynamical substrate from which persistent structures emerge.</p>
-<p>CTS Functional as the Generator of the Excitation Library
-This final section of Chapter 7 shows how the energy functional generates the full spectrum of CTS excitations that populate the survival map.</p>
 
 
 

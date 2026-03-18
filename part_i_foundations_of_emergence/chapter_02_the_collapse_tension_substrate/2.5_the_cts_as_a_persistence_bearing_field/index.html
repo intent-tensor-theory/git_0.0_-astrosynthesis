@@ -6546,229 +6546,142 @@
 
 <h1 id="25-the-cts-as-a-persistence-bearing-field">2.5 The CTS as a Persistence-Bearing Field<a class="headerlink" href="#25-the-cts-as-a-persistence-bearing-field" title="Permanent link">&para;</a></h1>
 <h2 id="251-persistence-encoded-in-the-field">2.5.1 Persistence encoded in the field<a class="headerlink" href="#251-persistence-encoded-in-the-field" title="Permanent link">&para;</a></h2>
-<p>In previous sections the Collapse Tension Substrate (CTS) was introduced as a scalar field
-$$
-\Phi(\mathbf{x},t)
-$$
-whose dynamics determine the formation of structures.
+<p>In previous sections the Collapse Tension Substrate (CTS) was introduced as a scalar field <span class="arithmatex">\(\Phi(\mathbf{x}, t)\)</span> whose dynamics determine the formation of structures.
 However, for the CTS to serve as the arena of emergence it must also act as a carrier of retained structure.
 This means the field must contain quantities that store structural organization over time.
 Thus persistence must be expressible in terms of field variables.</p>
 <h2 id="252-structural-energy-density">2.5.2 Structural energy density<a class="headerlink" href="#252-structural-energy-density" title="Permanent link">&para;</a></h2>
-<p>Define a structural energy density
-$$
-\rho_R(\mathbf{x},t)
-$$
-which measures the local retained structure within the substrate.
-For the CTS energy functional
-$$
-E[\Phi]
-\int
-\left(
-a |\nabla \Phi|^2
-+
-u (\nabla^2\Phi)^2
-+
-r \Phi^2
-+
-s \Phi^4
-\right)
-d^3x,
-$$
-the local density becomes
-$$
-\rho_R
-a |\nabla \Phi|^2
-+
-u (\nabla^2\Phi)^2
-+
-r \Phi^2
-+
-s \Phi^4.
-$$
-Thus
-$$
-R = \int \rho_R d^3x.
-$$
-This integral represents the total retained structure.</p>
+<p>Define a structural energy density <span class="arithmatex">\(\rho_R(\mathbf{x}, t)\)</span> which measures the local retained structure within the substrate.
+For the CTS energy functional</p>
+<div class="arithmatex">\[
+E[\Phi] = \int \left( a |\nabla \Phi|^2 + u (\nabla^2\Phi)^2 + r \Phi^2 + s \Phi^4 \right) d^3x,
+\]</div>
+<p>the local density becomes</p>
+<div class="arithmatex">\[
+\rho_R = a |\nabla \Phi|^2 + u (\nabla^2\Phi)^2 + r \Phi^2 + s \Phi^4.
+\]</div>
+<p>Thus</p>
+<div class="arithmatex">\[
+R = \int \rho_R \, d^3x.
+\]</div>
+<p>This integral represents the total retained structure.</p>
 <h2 id="253-energy-flow-and-dissipation">2.5.3 Energy flow and dissipation<a class="headerlink" href="#253-energy-flow-and-dissipation" title="Permanent link">&para;</a></h2>
-<p>The retained structure can change through two processes:
-redistribution of structure within the field
-dissipation of structure into the environment.
-The rate of change of total structural energy is
-$$
-\frac{dR}{dt}
-\int
-\frac{\partial \rho_R}{\partial t}
-d^3x.
-$$
-Using the field equation
-$$
-\partial_t \Phi
-r\Phi</p>
-<p>a\nabla^2\Phi
-u\nabla^4\Phi
-s\Phi^3,
-$$
-the time derivative of the energy functional becomes
-$$
-\frac{dE}{dt}
-\int
-\frac{\delta E}{\delta \Phi}
-\partial_t \Phi
-, d^3x.
-$$
-Substituting
-$$
-\partial_t \Phi = -\frac{\delta E}{\delta \Phi},
-$$
-gives
-$$
-\frac{dE}{dt}</p>
-<p>\int
-\left(
-\frac{\delta E}{\delta \Phi}
-\right)^2
-d^3x.
-$$</p>
+<p>The retained structure can change through two processes:</p>
+<ul>
+<li>redistribution of structure within the field</li>
+<li>dissipation of structure into the environment</li>
+</ul>
+<p>The rate of change of total structural energy is</p>
+<div class="arithmatex">\[
+\frac{dR}{dt} = \int \frac{\partial \rho_R}{\partial t} \, d^3x.
+\]</div>
+<p>Using the field equation <span class="arithmatex">\(\partial_t \Phi = -\delta E / \delta \Phi\)</span>, the time derivative of the energy functional becomes</p>
+<div class="arithmatex">\[
+\frac{dE}{dt} = \int \frac{\delta E}{\delta \Phi} \, \partial_t \Phi \, d^3x.
+\]</div>
+<p>Substituting <span class="arithmatex">\(\partial_t \Phi = -\delta E / \delta \Phi\)</span> gives</p>
+<div class="arithmatex">\[
+\frac{dE}{dt} = -\int \left( \frac{\delta E}{\delta \Phi} \right)^2 d^3x.
+\]</div>
 <h2 id="254-monotonic-energy-decrease">2.5.4 Monotonic energy decrease<a class="headerlink" href="#254-monotonic-energy-decrease" title="Permanent link">&para;</a></h2>
-<p>The expression
-$$
-\left(
-\frac{\delta E}{\delta \Phi}
-\right)^2
-$$
-is always non-negative.
-Therefore
-$$
-\frac{dE}{dt} \le 0.
-$$
-This means the CTS energy decreases over time unless the system reaches a stationary configuration.
+<p>The expression <span class="arithmatex">\(\left(\delta E / \delta \Phi\right)^2\)</span> is always non-negative.
+Therefore</p>
+<div class="arithmatex">\[
+\frac{dE}{dt} \leq 0.
+\]</div>
+<p>This means the CTS energy decreases over time unless the system reaches a stationary configuration.
 Thus collapse processes continually remove structural energy unless stabilized configurations form.</p>
 <h2 id="255-stationary-structures">2.5.5 Stationary structures<a class="headerlink" href="#255-stationary-structures" title="Permanent link">&para;</a></h2>
-<p>Persistent configurations correspond to states where
-$$
-\frac{\delta E}{\delta \Phi} = 0.
-$$
+<p>Persistent configurations correspond to states where <span class="arithmatex">\(\delta E / \delta \Phi = 0\)</span>.
 These are extrema of the energy functional.
-Such states satisfy
-$$
--r\Phi
-+
-a\nabla^2\Phi
-u\nabla^4\Phi
-s\Phi^3 = 0.
-$$
-Solutions of this equation correspond to stationary substrate structures.
-Examples may include
-localized soliton-like objects
-periodic patterns
-stable field domains.</p>
+Such states satisfy</p>
+<div class="arithmatex">\[
+-r\Phi + a\nabla^2\Phi - u\nabla^4\Phi - s\Phi^3 = 0.
+\]</div>
+<p>Solutions of this equation correspond to stationary substrate structures.
+Examples may include:</p>
+<ul>
+<li>localized soliton-like objects</li>
+<li>periodic patterns</li>
+<li>stable field domains</li>
+</ul>
 <h2 id="256-structural-memory">2.5.6 Structural memory<a class="headerlink" href="#256-structural-memory" title="Permanent link">&para;</a></h2>
 <p>Persistence requires not only temporary stabilization but also the ability to retain structural information over time.
 Within the CTS this memory is encoded through the spatial configuration of the field.
-Define a configuration vector
-$$
-\mathbf{C}(t) = {\Phi(\mathbf{x},t)}.
-$$
-The similarity between configurations at different times can be measured using the overlap
-$$
-M(t_1,t_2)
-\int
-\Phi(\mathbf{x},t_1)
-\Phi(\mathbf{x},t_2)
-d^3x.
-$$
-If
-$$
-M
-$$
-remains large over long intervals, the structure retains memory.</p>
+The similarity between configurations at different times can be measured using the overlap</p>
+<div class="arithmatex">\[
+M(t_1, t_2) = \int \Phi(\mathbf{x}, t_1)\, \Phi(\mathbf{x}, t_2) \, d^3x.
+\]</div>
+<p>If <span class="arithmatex">\(M\)</span> remains large over long intervals, the structure retains memory.</p>
 <h2 id="257-persistence-condition-in-field-form">2.5.7 Persistence condition in field form<a class="headerlink" href="#257-persistence-condition-in-field-form" title="Permanent link">&para;</a></h2>
-<p>Using the energy functional representation of retained structure,
-$$
-R = E[\Phi],
-$$
-and the dissipation rate
-$$
-\dot R = -\frac{dE}{dt},
-$$
-the selection number becomes
-$$
-S
-\frac{E[\Phi]}{\left|\frac{dE}{dt}\right|,t_{ref}}.
-$$
-Persistent configurations satisfy
-$$
-S \ge 1.
-$$</p>
+<p>Using the energy functional representation of retained structure <span class="arithmatex">\(R = E[\Phi]\)</span> and the dissipation rate <span class="arithmatex">\(\dot{R} = -dE/dt\)</span>, the selection number becomes</p>
+<div class="arithmatex">\[
+S = \frac{E[\Phi]}{\left|\dfrac{dE}{dt}\right| t_{ref}}.
+\]</div>
+<p>Persistent configurations satisfy <span class="arithmatex">\(S \geq 1\)</span>.</p>
 <h2 id="258-spatial-persistence">2.5.8 Spatial persistence<a class="headerlink" href="#258-spatial-persistence" title="Permanent link">&para;</a></h2>
 <p>Because the retained structure is distributed across space, persistence can vary locally.
-Define a local persistence density
-$$
-S(\mathbf{x})
-\frac{\rho_R(\mathbf{x})}
-{\dot{\rho}R(\mathbf{x}),t{ref}}.
-$$
-Regions where
-$$
-S(\mathbf{x}) &gt; 1
-$$
-act as structural cores.
-Regions where
-$$
-S(\mathbf{x}) &lt; 1
-$$
-tend to dissipate.
+Define a local persistence density</p>
+<div class="arithmatex">\[
+S(\mathbf{x}) = \frac{\rho_R(\mathbf{x})}{\dot{\rho}_R(\mathbf{x})\, t_{ref}}.
+\]</div>
+<p>Regions where <span class="arithmatex">\(S(\mathbf{x}) &gt; 1\)</span> act as structural cores.
+Regions where <span class="arithmatex">\(S(\mathbf{x}) &lt; 1\)</span> tend to dissipate.
 Thus the CTS naturally forms spatial persistence patterns.</p>
 <h2 id="259-emergent-structural-seeds">2.5.9 Emergent structural seeds<a class="headerlink" href="#259-emergent-structural-seeds" title="Permanent link">&para;</a></h2>
 <p>Persistent regions of the substrate can serve as seeds for higher-order structures.
-For example:
-persistent field pattern
-possible emergent structure
-localized peak
-particle-like excitation
-closed circulation
-vortex
-periodic pattern
-wave lattice</p>
+For example:</p>
+<table>
+<thead>
+<tr>
+<th>Persistent field pattern</th>
+<th>Possible emergent structure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>localized peak</td>
+<td>particle-like excitation</td>
+</tr>
+<tr>
+<td>closed circulation</td>
+<td>vortex</td>
+</tr>
+<tr>
+<td>periodic pattern</td>
+<td>wave lattice</td>
+</tr>
+</tbody>
+</table>
 <p>These seeds become the building blocks for later structural stages.</p>
 <h2 id="2510-persistence-transport">2.5.10 Persistence transport<a class="headerlink" href="#2510-persistence-transport" title="Permanent link">&para;</a></h2>
 <p>Retention is not only stored but also transported through the substrate.
-Energy flow is governed by a current
-$$
-\mathbf{J}_R.
-$$
-The continuity equation becomes
-$$
-\frac{\partial \rho_R}{\partial t}
-+
-\nabla \cdot \mathbf{J}_R
-\Lambda.
-$$
-Here
-$$
-\Lambda
-$$
-represents dissipative loss.
+Energy flow is governed by a current <span class="arithmatex">\(\mathbf{J}_R\)</span>.
+The continuity equation becomes</p>
+<div class="arithmatex">\[
+\frac{\partial \rho_R}{\partial t} + \nabla \cdot \mathbf{J}_R = -\Lambda,
+\]</div>
+<p>where <span class="arithmatex">\(\Lambda\)</span> represents dissipative loss.
 Thus persistence propagates through the field but is gradually degraded.</p>
 <h2 id="2511-interpretation">2.5.11 Interpretation<a class="headerlink" href="#2511-interpretation" title="Permanent link">&para;</a></h2>
-<p>The CTS therefore functions as a persistence-bearing field with three key properties:
-it stores structural energy
-it transports structural energy through spatial currents
-it dissipates structural energy through collapse mechanisms.
-Persistent configurations correspond to regions where storage and transport dominate over dissipation.</p>
+<p>The CTS therefore functions as a persistence-bearing field with three key properties:</p>
+<ul>
+<li>it stores structural energy</li>
+<li>it transports structural energy through spatial currents</li>
+<li>it dissipates structural energy through collapse mechanisms</li>
+</ul>
+<p>Persistent configurations correspond to regions where storage and transport dominate over dissipation.</p>
 <h2 id="2512-summary">2.5.12 Summary<a class="headerlink" href="#2512-summary" title="Permanent link">&para;</a></h2>
 <p>The Collapse Tension Substrate stores structural organization through its energy functional.
-The field dynamics naturally dissipate energy, but stationary configurations can retain structure long enough to satisfy the persistence condition
-$$
-S = \frac{R}{\dot R t_{ref}}.
-$$
-Regions of high persistence become seeds for higher-order structures.
+The field dynamics naturally dissipate energy, but stationary configurations can retain structure long enough to satisfy the persistence condition</p>
+<div class="arithmatex">\[
+S = \frac{R}{\dot{R} \, t_{ref}} \geq 1.
+\]</div>
+<p>Regions of high persistence become seeds for higher-order structures.
 These seeds will later give rise to gradients, circulation, and closed topological forms.</p>
-<p>Comparison to Vacuum, Ether, Manifold, and Field Ontology
+<hr />
+<p><em>Transition to Section 2.6:</em>
 This final section of Chapter 2 will compare the CTS concept to other foundational models of physical substrate used throughout the history of physics.</p>
-<p>This completes Chapter 2.</p>
 
 
 

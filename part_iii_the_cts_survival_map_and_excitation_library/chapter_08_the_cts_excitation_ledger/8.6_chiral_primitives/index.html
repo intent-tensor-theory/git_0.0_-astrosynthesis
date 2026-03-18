@@ -6567,118 +6567,180 @@
 These structures possess chirality — a property where the configuration cannot be superimposed onto its mirror image.
 Chiral excitations represent the first structures capable of encoding directional structural memory.</p>
 <h2 id="862-mathematical-definition-of-chirality">8.6.2 Mathematical definition of chirality<a class="headerlink" href="#862-mathematical-definition-of-chirality" title="Permanent link">&para;</a></h2>
-<p>Let a configuration be described by a field
-$$
-(x).\Phi<span class="arithmatex">\(\mathbf{x}\)</span>.
-$$
-A parity transformation acts as
-$$
-P:xx.\mathcal{P}:\mathbf{x}\rightarrow-\mathbf{x}.P:x
-$$
-A structure is chiral if
-$$
-(x)R(x)\Phi(-\mathbf{x}) \neq R\Phi<span class="arithmatex">\(\mathbf{x}\)</span>
-$$
-for any rotation RRR.
-Thus chiral objects exist in two forms:
-ΦLandΦR.\Phi_L \quad \text{and} \quad \Phi_R.ΦL​andΦR​.
-These correspond to left-handed and right-handed configurations.</p>
+<p>Let a configuration be described by a field <span class="arithmatex">\(\Phi(\mathbf{x})\)</span>.
+A parity transformation acts as</p>
+<div class="arithmatex">\[
+\mathcal{P}:\mathbf{x} \rightarrow -\mathbf{x}.
+\]</div>
+<p>A structure is chiral if</p>
+<div class="arithmatex">\[
+\Phi(-\mathbf{x}) \neq R\,\Phi(\mathbf{x})
+\]</div>
+<p>for any rotation <span class="arithmatex">\(R\)</span>.
+Thus chiral objects exist in two forms:</p>
+<div class="arithmatex">\[
+\Phi_L \quad \text{and} \quad \Phi_R.
+\]</div>
+<p>These correspond to left-handed and right-handed configurations.</p>
 <h2 id="863-helicity-as-a-chirality-measure">8.6.3 Helicity as a chirality measure<a class="headerlink" href="#863-helicity-as-a-chirality-measure" title="Permanent link">&para;</a></h2>
 <p>A useful measure of chirality is helicity.
-For a vector field v <span class="arithmatex">\(\mathbf{v}v,\)</span>
-$$
-H=v(v)d3x.H =\int \mathbf{v}\cdot<span class="arithmatex">\(\nabla\times\mathbf{v}\)</span>\,d^3x.H=
-$$
-This quantity measures the degree of twisting or linking in the field.
-If
-$$
-H0,H\neq 0,H=0,
-$$
-the configuration possesses intrinsic chirality.</p>
+For a vector field <span class="arithmatex">\(\mathbf{v}\)</span>,</p>
+<div class="arithmatex">\[
+H = \int \mathbf{v}\cdot(\nabla\times\mathbf{v})\,d^3x.
+\]</div>
+<p>This quantity measures the degree of twisting or linking in the field.
+If <span class="arithmatex">\(H \neq 0\)</span>, the configuration possesses intrinsic chirality.</p>
 <h2 id="864-twisted-vortex-loops">8.6.4 Twisted vortex loops<a class="headerlink" href="#864-twisted-vortex-loops" title="Permanent link">&para;</a></h2>
 <p>A simple chiral excitation can be produced by twisting a vortex ring.
-Let the ring carry a twist angle θ(s) <span class="arithmatex">\(\theta(s)\)</span>
-The twist energy can be written
-Etwist=kt2∫(dθds)2ds.E_{twist} = \frac{k_t}{2} \int \left<span class="arithmatex">\(\frac{d\theta}{ds}\right\)</span>^2 ds.Etwist​=2kt​​∫(dsdθ​)2ds.
-This energy penalizes sharp variations in twist.
+Let the ring carry a twist angle <span class="arithmatex">\(\theta(s)\)</span> along its arc length <span class="arithmatex">\(s\)</span>.
+The twist energy can be written</p>
+<div class="arithmatex">\[
+E_{twist} = \frac{k_t}{2} \int \left(\frac{d\theta}{ds}\right)^2 ds.
+\]</div>
+<p>This energy penalizes sharp variations in twist.
 Stable twisted configurations correspond to constant twist density.</p>
 <h2 id="865-chiral-energy-minima">8.6.5 Chiral energy minima<a class="headerlink" href="#865-chiral-energy-minima" title="Permanent link">&para;</a></h2>
-<p>The energy of a twisted ring typically possesses two minima:
-E(θL)andE(θR).E<span class="arithmatex">\(\theta_L\)</span> \quad \text{and} \quad E<span class="arithmatex">\(\theta_R\)</span>.E(θL​)andE(θR​).
-These correspond to opposite chirality states.
+<p>The energy of a twisted ring typically possesses two minima:</p>
+<div class="arithmatex">\[
+E(\theta_L) \quad \text{and} \quad E(\theta_R).
+\]</div>
+<p>These correspond to opposite chirality states.
 Because the states are separated by an energy barrier, transitions between them are suppressed.
 Thus chirality introduces structural bistability.</p>
 <h2 id="866-chirality-factor">8.6.6 Chirality factor<a class="headerlink" href="#866-chirality-factor" title="Permanent link">&para;</a></h2>
-<p>To include this effect in the persistence framework we introduce the chirality stability factor
-χc.\chi_c.χc​.
+<p>To include this effect in the persistence framework we introduce the chirality stability factor <span class="arithmatex">\(\chi_c\)</span>.
 This factor measures the resistance of the structure to chirality flipping.
-Typically
-Thus chiral structures enjoy enhanced persistence relative to non-chiral rings.</p>
+For strongly chiral structures</p>
+<div class="arithmatex">\[
+\chi_c \gg 1.
+\]</div>
+<p>Thus chiral structures enjoy enhanced persistence relative to non-chiral rings.</p>
 <h2 id="867-chirality-and-topological-protection">8.6.7 Chirality and topological protection<a class="headerlink" href="#867-chirality-and-topological-protection" title="Permanent link">&para;</a></h2>
-<p>In some systems chirality becomes a topological invariant.
-Examples include
-helical vortex structures</p>
-<p>twisted flux tubes</p>
-<p>knotted vortex loops.</p>
+<p>In some systems chirality becomes a topological invariant. Examples include</p>
+<ul>
+<li>helical vortex structures</li>
+<li>twisted flux tubes</li>
+<li>knotted vortex loops.</li>
+</ul>
 <p>In such cases chirality cannot change without breaking the structure.
 This produces extremely strong structural protection.</p>
 <h2 id="868-chiral-excitations-as-primitive-objects">8.6.8 Chiral excitations as primitive objects<a class="headerlink" href="#868-chiral-excitations-as-primitive-objects" title="Permanent link">&para;</a></h2>
 <p>Within the CTS excitation hierarchy, chiral structures represent the first primitive objects capable of directional interaction.
-Their properties include:
-description
-winding number
-chirality
-left/right orientation
-stability
-higher than rings</p>
+Their properties include:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>winding number</td>
+<td>topological circulation invariant</td>
+</tr>
+<tr>
+<td>chirality</td>
+<td>left/right orientation</td>
+</tr>
+<tr>
+<td>stability</td>
+<td>higher than rings</td>
+</tr>
+</tbody>
+</table>
 <p>These objects therefore occupy a higher persistence tier than simple vortex rings.</p>
 <h2 id="869-energy-of-chiral-structures">8.6.9 Energy of chiral structures<a class="headerlink" href="#869-energy-of-chiral-structures" title="Permanent link">&para;</a></h2>
-<p>The total energy of a chiral excitation can be written
-Etotal=Ering+Etwist+Einteraction.E_{total} = E_{ring} + E_{twist} + E_{interaction}.Etotal​=Ering​+Etwist​+Einteraction​.</p>
-<p>EtwistE_{twist}Etwist​ arises from helicity</p>
-<p>EinteractionE_{interaction}Einteraction​ accounts for coupling between twisted segments.</p>
+<p>The total energy of a chiral excitation can be written</p>
+<div class="arithmatex">\[
+E_{total} = E_{ring} + E_{twist} + E_{interaction}.
+\]</div>
+<p>Here <span class="arithmatex">\(E_{twist}\)</span> arises from helicity and <span class="arithmatex">\(E_{interaction}\)</span> accounts for coupling between twisted segments.</p>
 <p>The presence of twist energy increases formation energy but also increases structural locking energy.</p>
 <h2 id="8610-role-in-the-excitation-hierarchy">8.6.10 Role in the excitation hierarchy<a class="headerlink" href="#8610-role-in-the-excitation-hierarchy" title="Permanent link">&para;</a></h2>
-<p>The CTS excitation hierarchy now becomes
-excitation
-key feature
-wave
-oscillatory mode
-phase-locked mode
-nonlinear coherence
-open vortex
-circulation
-closed ring
-localized topology
-chiral primitive
-directional topology</p>
+<p>The CTS excitation hierarchy now becomes</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th>Key feature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wave</td>
+<td>oscillatory mode</td>
+</tr>
+<tr>
+<td>phase-locked mode</td>
+<td>nonlinear coherence</td>
+</tr>
+<tr>
+<td>open vortex</td>
+<td>circulation</td>
+</tr>
+<tr>
+<td>closed ring</td>
+<td>localized topology</td>
+</tr>
+<tr>
+<td>chiral primitive</td>
+<td>directional topology</td>
+</tr>
+</tbody>
+</table>
 <p>Each step introduces a new persistence mechanism.</p>
 <h2 id="8611-persistence-characteristics">8.6.11 Persistence characteristics<a class="headerlink" href="#8611-persistence-characteristics" title="Permanent link">&para;</a></h2>
-<p>Chiral primitives possess several persistence advantages:
-closure</p>
-<p>circulation invariance</p>
-<p>helicity stabilization.</p>
-<p>Thus their persistence number becomes
-S∗=EshellEDTobjχcRR˙ tref.S_* = \mathcal{E}<em obj="obj">{shell} \mathcal{E} D T</em>.S∗​=Eshell​EDTobj​χc​R˙tref​R​.} \chi_c \frac{R}{\dot R\,t_{ref}</p>
+<p>Chiral primitives possess several persistence advantages:</p>
+<ul>
+<li>closure</li>
+<li>circulation invariance</li>
+<li>helicity stabilization.</li>
+</ul>
+<p>Thus their persistence number becomes</p>
+<div class="arithmatex">\[
+S = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\chi_c\,\frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
 <h2 id="8612-ledger-entry-for-chiral-primitives">8.6.12 Ledger entry for chiral primitives<a class="headerlink" href="#8612-ledger-entry-for-chiral-primitives" title="Permanent link">&para;</a></h2>
-<p>parameter
-approximate value
-excitation type
-chiral primitive
-formation energy
-moderate–high
-locking energy
-topology factor
-chirality factor
-persistence
-high</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Approximate value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>excitation type</td>
+<td>chiral primitive</td>
+</tr>
+<tr>
+<td>formation energy</td>
+<td>moderate–high</td>
+</tr>
+<tr>
+<td>locking energy</td>
+<td>high</td>
+</tr>
+<tr>
+<td>topology factor</td>
+<td><span class="arithmatex">\(T_{obj} \gg 1\)</span></td>
+</tr>
+<tr>
+<td>chirality factor</td>
+<td><span class="arithmatex">\(\chi_c \gg 1\)</span></td>
+</tr>
+<tr>
+<td>persistence</td>
+<td>high</td>
+</tr>
+</tbody>
+</table>
 <p>Thus chiral primitives occupy the chirality survival region of the CTS survival map.</p>
 <h2 id="8613-summary">8.6.13 Summary<a class="headerlink" href="#8613-summary" title="Permanent link">&para;</a></h2>
 <p>Chiral primitives arise when closed vortex structures acquire directional twist.
 These structures possess helicity and exist in left-handed and right-handed states.
 Because chirality introduces additional structural protection, these excitations represent the first strongly persistent objects in the CTS excitation ledger.</p>
-<p>Shell Structures
-This section derives how multiple chiral or vortex structures can organize into closed shell configurations stabilized by multi-fan locking.</p>
 
 
 

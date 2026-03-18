@@ -6552,183 +6552,183 @@
 
 <h1 id="95-expression-ratio">9.5 Expression Ratio<a class="headerlink" href="#95-expression-ratio" title="Permanent link">&para;</a></h1>
 <h2 id="951-motivation">9.5.1 Motivation<a class="headerlink" href="#951-motivation" title="Permanent link">&para;</a></h2>
-<p>Section 9.4 introduced the lock ratio
-$$
-\Lambda_{lock} = \frac{E_{lock}}{E_{form}}
-$$
-which measures structural stabilization relative to formation cost.
+<p>Section 9.4 introduced the lock ratio</p>
+<div class="arithmatex">\[
+\Lambda_{lock} = \frac{E_{lock}}{E_{form}},
+\]</div>
+<p>which measures structural stabilization relative to formation cost.
 However, persistence is not determined by locking strength alone.
 An excitation may be extremely well locked but so expensive to create that it rarely appears.
 To quantify the ease of structural expression, we introduce a complementary dimensionless parameter: the expression ratio.</p>
 <h2 id="952-definition">9.5.2 Definition<a class="headerlink" href="#952-definition" title="Permanent link">&para;</a></h2>
-<p>The expression ratio is defined as
-$$
-\boxed{
-\Lambda_{expr} =
-\frac{E_{form}}{E_{lock} + \epsilon_0}
-}
-$$
-where
-$$
-<span class="arithmatex">\(\epsilon_0\)</span> is a small regularization constant preventing division by zero.
-$$
+<p>The expression ratio is defined as</p>
+<div class="arithmatex">\[
+\boxed{\Lambda_{expr} = \frac{E_{form}}{E_{lock} + \epsilon_0}}
+\]</div>
+<p>where <span class="arithmatex">\(\epsilon_0\)</span> is a small regularization constant preventing division by zero.
 This ratio measures the ease with which an excitation can appear relative to the energy required to stabilize it.</p>
 <h2 id="953-interpretation">9.5.3 Interpretation<a class="headerlink" href="#953-interpretation" title="Permanent link">&para;</a></h2>
 <p>The expression ratio measures structural expressibility.
-Three regimes emerge.
-Highly expressive structures
-$$
-\Lambda_{expr} \gg 1
-$$
-Formation energy dominates stabilization energy.
-These structures appear frequently but are fragile.
+Three regimes emerge.</p>
+<p><strong>Highly expressive structures</strong> (<span class="arithmatex">\(\Lambda_{expr} \gg 1\)</span>): Formation energy dominates stabilization energy. These structures appear frequently but are fragile.
 Examples:
-waves
-weak coherent packets.</p>
-<p>Balanced structures
-$$
-\Lambda_{expr} \sim 1
-$$
-Formation and stabilization energies are comparable.
+- Waves
+- Weak coherent packets</p>
+<p><strong>Balanced structures</strong> (<span class="arithmatex">\(\Lambda_{expr} \sim 1\)</span>): Formation and stabilization energies are comparable.
 Examples:
-vortices
-vortex rings.</p>
-<p>Difficult-to-express structures
-$$
-\Lambda_{expr} \ll 1
-$$
-Stabilization energy greatly exceeds formation energy.
-These structures require substantial energetic organization.
+- Vortices
+- Vortex rings</p>
+<p><strong>Difficult-to-express structures</strong> (<span class="arithmatex">\(\Lambda_{expr} \ll 1\)</span>): Stabilization energy greatly exceeds formation energy. These structures require substantial energetic organization.
 Examples:
-shells
-braid structures.</p>
+- Shells
+- Braid structures</p>
 <h2 id="954-complementarity-with-lock-ratio">9.5.4 Complementarity with lock ratio<a class="headerlink" href="#954-complementarity-with-lock-ratio" title="Permanent link">&para;</a></h2>
 <p>The lock ratio and expression ratio are mathematically related.
-Ignoring the small constant ( <span class="arithmatex">\(\epsilon_0),\)</span>
-$$
+Ignoring the small constant <span class="arithmatex">\(\epsilon_0\)</span>,</p>
+<div class="arithmatex">\[
 \Lambda_{expr} \approx \frac{1}{\Lambda_{lock}}.
-$$
-Thus the two ratios form complementary structural measures:
-quantity
-interpretation
-$$
-<span class="arithmatex">\(\Lambda_{lock}\)</span>
-$$
-stabilization strength
-$$
-<span class="arithmatex">\(\Lambda_{expr}\)</span>
-$$
-formation accessibility</p>
+\]</div>
+<p>Thus the two ratios form complementary structural measures:</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\Lambda_{lock}\)</span></td>
+<td>Stabilization strength</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\Lambda_{expr}\)</span></td>
+<td>Formation accessibility</td>
+</tr>
+</tbody>
+</table>
 <p>Together they describe the trade-off between stability and accessibility.</p>
 <h2 id="955-expression-ratio-for-cts-excitations">9.5.5 Expression ratio for CTS excitations<a class="headerlink" href="#955-expression-ratio-for-cts-excitations" title="Permanent link">&para;</a></h2>
-<p>Approximate expression ratios for the main excitation classes are:
-excitation
-$$
-<span class="arithmatex">\(\Lambda_{expr}\)</span>
-$$
-wave
-very large
-phase-locked mode
-large
-vortex
-~1
-ring
-&lt;1
-chiral primitive
-≪1
-shell
-≪1
-braid
-≪1</p>
+<p>Approximate expression ratios for the main excitation classes are:</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th><span class="arithmatex">\(\Lambda_{expr}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave</td>
+<td>Very large</td>
+</tr>
+<tr>
+<td>Phase-locked mode</td>
+<td>Large</td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td><span class="arithmatex">\(\sim 1\)</span></td>
+</tr>
+<tr>
+<td>Ring</td>
+<td><span class="arithmatex">\(&lt; 1\)</span></td>
+</tr>
+<tr>
+<td>Chiral primitive</td>
+<td><span class="arithmatex">\(\ll 1\)</span></td>
+</tr>
+<tr>
+<td>Shell</td>
+<td><span class="arithmatex">\(\ll 1\)</span></td>
+</tr>
+<tr>
+<td>Braid</td>
+<td><span class="arithmatex">\(\ll 1\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>Thus simple excitations are highly expressive while complex structures are difficult to form.</p>
 <h2 id="956-structural-interpretation">9.5.6 Structural interpretation<a class="headerlink" href="#956-structural-interpretation" title="Permanent link">&para;</a></h2>
 <p>The expression ratio reveals a fundamental principle of CTS emergence:
-the universe favors structures that are easy to express but persistent structures require high locking energy.
-This duality creates a structural landscape consisting of
-abundant, low-lock structures
-rare, high-lock persistent objects.</p>
+the universe favors structures that are easy to express, but persistent structures require high locking energy.
+This duality creates a structural landscape consisting of:</p>
+<ul>
+<li>Abundant, low-lock structures</li>
+<li>Rare, high-lock persistent objects</li>
+</ul>
 <h2 id="957-expression-ratio-and-excitation-abundance">9.5.7 Expression ratio and excitation abundance<a class="headerlink" href="#957-expression-ratio-and-excitation-abundance" title="Permanent link">&para;</a></h2>
-<p>Recall the abundance relation
-$$
-A_i \propto \exp!\left(-\frac{E_{total}}{T_{eff}}\right).
-$$
-Because
-$$
-E_{total} = E_{form} + E_{lock},
-$$
-structures with high formation energy appear less frequently.
+<p>Recall the abundance relation</p>
+<div class="arithmatex">\[
+A_i \propto \exp\!\left(-\frac{E_{total}}{T_{eff}}\right).
+\]</div>
+<p>Because <span class="arithmatex">\(E_{total} = E_{form} + E_{lock}\)</span>, structures with high formation energy appear less frequently.
 Thus small expression ratios generally correspond to low abundance.</p>
 <h2 id="958-expression-axis-of-the-survival-map">9.5.8 Expression axis of the survival map<a class="headerlink" href="#958-expression-axis-of-the-survival-map" title="Permanent link">&para;</a></h2>
 <p>The expression ratio also plays an important role in constructing the CTS survival map.
-Recall the horizontal coordinate of the map:
-$$
+Recall the horizontal coordinate of the map:</p>
+<div class="arithmatex">\[
 x = \Lambda_{lock}.
-$$
-Using the reciprocal relation
-$$
+\]</div>
+<p>Using the reciprocal relation</p>
+<div class="arithmatex">\[
 \Lambda_{expr} \approx \frac{1}{x},
-$$
-the expression ratio provides an alternative interpretation of this axis.
-Small (x) corresponds to high expressibility.
-Large (x) corresponds to high locking strength.</p>
+\]</div>
+<p>the expression ratio provides an alternative interpretation of this axis.
+Small <span class="arithmatex">\(x\)</span> corresponds to high expressibility.
+Large <span class="arithmatex">\(x\)</span> corresponds to high locking strength.</p>
 <h2 id="959-structural-efficiency-diagram">9.5.9 Structural efficiency diagram<a class="headerlink" href="#959-structural-efficiency-diagram" title="Permanent link">&para;</a></h2>
-<p>Plotting the two ratios together produces a structural classification diagram.
-region
-structure type
-high expression / low lock
-waves
-moderate expression / moderate lock
-vortices
-low expression / high lock
-shells
-very low expression / extreme lock
-braids</p>
+<p>Plotting the two ratios together produces a structural classification diagram.</p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Structure type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High expression / low lock</td>
+<td>Waves</td>
+</tr>
+<tr>
+<td>Moderate expression / moderate lock</td>
+<td>Vortices</td>
+</tr>
+<tr>
+<td>Low expression / high lock</td>
+<td>Shells</td>
+</tr>
+<tr>
+<td>Very low expression / extreme lock</td>
+<td>Braids</td>
+</tr>
+</tbody>
+</table>
 <p>This diagram visually illustrates the structural hierarchy of CTS excitations.</p>
 <h2 id="9510-expression-ratio-and-emergence-sequence">9.5.10 Expression ratio and emergence sequence<a class="headerlink" href="#9510-expression-ratio-and-emergence-sequence" title="Permanent link">&para;</a></h2>
 <p>The expression ratio also helps explain why certain structures appear earlier in the emergence sequence.
 Excitations with large expression ratios require less coordinated energy.
-Thus the typical emergence sequence proceeds:
-$$
-\text{waves}
-\rightarrow
-\text{vortices}
-\rightarrow
-\text{rings}
-\rightarrow
-\text{chiral structures}
-\rightarrow
-\text{shells}
-\rightarrow
-\text{braids}.
-$$
-Each step requires increasing structural organization.</p>
+Thus the typical emergence sequence proceeds:</p>
+<div class="arithmatex">\[
+\text{waves} \rightarrow \text{vortices} \rightarrow \text{rings} \rightarrow \text{chiral structures} \rightarrow \text{shells} \rightarrow \text{braids}.
+\]</div>
+<p>Each step requires increasing structural organization.</p>
 <h2 id="9511-ledger-entry">9.5.11 Ledger entry<a class="headerlink" href="#9511-ledger-entry" title="Permanent link">&para;</a></h2>
 <p>The expression ratio therefore becomes another important field in the excitation ledger.
-Each ledger entry records
-$$
-\mathcal{L}i =
-(
-\text{type},
-E{form},
-E_{lock},
-E_{total},
-\Lambda_{lock},
-\Lambda_{expr},
-\dots
-).
-$$
-These quantities allow structural expressibility and persistence to be compared directly.</p>
+Each ledger entry records</p>
+<div class="arithmatex">\[
+\mathcal{L}_i = (\text{type},\, E_{form},\, E_{lock},\, E_{total},\, \Lambda_{lock},\, \Lambda_{expr},\, \dots).
+\]</div>
+<p>These quantities allow structural expressibility and persistence to be compared directly.</p>
 <h2 id="9512-summary">9.5.12 Summary<a class="headerlink" href="#9512-summary" title="Permanent link">&para;</a></h2>
-<p>The expression ratio
-$$
-\Lambda_{expr} =
-\frac{E_{form}}{E_{lock}+\epsilon_0}
-$$
-measures how easily an excitation forms relative to its stabilization energy.
+<p>The expression ratio</p>
+<div class="arithmatex">\[
+\Lambda_{expr} = \frac{E_{form}}{E_{lock} + \epsilon_0}
+\]</div>
+<p>measures how easily an excitation forms relative to its stabilization energy.
 It complements the lock ratio and reveals the trade-off between structural accessibility and persistence.
 Together these two dimensionless quantities form the primary structural coordinates of the CTS excitation landscape.</p>
-<p>Structural Persistence
-This section derives the quantitative measure of structural survival used to determine which excitations cross the CTS persistence threshold.</p>
 
 
 

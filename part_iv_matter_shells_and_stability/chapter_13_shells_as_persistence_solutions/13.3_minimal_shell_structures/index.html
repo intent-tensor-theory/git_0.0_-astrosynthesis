@@ -6583,16 +6583,16 @@
 <h1 id="133-minimal-shell-structures">13.3 Minimal Shell Structures<a class="headerlink" href="#133-minimal-shell-structures" title="Permanent link">&para;</a></h1>
 <h2 id="1331-motivation">13.3.1 Motivation<a class="headerlink" href="#1331-motivation" title="Permanent link">&para;</a></h2>
 <p>Sections 13.1–13.2 established that shell structures achieve persistence through:
-multi-fan locking
-curvature memory
-However, not every closed surface satisfies the CTS persistence conditions.
+- multi-fan locking
+- curvature memory</p>
+<p>However, not every closed surface satisfies the CTS persistence conditions.
 Some surfaces are unstable or collapse under perturbations.
 Therefore we must determine:
 What is the simplest shell geometry capable of satisfying the persistence conditions of the Collapse Tension Substrate?</p>
 <h2 id="1332-energy-minimization-principle">13.3.2 Energy minimization principle<a class="headerlink" href="#1332-energy-minimization-principle" title="Permanent link">&para;</a></h2>
 <p>Stable shell structures correspond to minima of the shell energy functional
 $$
-E_{shell}
+E_{shell} =
 \int
 \left[
 \frac{\kappa}{2}(2H)^2
@@ -6611,34 +6611,41 @@ $$
 These conditions define stable equilibrium shapes.</p>
 <h2 id="1333-minimal-curvature-surfaces">13.3.3 Minimal curvature surfaces<a class="headerlink" href="#1333-minimal-curvature-surfaces" title="Permanent link">&para;</a></h2>
 <p>The simplest shell surfaces are those that minimize curvature energy.
-A special class of surfaces satisfies
-$$
-H = 0.
-$$
-These are known as minimal surfaces.
-Examples include:
-surface
-description
-catenoid
-surface between two rings
-helicoid
-spiral minimal surface
-plane
-trivial minimal surface</p>
+A special class of surfaces satisfies <span class="arithmatex">\(H = 0\)</span>.
+These are known as minimal surfaces.</p>
+<table>
+<thead>
+<tr>
+<th>Surface</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>catenoid</td>
+<td>surface between two rings</td>
+</tr>
+<tr>
+<td>helicoid</td>
+<td>spiral minimal surface</td>
+</tr>
+<tr>
+<td>plane</td>
+<td>trivial minimal surface</td>
+</tr>
+</tbody>
+</table>
 <p>However minimal surfaces are not closed shells.
 Thus additional constraints are required.</p>
 <h2 id="1334-closed-minimal-energy-surfaces">13.3.4 Closed minimal-energy surfaces<a class="headerlink" href="#1334-closed-minimal-energy-surfaces" title="Permanent link">&para;</a></h2>
 <p>Closed shells must satisfy the topological constraint
 $$
-\int_S K,dA = 2\pi\chi.
+\int_S K\,dA = 2\pi\chi.
 $$
-For a sphere
-$$
-\chi = 2.
-$$
+For a sphere <span class="arithmatex">\(\chi = 2\)</span>.
 Thus
 $$
-\int_S K,dA = 4\pi.
+\int_S K\,dA = 4\pi.
 $$
 This constraint restricts the possible shell geometries.</p>
 <h2 id="1335-the-spherical-shell">13.3.5 The spherical shell<a class="headerlink" href="#1335-the-spherical-shell" title="Permanent link">&para;</a></h2>
@@ -6663,7 +6670,7 @@ Because curvature is uniform across the surface, the sphere distributes stress e
 <h2 id="1336-energy-of-a-spherical-shell">13.3.6 Energy of a spherical shell<a class="headerlink" href="#1336-energy-of-a-spherical-shell" title="Permanent link">&para;</a></h2>
 <p>Substituting spherical curvature into the energy functional gives
 $$
-E_{sphere}
+E_{sphere} =
 \int
 \left[
 \frac{\kappa}{2}\left(\frac{2}{R}\right)^2
@@ -6671,24 +6678,20 @@ E_{sphere}
 \bar{\kappa}\frac{1}{R^2}
 \right] dA.
 $$
-Since
+Since <span class="arithmatex">\(dA = R^2 \sin\theta\, d\theta\, d\phi\)</span>, the integral yields
 $$
-dA = R^2 \sin\theta, d\theta, d\phi,
-$$
-the integral yields
-$$
-E_{sphere}
+E_{sphere} =
 4\pi(2\kappa + \bar{\kappa}).
 $$
 This energy is independent of radius, making the sphere a highly stable configuration.</p>
 <h2 id="1337-structural-advantages-of-spheres">13.3.7 Structural advantages of spheres<a class="headerlink" href="#1337-structural-advantages-of-spheres" title="Permanent link">&para;</a></h2>
 <p>The sphere provides several stability advantages:
-uniform curvature
-isotropic stress distribution
-maximal volume for minimal surface area
-The isoperimetric inequality states
+- uniform curvature
+- isotropic stress distribution
+- maximal volume for minimal surface area.</p>
+<p>The isoperimetric inequality states
 $$
-A^3 \ge 36\pi V^2.
+A^3 \geq 36\pi V^2.
 $$
 The sphere saturates this bound.
 Thus spheres minimize surface energy.</p>
@@ -6697,13 +6700,11 @@ Thus spheres minimize surface energy.</p>
 The torus can be parameterized as
 $$
 \mathbf{r}(u,v) =
-((R + r\cos v)\cos u,,
-(R + r\cos v)\sin u,,
-r\sin v).
+\bigl((R + r\cos v)\cos u,\;
+(R + r\cos v)\sin u,\;
+r\sin v\bigr).
 $$
-Here
-(R) = major radius
-(r) = minor radius.
+Here <span class="arithmatex">\(R\)</span> = major radius and <span class="arithmatex">\(r\)</span> = minor radius.
 The torus possesses regions of positive and negative curvature.</p>
 <h2 id="1339-toroidal-curvature">13.3.9 Toroidal curvature<a class="headerlink" href="#1339-toroidal-curvature" title="Permanent link">&para;</a></h2>
 <p>The Gaussian curvature of the torus is
@@ -6714,23 +6715,36 @@ $$
 Because curvature changes sign across the surface, toroidal shells exhibit more complex stress patterns.
 Nevertheless they remain stable under certain parameter ranges.</p>
 <h2 id="13310-polyhedral-shells">13.3.10 Polyhedral shells<a class="headerlink" href="#13310-polyhedral-shells" title="Permanent link">&para;</a></h2>
-<p>Discrete shells can also form.
-Examples include
-polyhedron
-faces
-tetrahedron
-4
-cube
-6
-icosahedron
-20</p>
+<p>Discrete shells can also form.</p>
+<table>
+<thead>
+<tr>
+<th>Polyhedron</th>
+<th>Faces</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tetrahedron</td>
+<td>4</td>
+</tr>
+<tr>
+<td>cube</td>
+<td>6</td>
+</tr>
+<tr>
+<td>icosahedron</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
 <p>In such shells curvature is concentrated at vertices rather than distributed continuously.</p>
 <h2 id="13311-discrete-curvature">13.3.11 Discrete curvature<a class="headerlink" href="#13311-discrete-curvature" title="Permanent link">&para;</a></h2>
 <p>For polyhedral shells curvature is given by
 $$
 K_v = 2\pi - \sum_i \theta_i
 $$
-where ( <span class="arithmatex">\(\theta_i) are the face angles meeting at vertex (v).\)</span>
+where <span class="arithmatex">\(\theta_i\)</span> are the face angles meeting at vertex <span class="arithmatex">\(v\)</span>.
 This discrete curvature preserves the global curvature constraint.</p>
 <h2 id="13312-minimal-shell-stability-condition">13.3.12 Minimal shell stability condition<a class="headerlink" href="#13312-minimal-shell-stability-condition" title="Permanent link">&para;</a></h2>
 <p>For a shell to remain stable the curvature energy must exceed perturbation energy:
@@ -6760,8 +6774,6 @@ Thus spherical shells represent the minimal persistence architecture.</p>
 <p>Minimal shell structures correspond to surfaces that minimize curvature energy while satisfying topological closure.
 The sphere provides the simplest stable shell because it distributes curvature uniformly and minimizes surface energy.
 These minimal shells represent the earliest durable surface structures capable of emerging within the Collapse Tension Substrate.</p>
-<p>Nested Shells
-This section derives how multiple shells can coexist and stabilize each other through layered persistence architectures.</p>
 
 
 

@@ -6557,108 +6557,200 @@
 
 <h1 id="65-deriving-the-topology-factor">6.5 Deriving the Topology Factor<a class="headerlink" href="#65-deriving-the-topology-factor" title="Permanent link">&para;</a></h1>
 <h2 id="651-motivation">6.5.1 Motivation<a class="headerlink" href="#651-motivation" title="Permanent link">&para;</a></h2>
-<p>Previous sections introduced several mechanisms that increase structural persistence:
-closure</p>
-<p>chirality</p>
-<p>braiding</p>
-<p>shell coherence</p>
+<p>Previous sections introduced several mechanisms that increase structural persistence:</p>
+<ul>
+<li>closure</li>
+<li>chirality</li>
+<li>braiding</li>
+<li>shell coherence</li>
+</ul>
 <p>Each of these mechanisms arises from topological constraints that restrict the ways a structure can deform or decay.
 To incorporate these effects quantitatively into persistence mechanics, we introduce a topology factor.
 This factor measures how strongly topological invariants protect a structure from structural loss.</p>
 <h2 id="652-topological-invariants">6.5.2 Topological invariants<a class="headerlink" href="#652-topological-invariants" title="Permanent link">&para;</a></h2>
 <p>A topological invariant is a quantity that remains constant under continuous deformation.
-Examples include:
-invariant
-expression
-winding number
-circulation
-$$
-=vdl\Gamma = \oint \mathbf{v}\cdot d\mathbf{l}
-$$
-linking number
-(Lk = <span class="arithmatex">\(\frac{1}{4\pi}\oint\oint\frac{\)</span>\mathbf{r}_1-\mathbf{r}_2<span class="arithmatex">\(\cdot(d\mathbf{r}_1\times d\mathbf{r}_2)}{\)</span>
-$$
-H=v(v)d3xH =\int \mathbf{v}\cdot<span class="arithmatex">\(\nabla\times\mathbf{v}\)</span>\,d^3xH=
-$$</p>
+Examples include:</p>
+<table>
+<thead>
+<tr>
+<th>Invariant</th>
+<th>Expression</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>winding number</td>
+<td><span class="arithmatex">\(n = \frac{1}{2\pi}\oint \nabla\theta \cdot d\mathbf{l}\)</span></td>
+</tr>
+<tr>
+<td>circulation</td>
+<td><span class="arithmatex">\(\Gamma = \oint \mathbf{v}\cdot d\mathbf{l}\)</span></td>
+</tr>
+<tr>
+<td>linking number</td>
+<td>$Lk = \frac{1}{4\pi}\oint\oint \frac{(\mathbf{r}_1-\mathbf{r}_2)\cdot(d\mathbf{r}_1\times d\mathbf{r}_2)}{</td>
+</tr>
+<tr>
+<td>helicity</td>
+<td><span class="arithmatex">\(H = \int \mathbf{v}\cdot(\nabla\times\mathbf{v})\,d^3x\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>These quantities cannot change without discontinuous transformations such as reconnection or tearing.
 Thus they impose topological barriers against structural decay.</p>
 <h2 id="653-topological-energy-barrier">6.5.3 Topological energy barrier<a class="headerlink" href="#653-topological-energy-barrier" title="Permanent link">&para;</a></h2>
-<p>Suppose a structure possesses invariant QQQ.
-To eliminate the structure, the system must change the value of QQQ.
-This requires crossing an energy barrier
-Etop.E_{top}.Etop​.
-then transitions between topological states are extremely unlikely.
+<p>Suppose a structure possesses invariant <span class="arithmatex">\(Q\)</span>.
+To eliminate the structure, the system must change the value of <span class="arithmatex">\(Q\)</span>.
+This requires crossing an energy barrier <span class="arithmatex">\(E_{top}\)</span>.
+When <span class="arithmatex">\(E_{top} \gg T_{eff}\)</span>, transitions between topological states are extremely unlikely.
 Thus the structure becomes effectively protected.</p>
 <h2 id="654-probability-of-topological-decay">6.5.4 Probability of topological decay<a class="headerlink" href="#654-probability-of-topological-decay" title="Permanent link">&para;</a></h2>
-<p>Let the probability of a topological transition be governed by Arrhenius behavior.
-Pdecay∼e−Etop/Teff.P_{decay} \sim e^{-E_{top}/T_{eff}}.Pdecay​∼e−Etop​/Teff​.</p>
-<p>TeffT_{eff}Teff​ is an effective fluctuation energy.</p>
-<p>Large barriers dramatically suppress decay probability.</p>
+<p>Let the probability of a topological transition be governed by Arrhenius behavior:</p>
+<div class="arithmatex">\[
+P_{decay} \sim e^{-E_{top}/T_{eff}}.
+\]</div>
+<p>Here <span class="arithmatex">\(T_{eff}\)</span> is an effective fluctuation energy.
+Large barriers dramatically suppress decay probability.</p>
 <h2 id="655-topology-factor-definition">6.5.5 Topology factor definition<a class="headerlink" href="#655-topology-factor-definition" title="Permanent link">&para;</a></h2>
-<p>We define the topology factor
-TobjT_{obj}Tobj​
-as the inverse of the decay probability:
-Tobj=eEtop/Teff.T_{obj} = e^{E_{top}/T_{eff}}.Tobj​=eEtop​/Teff​.
-condition
-topology factor
-no topology protection
-weak protection
-strong protection</p>
+<p>We define the topology factor <span class="arithmatex">\(T_{obj}\)</span> as the inverse of the decay probability:</p>
+<div class="arithmatex">\[
+T_{obj} = e^{E_{top}/T_{eff}}.
+\]</div>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Topology factor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>no topology protection</td>
+<td><span class="arithmatex">\(T_{obj} = 1\)</span></td>
+</tr>
+<tr>
+<td>weak protection</td>
+<td><span class="arithmatex">\(T_{obj} \sim 10\)</span></td>
+</tr>
+<tr>
+<td>strong protection</td>
+<td><span class="arithmatex">\(T_{obj} \gg 1\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>This factor increases the effective persistence of topologically protected structures.</p>
 <h2 id="656-topology-contribution-to-retained-structure">6.5.6 Topology contribution to retained structure<a class="headerlink" href="#656-topology-contribution-to-retained-structure" title="Permanent link">&para;</a></h2>
 <p>Topological protection can be interpreted as an additional retention channel.
-Thus retained structure becomes
-R=Rbulk+Rsurf+Rcurv+Rfan+Rtop.R = R_{bulk} + R_{surf} + R_{curv} + R_{fan} + R_{top}.R=Rbulk​+Rsurf​+Rcurv​+Rfan​+Rtop​.
-This term represents the energy barrier associated with topological constraints.</p>
+Thus retained structure becomes</p>
+<div class="arithmatex">\[
+R = R_{bulk} + R_{surf} + R_{curv} + R_{fan} + R_{top}.
+\]</div>
+<p>This term represents the energy barrier associated with topological constraints.</p>
 <h2 id="657-topology-factor-in-persistence-equation">6.5.7 Topology factor in persistence equation<a class="headerlink" href="#657-topology-factor-in-persistence-equation" title="Permanent link">&para;</a></h2>
 <p>Including the topology factor modifies the corrected persistence number.
-Previously we had
-Including topological protection yields
-S∗=EshellEDTobjRR˙ tref.S_* = \mathcal{E}<em obj="obj">{shell} \mathcal{E} D T</em>.S∗​=Eshell​EDTobj​R˙tref​R​.
-Thus topology directly increases persistence.} \frac{R}{\dot R\,t_{ref}</p>
+Including topological protection yields</p>
+<div class="arithmatex">\[
+S_* = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>Thus topology directly increases persistence.</p>
 <h2 id="658-topology-classes-of-structures">6.5.8 Topology classes of structures<a class="headerlink" href="#658-topology-classes-of-structures" title="Permanent link">&para;</a></h2>
-<p>Different structures possess different levels of topological protection.
-structure
-topology factor
-open wave
-vortex line
-vortex ring
-braid structure
-knotted structure
-extremely large</p>
+<p>Different structures possess different levels of topological protection.</p>
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Topology factor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open wave</td>
+<td><span class="arithmatex">\(T_{obj} = 1\)</span></td>
+</tr>
+<tr>
+<td>vortex line</td>
+<td><span class="arithmatex">\(T_{obj} \sim 1\)</span></td>
+</tr>
+<tr>
+<td>vortex ring</td>
+<td><span class="arithmatex">\(T_{obj} \gg 1\)</span></td>
+</tr>
+<tr>
+<td>braid structure</td>
+<td><span class="arithmatex">\(T_{obj} \gg 1\)</span></td>
+</tr>
+<tr>
+<td>knotted structure</td>
+<td>extremely large</td>
+</tr>
+</tbody>
+</table>
 <p>Thus higher-order topology produces stronger persistence.</p>
 <h2 id="659-topological-hierarchy">6.5.9 Topological hierarchy<a class="headerlink" href="#659-topological-hierarchy" title="Permanent link">&para;</a></h2>
-<p>The topology factor therefore produces a hierarchy of structural stability.
-Twave&lt;Tvortex&lt;Tring&lt;Tbraid&lt;Tknot.T_{wave} &lt; T_{vortex} &lt; T_{ring} &lt; T_{braid} &lt; T_{knot}.Twave​&lt;Tvortex​&lt;Tring​&lt;Tbraid​&lt;Tknot​.
-Structures higher in this hierarchy are progressively harder to destroy.</p>
+<p>The topology factor therefore produces a hierarchy of structural stability:</p>
+<div class="arithmatex">\[
+T_{wave} &lt; T_{vortex} &lt; T_{ring} &lt; T_{braid} &lt; T_{knot}.
+\]</div>
+<p>Structures higher in this hierarchy are progressively harder to destroy.</p>
 <h2 id="6510-relation-to-the-cts-emergence-ladder">6.5.10 Relation to the CTS emergence ladder<a class="headerlink" href="#6510-relation-to-the-cts-emergence-ladder" title="Permanent link">&para;</a></h2>
-<p>Combining this with earlier structural stages gives the emergence hierarchy:
-stage
-open topology
-closed manifold
-chirality
-directional invariant
-linking invariant
-multi-channel topology</p>
+<p>Combining this with earlier structural stages gives the emergence hierarchy:</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Topology</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open wave</td>
+<td>open topology</td>
+</tr>
+<tr>
+<td>closed object</td>
+<td>closed manifold</td>
+</tr>
+<tr>
+<td>chiral object</td>
+<td>chirality</td>
+</tr>
+<tr>
+<td>braided object</td>
+<td>directional invariant</td>
+</tr>
+<tr>
+<td>composite structure</td>
+<td>linking invariant</td>
+</tr>
+<tr>
+<td>shell system</td>
+<td>multi-channel topology</td>
+</tr>
+</tbody>
+</table>
 <p>Each stage increases the topology factor.</p>
 <h2 id="6511-structural-persistence-scaling">6.5.11 Structural persistence scaling<a class="headerlink" href="#6511-structural-persistence-scaling" title="Permanent link">&para;</a></h2>
-<p>Substituting the topology factor into the persistence equation yields
-S∗=EshellEDTobjRR˙ tref.S_<em> = \mathcal{E}<em obj="obj">{shell}\mathcal{E}D T</em>.S∗​=Eshell​EDTobj​R˙tref​R​.
-Thus persistence scales exponentially with the topological barrier.
-S∗∝eEtop/Teff.S_} \frac{R}{\dot R\,t_{ref}</em> \propto e^{E_{top}/T_{eff}}.S∗​∝eEtop​/Teff​.
-This explains why topologically protected structures can persist for extremely long times.</p>
+<p>Substituting the topology factor into the persistence equation yields</p>
+<div class="arithmatex">\[
+S_* = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>Thus persistence scales exponentially with the topological barrier:</p>
+<div class="arithmatex">\[
+S_* \propto e^{E_{top}/T_{eff}}.
+\]</div>
+<p>This explains why topologically protected structures can persist for extremely long times.</p>
 <h2 id="6512-interpretation">6.5.12 Interpretation<a class="headerlink" href="#6512-interpretation" title="Permanent link">&para;</a></h2>
 <p>Topology acts as a structural lock preventing continuous deformation into lower-energy states.
 This lock dramatically reduces effective structural loss.
 Thus topology represents one of the most powerful persistence mechanisms available in the Collapse Tension Substrate.</p>
 <h2 id="6513-summary">6.5.13 Summary<a class="headerlink" href="#6513-summary" title="Permanent link">&para;</a></h2>
-<p>The topology factor
-quantifies the contribution of topological constraints to structural persistence.
-Including this factor yields the corrected persistence equation
-S∗=EshellEDTobjRR˙ tref.S_* = \mathcal{E}<em obj="obj">{shell}\mathcal{E}D T</em>.S∗​=Eshell​EDTobj​R˙tref​R​.
-Structures with strong topological protection possess greatly enhanced persistence.} \frac{R}{\dot R\,t_{ref}</p>
-<p>From Expression to Objecthood
-This final section of Chapter 6 unifies closure, chirality, braiding, shells, and topology into a single criterion describing the transition from field expressions to discrete objects.</p>
+<p>The topology factor <span class="arithmatex">\(T_{obj}\)</span> quantifies the contribution of topological constraints to structural persistence.
+Including this factor yields the corrected persistence equation</p>
+<div class="arithmatex">\[
+S_* = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>Structures with strong topological protection possess greatly enhanced persistence.</p>
+<p><em>Transition to Section 6.6:</em> This final section of Chapter 6 unifies closure, chirality, braiding, shells, and topology into a single criterion describing the transition from field expressions to discrete objects.</p>
 
 
 

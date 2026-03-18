@@ -6557,36 +6557,26 @@
 
 <h1 id="22-defining-the-collapse-tension-substrate">2.2 Defining the Collapse Tension Substrate<a class="headerlink" href="#22-defining-the-collapse-tension-substrate" title="Permanent link">&para;</a></h1>
 <h2 id="221-motivation-for-a-formal-definition">2.2.1 Motivation for a formal definition<a class="headerlink" href="#221-motivation-for-a-formal-definition" title="Permanent link">&para;</a></h2>
-<p>The previous section introduced the conceptual idea of a Collapse Tension Substrate (CTS): a dynamical medium in which two opposing tendencies operate simultaneously:
-collapse, which degrades organized structure
-tension, which resists collapse and stabilizes configurations
-To develop this idea into a quantitative framework, we must define the substrate mathematically.
+<p>The previous section introduced the conceptual idea of a Collapse Tension Substrate (CTS): a dynamical medium in which two opposing tendencies operate simultaneously:</p>
+<ul>
+<li>collapse, which degrades organized structure</li>
+<li>tension, which resists collapse and stabilizes configurations</li>
+</ul>
+<p>To develop this idea into a quantitative framework, we must define the substrate mathematically.
 The CTS will therefore be represented by a field whose dynamics encode both collapse and stabilization mechanisms.</p>
 <h2 id="222-substrate-field">2.2.2 Substrate field<a class="headerlink" href="#222-substrate-field" title="Permanent link">&para;</a></h2>
-<p>Let the substrate be described by a scalar field
-$$
-\Phi(\mathbf{x},t).
-$$
+<p>Let the substrate be described by a scalar field <span class="arithmatex">\(\Phi(\mathbf{x}, t)\)</span>.
 This field represents the local structural potential of the substrate.
-The field is defined over a continuous domain, which for now may be treated as a three-dimensional coordinate space
-$$
-\mathbf{x} \in \mathbb{R}^3.
-$$
-Thus
-$$
+The field is defined over a continuous domain, which for now may be treated as a three-dimensional coordinate space <span class="arithmatex">\(\mathbf{x} \in \mathbb{R}^3\)</span>.
+Thus</p>
+<div class="arithmatex">\[
 \Phi : \mathbb{R}^3 \times \mathbb{R} \rightarrow \mathbb{R}.
-$$
-Configurations of the substrate correspond to specific functions
-$$
-\Phi(\mathbf{x},t).
-$$</p>
+\]</div>
+<p>Configurations of the substrate correspond to specific functions <span class="arithmatex">\(\Phi(\mathbf{x}, t)\)</span>.</p>
 <h2 id="223-energy-functional-of-the-substrate">2.2.3 Energy functional of the substrate<a class="headerlink" href="#223-energy-functional-of-the-substrate" title="Permanent link">&para;</a></h2>
-<p>To determine the dynamics of the field we introduce an energy functional
-$$
-E[\Phi].
-$$
-The simplest functional capable of producing structural competition is
-$$
+<p>To determine the dynamics of the field we introduce an energy functional <span class="arithmatex">\(E[\Phi]\)</span>.
+The simplest functional capable of producing structural competition is</p>
+<div class="arithmatex">\[
 E[\Phi] =
 \int
 \left(
@@ -6599,191 +6589,96 @@ r \Phi^2
 s \Phi^4
 \right)
 d^3x.
-$$
-Each term has a specific role.</p>
+\]</div>
+<p>Each term has a specific role.</p>
 <h2 id="224-interpretation-of-the-terms">2.2.4 Interpretation of the terms<a class="headerlink" href="#224-interpretation-of-the-terms" title="Permanent link">&para;</a></h2>
-<p>Gradient term
-$$
-a |\nabla \Phi|^2
-$$
-This term penalizes rapid spatial variation.
-It represents a smoothing tendency similar to diffusion.</p>
-<p>Curvature term
-$$
-u (\nabla^2 \Phi)^2
-$$
-This higher-order term stabilizes localized structures.
-It prevents indefinite collapse or runaway gradients.</p>
-<p>Quadratic potential
-$$
-r \Phi^2
-$$
-This term determines whether the uniform state
-$$
-\Phi = 0
-$$
-is stable or unstable.</p>
-<p>Nonlinear saturation
-$$
-s \Phi^4
-$$
-This term prevents unlimited growth of the field.
-It stabilizes finite-amplitude configurations.</p>
+<p><strong>Gradient term</strong> <span class="arithmatex">\(a |\nabla \Phi|^2\)</span>: penalizes rapid spatial variation; represents a smoothing tendency similar to diffusion.</p>
+<p><strong>Curvature term</strong> <span class="arithmatex">\(u (\nabla^2 \Phi)^2\)</span>: stabilizes localized structures; prevents indefinite collapse or runaway gradients.</p>
+<p><strong>Quadratic potential</strong> <span class="arithmatex">\(r \Phi^2\)</span>: determines whether the uniform state <span class="arithmatex">\(\Phi = 0\)</span> is stable or unstable.</p>
+<p><strong>Nonlinear saturation</strong> <span class="arithmatex">\(s \Phi^4\)</span>: prevents unlimited growth of the field; stabilizes finite-amplitude configurations.</p>
 <h2 id="225-dynamical-equation">2.2.5 Dynamical equation<a class="headerlink" href="#225-dynamical-equation" title="Permanent link">&para;</a></h2>
 <p>The time evolution of the substrate field follows a relaxation equation derived from the energy functional.
-A common form is
-$$
+A common form is</p>
+<div class="arithmatex">\[
 \partial_t \Phi = -\frac{\delta E}{\delta \Phi}.
-$$
-Computing the functional derivative gives
-$$
-\partial_t \Phi
-r\Phi</p>
-<p>a \nabla^2 \Phi
-u \nabla^4 \Phi
-s \Phi^3.
-$$
-This equation defines the CTS field dynamics.</p>
+\]</div>
+<p>Computing the functional derivative gives</p>
+<div class="arithmatex">\[
+\partial_t \Phi = -r\Phi + a \nabla^2 \Phi - u \nabla^4 \Phi - s \Phi^3.
+\]</div>
+<p>This equation defines the CTS field dynamics.</p>
 <h2 id="226-collapse-term">2.2.6 Collapse term<a class="headerlink" href="#226-collapse-term" title="Permanent link">&para;</a></h2>
-<p>The linear term
-$$
--r\Phi
-$$
-represents structural collapse.
-If
-$$
-r &gt; 0
-$$
-then fluctuations tend to decay.
-This term drives the system toward
-$$
-\Phi = 0.
-$$</p>
+<p>The linear term <span class="arithmatex">\(-r\Phi\)</span> represents structural collapse.
+If <span class="arithmatex">\(r &gt; 0\)</span>, then fluctuations tend to decay.
+This term drives the system toward <span class="arithmatex">\(\Phi = 0\)</span>.</p>
 <h2 id="227-tension-terms">2.2.7 Tension terms<a class="headerlink" href="#227-tension-terms" title="Permanent link">&para;</a></h2>
-<p>The remaining terms contribute to structural stabilization.
-diffusion-like tension
-$$
-a \nabla^2 \Phi
-$$
-allows spatial redistribution of structure.
-curvature tension
-$$
--u \nabla^4 \Phi
-$$
-stabilizes localized patterns.
-nonlinear tension
-$$
--s \Phi^3
-$$
-prevents runaway growth.
-Together these terms oppose collapse.</p>
+<p>The remaining terms contribute to structural stabilization:</p>
+<ul>
+<li><strong>diffusion-like tension</strong> <span class="arithmatex">\(a \nabla^2 \Phi\)</span>: allows spatial redistribution of structure</li>
+<li><strong>curvature tension</strong> <span class="arithmatex">\(-u \nabla^4 \Phi\)</span>: stabilizes localized patterns</li>
+<li><strong>nonlinear saturation</strong> <span class="arithmatex">\(-s \Phi^3\)</span>: prevents runaway growth</li>
+</ul>
+<p>Together these terms oppose collapse.</p>
 <h2 id="228-equilibrium-states">2.2.8 Equilibrium states<a class="headerlink" href="#228-equilibrium-states" title="Permanent link">&para;</a></h2>
-<p>Stationary configurations satisfy
-$$
-\partial_t \Phi = 0.
-$$
-Thus
-$$
--r\Phi
-+
-a \nabla^2 \Phi
-u \nabla^4 \Phi
-s \Phi^3
-= 0.
-$$
-Solutions of this equation represent possible substrate structures.
-Examples include:
-uniform states
-periodic patterns
-localized solitons.</p>
+<p>Stationary configurations satisfy <span class="arithmatex">\(\partial_t \Phi = 0\)</span>.
+Thus</p>
+<div class="arithmatex">\[
+-r\Phi + a \nabla^2 \Phi - u \nabla^4 \Phi - s \Phi^3 = 0.
+\]</div>
+<p>Solutions of this equation represent possible substrate structures.
+Examples include:</p>
+<ul>
+<li>uniform states</li>
+<li>periodic patterns</li>
+<li>localized solitons</li>
+</ul>
 <h2 id="229-linear-stability-analysis">2.2.9 Linear stability analysis<a class="headerlink" href="#229-linear-stability-analysis" title="Permanent link">&para;</a></h2>
-<p>Consider small perturbations
-$$
-\Phi = \epsilon e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}.
-$$
-Substituting into the linearized equation yields the dispersion relation
-$$
-\omega =
-r
-+
-a k^2
-+
-u k^4.
-$$
-The sign of
-$$
-\omega
-$$
-determines stability.
-If
-$$
-\omega &gt; 0
-$$
-the mode grows.
-If
-$$
-\omega &lt; 0
-$$
-the mode decays.</p>
+<p>Consider small perturbations</p>
+<div class="arithmatex">\[
+\Phi = \epsilon\, e^{i(\mathbf{k}\cdot\mathbf{x} - \omega t)}.
+\]</div>
+<p>Substituting into the linearized equation yields the dispersion relation</p>
+<div class="arithmatex">\[
+\omega = -r - a k^2 - u k^4.
+\]</div>
+<p>The sign of <span class="arithmatex">\(\omega\)</span> determines stability.
+If <span class="arithmatex">\(\omega &gt; 0\)</span> the mode grows.
+If <span class="arithmatex">\(\omega &lt; 0\)</span> the mode decays.</p>
 <h2 id="2210-mode-selection">2.2.10 Mode selection<a class="headerlink" href="#2210-mode-selection" title="Permanent link">&para;</a></h2>
-<p>The growth rate of a mode depends on its wavenumber
-$$
-k = |\mathbf{k}|.
-$$
-The dominant mode corresponds to the value of
-$$
-k
-$$
-that maximizes
-$$
-\omega(k).
-$$
+<p>The growth rate of a mode depends on its wavenumber <span class="arithmatex">\(k = |\mathbf{k}|\)</span>.
+The dominant mode corresponds to the value of <span class="arithmatex">\(k\)</span> that maximizes <span class="arithmatex">\(\omega(k)\)</span>.
 Thus the substrate naturally selects preferred spatial scales.
 These scales determine the characteristic size of emergent structures.</p>
 <h2 id="2211-structural-retention-in-the-cts">2.2.11 Structural retention in the CTS<a class="headerlink" href="#2211-structural-retention-in-the-cts" title="Permanent link">&para;</a></h2>
 <p>The retained structure of a configuration can be expressed in terms of the energy functional.
-Let
-$$
-R = E[\Phi].
-$$
+Let <span class="arithmatex">\(R = E[\Phi]\)</span>.
 Energy stored in the field represents organized structural content.
 Loss processes correspond to the dissipation of this energy.
-Thus
-$$
-\dot R = -\frac{dE}{dt}.
-$$</p>
+Thus</p>
+<div class="arithmatex">\[
+\dot{R} = -\frac{dE}{dt}.
+\]</div>
 <h2 id="2212-persistence-condition">2.2.12 Persistence condition<a class="headerlink" href="#2212-persistence-condition" title="Permanent link">&para;</a></h2>
-<p>Substituting this definition into the selection number gives
-$$
-S =
-\frac{E[\Phi]}{\left|\frac{dE}{dt}\right| t_{ref}}.
-$$
-Configurations satisfying
-$$
-S \ge 1
-$$
-persist long enough to participate in higher-order structural processes.</p>
+<p>Substituting this definition into the selection number gives</p>
+<div class="arithmatex">\[
+S = \frac{E[\Phi]}{\left|\dfrac{dE}{dt}\right| t_{ref}}.
+\]</div>
+<p>Configurations satisfying <span class="arithmatex">\(S \geq 1\)</span> persist long enough to participate in higher-order structural processes.</p>
 <h2 id="2213-summary">2.2.13 Summary<a class="headerlink" href="#2213-summary" title="Permanent link">&para;</a></h2>
-<p>The Collapse Tension Substrate is defined by a scalar field
-$$
-\Phi(\mathbf{x},t)
-$$
-whose dynamics follow
-$$
-\partial_t \Phi
-r\Phi</p>
-<p>a\nabla^2\Phi
-u\nabla^4\Phi
-s\Phi^3.
-$$
-Within this equation:
-the linear term represents collapse
-the gradient and curvature terms represent tension
-the nonlinear term stabilizes finite amplitudes.
-This competition generates the structural landscape from which persistent configurations emerge.</p>
-<p>Scalar Potential Before Geometry
+<p>The Collapse Tension Substrate is defined by a scalar field <span class="arithmatex">\(\Phi(\mathbf{x}, t)\)</span> whose dynamics follow</p>
+<div class="arithmatex">\[
+\partial_t \Phi = -r\Phi + a\nabla^2\Phi - u\nabla^4\Phi - s\Phi^3.
+\]</div>
+<p>Within this equation:</p>
+<ul>
+<li>the linear term <span class="arithmatex">\(-r\Phi\)</span> represents collapse</li>
+<li>the gradient and curvature terms represent tension</li>
+<li>the nonlinear term stabilizes finite amplitudes</li>
+</ul>
+<p>This competition generates the structural landscape from which persistent configurations emerge.</p>
+<hr />
+<p><em>Transition to Section 2.3:</em>
 This section derives the zero-dimensional scalar regime of the substrate and shows how fluctuations behave before gradients and spatial structures emerge.</p>
-<p>No additional sections beyond the Table of Contents.</p>
 
 
 

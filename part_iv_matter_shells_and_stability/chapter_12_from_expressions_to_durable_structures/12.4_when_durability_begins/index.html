@@ -6572,24 +6572,20 @@
 <h1 id="124-when-durability-begins">12.4 When Durability Begins<a class="headerlink" href="#124-when-durability-begins" title="Permanent link">&para;</a></h1>
 <h2 id="1241-motivation">12.4.1 Motivation<a class="headerlink" href="#1241-motivation" title="Permanent link">&para;</a></h2>
 <p>Section 12.3 established the conditions required for objecthood:
-persistence
-energy localization
-interaction boundary
-However, not every object is durable.
+- persistence
+- energy localization
+- interaction boundary</p>
+<p>However, not every object is durable.
 An object may exist temporarily but still be easily destroyed by environmental perturbations.
 Durability therefore requires an additional constraint: resistance to repeated perturbation events.
 This section derives the mathematical condition under which an object becomes durable matter.</p>
 <h2 id="1242-perturbation-environment">12.4.2 Perturbation environment<a class="headerlink" href="#1242-perturbation-environment" title="Permanent link">&para;</a></h2>
-<p>Let
-$$
-E_{pert}
-$$
-represent the characteristic perturbation energy delivered by the surrounding environment.
-Examples include
-collision energy
-fluctuation energy
-radiation energy.
-For an object to survive repeated interactions, its structural locking energy must exceed the perturbation energy.</p>
+<p>Let <span class="arithmatex">\(E_{pert}\)</span> represent the characteristic perturbation energy delivered by the surrounding environment.
+Examples include:
+- collision energy
+- fluctuation energy
+- radiation energy.</p>
+<p>For an object to survive repeated interactions, its structural locking energy must exceed the perturbation energy.</p>
 <h2 id="1243-durability-inequality">12.4.3 Durability inequality<a class="headerlink" href="#1243-durability-inequality" title="Permanent link">&para;</a></h2>
 <p>Durability therefore requires
 $$
@@ -6599,26 +6595,22 @@ If this condition is not satisfied, perturbations will disrupt the object's stru
 Thus durability requires locking energy dominance.</p>
 <h2 id="1244-probabilistic-survival">12.4.4 Probabilistic survival<a class="headerlink" href="#1244-probabilistic-survival" title="Permanent link">&para;</a></h2>
 <p>In realistic environments perturbations occur repeatedly.
-Let
-$$
-P_{surv}
-$$
-represent the probability that an object survives a single perturbation event.
+Let <span class="arithmatex">\(P_{surv}\)</span> represent the probability that an object survives a single perturbation event.
 A simple statistical model gives
 $$
-P_{surv}
+P_{surv} =
 \exp!\left(-\frac{E_{pert}}{E_{lock}}\right).
 $$
 Thus large locking energy dramatically increases survival probability.</p>
 <h2 id="1245-repeated-interaction-survival">12.4.5 Repeated interaction survival<a class="headerlink" href="#1245-repeated-interaction-survival" title="Permanent link">&para;</a></h2>
-<p>If an object experiences (N) perturbation events, the survival probability becomes
+<p>If an object experiences <span class="arithmatex">\(N\)</span> perturbation events, the survival probability becomes
 $$
 P_{total} =
 (P_{surv})^N.
 $$
 Thus
 $$
-P_{total}
+P_{total} =
 \exp!\left(-\frac{N E_{pert}}{E_{lock}}\right).
 $$
 Durability requires
@@ -6629,17 +6621,13 @@ $$</p>
 <p>Shell and composite structures possess large locking energies because many stabilization channels contribute simultaneously.
 Let
 $$
-E_{lock}
-\sum_{i=1}^{N_f} E_{bond,i}.
+E_{lock} = \sum_{i=1}^{N_f} E_{bond,i}.
 $$
 Thus locking energy grows with the number of structural bonds.
-Large (N_f) therefore dramatically increases durability.</p>
+Large <span class="arithmatex">\(N_f\)</span> therefore dramatically increases durability.</p>
 <h2 id="1247-structural-robustness">12.4.7 Structural robustness<a class="headerlink" href="#1247-structural-robustness" title="Permanent link">&para;</a></h2>
 <p>Durable structures also resist internal deformation modes.
-Let the deformation energy be
-$$
-E_{def}.
-$$
+Let <span class="arithmatex">\(E_{def}\)</span> be the deformation energy.
 Robust objects satisfy
 $$
 E_{def} \gg E_{thermal}.
@@ -6673,11 +6661,7 @@ $$
 These coordinates correspond to the shell survival and composite survival regions.</p>
 <h2 id="12410-durability-timescale">12.4.10 Durability timescale<a class="headerlink" href="#12410-durability-timescale" title="Permanent link">&para;</a></h2>
 <p>Durability can also be expressed as a survival timescale.
-Let
-$$
-\tau_{life}
-$$
-represent the lifetime of the object.
+Let <span class="arithmatex">\(\tau_{life}\)</span> represent the lifetime of the object.
 Using the perturbation model we obtain
 $$
 \tau_{life}
@@ -6685,28 +6669,44 @@ $$
 \tau_{int}
 \exp!\left(\frac{E_{lock}}{E_{pert}}\right)
 $$
-where
-$$
-\tau_{int}
-$$
-is the typical interaction interval.
+where <span class="arithmatex">\(\tau_{int}\)</span> is the typical interaction interval.
 Thus lifetime grows exponentially with locking energy.</p>
 <h2 id="12411-structural-hierarchy-of-durability">12.4.11 Structural hierarchy of durability<a class="headerlink" href="#12411-structural-hierarchy-of-durability" title="Permanent link">&para;</a></h2>
-<p>Applying the durability criterion to the CTS excitation hierarchy gives
-excitation
-durability
-waves
-none
-precursors
-none
-vortex rings
-weak
-chiral structures
-moderate
-shell structures
-strong
-composite structures
-extreme</p>
+<p>Applying the durability criterion to the CTS excitation hierarchy gives:</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th>Durability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>waves</td>
+<td>none</td>
+</tr>
+<tr>
+<td>precursors</td>
+<td>none</td>
+</tr>
+<tr>
+<td>vortex rings</td>
+<td>weak</td>
+</tr>
+<tr>
+<td>chiral structures</td>
+<td>moderate</td>
+</tr>
+<tr>
+<td>shell structures</td>
+<td>strong</td>
+</tr>
+<tr>
+<td>composite structures</td>
+<td>extreme</td>
+</tr>
+</tbody>
+</table>
 <p>Thus durable objects emerge primarily from shell-like architectures.</p>
 <h2 id="12412-emergence-of-matter-like-systems">12.4.12 Emergence of matter-like systems<a class="headerlink" href="#12412-emergence-of-matter-like-systems" title="Permanent link">&para;</a></h2>
 <p>Matter-like structures appear when durability becomes extremely large.
@@ -6722,10 +6722,10 @@ These conditions allow the object to survive enormous numbers of interactions.</
 <h2 id="12413-structural-memory">12.4.13 Structural memory<a class="headerlink" href="#12413-structural-memory" title="Permanent link">&para;</a></h2>
 <p>Durable objects possess structural memory.
 Because perturbations do not destroy the locking architecture, the object preserves its internal structure over long times.
-This property allows durable structures to support
-internal excitations
-repeated interactions
-structural evolution.</p>
+This property allows durable structures to support:
+- internal excitations
+- repeated interactions
+- structural evolution.</p>
 <h2 id="12414-summary">12.4.14 Summary<a class="headerlink" href="#12414-summary" title="Permanent link">&para;</a></h2>
 <p>Durability begins when structural locking energy significantly exceeds environmental perturbation energy.
 Mathematically this requires
@@ -6738,8 +6738,6 @@ S_* \gg 1,
 $$
 this condition produces objects capable of surviving repeated interactions.
 Within the CTS survival map this regime corresponds primarily to shell and composite structures.</p>
-<p>Why Some Expressions Remain Background Modes
-This section explains mathematically why most CTS excitations remain propagation modes rather than forming durable structures.</p>
 
 
 

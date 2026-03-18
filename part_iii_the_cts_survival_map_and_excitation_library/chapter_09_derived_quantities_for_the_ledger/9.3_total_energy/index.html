@@ -6552,194 +6552,179 @@
 
 <h1 id="93-total-energy">9.3 Total Energy<a class="headerlink" href="#93-total-energy" title="Permanent link">&para;</a></h1>
 <h2 id="931-motivation">9.3.1 Motivation<a class="headerlink" href="#931-motivation" title="Permanent link">&para;</a></h2>
-<p>Sections 9.1 and 9.2 introduced the two primary energy components of any CTS excitation:
-formation energy (E_{form})
-lock energy (E_{lock})
-While these two quantities describe different aspects of structural emergence, the excitation ledger must also track the total energetic burden of each structure.
+<p>Sections 9.1 and 9.2 introduced the two primary energy components of any CTS excitation:</p>
+<ul>
+<li>Formation energy <span class="arithmatex">\(E_{form}\)</span></li>
+<li>Lock energy <span class="arithmatex">\(E_{lock}\)</span></li>
+</ul>
+<p>While these two quantities describe different aspects of structural emergence, the excitation ledger must also track the total energetic burden of each structure.
 This quantity determines how frequently the excitation appears within the substrate.
 We therefore define the total excitation energy.</p>
 <h2 id="932-definition-of-total-energy">9.3.2 Definition of total energy<a class="headerlink" href="#932-definition-of-total-energy" title="Permanent link">&para;</a></h2>
-<p>The total energy of an excitation is simply the sum of formation and locking energies:
-$$
-\boxed{
-E_{total} = E_{form} + E_{lock}
-}
-$$
-This quantity represents the complete energy stored in the excitation relative to the vacuum.</p>
+<p>The total energy of an excitation is simply the sum of formation and locking energies:</p>
+<div class="arithmatex">\[
+\boxed{E_{total} = E_{form} + E_{lock}}
+\]</div>
+<p>This quantity represents the complete energy stored in the excitation relative to the vacuum.</p>
 <h2 id="933-energy-density-formulation">9.3.3 Energy density formulation<a class="headerlink" href="#933-energy-density-formulation" title="Permanent link">&para;</a></h2>
-<p>From the CTS energy functional the total energy is
-$$
-E_{total}
-\int
-\mathcal{E}(\mathbf{x}),d^3x.
-$$
-Where the energy density is
-$$
-\mathcal{E}
-a|\nabla\Phi|^2
-+
-u(\nabla^2\Phi)^2
-+
-r|\Phi|^2
-+
-s|\Phi|^4
-+
-b|\nabla\times\mathbf A|^2.
-$$
-Integrating this density over space yields the total excitation energy.</p>
+<p>From the CTS energy functional the total energy is</p>
+<div class="arithmatex">\[
+E_{total} = \int \mathcal{E}(\mathbf{x})\, d^3x,
+\]</div>
+<p>where the energy density is</p>
+<div class="arithmatex">\[
+\mathcal{E} = a|\nabla\Phi|^2 + u(\nabla^2\Phi)^2 + r|\Phi|^2 + s|\Phi|^4 + b|\nabla\times\mathbf{A}|^2.
+\]</div>
+<p>Integrating this density over space yields the total excitation energy.</p>
 <h2 id="934-physical-interpretation">9.3.4 Physical interpretation<a class="headerlink" href="#934-physical-interpretation" title="Permanent link">&para;</a></h2>
-<p>Each term in the energy density contributes to the total energy:
-energy component
-origin
-gradient energy
-spatial variation of field
-curvature energy
-higher-order spatial structure
-potential energy
-scalar field amplitude
-gauge energy
-circulation fields</p>
+<p>Each term in the energy density contributes to the total energy:</p>
+<table>
+<thead>
+<tr>
+<th>Energy component</th>
+<th>Origin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gradient energy</td>
+<td>Spatial variation of field</td>
+</tr>
+<tr>
+<td>Curvature energy</td>
+<td>Higher-order spatial structure</td>
+</tr>
+<tr>
+<td>Potential energy</td>
+<td>Scalar field amplitude</td>
+</tr>
+<tr>
+<td>Gauge energy</td>
+<td>Circulation fields</td>
+</tr>
+</tbody>
+</table>
 <p>The balance between these contributions determines the final energy of the excitation.</p>
 <h2 id="935-energy-hierarchy-of-excitation-classes">9.3.5 Energy hierarchy of excitation classes<a class="headerlink" href="#935-energy-hierarchy-of-excitation-classes" title="Permanent link">&para;</a></h2>
-<p>Using the scaling relations derived earlier, approximate total energies for major excitation classes can be summarized as follows:
-excitation
-approximate scaling
-wave
-$$
-(E\sim A^2)
-$$
-phase-locked mode
-$$
-(E\sim A^2L^3)
-$$
-vortex
-$$
-(E\sim \ln(R/\xi))
-$$
-ring
-$$
-(E\sim R\ln(R/\xi))
-$$
-chiral primitive
-$$
-(E\sim R + E_{twist})
-$$
-shell
-$$
-(E\sim R^2)
-$$
-braid
-$$
-(E\sim N R)
-$$</p>
+<p>Using the scaling relations derived earlier, approximate total energies for major excitation classes can be summarized as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th>Approximate scaling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave</td>
+<td><span class="arithmatex">\(E \sim A^2\)</span></td>
+</tr>
+<tr>
+<td>Phase-locked mode</td>
+<td><span class="arithmatex">\(E \sim A^2 L^3\)</span></td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td><span class="arithmatex">\(E \sim \ln(R/\xi)\)</span></td>
+</tr>
+<tr>
+<td>Ring</td>
+<td><span class="arithmatex">\(E \sim R\ln(R/\xi)\)</span></td>
+</tr>
+<tr>
+<td>Chiral primitive</td>
+<td><span class="arithmatex">\(E \sim R + E_{twist}\)</span></td>
+</tr>
+<tr>
+<td>Shell</td>
+<td><span class="arithmatex">\(E \sim R^2\)</span></td>
+</tr>
+<tr>
+<td>Braid</td>
+<td><span class="arithmatex">\(E \sim NR\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>These relations illustrate the increasing energetic cost of higher structural complexity.</p>
 <h2 id="936-energetic-ordering-of-cts-excitations">9.3.6 Energetic ordering of CTS excitations<a class="headerlink" href="#936-energetic-ordering-of-cts-excitations" title="Permanent link">&para;</a></h2>
-<p>Combining formation and locking contributions yields the approximate energy hierarchy
-$$
-E_{wave}
-&lt;
-E_{phase}
-&lt;
-E_{vortex}
-&lt;
-E_{ring}
-&lt;
-E_{chiral}
-&lt;
-E_{shell}
-&lt;
-E_{braid}.
-$$
-This ordering is fundamental to the structure of the CTS survival landscape.</p>
+<p>Combining formation and locking contributions yields the approximate energy hierarchy</p>
+<div class="arithmatex">\[
+E_{wave} &lt; E_{phase} &lt; E_{vortex} &lt; E_{ring} &lt; E_{chiral} &lt; E_{shell} &lt; E_{braid}.
+\]</div>
+<p>This ordering is fundamental to the structure of the CTS survival landscape.</p>
 <h2 id="937-total-energy-and-abundance">9.3.7 Total energy and abundance<a class="headerlink" href="#937-total-energy-and-abundance" title="Permanent link">&para;</a></h2>
 <p>Excitation abundance depends exponentially on total energy.
-The statistical abundance relation is
-$$
-A_i
-\propto
-\exp!\left(
--\frac{E_{total}}{T_{eff}}
-\right).
-$$
-Here (T_{eff}) represents the effective fluctuation energy of the substrate.
-Thus
-low total energy → high abundance
-high total energy → rare structures.</p>
+The statistical abundance relation is</p>
+<div class="arithmatex">\[
+A_i \propto \exp\!\left(-\frac{E_{total}}{T_{eff}}\right).
+\]</div>
+<p>Here <span class="arithmatex">\(T_{eff}\)</span> represents the effective fluctuation energy of the substrate.
+Thus:</p>
+<ul>
+<li>Low total energy → high abundance</li>
+<li>High total energy → rare structures</li>
+</ul>
 <h2 id="938-cheap-expressions-versus-durable-structures">9.3.8 Cheap expressions versus durable structures<a class="headerlink" href="#938-cheap-expressions-versus-durable-structures" title="Permanent link">&para;</a></h2>
 <p>An important insight emerges from comparing formation energy and locking energy.
-Two distinct structural regimes appear.
-Cheap expressions
-Structures with
-$$
-E_{total} \approx E_{form}
-$$
-form easily but decay quickly.
+Two distinct structural regimes appear.</p>
+<p><strong>Cheap expressions:</strong> Structures with <span class="arithmatex">\(E_{total} \approx E_{form}\)</span> form easily but decay quickly.
 Examples:
-waves
-weak coherent packets.</p>
-<p>Durable structures
-Structures with
-$$
-E_{lock} \gg E_{form}
-$$
-require more energy to form but resist destruction.
+- Waves
+- Weak coherent packets</p>
+<p><strong>Durable structures:</strong> Structures with <span class="arithmatex">\(E_{lock} \gg E_{form}\)</span> require more energy to form but resist destruction.
 Examples:
-shells
-braids.</p>
+- Shells
+- Braids</p>
 <h2 id="939-energetic-efficiency">9.3.9 Energetic efficiency<a class="headerlink" href="#939-energetic-efficiency" title="Permanent link">&para;</a></h2>
-<p>To compare structural efficiency we define
-$$
-\eta =
-\frac{E_{lock}}{E_{total}}.
-$$
-This quantity measures how much of the excitation energy contributes to structural stability.
-regime
-interpretation
-$$
-<span class="arithmatex">\(\eta \approx 0\)</span>
-$$
-fragile structures
-$$
-<span class="arithmatex">\(\eta \approx 0.5\)</span>
-$$
-balanced structures
-$$
-<span class="arithmatex">\(\eta \approx 1\)</span>
-$$
-highly stabilized structures</p>
+<p>To compare structural efficiency we define</p>
+<div class="arithmatex">\[
+\eta = \frac{E_{lock}}{E_{total}}.
+\]</div>
+<p>This quantity measures how much of the excitation energy contributes to structural stability.</p>
+<table>
+<thead>
+<tr>
+<th>Regime</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\eta \approx 0\)</span></td>
+<td>Fragile structures</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\eta \approx 0.5\)</span></td>
+<td>Balanced structures</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\eta \approx 1\)</span></td>
+<td>Highly stabilized structures</td>
+</tr>
+</tbody>
+</table>
 <h2 id="9310-total-energy-and-persistence">9.3.10 Total energy and persistence<a class="headerlink" href="#9310-total-energy-and-persistence" title="Permanent link">&para;</a></h2>
 <p>Although persistence primarily depends on structural retention, total energy influences persistence indirectly.
 Structures with extremely high total energy tend to form rarely, even if they are stable once formed.
-Thus the survival of an excitation depends on both
-persistence threshold
-formation probability.</p>
+Thus the survival of an excitation depends on both:</p>
+<ul>
+<li>Persistence threshold</li>
+<li>Formation probability</li>
+</ul>
 <h2 id="9311-ledger-entry">9.3.11 Ledger entry<a class="headerlink" href="#9311-ledger-entry" title="Permanent link">&para;</a></h2>
-<p>Each excitation entry in the CTS ledger therefore records
-$$
-E_{total}
-$$
-alongside formation and locking energies.
-The ledger structure becomes
-$$
-\mathcal{L}i =
-(
-\text{type},
-E{form},
-E_{lock},
-E_{total},
-\dots
-).
-$$
-These quantities determine the position of the excitation in the CTS survival map.</p>
+<p>Each excitation entry in the CTS ledger therefore records <span class="arithmatex">\(E_{total}\)</span> alongside formation and locking energies.
+The ledger structure becomes</p>
+<div class="arithmatex">\[
+\mathcal{L}_i = (\text{type},\, E_{form},\, E_{lock},\, E_{total},\, \dots).
+\]</div>
+<p>These quantities determine the position of the excitation in the CTS survival map.</p>
 <h2 id="9312-summary">9.3.12 Summary<a class="headerlink" href="#9312-summary" title="Permanent link">&para;</a></h2>
 <p>Total energy is the complete energetic cost of an excitation relative to the CTS vacuum.
-It combines formation energy and lock energy:
-$$
-E_{total}=E_{form}+E_{lock}.
-$$
-This quantity determines the abundance of excitations within the substrate and helps distinguish cheap background expressions from rare but highly persistent structures.</p>
-<p>Lock Ratio
-This section derives the dimensionless ratio that compares stabilization energy to formation cost and serves as the primary horizontal axis of the CTS survival map.</p>
+It combines formation energy and lock energy:</p>
+<div class="arithmatex">\[
+E_{total} = E_{form} + E_{lock}.
+\]</div>
+<p>This quantity determines the abundance of excitations within the substrate and helps distinguish cheap background expressions from rare but highly persistent structures.</p>
 
 
 

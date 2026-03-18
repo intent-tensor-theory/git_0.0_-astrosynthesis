@@ -6563,166 +6563,184 @@
 
 <h1 id="97-structural-persistence-scaling">9.7 Structural Persistence Scaling<a class="headerlink" href="#97-structural-persistence-scaling" title="Permanent link">&para;</a></h1>
 <h2 id="971-motivation">9.7.1 Motivation<a class="headerlink" href="#971-motivation" title="Permanent link">&para;</a></h2>
-<p>Section 9.6 introduced the corrected persistence number
-$$
-S_* =
-\mathcal{E}{shell}\mathcal{E}D T{obj}
-\frac{R}{\dot{R} t_{ref}}
-$$
-which determines whether an excitation survives.
+<p>Section 9.6 introduced the corrected persistence number</p>
+<div class="arithmatex">\[
+S_* = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\, t_{ref}},
+\]</div>
+<p>which determines whether an excitation survives.
 However, to use this equation predictively we must understand how each term scales with excitation size, topology, and environmental conditions.
 Persistence scaling reveals why certain structural classes dominate different regions of the CTS survival map.</p>
 <h2 id="972-scaling-of-retained-structure">9.7.2 Scaling of retained structure<a class="headerlink" href="#972-scaling-of-retained-structure" title="Permanent link">&para;</a></h2>
-<p>Let the excitation have characteristic size
-$$
-L.
-$$
+<p>Let the excitation have characteristic size <span class="arithmatex">\(L\)</span>.
 Retained structural energy typically scales with the spatial extent of the structure.
-For a (d)-dimensional structure
-$$
-R \sim \rho L^d
-$$
-where
-$$
-<span class="arithmatex">\(\rho\)</span> is structural energy density
-$$
-(d) is the effective dimensionality of the structure.
-Typical dimensionalities include:
-structure
-effective dimension
-wave packet
-(d=3)
-vortex line
-(d=1)
-ring
-(d=1)
-shell
-(d=2)
-braid
-(d=1)–(3) depending on geometry</p>
+For a <span class="arithmatex">\(d\)</span>-dimensional structure</p>
+<div class="arithmatex">\[
+R \sim \rho L^d,
+\]</div>
+<p>where <span class="arithmatex">\(\rho\)</span> is the structural energy density and <span class="arithmatex">\(d\)</span> is the effective dimensionality of the structure.
+Typical dimensionalities include:</p>
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Effective dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave packet</td>
+<td><span class="arithmatex">\(d = 3\)</span></td>
+</tr>
+<tr>
+<td>Vortex line</td>
+<td><span class="arithmatex">\(d = 1\)</span></td>
+</tr>
+<tr>
+<td>Ring</td>
+<td><span class="arithmatex">\(d = 1\)</span></td>
+</tr>
+<tr>
+<td>Shell</td>
+<td><span class="arithmatex">\(d = 2\)</span></td>
+</tr>
+<tr>
+<td>Braid</td>
+<td><span class="arithmatex">\(d = 1\)</span>–<span class="arithmatex">\(3\)</span> depending on geometry</td>
+</tr>
+</tbody>
+</table>
 <p>Thus larger structures generally possess larger retained energy.</p>
 <h2 id="973-scaling-of-structural-loss">9.7.3 Scaling of structural loss<a class="headerlink" href="#973-scaling-of-structural-loss" title="Permanent link">&para;</a></h2>
 <p>Loss occurs through dissipation, diffusion, or perturbation.
-The structural loss rate can be approximated as
-$$
-\dot{R}
-\sim
-\gamma L^{d-1}
-$$
-where
-$$
-<span class="arithmatex">\(\gamma\)</span> represents environmental coupling strength.
-$$
+The structural loss rate can be approximated as</p>
+<div class="arithmatex">\[
+\dot{R} \sim \gamma L^{d-1},
+\]</div>
+<p>where <span class="arithmatex">\(\gamma\)</span> represents environmental coupling strength.
 This scaling reflects the fact that structural loss occurs primarily across boundaries.</p>
 <h2 id="974-persistence-ratio-scaling">9.7.4 Persistence ratio scaling<a class="headerlink" href="#974-persistence-ratio-scaling" title="Permanent link">&para;</a></h2>
-<p>Substituting the above relations into the persistence number gives
-$$
-S_<em> =
-\mathcal{E}{shell}\mathcal{E}D T{obj}
-\frac{\rho L^d}{\gamma L^{d-1} t_{ref}}.
-$$
-Simplifying yields
-$$
-\boxed{
-S_</em> \sim
-\mathcal{E}{shell}\mathcal{E}D T{obj}
-\frac{\rho}{\gamma t_{ref}}
-L
-}
-$$
-Thus persistence grows approximately linearly with structural size.</p>
+<p>Substituting the above relations into the persistence number gives</p>
+<div class="arithmatex">\[
+S_* = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{\rho L^d}{\gamma L^{d-1} t_{ref}}.
+\]</div>
+<p>Simplifying yields</p>
+<div class="arithmatex">\[
+\boxed{S_* \sim \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{\rho}{\gamma\, t_{ref}}\,L}
+\]</div>
+<p>Thus persistence grows approximately linearly with structural size.</p>
 <h2 id="975-interpretation">9.7.5 Interpretation<a class="headerlink" href="#975-interpretation" title="Permanent link">&para;</a></h2>
 <p>This result reveals a crucial principle:
 larger structures tend to persist longer than smaller ones, provided structural locking exists.
 However, this scaling holds only when structural locking mechanisms prevent fragmentation.
 Without locking, large structures become unstable.</p>
 <h2 id="976-topological-scaling">9.7.6 Topological scaling<a class="headerlink" href="#976-topological-scaling" title="Permanent link">&para;</a></h2>
-<p>Topology modifies persistence scaling through the factor
-$$
-T_{obj}.
-$$
-Approximate topology factors for different excitations are
-excitation
-(T_{obj})
-wave
-1
-phase-locked mode
-~1
-vortex
-~2–5
-ring
-~5–10
-chiral primitive
-~10–20
-shell
-~20–100
-braid
-≫100</p>
+<p>Topology modifies persistence scaling through the factor <span class="arithmatex">\(T_{obj}\)</span>.
+Approximate topology factors for different excitations are:</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th><span class="arithmatex">\(T_{obj}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Phase-locked mode</td>
+<td><span class="arithmatex">\(\sim 1\)</span></td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td><span class="arithmatex">\(\sim 2\)</span>–<span class="arithmatex">\(5\)</span></td>
+</tr>
+<tr>
+<td>Ring</td>
+<td><span class="arithmatex">\(\sim 5\)</span>–<span class="arithmatex">\(10\)</span></td>
+</tr>
+<tr>
+<td>Chiral primitive</td>
+<td><span class="arithmatex">\(\sim 10\)</span>–<span class="arithmatex">\(20\)</span></td>
+</tr>
+<tr>
+<td>Shell</td>
+<td><span class="arithmatex">\(\sim 20\)</span>–<span class="arithmatex">\(100\)</span></td>
+</tr>
+<tr>
+<td>Braid</td>
+<td><span class="arithmatex">\(\gg 100\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>Thus topological protection dramatically increases persistence.</p>
 <h2 id="977-shell-amplification">9.7.7 Shell amplification<a class="headerlink" href="#977-shell-amplification" title="Permanent link">&para;</a></h2>
-<p>Shell structures receive an additional persistence multiplier
-$$
-\mathcal{E}<em shell="shell">{shell}.
-$$
+<p>Shell structures receive an additional persistence multiplier <span class="arithmatex">\(\mathcal{E}_{shell}\)</span>.
 Because shell closure distributes stress across the surface, small perturbations do not easily destroy the structure.
-Typical shell factors may satisfy
-$$
-\mathcal{E}</em> \sim 10 - 100.
-$$
-This explains why shell-like structures are extremely stable.</p>
+Typical shell factors may satisfy</p>
+<div class="arithmatex">\[
+\mathcal{E}_{shell} \sim 10\text{–}100.
+\]</div>
+<p>This explains why shell-like structures are extremely stable.</p>
 <h2 id="978-environmental-scaling">9.7.8 Environmental scaling<a class="headerlink" href="#978-environmental-scaling" title="Permanent link">&para;</a></h2>
-<p>Environmental fluctuations influence persistence through
-$$
-\gamma
-$$
-and
-$$
-t_{ref}.
-$$
+<p>Environmental fluctuations influence persistence through <span class="arithmatex">\(\gamma\)</span> and <span class="arithmatex">\(t_{ref}\)</span>.
 Strong environmental coupling increases loss rate and reduces persistence.
 Conversely, weak environmental coupling allows structures to survive longer.
-Thus
-$$
+Thus</p>
+<div class="arithmatex">\[
 S_* \propto \frac{1}{\gamma}.
-$$</p>
+\]</div>
 <h2 id="979-size-threshold-for-survival">9.7.9 Size threshold for survival<a class="headerlink" href="#979-size-threshold-for-survival" title="Permanent link">&para;</a></h2>
-<p>Using the scaling relation
-$$
-S_<em> \sim C L
-$$
-where
-$$
-C =
-\mathcal{E}{shell}\mathcal{E}D T{obj}
-\frac{\rho}{\gamma t_{ref}},
-$$
-the survival condition
-$$
-S_</em> &gt; 1
-$$
-becomes
-$$
+<p>Using the scaling relation <span class="arithmatex">\(S_* \sim C\, L\)</span> where</p>
+<div class="arithmatex">\[
+C = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{\rho}{\gamma\, t_{ref}},
+\]</div>
+<p>the survival condition <span class="arithmatex">\(S_* &gt; 1\)</span> becomes</p>
+<div class="arithmatex">\[
 L &gt; \frac{1}{C}.
-$$
-Thus there exists a minimum structural size required for persistence.</p>
+\]</div>
+<p>Thus there exists a minimum structural size required for persistence.</p>
 <h2 id="9710-persistence-hierarchy">9.7.10 Persistence hierarchy<a class="headerlink" href="#9710-persistence-hierarchy" title="Permanent link">&para;</a></h2>
-<p>Combining all scaling relations yields the following qualitative persistence ordering:
-excitation
-persistence scaling
-wave
-very low
-phase-locked mode
-low
-vortex
-moderate
-ring
-moderate–high
-chiral primitive
-high
-shell
-very high
-braid
-extremely high</p>
+<p>Combining all scaling relations yields the following qualitative persistence ordering:</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th>Persistence scaling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave</td>
+<td>Very low</td>
+</tr>
+<tr>
+<td>Phase-locked mode</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td>Moderate</td>
+</tr>
+<tr>
+<td>Ring</td>
+<td>Moderate–high</td>
+</tr>
+<tr>
+<td>Chiral primitive</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Shell</td>
+<td>Very high</td>
+</tr>
+<tr>
+<td>Braid</td>
+<td>Extremely high</td>
+</tr>
+</tbody>
+</table>
 <p>Thus persistence increases with both topological protection and structural dimensionality.</p>
 <h2 id="9711-implication-for-cts-emergence">9.7.11 Implication for CTS emergence<a class="headerlink" href="#9711-implication-for-cts-emergence" title="Permanent link">&para;</a></h2>
 <p>Persistence scaling reveals why emergence proceeds through a hierarchy of structures.
@@ -6730,32 +6748,18 @@ Small weakly locked excitations appear first but decay quickly.
 Larger topologically protected structures appear later but persist much longer.
 Thus the structural population of the CTS substrate evolves toward increasingly stable excitations.</p>
 <h2 id="9712-persistence-scaling-and-the-survival-map">9.7.12 Persistence scaling and the survival map<a class="headerlink" href="#9712-persistence-scaling-and-the-survival-map" title="Permanent link">&para;</a></h2>
-<p>Substituting the persistence scaling into the survival condition
-$$
-xy = 1
-$$
-gives
-$$
-\Lambda_{lock}
-\left(
-\mathcal{E}{shell}\mathcal{E}D T{obj}
-\frac{\rho}{\gamma t_{ref}}L
-\right)
-= 1.
-$$
-This equation defines the boundary between ephemeral and persistent excitations in the CTS phase chart.</p>
+<p>Substituting the persistence scaling into the survival condition <span class="arithmatex">\(xy = 1\)</span> gives</p>
+<div class="arithmatex">\[
+\Lambda_{lock}\left(\mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{\rho}{\gamma\, t_{ref}}\,L\right) = 1.
+\]</div>
+<p>This equation defines the boundary between ephemeral and persistent excitations in the CTS phase chart.</p>
 <h2 id="9713-summary">9.7.13 Summary<a class="headerlink" href="#9713-summary" title="Permanent link">&para;</a></h2>
 <p>Structural persistence scales approximately linearly with excitation size and strongly with topology.
-The corrected persistence number can be approximated as
-$$
-S_* \sim
-\mathcal{E}{shell}\mathcal{E}D T{obj}
-\frac{\rho}{\gamma t_{ref}}L.
-$$
-This scaling explains why large topologically protected structures dominate the persistent region of the CTS survival landscape.</p>
-<p>Abundance Law
-This final section derives how excitation populations emerge from the combined effects of formation energy and persistence.</p>
-<p>This completes Chapter 9.</p>
+The corrected persistence number can be approximated as</p>
+<div class="arithmatex">\[
+S_* \sim \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{\rho}{\gamma\, t_{ref}}\,L.
+\]</div>
+<p>This scaling explains why large topologically protected structures dominate the persistent region of the CTS survival landscape.</p>
 
 
 

@@ -2714,6 +2714,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#transition-to-chapter-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transition to Chapter 8
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -6586,119 +6597,169 @@
 <h1 id="76-cts-functional-as-the-generator-of-the-excitation-library">7.6 CTS Functional as the Generator of the Excitation Library<a class="headerlink" href="#76-cts-functional-as-the-generator-of-the-excitation-library" title="Permanent link">&para;</a></h1>
 <h2 id="761-from-functional-to-excitation-spectrum">7.6.1 From functional to excitation spectrum<a class="headerlink" href="#761-from-functional-to-excitation-spectrum" title="Permanent link">&para;</a></h2>
 <p>The CTS energy functional determines which structural configurations can exist in the substrate. These configurations correspond to solutions of the Euler–Lagrange equations derived from the functional.
-Recall the CTS functional
-$$
-E[,A]=d3x[a(iqA)2+bA2+u(2)2+r2+s4].E[\Phi,\mathbf A] = \int d^3x \left[ a|<span class="arithmatex">\(\nabla - iq\mathbf A\)</span>\Phi|^2 + b|\nabla\times\mathbf A|^2 + u<span class="arithmatex">\(\nabla^2\Phi\)</span>^2 + r|\Phi|^2 + s|\Phi|^4 \right].E[
-$$
-Extremizing the functional yields the field equations
-δEδΦ=0,δEδA=0.\frac{\delta E}{\delta \Phi}=0, \qquad \frac{\delta E}{\delta \mathbf A}=0.δΦδE​=0,δAδE​=0.
-Solutions to these equations define the excitation library of the Collapse Tension Substrate.</p>
+Recall the CTS functional</p>
+<div class="arithmatex">\[
+E[\Phi,\mathbf{A}] = \int d^3x \left[ a\left|(\nabla - iq\mathbf{A})\Phi\right|^2 + b|\nabla\times\mathbf{A}|^2 + u\left(\nabla^2\Phi\right)^2 + r|\Phi|^2 + s|\Phi|^4 \right].
+\]</div>
+<p>Extremizing the functional yields the field equations</p>
+<div class="arithmatex">\[
+\frac{\delta E}{\delta \Phi} = 0, \qquad \frac{\delta E}{\delta \mathbf{A}} = 0.
+\]</div>
+<p>Solutions to these equations define the excitation library of the Collapse Tension Substrate.</p>
 <h2 id="762-classes-of-cts-excitations">7.6.2 Classes of CTS excitations<a class="headerlink" href="#762-classes-of-cts-excitations" title="Permanent link">&para;</a></h2>
 <p>The functional admits several classes of solutions depending on boundary conditions and topology.
-The main families include:
-excitation
-description
-wave modes
-linear oscillatory solutions
-domain walls
-boundaries between vacuum states
-vortices
-rotational defects
-closed vortex loops
-shell structures
-closed coherent surfaces
-intertwined vortex structures</p>
+The main families include:</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wave modes</td>
+<td>linear oscillatory solutions</td>
+</tr>
+<tr>
+<td>domain walls</td>
+<td>boundaries between vacuum states</td>
+</tr>
+<tr>
+<td>vortices</td>
+<td>rotational defects</td>
+</tr>
+<tr>
+<td>vortex rings</td>
+<td>closed vortex loops</td>
+</tr>
+<tr>
+<td>shells</td>
+<td>closed coherent surfaces</td>
+</tr>
+<tr>
+<td>braids</td>
+<td>intertwined vortex structures</td>
+</tr>
+</tbody>
+</table>
 <p>Each family corresponds to a different topological or geometric configuration of the field.</p>
 <h2 id="763-linear-wave-solutions">7.6.3 Linear wave solutions<a class="headerlink" href="#763-linear-wave-solutions" title="Permanent link">&para;</a></h2>
-<p>In the symmetric vacuum (Φ=0 <span class="arithmatex">\(\Phi=0\)</span>
-∂tΦ=2a∇2Φ−2u∇4Φ−2rΦ.\partial_t \Phi = 2a\nabla^2\Phi - 2u\nabla^4\Phi - 2r\Phi.∂t​Φ=2a∇2Φ−2u∇4Φ−2rΦ.
-Assuming plane-wave solutions
-$$
-ei(kxt),\Phi \sim e^{i<span class="arithmatex">\(\mathbf{k}\cdot x-\omega t\)</span>},
-$$
-the dispersion relation is
-$$
-(k)=2ak22uk42r.\omega(k) = 2ak^2 - 2uk^4 - 2r.
-$$
-These solutions correspond to propagating substrate waves.</p>
+<p>In the symmetric vacuum (<span class="arithmatex">\(\Phi = 0\)</span>), the linearized evolution equation is</p>
+<div class="arithmatex">\[
+\partial_t \Phi = 2a\nabla^2\Phi - 2u\nabla^4\Phi - 2r\Phi.
+\]</div>
+<p>Assuming plane-wave solutions <span class="arithmatex">\(\Phi \sim e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}\)</span>, the dispersion relation is</p>
+<div class="arithmatex">\[
+\omega(k) = 2ak^2 - 2uk^4 - 2r.
+\]</div>
+<p>These solutions correspond to propagating substrate waves.</p>
 <h2 id="764-domain-wall-solutions">7.6.4 Domain wall solutions<a class="headerlink" href="#764-domain-wall-solutions" title="Permanent link">&para;</a></h2>
-<p>When r&lt;0r&lt;0r&lt;0, the substrate develops two vacuum states
-Φ=±Φ0.\Phi=\pm\Phi_0.Φ=±Φ0​.
+<p>When <span class="arithmatex">\(r &lt; 0\)</span>, the substrate develops two vacuum states <span class="arithmatex">\(\Phi = \pm\Phi_0\)</span>.
 A domain wall solution connects these states.
-In one dimension
+In one dimension, the wall profile interpolates smoothly between <span class="arithmatex">\(-\Phi_0\)</span> and <span class="arithmatex">\(+\Phi_0\)</span> over a thickness <span class="arithmatex">\(\ell \sim \sqrt{a/|r|}\)</span>.
 Domain walls represent localized planar excitations separating structural phases.</p>
 <h2 id="765-vortex-solutions">7.6.5 Vortex solutions<a class="headerlink" href="#765-vortex-solutions" title="Permanent link">&para;</a></h2>
-<p>When the scalar field couples to the vector potential A <span class="arithmatex">\(\mathbf AA, vortex solutions appear.\)</span>
-A vortex configuration takes the form
-$$
-(r,)=f(r)ein.\Phi(r,\theta) = f(r)e^{in\theta}.
-$$
-nnn is the winding number</p>
-<p>f(r)f(r)f(r) vanishes at the vortex core.</p>
-<p>The circulation around the vortex is quantized:
-$$
-dl=2n.\oint \nabla \theta \cdot dl = 2\pi n.
-$$
-This quantization produces topological protection.</p>
+<p>When the scalar field couples to the vector potential <span class="arithmatex">\(\mathbf{A}\)</span>, vortex solutions appear.
+A vortex configuration takes the form</p>
+<div class="arithmatex">\[
+\Phi(r,\theta) = f(r)\,e^{in\theta},
+\]</div>
+<p>where <span class="arithmatex">\(n\)</span> is the winding number and <span class="arithmatex">\(f(r)\)</span> vanishes at the vortex core.
+The circulation around the vortex is quantized:</p>
+<div class="arithmatex">\[
+\oint \nabla \theta \cdot d\mathbf{l} = 2\pi n.
+\]</div>
+<p>This quantization produces topological protection.</p>
 <h2 id="766-vortex-ring-solutions">7.6.6 Vortex ring solutions<a class="headerlink" href="#766-vortex-ring-solutions" title="Permanent link">&para;</a></h2>
 <p>A vortex line can close into a loop, producing a vortex ring.
-Let the ring have radius RRR.
-The energy of the ring scales approximately as
-Ering∼ρΓ2Rln⁡ ⁣(Rac)E_{ring} \sim \rho\Gamma^2 R \ln!\left<span class="arithmatex">\(\frac{R}{a_c}\right\)</span>Ering​∼ρΓ2Rln(ac​R​)
-$$
-\Gamma
-$$</p>
-<p>aca_cac​ is core size.</p>
-<p>Vortex rings are among the simplest localized closed excitations.</p>
+Let the ring have radius <span class="arithmatex">\(R\)</span>.
+The energy of the ring scales approximately as</p>
+<div class="arithmatex">\[
+E_{ring} \sim \rho\Gamma^2 R \ln\!\left(\frac{R}{a_c}\right),
+\]</div>
+<p>where <span class="arithmatex">\(\Gamma\)</span> is the circulation and <span class="arithmatex">\(a_c\)</span> is the core size.
+Vortex rings are among the simplest localized closed excitations.</p>
 <h2 id="767-shell-solutions">7.6.7 Shell solutions<a class="headerlink" href="#767-shell-solutions" title="Permanent link">&para;</a></h2>
 <p>Shell structures arise when multiple circulation channels stabilize a closed boundary.
-The shell energy contains contributions from:
-surface tension</p>
-<p>curvature energy</p>
-<p>internal field energy.</p>
-<p>A simplified shell energy expression is
-Eshell=σA+κc∫H2dA+Eint.E_{shell} = \sigma A + \kappa_c \int H^2 dA + E_{int}.Eshell​=σA+κc​∫H2dA+Eint​.
-AAA is shell area</p>
-<p>HHH is mean curvature.</p>
-<p>Shells form stable structures when curvature energy and surface tension balance internal pressure.</p>
+The shell energy contains contributions from:</p>
+<ul>
+<li>surface tension</li>
+<li>curvature energy</li>
+<li>internal field energy.</li>
+</ul>
+<p>A simplified shell energy expression is</p>
+<div class="arithmatex">\[
+E_{shell} = \sigma A + \kappa_c \int H^2 \, dA + E_{int},
+\]</div>
+<p>where <span class="arithmatex">\(A\)</span> is shell area and <span class="arithmatex">\(H\)</span> is mean curvature.
+Shells form stable structures when curvature energy and surface tension balance internal pressure.</p>
 <h2 id="768-braid-solutions">7.6.8 Braid solutions<a class="headerlink" href="#768-braid-solutions" title="Permanent link">&para;</a></h2>
 <p>When multiple vortex filaments intertwine, braid structures emerge.
-A braid with NNN strands is described by the braid group BNB_NBN​.
-The braid energy includes
-Ebraid=Evortex+Etwist+Einteraction.E_{braid} = E_{vortex} + E_{twist} + E_{interaction}.Ebraid​=Evortex​+Etwist​+Einteraction​.
-Braids are topologically protected because the linking number
-LkLkLk
-cannot change without reconnection.</p>
+A braid with <span class="arithmatex">\(N\)</span> strands is described by the braid group <span class="arithmatex">\(B_N\)</span>.
+The braid energy includes</p>
+<div class="arithmatex">\[
+E_{braid} = E_{vortex} + E_{twist} + E_{interaction}.
+\]</div>
+<p>Braids are topologically protected because the linking number <span class="arithmatex">\(Lk\)</span> cannot change without reconnection.</p>
 <h2 id="769-excitation-energy-hierarchy">7.6.9 Excitation energy hierarchy<a class="headerlink" href="#769-excitation-energy-hierarchy" title="Permanent link">&para;</a></h2>
 <p>Each excitation class has a characteristic formation energy.
-Approximate ordering:
-excitation
-formation energy
-domain walls
-vortex lines
-vortex rings</p>
+Approximate ordering from lowest to highest:</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th>Formation energy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>domain walls</td>
+<td>lowest</td>
+</tr>
+<tr>
+<td>vortex lines</td>
+<td>intermediate</td>
+</tr>
+<tr>
+<td>vortex rings</td>
+<td>higher</td>
+</tr>
+<tr>
+<td>shells and braids</td>
+<td>highest</td>
+</tr>
+</tbody>
+</table>
 <p>Thus low-energy excitations dominate the substrate background.
 Higher-energy excitations occur less frequently.</p>
 <h2 id="7610-excitation-ledger">7.6.10 Excitation ledger<a class="headerlink" href="#7610-excitation-ledger" title="Permanent link">&para;</a></h2>
-<p>Each excitation can be characterized by a set of parameters:
-(Eform,  Elock,  Etotal).(E_{form},\;E_{lock},\;E_{total}).(Eform​,Elock​,Etotal​).</p>
-<p>ElockE_{lock}Elock​ is energy associated with structural locking</p>
-<p>EtotalE_{total}Etotal​ is total excitation energy.</p>
-<p>These quantities form the basis of the CTS excitation ledger introduced later in the book.</p>
+<p>Each excitation can be characterized by a set of parameters:</p>
+<div class="arithmatex">\[
+(E_{form},\; E_{lock},\; E_{total}),
+\]</div>
+<p>where <span class="arithmatex">\(E_{lock}\)</span> is energy associated with structural locking and <span class="arithmatex">\(E_{total}\)</span> is total excitation energy.
+These quantities form the basis of the CTS excitation ledger introduced later in the book.</p>
 <h2 id="7611-abundance-law">7.6.11 Abundance law<a class="headerlink" href="#7611-abundance-law" title="Permanent link">&para;</a></h2>
-<p>The abundance of excitations follows a Boltzmann-like relation
-Ai∝e−Ei/Teff.A_i \propto e^{-E_i/T_{eff}}.Ai​∝e−Ei​/Teff​.
-low-energy excitations appear frequently</p>
-<p>high-energy structures are rare.</p>
+<p>The abundance of excitations follows a Boltzmann-like relation</p>
+<div class="arithmatex">\[
+A_i \propto e^{-E_i/T_{eff}}.
+\]</div>
+<ul>
+<li>Low-energy excitations appear frequently.</li>
+<li>High-energy structures are rare.</li>
+</ul>
 <p>This explains why wave-like structures dominate the substrate while complex composite objects appear less often.</p>
 <h2 id="7612-formation-versus-survival">7.6.12 Formation versus survival<a class="headerlink" href="#7612-formation-versus-survival" title="Permanent link">&para;</a></h2>
-<p>It is important to distinguish two separate processes:
-Formation
-Determined by the energy functional and excitation spectrum.
-Survival
-Determined by the persistence equation
-S∗=EshellEDTobjRR˙ tref.S_* = \mathcal{E}<em obj="obj">{shell}\mathcal{E}D T</em>.S∗​=Eshell​EDTobj​R˙tref​R​.
-Only excitations satisfying both conditions appear as persistent structures.} \frac{R}{\dot R\,t_{ref}</p>
+<p>It is important to distinguish two separate processes:</p>
+<ul>
+<li><strong>Formation</strong>: Determined by the energy functional and excitation spectrum.</li>
+<li><strong>Survival</strong>: Determined by the persistence equation</li>
+</ul>
+<div class="arithmatex">\[
+S_* = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>Only excitations satisfying both conditions appear as persistent structures.</p>
 <h2 id="7613-excitation-library">7.6.13 Excitation library<a class="headerlink" href="#7613-excitation-library" title="Permanent link">&para;</a></h2>
 <p>The complete CTS excitation library therefore consists of all solutions of the energy functional.
 These solutions populate the structural phase space of the substrate.
@@ -6712,9 +6773,8 @@ Thus objects are not fundamental entities but stable excitation modes.</p>
 These include waves, domain walls, vortices, rings, shells, and braids.
 Each excitation has a characteristic energy and topology.
 Persistence mechanics then determines which of these excitations survive long enough to become observable structures.</p>
-<p>Transition to Chapter 8
-Having derived the excitation spectrum from the energy functional, we now turn to a systematic classification of these structures.</p>
-<p>What Counts as an Excitation</p>
+<h2 id="transition-to-chapter-8">Transition to Chapter 8<a class="headerlink" href="#transition-to-chapter-8" title="Permanent link">&para;</a></h2>
+<p>Having derived the excitation spectrum from the energy functional, we now turn to a systematic classification of these structures in terms of what counts as an excitation.</p>
 
 
 

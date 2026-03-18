@@ -6593,24 +6593,21 @@ Closure eliminates endpoints, reducing dissipation.
 However, closure does not eliminate deformation modes.</p>
 <h2 id="1223-instability-modes-of-rings">12.2.3 Instability modes of rings<a class="headerlink" href="#1223-instability-modes-of-rings" title="Permanent link">&para;</a></h2>
 <p>Closed loops possess several deformation modes.
-Let the ring radius be
-$$
-R(\theta,t).
-$$
+Let the ring radius be <span class="arithmatex">\(R(\theta,t)\)</span>.
 Perturbations can be expanded in Fourier modes
 $$
-R(\theta,t)
+R(\theta,t) =
 R_0 +
 \sum_{n}
 a_n(t)\cos(n\theta)
 +
 b_n(t)\sin(n\theta).
 $$
-These modes correspond to
-elliptical distortions
-twisting modes
-Kelvin waves.
-Such modes allow the ring to lose energy through radiation or reconnection.</p>
+These modes correspond to:
+- elliptical distortions
+- twisting modes
+- Kelvin waves.</p>
+<p>Such modes allow the ring to lose energy through radiation or reconnection.</p>
 <h2 id="1224-kelvin-wave-instability">12.2.4 Kelvin-wave instability<a class="headerlink" href="#1224-kelvin-wave-instability" title="Permanent link">&para;</a></h2>
 <p>Kelvin waves propagate along vortex filaments with dispersion relation
 $$
@@ -6623,19 +6620,12 @@ This cascade eventually leads to vortex reconnection and structural decay.
 Thus closure structures remain vulnerable to perturbations.</p>
 <h2 id="1225-shell-closure">12.2.5 Shell closure<a class="headerlink" href="#1225-shell-closure" title="Permanent link">&para;</a></h2>
 <p>Shell structures eliminate these deformation pathways by introducing surface locking.
-Instead of a closed line
-$$
-\mathbf{r}(s),
-$$
-a shell defines a closed surface
-$$
-\mathbf{r}(u,v).
-$$
+Instead of a closed line <span class="arithmatex">\(\mathbf{r}(s)\)</span>, a shell defines a closed surface <span class="arithmatex">\(\mathbf{r}(u,v)\)</span>.
 This surface possesses two principal curvature directions.</p>
 <h2 id="1226-curvature-energy">12.2.6 Curvature energy<a class="headerlink" href="#1226-curvature-energy" title="Permanent link">&para;</a></h2>
 <p>The energy of a surface deformation is governed by curvature energy
 $$
-E_{shell}
+E_{shell} =
 \int
 \left(
 \frac{\kappa}{2}(2H)^2
@@ -6644,29 +6634,37 @@ E_{shell}
 \right)
 dA.
 $$
-Here
-(H) = mean curvature
-(K) = Gaussian curvature.
+Here <span class="arithmatex">\(H\)</span> = mean curvature and <span class="arithmatex">\(K\)</span> = Gaussian curvature.
 Because the surface must maintain curvature equilibrium, many deformation modes are suppressed.</p>
 <h2 id="1227-multi-axis-locking">12.2.7 Multi-axis locking<a class="headerlink" href="#1227-multi-axis-locking" title="Permanent link">&para;</a></h2>
 <p>Shell stability arises because multiple directions contribute to structural locking.
-Let the shell possess (N_f) locking channels.
+Let the shell possess <span class="arithmatex">\(N_f\)</span> locking channels.
 The equilibrium condition is
 $$
 \sum_{i=1}^{N_f} \mathbf{F}_i = 0.
 $$
 Because deformation would require breaking several locking channels simultaneously, shells exhibit much higher stability than rings.</p>
 <h2 id="1228-lock-ratio-comparison">12.2.8 Lock ratio comparison<a class="headerlink" href="#1228-lock-ratio-comparison" title="Permanent link">&para;</a></h2>
-<p>The difference between closure and shell structures appears clearly in the lock ratio.
-Closure structures:
-$$
-\Lambda_{lock} \sim 1-3.
-$$
-Shell structures:
-$$
-\Lambda_{lock} \sim 10-50.
-$$
-Thus shells move significantly further right in the CTS phase chart.</p>
+<p>The difference between closure and shell structures appears clearly in the lock ratio.</p>
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Lock ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Closure structures</td>
+<td><span class="arithmatex">\(\Lambda_{lock} \sim 1\)</span>–<span class="arithmatex">\(3\)</span></td>
+</tr>
+<tr>
+<td>Shell structures</td>
+<td><span class="arithmatex">\(\Lambda_{lock} \sim 10\)</span>–<span class="arithmatex">\(50\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Thus shells move significantly further right in the CTS phase chart.</p>
 <h2 id="1229-persistence-comparison">12.2.9 Persistence comparison<a class="headerlink" href="#1229-persistence-comparison" title="Permanent link">&para;</a></h2>
 <p>Persistence numbers also differ dramatically.
 For rings
@@ -6695,15 +6693,29 @@ Ring structures confine energy along a one-dimensional filament.
 Shell structures confine energy across a two-dimensional surface.
 This dramatically increases structural rigidity.</p>
 <h2 id="12212-mode-suppression">12.2.12 Mode suppression<a class="headerlink" href="#12212-mode-suppression" title="Permanent link">&para;</a></h2>
-<p>Surface locking suppresses several instability modes including
-instability
-suppressed by shell
-filament bending
-curvature tension
-Kelvin waves
-surface rigidity
-torsion collapse
-multi-axis locking</p>
+<p>Surface locking suppresses several instability modes:</p>
+<table>
+<thead>
+<tr>
+<th>Instability</th>
+<th>Suppressed by shell</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>filament bending</td>
+<td>curvature tension</td>
+</tr>
+<tr>
+<td>Kelvin waves</td>
+<td>surface rigidity</td>
+</tr>
+<tr>
+<td>torsion collapse</td>
+<td>multi-axis locking</td>
+</tr>
+</tbody>
+</table>
 <p>Thus shell geometry stabilizes many deformation pathways.</p>
 <h2 id="12213-emergence-implication">12.2.13 Emergence implication<a class="headerlink" href="#12213-emergence-implication" title="Permanent link">&para;</a></h2>
 <p>The difference between closure and shell lock explains why matter-like structures appear primarily in the shell survival region.
@@ -6713,8 +6725,6 @@ Surface locking is required for long-term structural survival.</p>
 <p>Closure structures stabilize excitations by eliminating endpoints, but they remain vulnerable to deformation modes.
 Shell structures introduce multi-axis locking and curvature stabilization, dramatically increasing both lock ratio and persistence.
 For this reason durable matter-like structures arise primarily from shell architectures rather than simple closure excitations.</p>
-<p>When Objecthood Begins
-This section derives the precise structural conditions under which a persistent excitation becomes a discrete object within the CTS framework.</p>
 
 
 

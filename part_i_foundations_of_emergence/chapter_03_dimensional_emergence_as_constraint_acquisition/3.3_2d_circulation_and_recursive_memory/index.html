@@ -1497,6 +1497,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#3313-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3.13 Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -6565,11 +6576,7 @@ A simple relation is
 $$
 \mathbf{v} = -\kappa \nabla \Phi
 $$
-where
-$$
-\kappa
-$$
-is a transport coefficient.
+where <span class="arithmatex">\(\kappa\)</span> is a transport coefficient.
 This relation shows how gradients produce directed motion.</p>
 <h2 id="333-curl-and-circulation">3.3.3 Curl and circulation<a class="headerlink" href="#333-curl-and-circulation" title="Permanent link">&para;</a></h2>
 <p>Circulation appears when the velocity field develops nonzero curl.
@@ -6589,24 +6596,19 @@ $$
 rotational motion exists.
 Such regions correspond to vortical structures.</p>
 <h2 id="334-circulation-integral">3.3.4 Circulation integral<a class="headerlink" href="#334-circulation-integral" title="Permanent link">&para;</a></h2>
-<p>Circulation around a closed curve (C) is defined as
+<p>Circulation around a closed curve <span class="arithmatex">\(C\)</span> is defined as
 $$
-\Gamma
-\oint_C
-\mathbf{v}\cdot d\mathbf{l}.
+\Gamma = \oint_C \mathbf{v}\cdot d\mathbf{l}.
 $$
-Using Stokes’ theorem this becomes
+Using Stokes' theorem this becomes
 $$
-\Gamma
-\int_S
-(\nabla \times \mathbf{v})\cdot d\mathbf{S}.
+\Gamma = \int_S (\nabla \times \mathbf{v})\cdot d\mathbf{S}.
 $$
 Thus nonzero curl produces finite circulation.</p>
 <h2 id="335-vorticity">3.3.5 Vorticity<a class="headerlink" href="#335-vorticity" title="Permanent link">&para;</a></h2>
 <p>Define the vorticity vector
 $$
-\boldsymbol{\omega}
-\nabla \times \mathbf{v}.
+\boldsymbol{\omega} = \nabla \times \mathbf{v}.
 $$
 This quantity measures the local rotational strength of the flow.
 Regions where
@@ -6619,17 +6621,13 @@ Such regions represent the earliest form of 2D structural closure in the substra
 <p>Circulating flows store kinetic energy.
 Define the circulation energy
 $$
-E_{circ}
+E_{circ} =
 \frac{1}{2}
 \int
 \rho |\mathbf{v}|^2
 d^3x.
 $$
-Here
-$$
-\rho
-$$
-represents an effective density associated with structural transport.
+Here <span class="arithmatex">\(\rho\)</span> represents an effective density associated with structural transport.
 This energy contributes to retained structure.</p>
 <h2 id="337-structural-retention-with-circulation">3.3.7 Structural retention with circulation<a class="headerlink" href="#337-structural-retention-with-circulation" title="Permanent link">&para;</a></h2>
 <p>The total retained structure now includes three contributions:
@@ -6645,66 +6643,70 @@ Circulation therefore provides an additional channel for storing organized struc
 <h2 id="338-persistence-of-vortices">3.3.8 Persistence of vortices<a class="headerlink" href="#338-persistence-of-vortices" title="Permanent link">&para;</a></h2>
 <p>Rotational structures can resist collapse more effectively than pure gradients.
 In many physical systems vortices possess topological stability.
-The circulation
-$$
-\Gamma
-$$
-may remain approximately conserved.
+The circulation <span class="arithmatex">\(\Gamma\)</span> may remain approximately conserved.
 Thus vortices can persist even when surrounding gradients dissipate.</p>
 <h2 id="339-recursive-memory">3.3.9 Recursive memory<a class="headerlink" href="#339-recursive-memory" title="Permanent link">&para;</a></h2>
 <p>Circulating motion has an important consequence.
 Because the flow loops back on itself, structural information can circulate repeatedly.
 Define the recurrence time
 $$
-T_{cycle}
-\frac{L}{v}
+T_{cycle} = \frac{L}{v}
 $$
-where
-$$
-L
-$$
-is the circumference of the circulation path.
+where <span class="arithmatex">\(L\)</span> is the circumference of the circulation path.
 During each cycle the structural configuration revisits previous states.
 This process creates recursive memory.</p>
 <h2 id="3310-persistence-condition-for-circulation">3.3.10 Persistence condition for circulation<a class="headerlink" href="#3310-persistence-condition-for-circulation" title="Permanent link">&para;</a></h2>
 <p>Using the selection number
 $$
-S =
-\frac{R}{\dot R t_{ref}},
+S = \frac{R}{\dot{R}\,t_{ref}},
 $$
 and the retention measure including circulation energy,
 $$
 R =
-\alpha_0 ||\Phi||^2
+\alpha_0 |\Phi|^2
 +
-\alpha_1 ||\nabla\Phi||^2
+\alpha_1 |\nabla\Phi|^2
 +
-\alpha_2 ||\mathbf{v}||^2,
+\alpha_2 |\mathbf{v}|^2,
 $$
 we see that vortical structures may achieve
 $$
-S \ge 1
+S \geq 1
 $$
 if the circulation energy exceeds dissipative losses.</p>
 <h2 id="3311-emergent-vortex-structures">3.3.11 Emergent vortex structures<a class="headerlink" href="#3311-emergent-vortex-structures" title="Permanent link">&para;</a></h2>
 <p>Several classes of persistent structures can arise from circulation.
-Examples include:
-structure
-defining property
-vortex line
-circulation around a core
-vortex ring
-closed loop circulation
-vortex sheet
-extended rotational layer</p>
+Examples include:</p>
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Defining property</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vortex line</td>
+<td>circulation around a core</td>
+</tr>
+<tr>
+<td>vortex ring</td>
+<td>closed loop circulation</td>
+</tr>
+<tr>
+<td>vortex sheet</td>
+<td>extended rotational layer</td>
+</tr>
+</tbody>
+</table>
 <p>These objects represent the first self-reinforcing dynamical structures in the CTS.</p>
 <h2 id="3312-dimensional-interpretation">3.3.12 Dimensional interpretation<a class="headerlink" href="#3312-dimensional-interpretation" title="Permanent link">&para;</a></h2>
 <p>Circulation requires two spatial directions.
 The rotational plane defines a two-dimensional structure.
 Thus circulation corresponds to the 2D stage of dimensional emergence.
 In this stage the substrate supports closed loops of structural transport.</p>
-<p>Summary
-The third stage of dimensional emergence occurs when interacting gradients produce circulation.
+<h2 id="3313-summary">3.3.13 Summary<a class="headerlink" href="#3313-summary" title="Permanent link">&para;</a></h2>
+<p>The third stage of dimensional emergence occurs when interacting gradients produce circulation.
 Rotational structures store energy through
 $$
 E_{circ} =
@@ -6713,9 +6715,7 @@ E_{circ} =
 $$
 Circulation introduces recursive memory and increases structural persistence.
 These properties allow vortical structures to survive longer than simple gradient configurations.</p>
-<p>3D: Curvature Closure and Boundary Formation
-This next section derives how circulating structures close into bounded volumes, forming the first true structural objects.</p>
-<p>No additional sections beyond the Table of Contents.</p>
+<p><em>Transition to Section 3.4:</em> The next section derives how circulating structures close into bounded volumes, forming the first true structural objects.</p>
 
 
 

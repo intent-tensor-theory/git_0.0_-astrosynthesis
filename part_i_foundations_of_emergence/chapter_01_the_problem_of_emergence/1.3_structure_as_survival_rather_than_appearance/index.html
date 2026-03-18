@@ -6558,172 +6558,145 @@
 <h1 id="13-structure-as-survival-rather-than-appearance">1.3 Structure as Survival Rather Than Appearance<a class="headerlink" href="#13-structure-as-survival-rather-than-appearance" title="Permanent link">&para;</a></h1>
 <h2 id="131-the-difference-between-appearance-and-persistence">1.3.1 The difference between appearance and persistence<a class="headerlink" href="#131-the-difference-between-appearance-and-persistence" title="Permanent link">&para;</a></h2>
 <p>A fluctuation appearing in a physical system does not automatically constitute a structure.
-To see this mathematically, consider a field
-$$
-(x,t)\Phi<span class="arithmatex">\(\mathbf{x},t\)</span>
-$$
-representing the state of a substrate.
-A fluctuation exists whenever
-$$
-(x,t)0\Phi<span class="arithmatex">\(\mathbf{x},t\)</span> \neq 0
-$$
-for some region of space and time.
+To see this mathematically, consider a field <span class="arithmatex">\(\Phi(\mathbf{x}, t)\)</span> representing the state of a substrate.
+A fluctuation exists whenever <span class="arithmatex">\(\Phi(\mathbf{x}, t) \neq 0\)</span> for some region of space and time.
 However this condition alone is extremely weak. Random noise, thermal motion, and quantum fluctuations all satisfy it.
-Thus the appearance condition is simply
-$$
-(x,t)such that(x,t)0.\exists <span class="arithmatex">\(\mathbf{x},t\)</span> \quad \text{such that} \quad \Phi<span class="arithmatex">\(\mathbf{x},t\)</span> \neq 0.
-$$
-But appearance alone says nothing about persistence.</p>
+Thus the appearance condition is simply</p>
+<div class="arithmatex">\[
+\exists\, (\mathbf{x}, t) \quad \text{such that} \quad \Phi(\mathbf{x}, t) \neq 0.
+\]</div>
+<p>But appearance alone says nothing about persistence.</p>
 <h2 id="132-time-evolution-of-a-fluctuation">1.3.2 Time evolution of a fluctuation<a class="headerlink" href="#132-time-evolution-of-a-fluctuation" title="Permanent link">&para;</a></h2>
-<p>Let the amplitude of a fluctuation be
-A(t).A(t).A(t).
-A common decay law is
-dAdt=−γA.\frac{dA}{dt} = -\gamma A.dtdA​=−γA.
-The solution is
-The structure therefore disappears exponentially with time constant
-τ=1γ.\tau = \frac{1}{\gamma}.τ=γ1​.
-Even though the fluctuation appeared at time
-t=0t=0t=0
-it becomes negligible after
-$$
-t.t\gg \tau.t
-$$
+<p>Let the amplitude of a fluctuation be <span class="arithmatex">\(A(t)\)</span>.
+A common decay law is</p>
+<div class="arithmatex">\[
+\frac{dA}{dt} = -\gamma A.
+\]</div>
+<p>The solution is</p>
+<div class="arithmatex">\[
+A(t) = A(0)\, e^{-\gamma t}.
+\]</div>
+<p>The structure therefore disappears exponentially with time constant</p>
+<div class="arithmatex">\[
+\tau = \frac{1}{\gamma}.
+\]</div>
+<p>Even though the fluctuation appeared at time <span class="arithmatex">\(t = 0\)</span>, it becomes negligible after <span class="arithmatex">\(t \gg \tau\)</span>.
 Thus appearance does not imply persistence.</p>
 <h2 id="133-structural-measure">1.3.3 Structural measure<a class="headerlink" href="#133-structural-measure" title="Permanent link">&para;</a></h2>
 <p>To distinguish meaningful structures from transient fluctuations, we define a structural measure.
-Let
-$$
-R()R<span class="arithmatex">\(\sigma\)</span>R(
-$$
-represent the retained structure of configuration
-$$
-.\sigma.
-$$
-Examples include:
-system
-structural measure
-wave
-coherent amplitude
-particle
-rest energy
-vortex
-circulation
-atom
-binding energy</p>
-<p>Thus
-RRR
-quantifies the organized content of a configuration.</p>
+Let <span class="arithmatex">\(R(\sigma)\)</span> represent the retained structure of configuration <span class="arithmatex">\(\sigma\)</span>.
+Examples include:</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Structural measure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wave</td>
+<td>coherent amplitude</td>
+</tr>
+<tr>
+<td>particle</td>
+<td>rest energy</td>
+</tr>
+<tr>
+<td>vortex</td>
+<td>circulation</td>
+</tr>
+<tr>
+<td>atom</td>
+<td>binding energy</td>
+</tr>
+</tbody>
+</table>
+<p>Thus <span class="arithmatex">\(R\)</span> quantifies the organized content of a configuration.</p>
 <h2 id="134-loss-processes">1.3.4 Loss processes<a class="headerlink" href="#134-loss-processes" title="Permanent link">&para;</a></h2>
 <p>Every structure is subject to processes that degrade its organization.
-Define the loss rate
-$$
-R\dot RR
-$$
-as the rate at which structural content is destroyed.
-Loss mechanisms include:
-diffusion</p>
-<p>radiation</p>
-<p>scattering</p>
-<p>thermal noise</p>
-<p>interaction with the environment.</p>
-<p>Thus the structural evolution becomes
-dRdt=−R˙.\frac{dR}{dt} = -\dot R.dtdR​=−R˙.</p>
+Define the loss rate <span class="arithmatex">\(\dot{R}\)</span> as the rate at which structural content is destroyed.
+Loss mechanisms include:</p>
+<ul>
+<li>diffusion</li>
+<li>radiation</li>
+<li>scattering</li>
+<li>thermal noise</li>
+<li>interaction with the environment</li>
+</ul>
+<p>Thus the structural evolution becomes</p>
+<div class="arithmatex">\[
+\frac{dR}{dt} = -\dot{R}.
+\]</div>
 <h2 id="135-survival-condition">1.3.5 Survival condition<a class="headerlink" href="#135-survival-condition" title="Permanent link">&para;</a></h2>
 <p>A structure persists only if the amount of retained structure exceeds the amount lost during the relevant time horizon.
-Let
-represent the time horizon of interest.
-Then persistence requires
-Dividing both sides by
-R˙tref\dot R t_{ref}R˙tref​
-gives the dimensionless quantity
-S=RR˙tref.S = \frac{R}{\dot R t_{ref}}.S=R˙tref​R​.
-This is the selection number introduced earlier.
-Persistence requires
-$$
-S1.S\ge 1.S
-$$</p>
-<h2 id="136-appearance-regime">1.3.6 Appearance regime<a class="headerlink" href="#136-appearance-regime" title="Permanent link">&para;</a></h2>
+Let <span class="arithmatex">\(t_{ref}\)</span> represent the time horizon of interest.
+Then persistence requires</p>
 <div class="arithmatex">\[
-S1S\ll 1S
-$$
-Loss overwhelms retention.
+R \geq \dot{R} \, t_{ref}.
+\]</div>
+<p>Dividing both sides by <span class="arithmatex">\(\dot{R} \, t_{ref}\)</span> gives the dimensionless quantity</p>
+<div class="arithmatex">\[
+S = \frac{R}{\dot{R} \, t_{ref}}.
+\]</div>
+<p>This is the selection number introduced earlier.
+Persistence requires</p>
+<div class="arithmatex">\[
+S \geq 1.
+\]</div>
+<h2 id="136-appearance-regime">1.3.6 Appearance regime<a class="headerlink" href="#136-appearance-regime" title="Permanent link">&para;</a></h2>
+<p>When <span class="arithmatex">\(S \ll 1\)</span>, loss overwhelms retention.
 The configuration exists only briefly.
 This regime corresponds to ephemeral fluctuations.
-Mathematically
-$$
-R(t)0R(t)\rightarrow 0R(t)
+Mathematically,</p>
+<div class="arithmatex">\[
+R(t) \rightarrow 0 \quad \text{rapidly.}
 \]</div>
 <h2 id="137-persistence-regime">1.3.7 Persistence regime<a class="headerlink" href="#137-persistence-regime" title="Permanent link">&para;</a></h2>
-<p>$$
-S1S\gg 1S
-$$
-Retention dominates loss.
+<p>When <span class="arithmatex">\(S \gg 1\)</span>, retention dominates loss.
 The structure survives long enough to accumulate or interact with other structures.
 This regime corresponds to durable configurations.</p>
 <h2 id="138-configuration-space">1.3.8 Configuration space<a class="headerlink" href="#138-configuration-space" title="Permanent link">&para;</a></h2>
-<p>represent the space of all possible configurations of the substrate.
-Each configuration
-has a structural measure
-RiR_iRi​
-and loss rate
-Thus each configuration has a selection number
-Si=RiR˙itref.S_i = \frac{R_i}{\dot R_i t_{ref}}.Si​=R˙i​tref​Ri​​.</p>
+<p>Let <span class="arithmatex">\(\Omega\)</span> represent the space of all possible configurations of the substrate.
+Each configuration <span class="arithmatex">\(\sigma_i\)</span> has a structural measure <span class="arithmatex">\(R_i\)</span> and loss rate <span class="arithmatex">\(\dot{R}_i\)</span>.
+Thus each configuration has a selection number</p>
+<div class="arithmatex">\[
+S_i = \frac{R_i}{\dot{R}_i \, t_{ref}}.
+\]</div>
 <h2 id="139-persistence-subset">1.3.9 Persistence subset<a class="headerlink" href="#139-persistence-subset" title="Permanent link">&para;</a></h2>
-<p>Define the subset of configurations satisfying the persistence condition:
-Ωpersist={σi∈Ω∣Si≥1}.\Omega_{persist} = {\sigma_i \in \Omega \mid S_i \ge 1}.Ωpersist​={σi​∈Ω∣Si​≥1}.
-These configurations are capable of surviving.
-All other configurations decay rapidly.
-Thus</p>
+<p>Define the subset of configurations satisfying the persistence condition:</p>
+<div class="arithmatex">\[
+\Omega_{persist} = \{ \sigma_i \in \Omega \mid S_i \geq 1 \}.
+\]</div>
+<p>These configurations are capable of surviving.
+All other configurations decay rapidly.</p>
 <h2 id="1310-observable-structures">1.3.10 Observable structures<a class="headerlink" href="#1310-observable-structures" title="Permanent link">&para;</a></h2>
 <p>The structures that populate physical reality must belong to the persistence subset.
-Thus
-This leads to an important reinterpretation of emergence:
-Observable structures are persistence-selected configurations. <span class="arithmatex">\(\text{Observable structures are persistence-selected configurations.}Observable structures are persistence-selected configurations.\)</span></p>
+This leads to an important reinterpretation of emergence:</p>
+<blockquote>
+<p>Observable structures are persistence-selected configurations.</p>
+</blockquote>
 <h2 id="1311-filtering-interpretation">1.3.11 Filtering interpretation<a class="headerlink" href="#1311-filtering-interpretation" title="Permanent link">&para;</a></h2>
 <p>The emergence process can therefore be written as a filtering operation.
-Let
-$$
-F\mathcal{F}F
-$$
-represent the persistence filter defined by the selection condition.
-Then
-Thus emergence becomes a selection process.</p>
+Let <span class="arithmatex">\(\mathcal{F}\)</span> represent the persistence filter defined by the selection condition.
+Then</p>
+<div class="arithmatex">\[
+\mathcal{F}(\Omega) = \Omega_{persist} = \{ \sigma \in \Omega \mid S(\sigma) \geq 1 \}.
+\]</div>
+<p>Emergence becomes a selection process.</p>
 <h2 id="1312-limiting-cases">1.3.12 Limiting cases<a class="headerlink" href="#1312-limiting-cases" title="Permanent link">&para;</a></h2>
-<p>Zero loss
-If
-$$
-R0\dot R \rightarrow 0R
-$$
-then
-$$
-S.S\rightarrow \infty.S
-$$
+<p><strong>Zero loss</strong> — if <span class="arithmatex">\(\dot{R} \rightarrow 0\)</span>, then <span class="arithmatex">\(S \rightarrow \infty\)</span>.
 The structure becomes perfectly stable.</p>
-<p>Infinite loss
-If
-$$
-R\dot R \rightarrow \inftyR
-$$
-then
-$$
-S0.S\rightarrow 0.S
-$$
+<p><strong>Infinite loss</strong> — if <span class="arithmatex">\(\dot{R} \rightarrow \infty\)</span>, then <span class="arithmatex">\(S \rightarrow 0\)</span>.
 No structure can survive.</p>
-<p>Vanishing structure
-If
-$$
-R0R\rightarrow 0R
-$$
-then
-$$
-S0.S\rightarrow 0.S
-$$
+<p><strong>Vanishing structure</strong> — if <span class="arithmatex">\(R \rightarrow 0\)</span>, then <span class="arithmatex">\(S \rightarrow 0\)</span>.
 Fluctuations without organization disappear immediately.</p>
 <h2 id="1313-implication">1.3.13 Implication<a class="headerlink" href="#1313-implication" title="Permanent link">&para;</a></h2>
 <p>Emergence is therefore not simply a question of what can form.
 It is a question of what can survive the loss processes of the substrate.
 Thus the problem of emergence becomes a quantitative survival problem across configuration space.</p>
-<p>Transition to Section 1.4
+<hr />
+<p><em>Transition to Section 1.4:</em>
 The next section examines the processes responsible for structural loss.
 Understanding emergence requires understanding not only retention mechanisms but also the mechanisms that destroy structure.
 Thus we now analyze the mathematical role of loss in physical systems.</p>

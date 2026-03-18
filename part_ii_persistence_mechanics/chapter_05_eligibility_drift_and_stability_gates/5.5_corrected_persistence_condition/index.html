@@ -6546,162 +6546,174 @@
 
 <h1 id="55-corrected-persistence-condition">5.5 Corrected Persistence Condition<a class="headerlink" href="#55-corrected-persistence-condition" title="Permanent link">&para;</a></h1>
 <h2 id="551-motivation">5.5.1 Motivation<a class="headerlink" href="#551-motivation" title="Permanent link">&para;</a></h2>
-<p>Chapters 4 and 5 introduced the mathematical ingredients that determine whether a structure can survive within the Collapse Tension Substrate:
-retained structure (R)
-structural loss rate ( <span class="arithmatex">\(\dot R)\)</span>
-persistence horizon (t_{ref})
-eligibility constraints ( <span class="arithmatex">\(\mathcal{E})\)</span>
-drift stability (D)
-geometric locking conditions.
-Each of these factors plays a role in determining whether a configuration can survive long enough to become part of the persistent structure of the system.
+<p>Chapters 4 and 5 introduced the mathematical ingredients that determine whether a structure can survive within the Collapse Tension Substrate:</p>
+<ul>
+<li>retained structure <span class="arithmatex">\(R\)</span></li>
+<li>structural loss rate <span class="arithmatex">\(\dot{R}\)</span></li>
+<li>persistence horizon <span class="arithmatex">\(t_{ref}\)</span></li>
+<li>eligibility constraints <span class="arithmatex">\(\mathcal{E}\)</span></li>
+<li>drift stability <span class="arithmatex">\(D\)</span></li>
+<li>geometric locking conditions</li>
+</ul>
+<p>Each of these factors plays a role in determining whether a configuration can survive long enough to become part of the persistent structure of the system.
 We now combine these factors into a single persistence condition.</p>
 <h2 id="552-base-persistence-equation">5.5.2 Base persistence equation<a class="headerlink" href="#552-base-persistence-equation" title="Permanent link">&para;</a></h2>
-<p>The base persistence condition derived earlier is
-$$
-S = \frac{R}{\dot R,t_{ref}}.
-$$
-This dimensionless parameter compares retained structure to structural loss during the persistence horizon.
-Persistence requires
-$$
-S \ge 1.
-$$</p>
+<p>The base persistence condition derived earlier is</p>
+<div class="arithmatex">\[
+S = \frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>This dimensionless parameter compares retained structure to structural loss during the persistence horizon.
+Persistence requires</p>
+<div class="arithmatex">\[
+S \geq 1.
+\]</div>
 <h2 id="553-incorporating-eligibility">5.5.3 Incorporating eligibility<a class="headerlink" href="#553-incorporating-eligibility" title="Permanent link">&para;</a></h2>
 <p>Configurations that violate structural constraints cannot exist even if they are energetically stable.
-This restriction is enforced through the eligibility operator
-$$
-\mathcal{E}(\sigma).
-$$
-Thus the persistence number becomes
-$$
+This restriction is enforced through the eligibility operator <span class="arithmatex">\(\mathcal{E}(\sigma)\)</span>.
+Thus the persistence number becomes</p>
+<div class="arithmatex">\[
 S_1 =
-\mathcal{E}(\sigma)
-\frac{R}{\dot R,t_{ref}}.
-$$
-If
-$$
-\mathcal{E}(\sigma)=0,
-$$
-the configuration is eliminated regardless of the value of (S).</p>
+\mathcal{E}(\sigma)\,
+\frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>If <span class="arithmatex">\(\mathcal{E}(\sigma)=0\)</span>, the configuration is eliminated regardless of the value of <span class="arithmatex">\(S\)</span>.</p>
 <h2 id="554-incorporating-drift-stability">5.5.4 Incorporating drift stability<a class="headerlink" href="#554-incorporating-drift-stability" title="Permanent link">&para;</a></h2>
 <p>Configurations may drift through configuration space even if they are structurally admissible.
-To account for this effect we introduce the drift stability factor
-$$
-D.
-$$
-The persistence number becomes
-$$
+To account for this effect we introduce the drift stability factor <span class="arithmatex">\(D\)</span>.
+The persistence number becomes</p>
+<div class="arithmatex">\[
 S_2 =
-\mathcal{E}(\sigma)
-D
-\frac{R}{\dot R,t_{ref}}.
-$$
-The factor (D) reduces the persistence of configurations that are weakly anchored in the stability landscape.</p>
+\mathcal{E}(\sigma)\,
+D\,
+\frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>The factor <span class="arithmatex">\(D\)</span> reduces the persistence of configurations that are weakly anchored in the stability landscape.</p>
 <h2 id="555-incorporating-shell-admissibility">5.5.5 Incorporating shell admissibility<a class="headerlink" href="#555-incorporating-shell-admissibility" title="Permanent link">&para;</a></h2>
 <p>For complex structures such as shells, additional geometric constraints must be satisfied.
-These constraints arise from the multi-channel structural balance described by the six-fan lock condition
-$$
-\sum_{i=1}^{6} F_i \hat{n}<em shell="shell">i = 0.
-$$
-Define a shell admissibility operator
-$$
-\mathcal{E}</em>.
-$$
+These constraints arise from the multi-channel structural balance described by the six-fan lock condition</p>
+<div class="arithmatex">\[
+\sum_{i=1}^{6} F_i \hat{n}_i = 0.
+\]</div>
+<p>Define a shell admissibility operator <span class="arithmatex">\(\mathcal{E}_{shell}\)</span>.
 This operator evaluates whether the geometric locking conditions are satisfied.</p>
 <h2 id="556-final-corrected-persistence-number">5.5.6 Final corrected persistence number<a class="headerlink" href="#556-final-corrected-persistence-number" title="Permanent link">&para;</a></h2>
-<p>Combining these factors gives the corrected persistence number
-$$
-S_<em> =
-\mathcal{E}{shell}
-\mathcal{E}
-D
-\frac{R}{\dot R,t{ref}}.
-$$
-Persistence requires
-$$
-S_</em> \ge 1.
-$$
-This equation defines the full persistence criterion for structures within the Collapse Tension Substrate.</p>
+<p>Combining these factors gives the corrected persistence number</p>
+<div class="arithmatex">\[
+S_* =
+\mathcal{E}_{shell}\,
+\mathcal{E}\,
+D\,
+\frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>Persistence requires</p>
+<div class="arithmatex">\[
+S_* \geq 1.
+\]</div>
+<p>This equation defines the full persistence criterion for structures within the Collapse Tension Substrate.</p>
 <h2 id="557-structural-filtering-hierarchy">5.5.7 Structural filtering hierarchy<a class="headerlink" href="#557-structural-filtering-hierarchy" title="Permanent link">&para;</a></h2>
 <p>The corrected persistence equation represents a sequence of filters applied to configuration space.
-The filtering process occurs in four stages:
-structural eligibility
-shell admissibility
-drift stability
-persistence selection.
-Formally, the surviving configuration set is
-$$
-\Omega_{persist}
-{\sigma \in \Omega
-\mid
-\mathcal{E}{shell}
-\mathcal{E}
-D
-\frac{R}{\dot R,t{ref}} \ge 1
-}.
-$$
-Only configurations within this set become persistent structures.</p>
+The filtering process occurs in four stages:</p>
+<ul>
+<li>structural eligibility</li>
+<li>shell admissibility</li>
+<li>drift stability</li>
+<li>persistence selection</li>
+</ul>
+<p>Formally, the surviving configuration set is</p>
+<div class="arithmatex">\[
+\Omega_{persist} =
+\left\{\sigma \in \Omega
+\;\middle|\;
+\mathcal{E}_{shell}\,
+\mathcal{E}\,
+D\,
+\frac{R}{\dot{R}\,t_{ref}} \geq 1
+\right\}.
+\]</div>
+<p>Only configurations within this set become persistent structures.</p>
 <h2 id="558-structural-hierarchy">5.5.8 Structural hierarchy<a class="headerlink" href="#558-structural-hierarchy" title="Permanent link">&para;</a></h2>
 <p>The persistence equation also explains why complex structures appear in stages.
 Each level of structural complexity introduces new eligibility constraints.
-Examples include:
-structural level
-dominant constraint
-scalar field
-amplitude stability
-gradient field
-spatial compatibility
-circulation
-rotational coherence
-closure
-boundary formation
-shell
-multi-axis geometric lock</p>
+Examples include:</p>
+<table>
+<thead>
+<tr>
+<th>Structural level</th>
+<th>Dominant constraint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar field</td>
+<td>amplitude stability</td>
+</tr>
+<tr>
+<td>gradient field</td>
+<td>spatial compatibility</td>
+</tr>
+<tr>
+<td>circulation</td>
+<td>rotational coherence</td>
+</tr>
+<tr>
+<td>closure</td>
+<td>boundary formation</td>
+</tr>
+<tr>
+<td>shell</td>
+<td>multi-axis geometric lock</td>
+</tr>
+</tbody>
+</table>
 <p>Thus higher structural levels require increasingly stringent persistence conditions.</p>
 <h2 id="559-structural-abundance">5.5.9 Structural abundance<a class="headerlink" href="#559-structural-abundance" title="Permanent link">&para;</a></h2>
 <p>The corrected persistence condition also explains why certain structures are abundant while others are rare.
-Configurations with
-large retained structure
-low loss rate
-strong drift stability
-simple eligibility constraints
-are far more likely to satisfy
-$$
-S_* \ge 1.
-$$
-These configurations dominate the persistent structure of the system.</p>
+Configurations with:</p>
+<ul>
+<li>large retained structure</li>
+<li>low loss rate</li>
+<li>strong drift stability</li>
+<li>simple eligibility constraints</li>
+</ul>
+<p>are far more likely to satisfy</p>
+<div class="arithmatex">\[
+S_* \geq 1.
+\]</div>
+<p>These configurations dominate the persistent structure of the system.</p>
 <h2 id="5510-structural-rarity">5.5.10 Structural rarity<a class="headerlink" href="#5510-structural-rarity" title="Permanent link">&para;</a></h2>
-<p>Conversely, structures that require
-precise geometric locking
-high structural energy
-complex coordination
-occur rarely.
-Such configurations lie near the boundary
-$$
+<p>Conversely, structures that require:</p>
+<ul>
+<li>precise geometric locking</li>
+<li>high structural energy</li>
+<li>complex coordination</li>
+</ul>
+<p>occur rarely.
+Such configurations lie near the boundary</p>
+<div class="arithmatex">\[
 S_* \approx 1.
-$$
-Small perturbations may destabilize them.</p>
+\]</div>
+<p>Small perturbations may destabilize them.</p>
 <h2 id="5511-final-persistence-rule">5.5.11 Final persistence rule<a class="headerlink" href="#5511-final-persistence-rule" title="Permanent link">&para;</a></h2>
-<p>The persistence of structures within the Collapse Tension Substrate is governed by the inequality
-$$
+<p>The persistence of structures within the Collapse Tension Substrate is governed by the inequality</p>
+<div class="arithmatex">\[
 \boxed{
-\mathcal{E}{shell}\mathcal{E}D
-\frac{R}{\dot R,t{ref}}
-\ge 1
+\mathcal{E}_{shell}\,\mathcal{E}\,D\,
+\frac{R}{\dot{R}\,t_{ref}}
+\geq 1
 }
-$$
-This equation summarizes the survival conditions for emergent structures.</p>
+\]</div>
+<p>This equation summarizes the survival conditions for emergent structures.</p>
 <h2 id="5512-summary-of-chapter-5">5.5.12 Summary of Chapter 5<a class="headerlink" href="#5512-summary-of-chapter-5" title="Permanent link">&para;</a></h2>
 <p>Chapter 5 introduced the structural gates that determine whether configurations can persist.
-Key results include:
-the eligibility operator ( <span class="arithmatex">\(\mathcal{E})\)</span>
-the drift stability factor (D)
-the six-fan shell locking condition
-the corrected persistence number (S_*).
-These concepts extend the persistence framework beyond simple energy considerations and incorporate the geometric and dynamical constraints required for structural survival.</p>
-<p>Transition to Chapter 6
-With the persistence condition fully established, the next chapter analyzes how topology determines the formation of stable objects within the Collapse Tension Substrate.</p>
-<p>Closure as the First Objecthood Threshold
-This section begins the mathematical analysis of how topological closure transforms persistent patterns into discrete structural objects.</p>
+Key results include:</p>
+<ul>
+<li>the eligibility operator <span class="arithmatex">\(\mathcal{E}\)</span></li>
+<li>the drift stability factor <span class="arithmatex">\(D\)</span></li>
+<li>the six-fan shell locking condition</li>
+<li>the corrected persistence number <span class="arithmatex">\(S_*\)</span></li>
+</ul>
+<p>These concepts extend the persistence framework beyond simple energy considerations and incorporate the geometric and dynamical constraints required for structural survival.</p>
+<p><em>Transition to Chapter 6:</em> With the persistence condition fully established, the next chapter analyzes how topology determines the formation of stable objects within the Collapse Tension Substrate, beginning with closure as the first objecthood threshold.</p>
 
 
 

@@ -6546,163 +6546,105 @@
 
 <h1 id="44-derivation-of-the-selection-number">4.4 Derivation of the Selection Number<a class="headerlink" href="#44-derivation-of-the-selection-number" title="Permanent link">&para;</a></h1>
 <h2 id="441-objective">4.4.1 Objective<a class="headerlink" href="#441-objective" title="Permanent link">&para;</a></h2>
-<p>Previous sections introduced three quantities:
-retained structure (R)
-structural loss rate ( <span class="arithmatex">\(\dot R)\)</span>
-persistence horizon (t_{ref})
-We now derive the selection number
-$$
-S
-$$
-as the dimensionless parameter controlling structural persistence.</p>
+<p>Previous sections introduced three quantities:</p>
+<ul>
+<li>Retained structure <span class="arithmatex">\(R\)</span></li>
+<li>Structural loss rate <span class="arithmatex">\(\dot{R}\)</span></li>
+<li>Persistence horizon <span class="arithmatex">\(t_{ref}\)</span></li>
+</ul>
+<p>We now derive the selection number <span class="arithmatex">\(S\)</span> as the dimensionless parameter controlling structural persistence.</p>
 <h2 id="442-time-evolution-of-retained-structure">4.4.2 Time evolution of retained structure<a class="headerlink" href="#442-time-evolution-of-retained-structure" title="Permanent link">&para;</a></h2>
-<p>Let
-$$
-R(t)
-$$
-represent the retained structure of a configuration.
-The general evolution equation is
-$$
-\frac{dR}{dt} = -\dot R.
-$$
-In many systems structural loss is proportional to the existing structure.
-Thus
-$$
+<p>Let <span class="arithmatex">\(R(t)\)</span> represent the retained structure of a configuration. The general evolution equation is</p>
+<div class="arithmatex">\[
+\frac{dR}{dt} = -\dot{R}.
+\]</div>
+<p>In many systems structural loss is proportional to the existing structure. Thus</p>
+<div class="arithmatex">\[
 \frac{dR}{dt} = -\Gamma R.
-$$
-The parameter
-$$
-\Gamma
-$$
-represents the effective decay constant.</p>
+\]</div>
+<p>The parameter <span class="arithmatex">\(\Gamma\)</span> represents the effective decay constant.</p>
 <h2 id="443-solution-of-the-decay-equation">4.4.3 Solution of the decay equation<a class="headerlink" href="#443-solution-of-the-decay-equation" title="Permanent link">&para;</a></h2>
-<p>Solving the differential equation
-$$
+<p>Solving the differential equation</p>
+<div class="arithmatex">\[
 \frac{dR}{dt} = -\Gamma R
-$$
-gives
-$$
-R(t) = R_0 e^{-\Gamma t}.
-$$
-Thus retained structure decreases exponentially over time.
-The characteristic lifetime of the structure is
-$$
+\]</div>
+<p>gives</p>
+<div class="arithmatex">\[
+R(t) = R_0\,e^{-\Gamma t}.
+\]</div>
+<p>Thus retained structure decreases exponentially over time. The characteristic lifetime of the structure is</p>
+<div class="arithmatex">\[
 \tau = \frac{1}{\Gamma}.
-$$</p>
+\]</div>
 <h2 id="444-structural-survival-condition">4.4.4 Structural survival condition<a class="headerlink" href="#444-structural-survival-condition" title="Permanent link">&para;</a></h2>
-<p>Suppose a structure must persist over the time interval
-$$
-t_{ref}.
-$$
-The remaining structure after this interval is
-$$
-R(t_{ref}) = R_0 e^{-\Gamma t_{ref}}.
-$$
-Persistence requires that a significant fraction of the original structure remain.
-A natural threshold occurs when
-$$
-\Gamma t_{ref} = 1.
-$$
-At this point the structure decays by a factor
-$$
-e^{-1}.
-$$</p>
+<p>Suppose a structure must persist over the time interval <span class="arithmatex">\(t_{ref}\)</span>. The remaining structure after this interval is</p>
+<div class="arithmatex">\[
+R(t_{ref}) = R_0\,e^{-\Gamma t_{ref}}.
+\]</div>
+<p>Persistence requires that a significant fraction of the original structure remain. A natural threshold occurs when</p>
+<div class="arithmatex">\[
+\Gamma\,t_{ref} = 1.
+\]</div>
+<p>At this point the structure decays by a factor <span class="arithmatex">\(e^{-1}\)</span>.</p>
 <h2 id="445-dimensionless-persistence-parameter">4.4.5 Dimensionless persistence parameter<a class="headerlink" href="#445-dimensionless-persistence-parameter" title="Permanent link">&para;</a></h2>
-<p>Define a dimensionless parameter
-$$
-S = \frac{1}{\Gamma t_{ref}}.
-$$
-Using
-$$
-\Gamma = \frac{\dot R}{R},
-$$
-this becomes
-$$
-S = \frac{R}{\dot R,t_{ref}}.
-$$
-This expression is the selection number.</p>
+<p>Define a dimensionless parameter</p>
+<div class="arithmatex">\[
+S = \frac{1}{\Gamma\,t_{ref}}.
+\]</div>
+<p>Using</p>
+<div class="arithmatex">\[
+\Gamma = \frac{\dot{R}}{R},
+\]</div>
+<p>this becomes</p>
+<div class="arithmatex">\[
+S = \frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>This expression is the selection number.</p>
 <h2 id="446-interpretation-of-the-numerator">4.4.6 Interpretation of the numerator<a class="headerlink" href="#446-interpretation-of-the-numerator" title="Permanent link">&para;</a></h2>
-<p>The numerator
-$$
-R
-$$
-represents the structural content stored in the configuration.
-Larger values of (R) correspond to more organized energy or information.
-Thus increasing (R) increases persistence.</p>
+<p>The numerator <span class="arithmatex">\(R\)</span> represents the structural content stored in the configuration. Larger values of <span class="arithmatex">\(R\)</span> correspond to more organized energy or information. Thus increasing <span class="arithmatex">\(R\)</span> increases persistence.</p>
 <h2 id="447-interpretation-of-the-denominator">4.4.7 Interpretation of the denominator<a class="headerlink" href="#447-interpretation-of-the-denominator" title="Permanent link">&para;</a></h2>
-<p>The denominator
-$$
-\dot R,t_{ref}
-$$
-represents the structural content lost during the persistence horizon.
-Thus the selection number compares retained structure with structure lost during the relevant time interval.</p>
+<p>The denominator <span class="arithmatex">\(\dot{R}\,t_{ref}\)</span> represents the structural content lost during the persistence horizon. Thus the selection number compares retained structure with structure lost during the relevant time interval.</p>
 <h2 id="448-persistence-regimes">4.4.8 Persistence regimes<a class="headerlink" href="#448-persistence-regimes" title="Permanent link">&para;</a></h2>
-<p>The persistence condition follows directly.
-Ephemeral regime
-$$
-S &lt; 1
-$$
-Loss dominates retention.
-The structure decays before the persistence horizon.</p>
-<p>Critical regime
-$$
-S = 1
-$$
-Retention balances loss.
-The structure lies at the threshold of persistence.</p>
-<p>Persistent regime
-$$
-S &gt; 1
-$$
-Retention dominates.
-The structure survives beyond the persistence horizon.</p>
+<p>The persistence condition follows directly.</p>
+<p><strong>Ephemeral regime:</strong> <span class="arithmatex">\(S &lt; 1\)</span></p>
+<p>Loss dominates retention. The structure decays before the persistence horizon.</p>
+<p><strong>Critical regime:</strong> <span class="arithmatex">\(S = 1\)</span></p>
+<p>Retention balances loss. The structure lies at the threshold of persistence.</p>
+<p><strong>Persistent regime:</strong> <span class="arithmatex">\(S &gt; 1\)</span></p>
+<p>Retention dominates. The structure survives beyond the persistence horizon.</p>
 <h2 id="449-alternative-form-using-lifetime">4.4.9 Alternative form using lifetime<a class="headerlink" href="#449-alternative-form-using-lifetime" title="Permanent link">&para;</a></h2>
-<p>Using the structural lifetime
-$$
+<p>Using the structural lifetime</p>
+<div class="arithmatex">\[
 \tau = \frac{1}{\Gamma},
-$$
-the selection number becomes
-$$
+\]</div>
+<p>the selection number becomes</p>
+<div class="arithmatex">\[
 S = \frac{\tau}{t_{ref}}.
-$$
-Thus persistence simply compares the lifetime of a structure with the time horizon over which it must survive.</p>
+\]</div>
+<p>Thus persistence simply compares the lifetime of a structure with the time horizon over which it must survive.</p>
 <h2 id="4410-structural-interpretation">4.4.10 Structural interpretation<a class="headerlink" href="#4410-structural-interpretation" title="Permanent link">&para;</a></h2>
-<p>The selection number can be interpreted as a survival ratio.
-If
-$$
-S \gg 1,
-$$
-the structure remains largely intact during the persistence horizon.
-If
-$$
-S \ll 1,
-$$
-the structure disappears rapidly.</p>
+<p>The selection number can be interpreted as a survival ratio. If <span class="arithmatex">\(S \gg 1\)</span>, the structure remains largely intact during the persistence horizon. If <span class="arithmatex">\(S \ll 1\)</span>, the structure disappears rapidly.</p>
 <h2 id="4411-application-to-multiple-retention-channels">4.4.11 Application to multiple retention channels<a class="headerlink" href="#4411-application-to-multiple-retention-channels" title="Permanent link">&para;</a></h2>
-<p>If structural retention contains several channels
-$$
+<p>If structural retention contains several channels</p>
+<div class="arithmatex">\[
 R = \sum_i R_i
-$$
-and loss processes include several mechanisms
-$$
-\dot R = \sum_j \dot R_j,
-$$
-then the selection number becomes
-$$
-S =
-\frac{\sum_i R_i}
-{\left(\sum_j \dot R_j\right) t_{ref}}.
-$$
-Thus multiple retention channels increase persistence while multiple loss channels decrease it.</p>
+\]</div>
+<p>and loss processes include several mechanisms</p>
+<div class="arithmatex">\[
+\dot{R} = \sum_j \dot{R}_j,
+\]</div>
+<p>then the selection number becomes</p>
+<div class="arithmatex">\[
+S = \frac{\sum_i R_i}{\left(\sum_j \dot{R}_j\right) t_{ref}}.
+\]</div>
+<p>Thus multiple retention channels increase persistence while multiple loss channels decrease it.</p>
 <h2 id="4412-summary">4.4.12 Summary<a class="headerlink" href="#4412-summary" title="Permanent link">&para;</a></h2>
-<p>The selection number is derived by comparing retained structure with structural loss during the persistence horizon.
-The final expression is
-$$
-S = \frac{R}{\dot R,t_{ref}}.
-$$
-This dimensionless parameter determines whether a configuration survives long enough to participate in further structural evolution.</p>
-<p>Interpreting Subcritical, Critical, and Supercritical Emergence
-This section analyzes how the selection number determines transitions between ephemeral fluctuations and persistent structures.</p>
+<p>The selection number is derived by comparing retained structure with structural loss during the persistence horizon. The final expression is</p>
+<div class="arithmatex">\[
+S = \frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>This dimensionless parameter determines whether a configuration survives long enough to participate in further structural evolution.</p>
+<p><em>Transition to Section 4.5:</em> This section analyzes how the selection number determines transitions between ephemeral fluctuations and persistent structures.</p>
 
 
 

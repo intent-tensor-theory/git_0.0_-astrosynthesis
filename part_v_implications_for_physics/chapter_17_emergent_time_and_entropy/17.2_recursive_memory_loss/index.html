@@ -6589,92 +6589,122 @@ This introduces the concept of memory.
 Time therefore emerges not just from loss, but from the progressive loss of memory across recursive interactions.</p>
 <h2 id="1722-definition-of-structural-memory">17.2.2 Definition of structural memory<a class="headerlink" href="#1722-definition-of-structural-memory" title="Permanent link">&para;</a></h2>
 <p>Let a system state be described by a configuration
+$$
 X(t).
+$$
 We define memory as the degree to which the current state retains information about a prior state:
-M(t,t0)=⟨X(t),X(t0)⟩.
-)=⟨X(t),X(t
+$$
+M(t, t_0) = \langle X(t),\, X(t_0) \rangle.
+$$
 This inner product measures correlation between past and present structure.</p>
 <h2 id="1723-memory-decay">17.2.3 Memory decay<a class="headerlink" href="#1723-memory-decay" title="Permanent link">&para;</a></h2>
 <p>As the system evolves, memory decreases.
 We model memory decay as
-dMdt=−γM.
+$$
+\frac{dM}{dt} = -\gamma M.
+$$
 Solving gives
-M(t)=M0e−γt.
-γ = memory loss rate.
+$$
+M(t) = M_0\, e^{-\gamma t},
+$$
+where <span class="arithmatex">\(\gamma\)</span> is the memory loss rate.
 Thus memory decays exponentially over time.</p>
 <h2 id="1724-recursive-transformation">17.2.4 Recursive transformation<a class="headerlink" href="#1724-recursive-transformation" title="Permanent link">&para;</a></h2>
 <p>System evolution can be expressed as repeated application of a transformation operator
-Xn+1=T(Xn).
+$$
+X_{n+1} = T(X_n).
+$$
 Each application introduces loss of structural detail.
-After 
-Xn=Tn(X0).
+After <span class="arithmatex">\(n\)</span> steps,
+$$
+X_n = T^n(X_0).
+$$
 Memory relative to the initial state becomes
-Mn∼e−γn.</p>
+$$
+M_n \sim e^{-\gamma n}.
+$$</p>
 <h2 id="1725-time-as-recursion-index">17.2.5 Time as recursion index<a class="headerlink" href="#1725-time-as-recursion-index" title="Permanent link">&para;</a></h2>
 <p>This suggests an alternative interpretation of time:
-t∼n
-n is the number of recursive transformations.
+$$
+t \sim n,
+$$
+where <span class="arithmatex">\(n\)</span> is the number of recursive transformations.
 Thus time corresponds to the depth of recursive evolution.</p>
 <h2 id="1726-loss-accumulation">17.2.6 Loss accumulation<a class="headerlink" href="#1726-loss-accumulation" title="Permanent link">&para;</a></h2>
 <p>Each transformation reduces retained structure
-Rn+1=Rn−ΔRn.
+$$
+R_{n+1} = R_n - \Delta R_n.
+$$
 Over many steps
-Rn=R0−∑k=1nΔRk.
-This cumulative loss defines the system’s temporal progression.</p>
+$$
+R_n = R_0 - \sum_{k=1}^{n} \Delta R_k.
+$$
+This cumulative loss defines the system's temporal progression.</p>
 <h2 id="1727-information-theoretic-interpretation">17.2.7 Information-theoretic interpretation<a class="headerlink" href="#1727-information-theoretic-interpretation" title="Permanent link">&para;</a></h2>
 <p>Memory can also be expressed using information entropy.
 Let the system have entropy
-S=−∑pilog⁡pi.
+$$
+S = -\sum_i p_i \log p_i.
+$$
 As memory decreases, entropy increases:
-dSdt≥0.
+$$
+\frac{dS}{dt} \geq 0.
+$$
 Thus memory loss corresponds to entropy growth.</p>
 <h2 id="1728-correlation-length-decay">17.2.8 Correlation length decay<a class="headerlink" href="#1728-correlation-length-decay" title="Permanent link">&para;</a></h2>
-<p>Memory can also be characterized by correlation length
-ξ(t).
-In many systems
+<p>Memory can also be characterized by correlation length <span class="arithmatex">\(\xi(t)\)</span>.
+In many systems correlation length decreases over time.
 As time progresses, correlations decay and structure becomes less ordered.</p>
 <h2 id="1729-persistence-and-memory">17.2.9 Persistence and memory<a class="headerlink" href="#1729-persistence-and-memory" title="Permanent link">&para;</a></h2>
 <p>The persistence number
-S=RR˙tref
+$$
+S = \frac{R}{\dot{R}\, t_{\text{ref}}}
+$$
 can be related to memory retention.
 High persistence systems retain memory longer:
-γ∼R˙R.
-M(t)∼e−t/τ</p>
+$$
+\gamma \sim \frac{\dot{R}}{R}, \qquad M(t) \sim e^{-t/\tau}.
+$$</p>
 <h2 id="17210-recursive-stability">17.2.10 Recursive stability<a class="headerlink" href="#17210-recursive-stability" title="Permanent link">&para;</a></h2>
 <p>If a system satisfies
-S∗&gt;1,
+$$
+S_* &gt; 1,
+$$
 then memory decay is slow.
 Such systems maintain coherence across many recursive steps.
-If
-memory rapidly disappears.</p>
+If <span class="arithmatex">\(S_* &lt; 1\)</span>, memory rapidly disappears.</p>
 <h2 id="17211-direction-of-time">17.2.11 Direction of time<a class="headerlink" href="#17211-direction-of-time" title="Permanent link">&para;</a></h2>
 <p>The direction of time emerges from the monotonic decrease of memory:
-dMdt&lt;0.
+$$
+\frac{dM}{dt} &lt; 0.
+$$
 This provides a second formulation of time direction:
-time arrow∼memory loss.
-time arrow∼memory loss.</p>
+$$
+\text{time arrow} \sim \text{memory loss.}
+$$</p>
 <h2 id="17212-local-vs-global-memory">17.2.12 Local vs global memory<a class="headerlink" href="#17212-local-vs-global-memory" title="Permanent link">&para;</a></h2>
 <p>Different subsystems may have different memory decay rates.
-Define local memory
-Spatial variations in 
-γ(x) produce non-uniform temporal behavior.</p>
+Define local memory decay rate <span class="arithmatex">\(\gamma(x)\)</span>.
+Spatial variations in <span class="arithmatex">\(\gamma(x)\)</span> produce non-uniform temporal behavior.</p>
 <h2 id="17213-memory-kernels">17.2.13 Memory kernels<a class="headerlink" href="#17213-memory-kernels" title="Permanent link">&para;</a></h2>
 <p>More generally, memory decay may follow a non-exponential form.
 Using a memory kernel
-M(t)=∫0tK(t−t′)X(t′)dt′.
+$$
+M(t) = \int_0^t K(t - t')\, X(t')\, dt'.
+$$
 Different kernels produce different temporal dynamics.</p>
 <h2 id="17214-cts-interpretation">17.2.14 CTS interpretation<a class="headerlink" href="#17214-cts-interpretation" title="Permanent link">&para;</a></h2>
-<p>Within the CTS framework:
-• recursive interactions = transformation steps
-• memory = retained structural information
-• time = ordering of recursive memory loss.
-Thus time emerges from progressive degradation of structural correlations.</p>
+<p>Within the CTS framework:</p>
+<ul>
+<li>recursive interactions = transformation steps</li>
+<li>memory = retained structural information</li>
+<li>time = ordering of recursive memory loss</li>
+</ul>
+<p>Thus time emerges from progressive degradation of structural correlations.</p>
 <h2 id="17215-summary">17.2.15 Summary<a class="headerlink" href="#17215-summary" title="Permanent link">&para;</a></h2>
 <p>Time can be interpreted as the ordered loss of memory across recursive transformations.
 As systems evolve, structural correlations decay and entropy increases.
 This process defines both the direction and progression of time within the Collapse Tension Substrate.</p>
-<p>Entropy as Degradation of Coherence
-This section derives entropy mathematically as the loss of structural coherence within persistent systems.</p>
 
 
 

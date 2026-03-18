@@ -6546,200 +6546,172 @@
 
 <h1 id="42-defining-loss-rate">4.2 Defining Loss Rate<a class="headerlink" href="#42-defining-loss-rate" title="Permanent link">&para;</a></h1>
 <h2 id="421-structural-degradation">4.2.1 Structural degradation<a class="headerlink" href="#421-structural-degradation" title="Permanent link">&para;</a></h2>
-<p>In the persistence framework, the numerator of the selection number
-$$
-S = \frac{R}{\dot R,t_{ref}}
-$$
-measures retained structure. The denominator must therefore measure the rate at which that structure is destroyed.
-Define the structural loss rate
-$$
-\dot R = -\frac{dR}{dt}.
-$$
-This quantity represents the rate at which organized structure degrades due to dissipative processes.</p>
+<p>In the persistence framework, the numerator of the selection number</p>
+<div class="arithmatex">\[
+S = \frac{R}{\dot{R}\,t_{ref}}
+\]</div>
+<p>measures retained structure. The denominator must therefore measure the rate at which that structure is destroyed. Define the structural loss rate</p>
+<div class="arithmatex">\[
+\dot{R} = -\frac{dR}{dt}.
+\]</div>
+<p>This quantity represents the rate at which organized structure degrades due to dissipative processes.</p>
 <h2 id="422-sources-of-structural-loss">4.2.2 Sources of structural loss<a class="headerlink" href="#422-sources-of-structural-loss" title="Permanent link">&para;</a></h2>
-<p>Structural degradation arises from a variety of physical processes. The most common include:
-loss mechanism
-physical example
-diffusion
-smoothing of gradients
-viscous dissipation
-decay of vortices
-radiation
-energy emission
-scattering
-particle interactions
-thermal noise
-random fluctuations</p>
+<p>Structural degradation arises from a variety of physical processes. The most common include:</p>
+<table>
+<thead>
+<tr>
+<th>Loss mechanism</th>
+<th>Physical example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Diffusion</td>
+<td>Smoothing of gradients</td>
+</tr>
+<tr>
+<td>Viscous dissipation</td>
+<td>Decay of vortices</td>
+</tr>
+<tr>
+<td>Radiation</td>
+<td>Energy emission</td>
+</tr>
+<tr>
+<td>Scattering</td>
+<td>Particle interactions</td>
+</tr>
+<tr>
+<td>Thermal noise</td>
+<td>Random fluctuations</td>
+</tr>
+</tbody>
+</table>
 <p>Each of these processes reduces the structural energy stored in a configuration.</p>
 <h2 id="423-loss-as-dissipation">4.2.3 Loss as dissipation<a class="headerlink" href="#423-loss-as-dissipation" title="Permanent link">&para;</a></h2>
-<p>For systems described by an energy functional
-$$
-E[\Phi],
-$$
-the structural loss rate corresponds to the rate at which energy dissipates.
-Define
-$$
+<p>For systems described by an energy functional <span class="arithmatex">\(E[\Phi]\)</span>, the structural loss rate corresponds to the rate at which energy dissipates. Define</p>
+<div class="arithmatex">\[
 R = E[\Phi].
-$$
-Then
-$$
-\dot R = -\frac{dE}{dt}.
-$$
-If the system follows gradient-descent dynamics
-$$
+\]</div>
+<p>Then</p>
+<div class="arithmatex">\[
+\dot{R} = -\frac{dE}{dt}.
+\]</div>
+<p>If the system follows gradient-descent dynamics</p>
+<div class="arithmatex">\[
 \partial_t \Phi = -\frac{\delta E}{\delta \Phi},
-$$
-the energy decreases according to
-$$
-\frac{dE}{dt}
-\int
-\frac{\delta E}{\delta \Phi}
-\partial_t \Phi , d^3x.
-$$
-Substituting the field equation gives
-$$
-\frac{dE}{dt}</p>
-<p>\int
-\left(
-\frac{\delta E}{\delta \Phi}
-\right)^2
-d^3x.
-$$
-Thus
-$$
-\dot R =
-\int
-\left(
-\frac{\delta E}{\delta \Phi}
-\right)^2
-d^3x.
-$$
-This expression is always positive, confirming that structural energy dissipates.</p>
+\]</div>
+<p>the energy decreases according to</p>
+<div class="arithmatex">\[
+\frac{dE}{dt} = -\int \left(\frac{\delta E}{\delta \Phi}\right)^2 d^3x.
+\]</div>
+<p>Thus</p>
+<div class="arithmatex">\[
+\dot{R} = \int \left(\frac{\delta E}{\delta \Phi}\right)^2 d^3x.
+\]</div>
+<p>This expression is always positive, confirming that structural energy dissipates.</p>
 <h2 id="424-diffusive-loss">4.2.4 Diffusive loss<a class="headerlink" href="#424-diffusive-loss" title="Permanent link">&para;</a></h2>
-<p>One of the most common loss processes is diffusion.
-The diffusion equation is
-$$
+<p>One of the most common loss processes is diffusion. The diffusion equation is</p>
+<div class="arithmatex">\[
 \partial_t \Phi = D\nabla^2 \Phi.
-$$
-For a Fourier mode
-$$
-\Phi_k(t)
-\Phi_k(0)e^{-Dk^2t},
-$$
-the decay rate becomes
-$$
+\]</div>
+<p>For a Fourier mode</p>
+<div class="arithmatex">\[
+\Phi_k(t) = \Phi_k(0)\,e^{-Dk^2 t},
+\]</div>
+<p>the decay rate becomes</p>
+<div class="arithmatex">\[
 \Gamma = Dk^2.
-$$
-Thus the structural loss rate for gradient structures is approximately
-$$
-\dot R \sim \Gamma R.
-$$
-Small-scale structures with large (k) decay rapidly.</p>
+\]</div>
+<p>Thus the structural loss rate for gradient structures is approximately</p>
+<div class="arithmatex">\[
+\dot{R} \sim \Gamma R.
+\]</div>
+<p>Small-scale structures with large <span class="arithmatex">\(k\)</span> decay rapidly.</p>
 <h2 id="425-viscous-loss-in-circulation">4.2.5 Viscous loss in circulation<a class="headerlink" href="#425-viscous-loss-in-circulation" title="Permanent link">&para;</a></h2>
-<p>Circulating structures such as vortices lose energy through viscosity.
-The vorticity equation is
-$$
-\partial_t \boldsymbol{\omega}
-\nabla \times (\mathbf{v} \times \boldsymbol{\omega})
-+
-\nu\nabla^2 \boldsymbol{\omega}.
-$$
-The second term represents viscous diffusion.
-The decay rate for a vortex of size (L) is approximately
-$$
+<p>Circulating structures such as vortices lose energy through viscosity. The vorticity equation is</p>
+<div class="arithmatex">\[
+\partial_t \boldsymbol{\omega} = \nabla \times (\mathbf{v} \times \boldsymbol{\omega}) + \nu\nabla^2 \boldsymbol{\omega}.
+\]</div>
+<p>The second term represents viscous diffusion. The decay rate for a vortex of size <span class="arithmatex">\(L\)</span> is approximately</p>
+<div class="arithmatex">\[
 \Gamma \sim \frac{\nu}{L^2}.
-$$
-Thus larger vortices persist longer.</p>
+\]</div>
+<p>Thus larger vortices persist longer.</p>
 <h2 id="426-surface-relaxation">4.2.6 Surface relaxation<a class="headerlink" href="#426-surface-relaxation" title="Permanent link">&para;</a></h2>
-<p>Closed structures lose energy through curvature smoothing.
-The curvature evolution equation is
-$$
+<p>Closed structures lose energy through curvature smoothing. The curvature evolution equation is</p>
+<div class="arithmatex">\[
 \partial_t H = -\kappa \nabla^2 H.
-$$
-Here
-$$
-\kappa
-$$
-represents curvature mobility.
-The decay rate for curvature modes scales approximately as
-$$
+\]</div>
+<p>Here <span class="arithmatex">\(\kappa\)</span> represents curvature mobility. The decay rate for curvature modes scales approximately as</p>
+<div class="arithmatex">\[
 \Gamma \sim \frac{\kappa}{L^3}.
-$$
-Thus larger closed structures experience slower relaxation.</p>
+\]</div>
+<p>Thus larger closed structures experience slower relaxation.</p>
 <h2 id="427-general-loss-law">4.2.7 General loss law<a class="headerlink" href="#427-general-loss-law" title="Permanent link">&para;</a></h2>
-<p>Many physical systems exhibit exponential structural decay.
-In this case
-$$
+<p>Many physical systems exhibit exponential structural decay. In this case</p>
+<div class="arithmatex">\[
 \frac{dR}{dt} = -\Gamma R.
-$$
-The solution is
-$$
-R(t) = R_0 e^{-\Gamma t}.
-$$
-Thus
-$$
-\dot R = \Gamma R.
-$$
-The decay constant ( <span class="arithmatex">\(\Gamma) determines the rate of structural loss.\)</span></p>
+\]</div>
+<p>The solution is</p>
+<div class="arithmatex">\[
+R(t) = R_0\,e^{-\Gamma t}.
+\]</div>
+<p>Thus</p>
+<div class="arithmatex">\[
+\dot{R} = \Gamma R.
+\]</div>
+<p>The decay constant <span class="arithmatex">\(\Gamma\)</span> determines the rate of structural loss.</p>
 <h2 id="428-loss-timescale">4.2.8 Loss timescale<a class="headerlink" href="#428-loss-timescale" title="Permanent link">&para;</a></h2>
-<p>Define the structural lifetime
-$$
+<p>Define the structural lifetime</p>
+<div class="arithmatex">\[
 \tau = \frac{1}{\Gamma}.
-$$
-This represents the characteristic time over which structural energy decreases significantly.
-If
-$$
+\]</div>
+<p>This represents the characteristic time over which structural energy decreases significantly. If</p>
+<div class="arithmatex">\[
 t_{ref} \ll \tau,
-$$
-the structure appears stable.
-If
-$$
+\]</div>
+<p>the structure appears stable. If</p>
+<div class="arithmatex">\[
 t_{ref} \gg \tau,
-$$
-the structure decays quickly.</p>
+\]</div>
+<p>the structure decays quickly.</p>
 <h2 id="429-loss-channels">4.2.9 Loss channels<a class="headerlink" href="#429-loss-channels" title="Permanent link">&para;</a></h2>
-<p>Just as retained structure can have multiple channels, loss can also occur through multiple mechanisms.
-Define
-$$
-\dot R =
-\sum_i \dot R_i
-$$
-where each term represents a different dissipation process.
-Examples include
-diffusive loss
-radiative loss
-viscous loss
-thermal degradation.
-These contributions combine to determine the total loss rate.</p>
+<p>Just as retained structure can have multiple channels, loss can also occur through multiple mechanisms. Define</p>
+<div class="arithmatex">\[
+\dot{R} = \sum_i \dot{R}_i
+\]</div>
+<p>where each term represents a different dissipation process. Examples include:</p>
+<ul>
+<li>Diffusive loss</li>
+<li>Radiative loss</li>
+<li>Viscous loss</li>
+<li>Thermal degradation</li>
+</ul>
+<p>These contributions combine to determine the total loss rate.</p>
 <h2 id="4210-effective-decay-rate">4.2.10 Effective decay rate<a class="headerlink" href="#4210-effective-decay-rate" title="Permanent link">&para;</a></h2>
-<p>The effective decay rate is defined as
-$$
-\Gamma_{eff} =
-\frac{\dot R}{R}.
-$$
-Substituting this definition into the persistence condition gives
-$$
-S =
-\frac{1}{\Gamma_{eff} t_{ref}}.
-$$
-Thus persistence depends entirely on the ratio between structural lifetime and the observation horizon.</p>
+<p>The effective decay rate is defined as</p>
+<div class="arithmatex">\[
+\Gamma_{eff} = \frac{\dot{R}}{R}.
+\]</div>
+<p>Substituting this definition into the persistence condition gives</p>
+<div class="arithmatex">\[
+S = \frac{1}{\Gamma_{eff}\,t_{ref}}.
+\]</div>
+<p>Thus persistence depends entirely on the ratio between structural lifetime and the observation horizon.</p>
 <h2 id="4211-interpretation">4.2.11 Interpretation<a class="headerlink" href="#4211-interpretation" title="Permanent link">&para;</a></h2>
-<p>Structural loss represents the universal tendency of organized configurations to degrade over time.
-Without retention mechanisms, loss processes would drive all systems toward equilibrium.
-The persistence framework therefore interprets emergence as the outcome of competition between retention and loss.</p>
+<p>Structural loss represents the universal tendency of organized configurations to degrade over time. Without retention mechanisms, loss processes would drive all systems toward equilibrium. The persistence framework therefore interprets emergence as the outcome of competition between retention and loss.</p>
 <h2 id="4212-summary">4.2.12 Summary<a class="headerlink" href="#4212-summary" title="Permanent link">&para;</a></h2>
-<p>Structural loss rate is defined as
-$$
-\dot R = -\frac{dR}{dt}.
-$$
-For many systems this corresponds to exponential decay
-$$
-\dot R = \Gamma R.
-$$
-The effective decay rate ( <span class="arithmatex">\(\Gamma) determines how quickly structure dissipates.\)</span>
-Together with retained structure (R), the loss rate forms the denominator of the persistence equation.</p>
-<p>Defining the Persistence Horizon
-This section introduces the timescale (t_{ref}) and derives how observational timescales influence structural persistence.</p>
+<p>Structural loss rate is defined as</p>
+<div class="arithmatex">\[
+\dot{R} = -\frac{dR}{dt}.
+\]</div>
+<p>For many systems this corresponds to exponential decay</p>
+<div class="arithmatex">\[
+\dot{R} = \Gamma R.
+\]</div>
+<p>The effective decay rate <span class="arithmatex">\(\Gamma\)</span> determines how quickly structure dissipates. Together with retained structure <span class="arithmatex">\(R\)</span>, the loss rate forms the denominator of the persistence equation.</p>
+<p><em>Transition to Section 4.3:</em> This section introduces the timescale <span class="arithmatex">\(t_{ref}\)</span> and derives how observational timescales influence structural persistence.</p>
 
 
 

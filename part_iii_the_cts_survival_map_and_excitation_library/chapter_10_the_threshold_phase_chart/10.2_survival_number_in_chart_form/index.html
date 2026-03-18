@@ -6563,184 +6563,169 @@
 
 <h1 id="102-survival-number-in-chart-form">10.2 Survival Number in Chart Form<a class="headerlink" href="#102-survival-number-in-chart-form" title="Permanent link">&para;</a></h1>
 <h2 id="1021-motivation">10.2.1 Motivation<a class="headerlink" href="#1021-motivation" title="Permanent link">&para;</a></h2>
-<p>Section 10.1 defined the two variables that form the axes of the CTS Threshold Phase Chart:
-$$
+<p>Section 10.1 defined the two variables that form the axes of the CTS Threshold Phase Chart:</p>
+<div class="arithmatex">\[
 x = \Lambda_{lock}
-$$
-$$
-y =
-\mathcal{E}{shell}\mathcal{E}D T{obj}
-\frac{R}{\dot{R} t_{ref}}
-$$
-These variables measure two independent structural properties:
-locking strength
-persistence capacity
-However, to construct the threshold curve separating ephemeral excitations from persistent structures, we must rewrite the persistence condition in terms of these phase variables.</p>
+\]</div>
+<div class="arithmatex">\[
+y = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\, t_{ref}}
+\]</div>
+<p>These variables measure two independent structural properties:</p>
+<ul>
+<li>Locking strength</li>
+<li>Persistence capacity</li>
+</ul>
+<p>However, to construct the threshold curve separating ephemeral excitations from persistent structures, we must rewrite the persistence condition in terms of these phase variables.</p>
 <h2 id="1022-original-persistence-condition">10.2.2 Original persistence condition<a class="headerlink" href="#1022-original-persistence-condition" title="Permanent link">&para;</a></h2>
-<p>From Chapter 9 the corrected persistence number is
-$$
-S_<em> =
-\mathcal{E}{shell}\mathcal{E}D T{obj}
-\frac{R}{\dot{R} t_{ref}}.
-$$
-The persistence threshold occurs when
-$$
-S_</em> = 1.
-$$
-Structures with
-$$
-S_* &gt; 1
-$$
-survive.</p>
+<p>From Chapter 9 the corrected persistence number is</p>
+<div class="arithmatex">\[
+S_* = \mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\, t_{ref}}.
+\]</div>
+<p>The persistence threshold occurs when <span class="arithmatex">\(S_* = 1\)</span>.
+Structures with <span class="arithmatex">\(S_* &gt; 1\)</span> survive.</p>
 <h2 id="1023-inclusion-of-locking-energy">10.2.3 Inclusion of locking energy<a class="headerlink" href="#1023-inclusion-of-locking-energy" title="Permanent link">&para;</a></h2>
 <p>Persistence alone does not guarantee structural survival.
 A structure may have strong persistence properties but still fail to appear frequently if formation energy dominates.
-Thus survival depends on both:
-persistence strength
-locking strength.
-To incorporate both effects we define the survival number
-$$
-S_{surv}.
-$$</p>
+Thus survival depends on both:</p>
+<ul>
+<li>Persistence strength</li>
+<li>Locking strength</li>
+</ul>
+<p>To incorporate both effects we define the survival number <span class="arithmatex">\(S_{surv}\)</span>.</p>
 <h2 id="1024-definition-of-the-survival-number">10.2.4 Definition of the survival number<a class="headerlink" href="#1024-definition-of-the-survival-number" title="Permanent link">&para;</a></h2>
-<p>The survival number combines persistence with locking strength:
-$$
-\boxed{
-S_{surv} =
-\Lambda_{lock}
-,
-\mathcal{E}{shell}\mathcal{E}D T{obj}
-\frac{R}{\dot{R} t_{ref}}
-}
-$$
-Substituting the phase chart variables gives
-$$
-S_{surv} = x y.
-$$</p>
+<p>The survival number combines persistence with locking strength:</p>
+<div class="arithmatex">\[
+\boxed{S_{surv} = \Lambda_{lock}\,\mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\, t_{ref}}}
+\]</div>
+<p>Substituting the phase chart variables gives</p>
+<div class="arithmatex">\[
+S_{surv} = x\, y.
+\]</div>
 <h2 id="1025-survival-threshold">10.2.5 Survival threshold<a class="headerlink" href="#1025-survival-threshold" title="Permanent link">&para;</a></h2>
-<p>The survival threshold occurs when
-$$
+<p>The survival threshold occurs when</p>
+<div class="arithmatex">\[
 S_{surv} = 1.
-$$
-Thus
-$$
+\]</div>
+<p>Thus</p>
+<div class="arithmatex">\[
 \boxed{xy = 1}
-$$
-defines the boundary between ephemeral and persistent structures.</p>
+\]</div>
+<p>defines the boundary between ephemeral and persistent structures.</p>
 <h2 id="1026-geometry-of-the-threshold">10.2.6 Geometry of the threshold<a class="headerlink" href="#1026-geometry-of-the-threshold" title="Permanent link">&para;</a></h2>
-<p>The equation
-$$
-xy = 1
-$$
-represents a rectangular hyperbola in the phase plane.
-Solving for (y) gives
-$$
+<p>The equation <span class="arithmatex">\(xy = 1\)</span> represents a rectangular hyperbola in the phase plane.
+Solving for <span class="arithmatex">\(y\)</span> gives</p>
+<div class="arithmatex">\[
 y = \frac{1}{x}.
-$$
-Thus the threshold curve decreases as locking strength increases.</p>
+\]</div>
+<p>Thus the threshold curve decreases as locking strength increases.</p>
 <h2 id="1027-physical-interpretation">10.2.7 Physical interpretation<a class="headerlink" href="#1027-physical-interpretation" title="Permanent link">&para;</a></h2>
-<p>The hyperbolic boundary reveals two distinct survival mechanisms.
-Persistence-dominated survival
-Structures with large (y) can survive even with small locking strength.
+<p>The hyperbolic boundary reveals two distinct survival mechanisms.</p>
+<p><strong>Persistence-dominated survival:</strong> Structures with large <span class="arithmatex">\(y\)</span> can survive even with small locking strength.
 Examples:
-coherent vortices
-rings.</p>
-<p>Locking-dominated survival
-Structures with large (x) can survive even with moderate persistence.
+- Coherent vortices
+- Rings</p>
+<p><strong>Locking-dominated survival:</strong> Structures with large <span class="arithmatex">\(x\)</span> can survive even with moderate persistence.
 Examples:
-shells
-braids.</p>
+- Shells
+- Braids</p>
 <h2 id="1028-regions-of-the-phase-chart">10.2.8 Regions of the phase chart<a class="headerlink" href="#1028-regions-of-the-phase-chart" title="Permanent link">&para;</a></h2>
-<p>The threshold curve divides the phase chart into two fundamental regions.
-Ephemeral region
-$$
-xy &lt; 1
-$$
-Structures decay faster than they stabilize.
+<p>The threshold curve divides the phase chart into two fundamental regions.</p>
+<p><strong>Ephemeral region</strong> (<span class="arithmatex">\(xy &lt; 1\)</span>): Structures decay faster than they stabilize.
 Typical examples:
-waves
-weak coherent packets.</p>
-<p>Persistent region
-$$
-xy &gt; 1
-$$
-Structures stabilize faster than they decay.
+- Waves
+- Weak coherent packets</p>
+<p><strong>Persistent region</strong> (<span class="arithmatex">\(xy &gt; 1\)</span>): Structures stabilize faster than they decay.
 Typical examples:
-vortices
-rings
-shells
-braids.</p>
+- Vortices
+- Rings
+- Shells
+- Braids</p>
 <h2 id="1029-logarithmic-representation">10.2.9 Logarithmic representation<a class="headerlink" href="#1029-logarithmic-representation" title="Permanent link">&para;</a></h2>
 <p>Because structural parameters span many orders of magnitude, the phase chart is best plotted on logarithmic axes.
-Define
-$$
-X = \log x
-$$
-$$
-Y = \log y.
-$$
-The survival boundary becomes
-$$
+Define</p>
+<div class="arithmatex">\[
+X = \log x, \qquad Y = \log y.
+\]</div>
+<p>The survival boundary becomes</p>
+<div class="arithmatex">\[
 X + Y = 0.
-$$
-Thus the threshold appears as a straight line with slope (-1) on a log–log chart.</p>
+\]</div>
+<p>Thus the threshold appears as a straight line with slope <span class="arithmatex">\(-1\)</span> on a log–log chart.</p>
 <h2 id="10210-structural-trajectories">10.2.10 Structural trajectories<a class="headerlink" href="#10210-structural-trajectories" title="Permanent link">&para;</a></h2>
 <p>As an excitation evolves, its position in the phase chart may move.
-For example:
-increasing coherence raises (y)
-stronger locking raises (x)
-environmental fluctuations lower (y).
-Thus excitations can migrate across the survival boundary.</p>
+For example:</p>
+<ul>
+<li>Increasing coherence raises <span class="arithmatex">\(y\)</span></li>
+<li>Stronger locking raises <span class="arithmatex">\(x\)</span></li>
+<li>Environmental fluctuations lower <span class="arithmatex">\(y\)</span></li>
+</ul>
+<p>Thus excitations can migrate across the survival boundary.</p>
 <h2 id="10211-example-positions">10.2.11 Example positions<a class="headerlink" href="#10211-example-positions" title="Permanent link">&para;</a></h2>
-<p>Approximate locations of several excitation classes illustrate the chart structure.
-excitation
-(x)
-(y)
-survival
-wave
-~0
-≪1
-ephemeral
-phase packet
-~0.3
-&lt;1
-ephemeral
-vortex
-~1
-~1
-marginal
-ring
-~3</p>
-<blockquote>
-<p>1
-persistent
-shell
-~20
-≫10
-highly persistent
-braid
-≫50
-≫100
-extremely persistent</p>
-</blockquote>
+<p>Approximate locations of several excitation classes illustrate the chart structure.</p>
+<table>
+<thead>
+<tr>
+<th>Excitation</th>
+<th><span class="arithmatex">\(x\)</span></th>
+<th><span class="arithmatex">\(y\)</span></th>
+<th>Survival</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave</td>
+<td><span class="arithmatex">\(\sim 0\)</span></td>
+<td><span class="arithmatex">\(\ll 1\)</span></td>
+<td>Ephemeral</td>
+</tr>
+<tr>
+<td>Phase packet</td>
+<td><span class="arithmatex">\(\sim 0.3\)</span></td>
+<td><span class="arithmatex">\(&lt; 1\)</span></td>
+<td>Ephemeral</td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td><span class="arithmatex">\(\sim 1\)</span></td>
+<td><span class="arithmatex">\(\sim 1\)</span></td>
+<td>Marginal</td>
+</tr>
+<tr>
+<td>Ring</td>
+<td><span class="arithmatex">\(\sim 3\)</span></td>
+<td><span class="arithmatex">\(&gt; 1\)</span></td>
+<td>Persistent</td>
+</tr>
+<tr>
+<td>Shell</td>
+<td><span class="arithmatex">\(\sim 20\)</span></td>
+<td><span class="arithmatex">\(\gg 10\)</span></td>
+<td>Highly persistent</td>
+</tr>
+<tr>
+<td>Braid</td>
+<td><span class="arithmatex">\(\gg 50\)</span></td>
+<td><span class="arithmatex">\(\gg 100\)</span></td>
+<td>Extremely persistent</td>
+</tr>
+</tbody>
+</table>
 <p>These positions produce the structural regions of the survival map.</p>
 <h2 id="10212-emergence-interpretation">10.2.12 Emergence interpretation<a class="headerlink" href="#10212-emergence-interpretation" title="Permanent link">&para;</a></h2>
 <p>The hyperbolic survival boundary provides a mathematical interpretation of emergence:
 structures appear when stabilization mechanisms overcome structural loss.
 The CTS framework therefore interprets emergence as a geometric threshold crossing in structural phase space.</p>
 <h2 id="10213-summary">10.2.13 Summary<a class="headerlink" href="#10213-summary" title="Permanent link">&para;</a></h2>
-<p>Expressing the persistence condition in phase chart coordinates yields the survival number
-$$
+<p>Expressing the persistence condition in phase chart coordinates yields the survival number</p>
+<div class="arithmatex">\[
 S_{surv} = xy.
-$$
-The threshold
-$$
+\]</div>
+<p>The threshold</p>
+<div class="arithmatex">\[
 xy = 1
-$$
-defines the boundary separating ephemeral excitations from persistent structures.
+\]</div>
+<p>defines the boundary separating ephemeral excitations from persistent structures.
 This hyperbolic curve forms the central organizing feature of the CTS Threshold Phase Chart.</p>
-<p>What Lies Below Threshold
-This section analyzes the properties of excitations that occupy the ephemeral region of the phase chart.</p>
 
 
 

@@ -6557,205 +6557,209 @@
 
 <h1 id="53-drift-stability">5.3 Drift Stability<a class="headerlink" href="#53-drift-stability" title="Permanent link">&para;</a></h1>
 <h2 id="531-structural-drift-in-configuration-space">5.3.1 Structural drift in configuration space<a class="headerlink" href="#531-structural-drift-in-configuration-space" title="Permanent link">&para;</a></h2>
-<p>Even when a configuration satisfies both
-$$
+<p>Even when a configuration satisfies both</p>
+<div class="arithmatex">\[
 \mathcal{E}(\sigma)=1
-$$
-and
-$$
+\]</div>
+<p>and</p>
+<div class="arithmatex">\[
 S&gt;1,
-$$
-the structure may still fail to persist if it drifts through configuration space toward regions of higher dissipation.
+\]</div>
+<p>the structure may still fail to persist if it drifts through configuration space toward regions of higher dissipation.
 Thus persistence requires not only retention and eligibility, but also dynamical stability.
 We call this requirement drift stability.</p>
 <h2 id="532-configuration-space-dynamics">5.3.2 Configuration space dynamics<a class="headerlink" href="#532-configuration-space-dynamics" title="Permanent link">&para;</a></h2>
-<p>Let the system be described by configuration coordinates
-$$
-\mathbf{q} = (q_1, q_2, ..., q_n).
-$$
-The evolution of the system in configuration space can be written
-$$
+<p>Let the system be described by configuration coordinates</p>
+<div class="arithmatex">\[
+\mathbf{q} = (q_1, q_2, \dots, q_n).
+\]</div>
+<p>The evolution of the system in configuration space can be written</p>
+<div class="arithmatex">\[
 \frac{d\mathbf{q}}{dt} = \mathbf{F}(\mathbf{q}).
-$$
-Here
-$$
-\mathbf{F}
-$$
-represents the dynamical flow vector.
+\]</div>
+<p>Here <span class="arithmatex">\(\mathbf{F}\)</span> represents the dynamical flow vector.
 A configuration persists only if the flow does not carry it into a region where structural loss dominates.</p>
 <h2 id="533-attractors-and-repellers">5.3.3 Attractors and repellers<a class="headerlink" href="#533-attractors-and-repellers" title="Permanent link">&para;</a></h2>
-<p>In dynamical systems, configurations can behave in three ways:
-behavior
-description
-attractor
-trajectories converge
-repeller
-trajectories diverge
-neutral
-trajectories drift</p>
+<p>In dynamical systems, configurations can behave in three ways:</p>
+<table>
+<thead>
+<tr>
+<th>Behavior</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>attractor</td>
+<td>trajectories converge</td>
+</tr>
+<tr>
+<td>repeller</td>
+<td>trajectories diverge</td>
+</tr>
+<tr>
+<td>neutral</td>
+<td>trajectories drift</td>
+</tr>
+</tbody>
+</table>
 <p>Persistent structures correspond to attractor states.
 Mathematically, an attractor occurs when small perturbations decay.</p>
 <h2 id="534-linear-stability-analysis">5.3.4 Linear stability analysis<a class="headerlink" href="#534-linear-stability-analysis" title="Permanent link">&para;</a></h2>
-<p>Consider a small perturbation
-$$
-\delta\mathbf{q}
-$$
-around a configuration
-$$
-\mathbf{q}<em ij="ij">0.
-$$
-Linearizing the dynamical system gives
-$$
-\frac{d}{dt}(\delta\mathbf{q})
-J(\mathbf{q}_0),\delta\mathbf{q}.
-$$
-Here
-$$
-J
-$$
-is the Jacobian matrix
-$$
-J</em> =
+<p>Consider a small perturbation <span class="arithmatex">\(\delta\mathbf{q}\)</span> around a configuration <span class="arithmatex">\(\mathbf{q}_0\)</span>.
+Linearizing the dynamical system gives</p>
+<div class="arithmatex">\[
+\frac{d}{dt}(\delta\mathbf{q}) = J(\mathbf{q}_0)\,\delta\mathbf{q}.
+\]</div>
+<p>Here <span class="arithmatex">\(J\)</span> is the Jacobian matrix</p>
+<div class="arithmatex">\[
+J_{ij} =
 \frac{\partial F_i}{\partial q_j}.
-$$</p>
+\]</div>
 <h2 id="535-stability-criterion">5.3.5 Stability criterion<a class="headerlink" href="#535-stability-criterion" title="Permanent link">&para;</a></h2>
 <p>The eigenvalues of the Jacobian determine stability.
-Let
-$$
-\lambda_i
-$$
-be the eigenvalues of (J).
-The configuration is stable if
-$$
+Let <span class="arithmatex">\(\lambda_i\)</span> be the eigenvalues of <span class="arithmatex">\(J\)</span>.
+The configuration is stable if</p>
+<div class="arithmatex">\[
 \text{Re}(\lambda_i) &lt; 0
-$$
-for all eigenvalues.
+\]</div>
+<p>for all eigenvalues.
 In this case perturbations decay exponentially.</p>
 <h2 id="536-drift-instability">5.3.6 Drift instability<a class="headerlink" href="#536-drift-instability" title="Permanent link">&para;</a></h2>
-<p>If any eigenvalue satisfies
-$$
+<p>If any eigenvalue satisfies</p>
+<div class="arithmatex">\[
 \text{Re}(\lambda_i) &gt; 0,
-$$
-perturbations grow.
+\]</div>
+<p>perturbations grow.
 The system moves away from the configuration.
 Thus the structure drifts toward another region of configuration space.
-Such configurations cannot persist even if
-$$
+Such configurations cannot persist even if</p>
+<div class="arithmatex">\[
 S&gt;1.
-$$</p>
+\]</div>
 <h2 id="537-drift-stability-factor">5.3.7 Drift stability factor<a class="headerlink" href="#537-drift-stability-factor" title="Permanent link">&para;</a></h2>
-<p>To incorporate this effect into persistence mechanics we define the drift stability factor
-$$
-D.
-$$
+<p>To incorporate this effect into persistence mechanics we define the drift stability factor <span class="arithmatex">\(D\)</span>.
 This quantity measures how strongly the configuration is anchored to a stable attractor.
-One convenient definition is
-$$
+One convenient definition is</p>
+<div class="arithmatex">\[
 D = \exp(-\Lambda)
-$$
-where
-$$
-\Lambda = \max_i (\text{Re}(\lambda_i)).
-$$
-Thus
-condition
-D
-stable attractor
-$$
-(D\approx 1)
-$$
-weakly stable
-(0 &lt; D &lt; 1)
-unstable
-$$
-(D\approx 0)
-$$</p>
+\]</div>
+<p>where</p>
+<div class="arithmatex">\[
+\Lambda = \max_i \bigl(\text{Re}(\lambda_i)\bigr).
+\]</div>
+<p>Thus:</p>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th><span class="arithmatex">\(D\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>stable attractor</td>
+<td><span class="arithmatex">\(D \approx 1\)</span></td>
+</tr>
+<tr>
+<td>weakly stable</td>
+<td><span class="arithmatex">\(0 &lt; D &lt; 1\)</span></td>
+</tr>
+<tr>
+<td>unstable</td>
+<td><span class="arithmatex">\(D \approx 0\)</span></td>
+</tr>
+</tbody>
+</table>
 <h2 id="538-physical-interpretation">5.3.8 Physical interpretation<a class="headerlink" href="#538-physical-interpretation" title="Permanent link">&para;</a></h2>
 <p>Drift stability measures the restoring strength of structural forces.
-Examples include:
-system
-restoring mechanism
-vortex
-circulation conservation
-soliton
-nonlinear dispersion balance
-atomic orbit
-electromagnetic binding
-molecular bond
-potential well</p>
+Examples include:</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Restoring mechanism</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vortex</td>
+<td>circulation conservation</td>
+</tr>
+<tr>
+<td>soliton</td>
+<td>nonlinear dispersion balance</td>
+</tr>
+<tr>
+<td>atomic orbit</td>
+<td>electromagnetic binding</td>
+</tr>
+<tr>
+<td>molecular bond</td>
+<td>potential well</td>
+</tr>
+</tbody>
+</table>
 <p>These mechanisms anchor the configuration in phase space.</p>
 <h2 id="539-drift-stability-and-persistence">5.3.9 Drift stability and persistence<a class="headerlink" href="#539-drift-stability-and-persistence" title="Permanent link">&para;</a></h2>
 <p>Including drift stability modifies the persistence equation.
-The corrected persistence number becomes
-$$
-S_<em> =
-\mathcal{E}(\sigma)
-D
-\frac{R}{\dot R,t_{ref}}.
-$$
-Persistence requires
-$$
-S_</em> \ge 1.
-$$
-Thus three conditions must be satisfied simultaneously:
-eligibility
-drift stability
-retention exceeding loss.</p>
+The corrected persistence number becomes</p>
+<div class="arithmatex">\[
+S_* =
+\mathcal{E}(\sigma)\,
+D\,
+\frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p>Persistence requires</p>
+<div class="arithmatex">\[
+S_* \geq 1.
+\]</div>
+<p>Thus three conditions must be satisfied simultaneously:</p>
+<ul>
+<li>eligibility</li>
+<li>drift stability</li>
+<li>retention exceeding loss</li>
+</ul>
 <h2 id="5310-stability-landscape">5.3.10 Stability landscape<a class="headerlink" href="#5310-stability-landscape" title="Permanent link">&para;</a></h2>
-<p>The system can be visualized as moving through a stability landscape defined by the structural energy
-$$
-E(\mathbf{q}).
-$$
+<p>The system can be visualized as moving through a stability landscape defined by the structural energy <span class="arithmatex">\(E(\mathbf{q})\)</span>.
 Stable configurations occur near local minima of this landscape.
-The restoring force is
-$$
+The restoring force is</p>
+<div class="arithmatex">\[
 \mathbf{F} = -\nabla E.
-$$
-Thus drift stability corresponds to curvature of the energy surface.</p>
+\]</div>
+<p>Thus drift stability corresponds to curvature of the energy surface.</p>
 <h2 id="5311-energy-curvature-criterion">5.3.11 Energy curvature criterion<a class="headerlink" href="#5311-energy-curvature-criterion" title="Permanent link">&para;</a></h2>
-<p>For a configuration at
-$$
-\mathbf{q}<em ij="ij">0
-$$
-the second derivative matrix
-$$
-H</em> =
+<p>For a configuration at <span class="arithmatex">\(\mathbf{q}_0\)</span> the second derivative matrix</p>
+<div class="arithmatex">\[
+H_{ij} =
 \frac{\partial^2 E}{\partial q_i \partial q_j}
-$$
-defines the Hessian matrix.
-Stability requires
-$$
-H
-$$
-to be positive definite.
+\]</div>
+<p>defines the Hessian matrix.
+Stability requires <span class="arithmatex">\(H\)</span> to be positive definite.
 This ensures that the configuration lies in an energy minimum.</p>
 <h2 id="5312-structural-anchoring">5.3.12 Structural anchoring<a class="headerlink" href="#5312-structural-anchoring" title="Permanent link">&para;</a></h2>
 <p>When the Hessian is positive definite, perturbations produce restoring forces.
-Thus
-$$
+Thus</p>
+<div class="arithmatex">\[
 \delta E \approx
-\frac{1}{2}
+\frac{1}{2}\,
 \delta\mathbf{q}^T
-H
+H\,
 \delta\mathbf{q}.
-$$
-Positive curvature prevents the configuration from drifting.
+\]</div>
+<p>Positive curvature prevents the configuration from drifting.
 This anchoring effect allows persistent structures to remain localized.</p>
 <h2 id="5313-summary">5.3.13 Summary<a class="headerlink" href="#5313-summary" title="Permanent link">&para;</a></h2>
 <p>Drift stability ensures that configurations remain localized in configuration space.
 The stability condition is determined by the eigenvalues of the Jacobian or the curvature of the energy landscape.
-This effect is captured by the drift stability factor
-$$
-D.
-$$
-Including this factor modifies the persistence equation to
-$$
+This effect is captured by the drift stability factor <span class="arithmatex">\(D\)</span>.
+Including this factor modifies the persistence equation to</p>
+<div class="arithmatex">\[
 S_* =
-\mathcal{E} D
-\frac{R}{\dot R,t_{ref}}.
-$$</p>
-<p>Six-Fan Lock Logic and Shell Admissibility
-This section derives the geometric locking conditions required for multi-channel structural stability.</p>
+\mathcal{E}\,D\,
+\frac{R}{\dot{R}\,t_{ref}}.
+\]</div>
+<p><em>Transition to Section 5.4:</em> Six-Fan Lock Logic and Shell Admissibility derives the geometric locking conditions required for multi-channel structural stability.</p>
 
 
 
