@@ -11,7 +11,7 @@ Closure produces the first finite spatial boundaries.
 ## 3.4.2 Curvature definition
 
 Curvature measures the deviation of a curve or surface from a straight configuration.
-For a curve parameterized by arc length (s), curvature is defined as
+For a curve parameterized by arc length $s$, curvature is defined as
 $$
 \kappa = \left| \frac{d^2 \mathbf{x}}{ds^2} \right|.
 $$
@@ -30,10 +30,7 @@ Curvature allows circulating structures to fold into closed shapes.
 ## 3.4.3 Surface curvature
 
 In three dimensions, boundaries form surfaces rather than curves.
-The curvature of a surface is characterized by the principal curvatures
-$$
-k_1 , ; k_2.
-$$
+The curvature of a surface is characterized by the principal curvatures $k_1$ and $k_2$.
 From these we define the mean curvature
 $$
 H = \frac{k_1 + k_2}{2}
@@ -49,18 +46,12 @@ These quantities determine the geometric stability of closed surfaces.
 Curved surfaces store structural energy.
 A common curvature energy functional is
 $$
-E_{curv}
+E_{curv} =
 \int
-\left(
 \kappa_c H^2
-\right)
-dA
+\, dA
 $$
-where
-$$
-\kappa_c
-$$
-is a curvature stiffness coefficient.
+where $\kappa_c$ is a curvature stiffness coefficient.
 This energy penalizes sharp curvature and stabilizes smooth boundaries.
 
 ## 3.4.5 Closure condition
@@ -70,19 +61,17 @@ $$
 \oint_S dA < \infty.
 $$
 This means the structure encloses a finite region of the substrate.
-Typical closed geometries include
-spheres
-toroidal structures
-closed vortex rings.
+Typical closed geometries include:
+
+- spheres
+- toroidal structures
+- closed vortex rings
+
 Closure transforms circulating flows into bounded structural objects.
 
 ## 3.4.6 Boundary formation
 
-Define a boundary surface
-$$
-\Sigma
-$$
-separating two regions of the substrate.
+Define a boundary surface $\Sigma$ separating two regions of the substrate.
 Across the boundary the scalar field may change rapidly:
 $$
 |\nabla \Phi|_{\Sigma} \gg 0.
@@ -90,14 +79,9 @@ $$
 This sharp transition forms a structural interface.
 The interface energy can be written
 $$
-E_{surf}
-\sigma \int_{\Sigma} dA
+E_{surf} = \sigma \int_{\Sigma} dA
 $$
-where
-$$
-\sigma
-$$
-is the surface tension.
+where $\sigma$ is the surface tension.
 
 ## 3.4.7 Retained structure with closure
 
@@ -130,13 +114,13 @@ Topological protection therefore increases persistence.
 
 Using the selection number
 $$
-S = \frac{R}{\dot R t_{ref}},
+S = \frac{R}{\dot{R}\,t_{ref}},
 $$
 closure increases the numerator through additional energy storage mechanisms.
 At the same time topological constraints can reduce loss processes.
 Thus closed structures are more likely to satisfy
 $$
-S \ge 1.
+S \geq 1.
 $$
 This marks the appearance of true structural objects.
 
@@ -144,14 +128,12 @@ This marks the appearance of true structural objects.
 
 Once closure occurs, the substrate supports bounded volumes.
 Examples include:
-structure
-description
-spherical domain
-closed scalar configuration
-vortex ring
-toroidal circulation
-soliton bubble
-localized field region
+
+| Structure | Description |
+|-----------|-------------|
+| spherical domain | closed scalar configuration |
+| vortex ring | toroidal circulation |
+| soliton bubble | localized field region |
 
 These objects represent persistent structural units.
 
@@ -168,24 +150,27 @@ At this stage the substrate supports objects that occupy finite regions of space
 ## 3.4.12 Structural significance
 
 Closure marks a fundamental transition in the emergence process.
+
 Before closure:
-structures are extended patterns
-gradients and flows remain open.
+
+- structures are extended patterns
+- gradients and flows remain open
+
 After closure:
-structures possess boundaries
-internal structure can be protected from external collapse.
+
+- structures possess boundaries
+- internal structure can be protected from external collapse
+
 This transition allows persistent objects to form.
 
-Summary
+## 3.4.13 Summary
+
 The fourth stage of dimensional emergence occurs when circulating structures develop curvature closure.
 Closed boundaries store energy through surface curvature
 $$
-E_{curv} = \int \kappa_c H^2 dA.
+E_{curv} = \int \kappa_c H^2 \, dA.
 $$
 Closure produces bounded volumes and introduces topological protection.
 These properties allow the formation of the first durable structural objects.
 
-Why Each Stage Is a New Mode of Resisting Loss
-This section mathematically compares the persistence properties of scalar states, gradients, circulation, and closed structures.
-
-No extra sections beyond the Table of Contents.
+*Transition to Section 3.5:* The next section mathematically compares the persistence properties of scalar states, gradients, circulation, and closed structures.

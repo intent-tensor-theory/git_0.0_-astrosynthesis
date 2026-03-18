@@ -4,9 +4,11 @@
 
 Modern physics typically assumes that geometry is fundamental.
 Examples include:
-• spacetime manifolds in general relativity
-• Hilbert spaces in quantum mechanics
-• phase spaces in classical mechanics.
+
+- spacetime manifolds in general relativity
+- Hilbert spaces in quantum mechanics
+- phase spaces in classical mechanics
+
 In these theories, geometry is assumed before physical structure appears.
 However, the Collapse Tension Substrate (CTS) framework suggests an alternative possibility:
 geometry may itself be an emergent consequence of persistent structural relationships.
@@ -26,10 +28,9 @@ $$
 ds^2 = g_{\mu\nu} dx^\mu dx^\nu.
 $$
 In this formulation geometry exists prior to matter.
-Matter simply curves the geometry through Einstein’s field equations
+Matter simply curves the geometry through Einstein's field equations
 $$
-G_{\mu\nu}
-8\pi G T_{\mu\nu}.
+G_{\mu\nu} = 8\pi G\, T_{\mu\nu}.
 $$
 
 ## 16.1.3 Conceptual difficulty
@@ -93,7 +94,7 @@ Geometric distance may then be defined as the shortest path through the network.
 
 ## 16.1.8 Emergent metric
 
-Given interaction weights (w_{ij}), a metric can be constructed
+Given interaction weights $w_{ij}$, a metric can be constructed
 $$
 d_{ij} = \min_{\text{paths}} \sum w_{kl}.
 $$
@@ -106,8 +107,8 @@ For a network of nodes the effective dimension can be estimated using the scalin
 $$
 N(r) \sim r^{d}.
 $$
-Here (N(r)) is the number of nodes within distance (r).
-The exponent (d) defines the effective dimensionality.
+Here $N(r)$ is the number of nodes within distance $r$.
+The exponent $d$ defines the effective dimensionality.
 
 ## 16.1.10 Curvature emergence
 
@@ -128,15 +129,12 @@ Thus geometry becomes a secondary structure built upon persistence relationships
 ## 16.1.12 Comparison with quantum gravity approaches
 
 Several modern theories explore similar ideas.
-Examples include:
-approach
-idea
-loop quantum gravity
-discrete spacetime networks
-causal sets
-spacetime from relational ordering
-tensor networks
-geometry from entanglement structure
+
+| Approach | Idea |
+| --- | --- |
+| loop quantum gravity | discrete spacetime networks |
+| causal sets | spacetime from relational ordering |
+| tensor networks | geometry from entanglement structure |
 
 These approaches support the possibility that geometry may emerge from deeper structures.
 
@@ -144,10 +142,11 @@ These approaches support the possibility that geometry may emerge from deeper st
 
 The CTS framework proposes that geometry emerges specifically from persistent structural excitations within the substrate.
 In this view:
-the substrate supports excitations
-persistent structures appear
-relational networks form
-geometry emerges from these relations.
+
+- the substrate supports excitations
+- persistent structures appear
+- relational networks form
+- geometry emerges from these relations
 
 ## 16.1.14 Implications
 
@@ -159,7 +158,3 @@ This possibility suggests that the structure of spacetime could reflect the orga
 The traditional view treats geometry as a fundamental property of the universe.
 The CTS framework instead suggests that geometry may emerge from networks of persistent structures interacting within the substrate.
 Distance, dimension, and curvature may therefore arise as relational properties rather than primitive features of reality.
-
-Distance as Stabilized Relational Separation
-This section derives how measurable distance can arise mathematically from interaction laws between persistent structures.
-

@@ -3,10 +3,12 @@
 ## 3.5.1 The role of loss in emergence
 
 The previous sections described a sequence of structural stages in the Collapse Tension Substrate:
-scalar variation
-gradients
-circulation
-curvature closure
+
+- scalar variation
+- gradients
+- circulation
+- curvature closure
+
 These stages represent increasing structural complexity. However the key feature of this progression is not merely geometric complexity.
 Each stage introduces a new mechanism for resisting structural loss.
 To understand this formally we must compare the loss dynamics at each stage.
@@ -23,19 +25,17 @@ R_0 = \Phi^2.
 $$
 The rate of loss becomes
 $$
-\dot R_0
-2\Phi \frac{d\Phi}{dt}.
+\dot{R}_0 = 2\Phi \frac{d\Phi}{dt}.
 $$
 Substituting the scalar equation gives
 $$
-\dot R_0
--2r\Phi^2 - 2s\Phi^4.
+\dot{R}_0 = -2r\Phi^2 - 2s\Phi^4.
 $$
 Thus scalar configurations lose structure through amplitude decay.
 The persistence condition is
 $$
 S_0 =
-\frac{\Phi^2}{| -2r\Phi^2 - 2s\Phi^4 | t_{ref}}.
+\frac{\Phi^2}{| -2r\Phi^2 - 2s\Phi^4 | \, t_{ref}}.
 $$
 Scalar states can persist only if nonlinear stabilization reduces the effective decay rate.
 
@@ -64,10 +64,10 @@ $$
 The persistence number becomes
 $$
 S_1 =
-\frac{R_1}{\Gamma_1 R_1 t_{ref}}
-\frac{1}{Dk^2 t_{ref}}.
+\frac{R_1}{\Gamma_1 R_1 \, t_{ref}}
+= \frac{1}{Dk^2 \, t_{ref}}.
 $$
-Large-scale gradients (small (k)) persist longer.
+Large-scale gradients (small $k$) persist longer.
 
 ## 3.5.4 Circulation loss dynamics
 
@@ -83,7 +83,7 @@ $$
 Viscous dissipation governs the decay of circulation.
 The Navier–Stokes vorticity equation is
 $$
-\partial_t \boldsymbol{\omega}
+\partial_t \boldsymbol{\omega} =
 \nabla \times (\mathbf{v} \times \boldsymbol{\omega})
 +
 \nu \nabla^2 \boldsymbol{\omega}.
@@ -114,10 +114,12 @@ R_3 =
 +
 \alpha_3 \int H^2 dA.
 $$
-Loss mechanisms now include
-surface tension relaxation
-curvature diffusion
-internal dissipation.
+Loss mechanisms now include:
+
+- surface tension relaxation
+- curvature diffusion
+- internal dissipation
+
 However closed boundaries limit the leakage of structural energy.
 For example surface energy evolves according to
 $$
@@ -129,24 +131,13 @@ Closed geometry significantly reduces energy loss.
 ## 3.5.6 Comparison of decay rates
 
 The effective decay rates of each structural stage can be summarized as:
-stage
-decay rate
-scalar
-$$
-$\Gamma_0 \sim r$
-$$
-gradient
-$$
-$\Gamma_1 \sim Dk^2$
-$$
-circulation
-$$
-$\Gamma_2 \sim \nu/L^2$
-$$
-closure
-$$
-$\Gamma_3 \sim \kappa/L^3$
-$$
+
+| Stage | Decay rate |
+|-----------|----------------------|
+| scalar | $\Gamma_0 \sim r$ |
+| gradient | $\Gamma_1 \sim Dk^2$ |
+| circulation | $\Gamma_2 \sim \nu/L^2$ |
+| closure | $\Gamma_3 \sim \kappa/L^3$ |
 
 Each successive stage decreases the effective rate of structural loss.
 Thus higher-order structures persist longer.
@@ -155,11 +146,11 @@ Thus higher-order structures persist longer.
 
 Substituting these decay rates into the selection number
 $$
-S = \frac{R}{\dot R t_{ref}}
+S = \frac{R}{\dot{R} \, t_{ref}}
 $$
 gives
 $$
-S_n = \frac{1}{\Gamma_n t_{ref}}.
+S_n = \frac{1}{\Gamma_n \, t_{ref}}.
 $$
 Thus
 $$
@@ -171,16 +162,13 @@ This establishes a hierarchy of persistence.
 ## 3.5.8 Structural ladder
 
 The sequence of emergence can therefore be interpreted as a ladder of increasing resistance to collapse.
-stage
-resistance mechanism
-scalar
-nonlinear amplitude stabilization
-gradient
-spatial tension
-circulation
-rotational coherence
-closure
-boundary protection
+
+| Stage | Resistance mechanism |
+|-----------|------------------------------|
+| scalar | nonlinear amplitude stabilization |
+| gradient | spatial tension |
+| circulation | rotational coherence |
+| closure | boundary protection |
 
 Each stage adds a new retention channel.
 
@@ -200,12 +188,10 @@ The dimensional sequence derived in this chapter is therefore not merely geometr
 It reflects the progressive introduction of mechanisms that reduce structural loss.
 This explains why more complex structures can survive longer than simple fluctuations.
 
-Summary
+## 3.5.11 Summary
+
 Each stage of dimensional emergence introduces a new retention mechanism that reduces the effective loss rate.
 The resulting hierarchy of persistence explains why scalar fluctuations vanish rapidly while closed structures can endure for long periods.
 This progression forms the structural ladder of the Collapse Tension Substrate.
 
-The Collapse Ladder as a Mechanical Sequence
-This final section of Chapter 3 formalizes the dimensional emergence sequence as a dynamical cascade within the CTS.
-
-This completes Chapter 3.
+*Transition to Section 3.6:* The final section of Chapter 3 formalizes the dimensional emergence sequence as a dynamical cascade within the CTS.

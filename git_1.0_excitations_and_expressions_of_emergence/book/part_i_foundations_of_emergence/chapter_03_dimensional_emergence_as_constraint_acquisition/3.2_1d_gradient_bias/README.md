@@ -27,7 +27,7 @@ $$
 $$
 The magnitude of the gradient is
 $$
-|\nabla \Phi|
+|\nabla \Phi| =
 \sqrt{
 \left(\frac{\partial \Phi}{\partial x}\right)^2
 +
@@ -43,7 +43,7 @@ This quantity measures how rapidly the field varies across space.
 Gradients store structural energy in the field.
 From the CTS energy functional,
 $$
-E[\Phi]
+E[\Phi] =
 \int
 \left(
 a |\nabla \Phi|^2
@@ -58,8 +58,7 @@ d^3x,
 $$
 the gradient contribution is
 $$
-E_{grad}
-a \int |\nabla \Phi|^2 d^3x.
+E_{grad} = a \int |\nabla \Phi|^2 d^3x.
 $$
 This energy represents the structural tension associated with spatial variation.
 
@@ -71,7 +70,7 @@ a\nabla^2\Phi.
 $$
 The Laplacian operator
 $$
-\nabla^2 \Phi
+\nabla^2 \Phi =
 \frac{\partial^2 \Phi}{\partial x^2}
 +
 \frac{\partial^2 \Phi}{\partial y^2}
@@ -81,12 +80,7 @@ $$
 describes how gradients evolve.
 Substituting into the field equation,
 $$
-\partial_t \Phi
-r\Phi
-
-a\nabla^2\Phi
-u\nabla^4\Phi
-s\Phi^3,
+\partial_t \Phi = -r\Phi + a\nabla^2\Phi - u\nabla^4\Phi - s\Phi^3,
 $$
 we see that spatial variation influences the evolution of the field.
 
@@ -98,13 +92,11 @@ $$
 $$
 Express this perturbation as a Fourier mode
 $$
-\delta\Phi
-A e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}.
+\delta\Phi = A e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}.
 $$
 Substituting into the linearized CTS equation gives the dispersion relation
 $$
-\omega(k)
-r + a k^2 + u k^4.
+\omega(k) = r + a k^2 + u k^4.
 $$
 Here
 $$
@@ -124,7 +116,7 @@ Thus gradients become amplified.
 The direction of the gradient defines the first spatial axis of organization in the substrate.
 This marks the transition from scalar variation to directional structure.
 
-## 3.2.7 One–dimensional bias
+## 3.2.7 One-dimensional bias
 
 When a dominant gradient forms along a particular direction
 $$
@@ -132,8 +124,7 @@ $$
 $$
 the field becomes approximately
 $$
-\Phi(\mathbf{x})
-\Phi(n)
+\Phi(\mathbf{x}) \approx \Phi(n)
 $$
 where
 $$
@@ -174,20 +165,19 @@ Larger structures have longer lifetimes.
 
 Using the persistence condition
 $$
-S =
-\frac{R}{\dot R, t_{ref}},
+S = \frac{R}{\dot{R}\,t_{ref}},
 $$
 and the gradient-based retention measure,
 $$
 R =
-\alpha_0 ||\Phi||^2
+\alpha_0 \|\Phi\|^2
 +
-\alpha_1 ||\nabla\Phi||^2,
+\alpha_1 \|\nabla\Phi\|^2,
 $$
 we see that gradient energy increases the numerator of the selection number.
 Thus sufficiently strong gradients may allow
 $$
-S \ge 1.
+S \geq 1.
 $$
 In this case the directional structure persists.
 
@@ -195,9 +185,11 @@ In this case the directional structure persists.
 
 The gradient regime introduces the first form of spatial organization in the CTS.
 Key features include:
-directional bias
-spatial differentiation
-storage of structural energy in gradients.
+
+- directional bias
+- spatial differentiation
+- storage of structural energy in gradients
+
 These properties allow the substrate to support more complex dynamical behavior.
 
 ## 3.2.12 Transition to circulation
@@ -211,7 +203,8 @@ $$
 $$
 This marks the transition from the 1D gradient regime to the 2D circulation regime.
 
-Summary
+## 3.2.13 Summary
+
 The second stage of dimensional emergence occurs when scalar fluctuations develop spatial gradients.
 These gradients introduce directional structure and store energy through
 $$
@@ -219,7 +212,4 @@ E_{grad} = a\int |\nabla\Phi|^2 d^3x.
 $$
 If gradient energy is sufficiently large relative to loss processes, the configuration satisfies the persistence condition and becomes a stable directional structure.
 
-2D: Circulation and Recursive Memory
-This section derives how interacting gradients produce rotational structures and persistent circulation in the CTS.
-
-No extra sections beyond the Table of Contents.
+*Transition to Section 3.3:* The next section derives how interacting gradients produce rotational structures and persistent circulation in the CTS.

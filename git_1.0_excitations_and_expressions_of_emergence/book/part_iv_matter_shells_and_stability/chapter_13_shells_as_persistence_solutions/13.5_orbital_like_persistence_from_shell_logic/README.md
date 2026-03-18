@@ -3,9 +3,10 @@
 ## 13.5.1 Motivation
 
 Sections 13.1–13.4 established that shell structures are highly stable because of:
-multi-fan locking
-curvature memory
-nested shell reinforcement
+- multi-fan locking
+- curvature memory
+- nested shell reinforcement
+
 However shells also generate another important structural phenomenon.
 They naturally produce stable excitation pathways around the shell surface or around nested shell layers.
 These pathways resemble orbital persistence states.
@@ -13,10 +14,7 @@ The goal of this section is to derive mathematically why shell architectures sup
 
 ## 13.5.2 Bound excitation states
 
-Consider a persistent shell structure with radius
-$$
-R.
-$$
+Consider a persistent shell structure with radius $R$.
 An excitation interacting with the shell experiences a restoring potential due to curvature and structural locking.
 We model the radial potential as
 $$
@@ -32,21 +30,21 @@ m\frac{d^2r}{dt^2} = -\frac{dV}{dr}.
 $$
 Substituting the shell potential yields
 $$
-m\frac{d^2r}{dt^2}
+m\frac{d^2r}{dt^2} =
 -\frac{2\alpha}{(r-R)^3}.
 $$
 The restoring force increases rapidly as the excitation approaches the shell surface.
 
 ## 13.5.4 Angular motion
 
-If the excitation possesses tangential velocity (v_ $\theta), angular momentum becomes$
+If the excitation possesses tangential velocity $v_\theta$, angular momentum becomes
 $$
 L = m r^2 \dot{\theta}.
 $$
 Conservation of angular momentum allows the excitation to circulate around the shell.
 Thus the total effective potential becomes
 $$
-V_{eff}(r)
+V_{eff}(r) =
 V(r) + \frac{L^2}{2mr^2}.
 $$
 
@@ -58,7 +56,7 @@ $$
 $$
 This gives the equilibrium radius
 $$
-\frac{2\alpha}{(r-R)^3}
+\frac{2\alpha}{(r-R)^3} =
 \frac{L^2}{mr^3}.
 $$
 Solutions to this equation determine allowed orbital trajectories around the shell.
@@ -87,10 +85,7 @@ Surface modes satisfy the Laplace–Beltrami equation
 $$
 \nabla_S^2 \psi + \lambda \psi = 0.
 $$
-For a spherical shell the eigenfunctions are spherical harmonics
-$$
-Y_\ell^m(\theta,\phi).
-$$
+For a spherical shell the eigenfunctions are spherical harmonics $Y_\ell^m(\theta,\phi)$.
 Corresponding eigenvalues are
 $$
 \lambda_\ell = \frac{\ell(\ell+1)}{R^2}.
@@ -100,10 +95,7 @@ These modes represent stable oscillations along the shell surface.
 ## 13.5.8 Radial standing waves
 
 Nested shells allow standing waves between layers.
-Let shells exist at radii
-$$
-R_1 < R_2.
-$$
+Let shells exist at radii $R_1 < R_2$.
 Radial modes satisfy
 $$
 k_n = \frac{n\pi}{R_2-R_1}.
@@ -127,14 +119,12 @@ When this condition holds, orbital excitations remain bound to the shell.
 ## 13.5.10 Structural interpretation
 
 Shell architectures therefore support three types of excitation states:
-mode
-description
-surface modes
-waves along shell surface
-orbital modes
-circulation around shell
-radial modes
-standing waves between shells
+
+| Mode | Description |
+|---|---|
+| surface modes | waves along shell surface |
+| orbital modes | circulation around shell |
+| radial modes | standing waves between shells |
 
 Together these modes create complex internal dynamics.
 
@@ -177,8 +167,3 @@ Shell geometries create natural confinement potentials that support stable orbit
 These modes arise from angular momentum conservation, surface curvature, and boundary conditions imposed by shell geometry.
 Nested shells further support radial standing waves.
 Thus shell architectures generate a rich spectrum of persistent excitation states within the Collapse Tension Substrate.
-
-Shells as Survival Architectures
-This final section of Chapter 13 synthesizes the mathematical results and explains why shell geometries represent one of the most powerful persistence solutions in the CTS framework.
-
-This completes Chapter 13.

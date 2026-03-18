@@ -9,101 +9,134 @@ Formally, the formation energy determines how easily a structure can appear in t
 ## 9.1.2 Definition
 
 Let the CTS vacuum configuration be
-Φ=Φ0.\Phi = \Phi_0.Φ=Φ0​.
+
+$$
+\Phi = \Phi_0.
+$$
+
 Let an excitation be represented by a field configuration
-Φ=Φ0+δΦ.\Phi = \Phi_0 + \delta\Phi.Φ=Φ0​+δΦ.
+
+$$
+\Phi = \Phi_0 + \delta\Phi.
+$$
+
 The formation energy is defined as the difference between the energy of the excitation and the vacuum energy:
-Eform=E[Φ]−E[Φ0]\boxed{ E_{form} = E[\Phi] - E[\Phi_0] }Eform​=E[Φ]−E[Φ0​]​
-where E[Φ]E[ $\Phi]E[$
+
+$$
+\boxed{ E_{form} = E[\Phi] - E[\Phi_0] }
+$$
+
+where $E[\Phi]$ is the total energy of the field configuration $\Phi$.
 
 ## 9.1.3 CTS energy functional
 
 Recall the CTS functional
+
 $$
-E[,A]=d3x[a(iqA)2+bA2+u(2)2+r2+s4].E[\Phi,\mathbf A] = \int d^3x \left[ a|$\nabla - iq\mathbf A$\Phi|^2 + b|\nabla\times\mathbf A|^2 + u$\nabla^2\Phi$^2 + r|\Phi|^2 + s|\Phi|^4 \right].E[
+E[\Phi,\mathbf{A}] = \int d^3x \left[ a|(\nabla - iq\mathbf{A})\Phi|^2 + b|\nabla\times\mathbf{A}|^2 + u|\nabla^2\Phi|^2 + r|\Phi|^2 + s|\Phi|^4 \right].
 $$
+
 To compute formation energy we substitute the excitation configuration into this expression.
 
 ## 9.1.4 Energy density decomposition
 
 The energy density can be written as
-E=Egrad+Ecurv+Epot+Egauge.\mathcal{E} = \mathcal{E}_{grad} + \mathcal{E}_{curv} + \mathcal{E}_{pot} + \mathcal{E}_{gauge}.E=Egrad​+Ecurv​+Epot​+Egauge​.
+
+$$
+\mathcal{E} = \mathcal{E}_{grad} + \mathcal{E}_{curv} + \mathcal{E}_{pot} + \mathcal{E}_{gauge}.
+$$
 
 ## 9.1.5 Formation energy of wave excitations
 
 For small-amplitude wave excitations
+
 $$
-=Aei(kxt),\Phi = A e^{i$\mathbf{k}\cdot x-\omega t$},
+\Phi = A e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)},
 $$
-the dominant contribution is gradient energy.
-Thus
-Here VVV is the spatial volume of the wave.
-Because AAA can be arbitrarily small, wave formation energy can approach zero.
+
+the dominant contribution is gradient energy. Thus
+
+$$
+E_{form}^{wave} \sim (ak^2 + uk^4 + r) A^2 V.
+$$
+
+Here $V$ is the spatial volume of the wave.
+Because $A$ can be arbitrarily small, wave formation energy can approach zero.
 This explains why wave modes dominate the background excitation population.
 
 ## 9.1.6 Formation energy of vortex excitations
 
 For vortex structures the dominant energy contribution arises from phase gradients.
 Using the vortex ansatz
+
 $$
-(r,)=f(r)ein,\Phi(r,\theta)=f(r)e^{in\theta},
+\Phi(r,\theta) = f(r)e^{in\theta},
 $$
+
 the gradient energy density becomes
-Egrad≈a[(dfdr)2+n2r2f2].\mathcal{E}_{grad} \approx a\left[ \left$\frac{df}{dr}\right$^2 + \frac{n^2}{r^2}f^2 \right].Egrad​≈a[(drdf​)2+r2n2​f2].
+
+$$
+\mathcal{E}_{grad} \approx a\left[ \left(\frac{df}{dr}\right)^2 + \frac{n^2}{r^2}f^2 \right].
+$$
+
 Integrating yields the approximate vortex formation energy
-Eformvortex≈πan2Φ02ln⁡ ⁣(Rξ).E_{form}^{vortex} \approx \pi a n^2 \Phi_0^2 \ln\!\left$\frac{R}{\xi}\right$.Eformvortex​≈πan2Φ02​ln(ξR​).
+
+$$
+E_{form}^{vortex} \approx \pi a n^2 \Phi_0^2 \ln\!\left(\frac{R}{\xi}\right).
+$$
+
 Thus vortex formation energy grows logarithmically with system size.
 
 ## 9.1.7 Formation energy of vortex rings
 
-A vortex filament bent into a ring of radius RRR has energy
-Eformring≈ρΓ2Rln⁡ ⁣(8Rξ).E_{form}^{ring} \approx \rho\Gamma^2 R \ln\!\left$\frac{8R}{\xi}\right$.Eformring​≈ρΓ2Rln(ξ8R​).
-$$
-\Gamma
-$$
+A vortex filament bent into a ring of radius $R$ has energy
 
 $$
-\rho
+E_{form}^{ring} \approx \rho\Gamma^2 R \ln\!\left(\frac{8R}{\xi}\right).
 $$
 
+Here $\Gamma$ is the circulation and $\rho$ is the effective density.
 The energy scales approximately linearly with ring radius.
 
 ## 9.1.8 Formation energy of shell structures
 
 For shell excitations the dominant energy contribution comes from surface tension.
-For a spherical shell of radius RRR
-Eformshell=4πσR2.E_{form}^{shell} = 4\pi\sigma R^2.Eformshell​=4πσR2.
+For a spherical shell of radius $R$
+
+$$
+E_{form}^{shell} = 4\pi\sigma R^2.
+$$
+
 Additional curvature energy contributes
-Ecurv=4πκc.E_{curv} = 4\pi\kappa_c.Ecurv​=4πκc​.
+
+$$
+E_{curv} = 4\pi\kappa_c.
+$$
+
 This quadratic scaling explains why shell structures require significantly larger formation energy.
 
 ## 9.1.9 Formation energy scaling law
 
 Different excitation classes therefore exhibit distinct scaling behavior.
-excitation
-formation energy scaling
-$$
-EA2E\sim A^2E
-$$
-$$
-Eln(R/)E\sim \ln(R/\xi)E
-$$
-$$
-ERln(R/)E\sim R\ln(R/\xi)E
-$$
-$$
-ER2E\sim R^2E
-$$
-$$
-ENRE\sim N RE
-$$
+
+| Excitation | Formation energy scaling |
+|---|---|
+| Wave | $E \sim A^2$ |
+| Vortex | $E \sim \ln(R/\xi)$ |
+| Vortex ring | $E \sim R\ln(R/\xi)$ |
+| Shell | $E \sim R^2$ |
+| Braid | $E \sim NR$ |
 
 These scaling laws determine how difficult it is to form each structure.
 
 ## 9.1.10 Formation energy and abundance
 
 From the abundance relation
-Ai∝e−Eform/Teff,A_i \propto e^{-E_{form}/T_{eff}},Ai​∝e−Eform​/Teff​,
+
+$$
+A_i \propto e^{-E_{form}/T_{eff}},
+$$
+
 structures with small formation energy appear frequently.
 Thus the substrate naturally contains many low-energy excitations.
 High-energy structures appear rarely.
@@ -117,18 +150,16 @@ The interplay between formation and locking energy determines the position of ea
 
 ## 9.1.12 Ledger entry parameter
 
-For each excitation type we record
-EformE_{form}Eform​
-as the first quantity in the ledger entry
-Li=(type,Eform,Elock,Etotal,… ).\mathcal{L}_i = $\text{type}, E_{form}, E_{lock}, E_{total}, \dots$.Li​=(type,Eform​,Elock​,Etotal​,…).
-This parameter controls the excitation’s abundance in the substrate.
+For each excitation type we record $E_{form}$ as the first quantity in the ledger entry
+
+$$
+\mathcal{L}_i = (\text{type},\, E_{form},\, E_{lock},\, E_{total},\, \dots).
+$$
+
+This parameter controls the excitation's abundance in the substrate.
 
 ## 9.1.13 Summary
 
 Formation energy is the energetic cost required to create an excitation from the CTS vacuum.
 It is computed directly from the CTS energy functional.
 Different excitation classes exhibit characteristic formation-energy scaling laws, which determine how frequently they appear within the substrate.
-
- Lock Energy
-This section derives the stabilizing energy contributions that allow excitations to resist structural decay.
-

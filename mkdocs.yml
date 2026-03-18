@@ -11,6 +11,7 @@ docs_dir: git_1.0_excitations_and_expressions_of_emergence/book
 
 theme:
   name: material
+  custom_dir: docs_overrides
   palette:
     - scheme: default
       primary: deep purple
@@ -72,6 +73,20 @@ markdown_extensions:
 plugins:
   - search:
       lang: en
+  - print-site:
+      add_to_navigation: true
+      print_page_title: "Print / Download"
+      add_print_site_banner: false
+      add_table_of_contents: true
+      toc_title: "Table of Contents"
+      toc_depth: 3
+      add_full_urls: false
+      enumerate_headings: false
+      enumerate_figures: false
+      add_cover_page: false
+      path_to_pdf: "assets/astrosynthesis.pdf"
+      include_css: true
+      enabled: true
 
 nav:
   - Home: index.md

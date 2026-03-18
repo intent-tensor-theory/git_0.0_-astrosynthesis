@@ -3,9 +3,10 @@
 ## 12.4.1 Motivation
 
 Section 12.3 established the conditions required for objecthood:
-persistence
-energy localization
-interaction boundary
+- persistence
+- energy localization
+- interaction boundary
+
 However, not every object is durable.
 An object may exist temporarily but still be easily destroyed by environmental perturbations.
 Durability therefore requires an additional constraint: resistance to repeated perturbation events.
@@ -13,15 +14,12 @@ This section derives the mathematical condition under which an object becomes du
 
 ## 12.4.2 Perturbation environment
 
-Let
-$$
-E_{pert}
-$$
-represent the characteristic perturbation energy delivered by the surrounding environment.
-Examples include
-collision energy
-fluctuation energy
-radiation energy.
+Let $E_{pert}$ represent the characteristic perturbation energy delivered by the surrounding environment.
+Examples include:
+- collision energy
+- fluctuation energy
+- radiation energy.
+
 For an object to survive repeated interactions, its structural locking energy must exceed the perturbation energy.
 
 ## 12.4.3 Durability inequality
@@ -36,29 +34,25 @@ Thus durability requires locking energy dominance.
 ## 12.4.4 Probabilistic survival
 
 In realistic environments perturbations occur repeatedly.
-Let
-$$
-P_{surv}
-$$
-represent the probability that an object survives a single perturbation event.
+Let $P_{surv}$ represent the probability that an object survives a single perturbation event.
 A simple statistical model gives
 $$
-P_{surv}
-\exp!\left(-\frac{E_{pert}}{E_{lock}}\right).
+P_{surv} =
+\exp\!\left(-\frac{E_{pert}}{E_{lock}}\right).
 $$
 Thus large locking energy dramatically increases survival probability.
 
 ## 12.4.5 Repeated interaction survival
 
-If an object experiences (N) perturbation events, the survival probability becomes
+If an object experiences $N$ perturbation events, the survival probability becomes
 $$
 P_{total} =
 (P_{surv})^N.
 $$
 Thus
 $$
-P_{total}
-\exp!\left(-\frac{N E_{pert}}{E_{lock}}\right).
+P_{total} =
+\exp\!\left(-\frac{N E_{pert}}{E_{lock}}\right).
 $$
 Durability requires
 $$
@@ -70,19 +64,15 @@ $$
 Shell and composite structures possess large locking energies because many stabilization channels contribute simultaneously.
 Let
 $$
-E_{lock}
-\sum_{i=1}^{N_f} E_{bond,i}.
+E_{lock} = \sum_{i=1}^{N_f} E_{bond,i}.
 $$
 Thus locking energy grows with the number of structural bonds.
-Large (N_f) therefore dramatically increases durability.
+Large $N_f$ therefore dramatically increases durability.
 
 ## 12.4.7 Structural robustness
 
 Durable structures also resist internal deformation modes.
-Let the deformation energy be
-$$
-E_{def}.
-$$
+Let $E_{def}$ be the deformation energy.
 Robust objects satisfy
 $$
 E_{def} \gg E_{thermal}.
@@ -122,42 +112,29 @@ These coordinates correspond to the shell survival and composite survival region
 ## 12.4.10 Durability timescale
 
 Durability can also be expressed as a survival timescale.
-Let
-$$
-\tau_{life}
-$$
-represent the lifetime of the object.
+Let $\tau_{life}$ represent the lifetime of the object.
 Using the perturbation model we obtain
 $$
 \tau_{life}
 \sim
 \tau_{int}
-\exp!\left(\frac{E_{lock}}{E_{pert}}\right)
+\exp\!\left(\frac{E_{lock}}{E_{pert}}\right)
 $$
-where
-$$
-\tau_{int}
-$$
-is the typical interaction interval.
+where $\tau_{int}$ is the typical interaction interval.
 Thus lifetime grows exponentially with locking energy.
 
 ## 12.4.11 Structural hierarchy of durability
 
-Applying the durability criterion to the CTS excitation hierarchy gives
-excitation
-durability
-waves
-none
-precursors
-none
-vortex rings
-weak
-chiral structures
-moderate
-shell structures
-strong
-composite structures
-extreme
+Applying the durability criterion to the CTS excitation hierarchy gives:
+
+| Excitation | Durability |
+|---|---|
+| waves | none |
+| precursors | none |
+| vortex rings | weak |
+| chiral structures | moderate |
+| shell structures | strong |
+| composite structures | extreme |
 
 Thus durable objects emerge primarily from shell-like architectures.
 
@@ -178,10 +155,10 @@ These conditions allow the object to survive enormous numbers of interactions.
 
 Durable objects possess structural memory.
 Because perturbations do not destroy the locking architecture, the object preserves its internal structure over long times.
-This property allows durable structures to support
-internal excitations
-repeated interactions
-structural evolution.
+This property allows durable structures to support:
+- internal excitations
+- repeated interactions
+- structural evolution.
 
 ## 12.4.14 Summary
 
@@ -196,7 +173,3 @@ S_* \gg 1,
 $$
 this condition produces objects capable of surviving repeated interactions.
 Within the CTS survival map this regime corresponds primarily to shell and composite structures.
-
-Why Some Expressions Remain Background Modes
-This section explains mathematically why most CTS excitations remain propagation modes rather than forming durable structures.
-

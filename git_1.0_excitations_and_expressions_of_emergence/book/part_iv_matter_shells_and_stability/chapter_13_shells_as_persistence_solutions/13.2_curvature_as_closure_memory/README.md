@@ -10,15 +10,11 @@ Curvature encodes geometric information that allows the structure to recover its
 
 ## 13.2.2 Surface geometry
 
-A shell is described by a surface embedding
-$$
-\mathbf{r}(u,v)
-$$
-where (u,v) parameterize the surface.
+A shell is described by a surface embedding $\mathbf{r}(u,v)$ where $(u,v)$ parameterize the surface.
 The local geometry is determined by the first fundamental form
 $$
 ds^2 =
-E,du^2 + 2F,du,dv + G,dv^2.
+E\,du^2 + 2F\,du\,dv + G\,dv^2.
 $$
 Here
 $$
@@ -35,25 +31,22 @@ These coefficients describe intrinsic distances on the surface.
 Extrinsic curvature is described by the second fundamental form
 $$
 II =
-L,du^2 + 2M,du,dv + N,dv^2.
+L\,du^2 + 2M\,du\,dv + N\,dv^2
 $$
 where
 $$
-L = \mathbf{r}{uu}\cdot \mathbf{n},
+L = \mathbf{r}_{uu}\cdot \mathbf{n},
 \quad
-M = \mathbf{r}{uv}\cdot \mathbf{n},
+M = \mathbf{r}_{uv}\cdot \mathbf{n},
 \quad
 N = \mathbf{r}_{vv}\cdot \mathbf{n}.
 $$
-Here ( $\mathbf{n}) is the surface normal.$
+Here $\mathbf{n}$ is the surface normal.
 These coefficients encode how the surface bends in three-dimensional space.
 
 ## 13.2.4 Principal curvatures
 
-From the curvature tensor we obtain the principal curvatures
-$$
-k_1, \quad k_2.
-$$
+From the curvature tensor we obtain the principal curvatures $k_1,\, k_2$.
 These are the eigenvalues of the curvature matrix.
 Two key scalar quantities arise:
 Mean curvature
@@ -70,23 +63,16 @@ These quantities determine the geometric character of the shell.
 
 One of the most important results of differential geometry is the Gauss–Bonnet theorem:
 $$
-\int_S K,dA = 2\pi \chi.
+\int_S K\,dA = 2\pi \chi.
 $$
-Here
-$$
-$\chi$ is the Euler characteristic of the surface.
-$$
+Here $\chi$ is the Euler characteristic of the surface.
 This theorem shows that total curvature is tied to topology.
 Thus curvature contains global structural information.
 
 ## 13.2.6 Curvature memory
 
 When a shell is deformed, curvature changes.
-Let
-$$
-\delta H, \quad \delta K
-$$
-represent curvature perturbations.
+Let $\delta H,\, \delta K$ represent curvature perturbations.
 Because curvature contributes to the shell's energy, deviations increase the total energy.
 Thus curvature acts as a memory of the equilibrium geometry.
 
@@ -94,7 +80,7 @@ Thus curvature acts as a memory of the equilibrium geometry.
 
 The curvature energy of a shell is given by
 $$
-E_{curv}
+E_{curv} =
 \int
 \left[
 \frac{\kappa}{2}(2H)^2
@@ -110,25 +96,21 @@ This energy penalizes deviations from the preferred curvature configuration.
 A curvature perturbation generates restoring forces.
 Taking the variation of the curvature energy yields
 $$
-\delta E_{curv}
+\delta E_{curv} =
 \int
 \left(
 \kappa \Delta H
-
+-
 2\kappa H(H^2-K)
-\right)\delta h, dA.
+\right)\delta h\, dA.
 $$
-Here ( $\delta h) is the normal displacement.$
+Here $\delta h$ is the normal displacement.
 These forces push the surface back toward its equilibrium shape.
 
 ## 13.2.9 Curvature stiffness
 
-The coefficient
-$$
-\kappa
-$$
-is known as the bending rigidity.
-Large values of ( $\kappa) make the shell difficult to bend.$
+The coefficient $\kappa$ is known as the bending rigidity.
+Large values of $\kappa$ make the shell difficult to bend.
 Thus curvature stiffness enhances persistence.
 
 ## 13.2.10 Curvature and locking
@@ -136,14 +118,15 @@ Thus curvature stiffness enhances persistence.
 Curvature stabilization combines with multi-fan locking.
 Let
 $$
-E_{lock}
+E_{lock} =
 E_{fan}
 +
 E_{curv}.
 $$
 Thus shell stability arises from two sources:
-structural locking
-curvature memory.
+- structural locking
+- curvature memory.
+
 Together these mechanisms produce extremely large locking energy.
 
 ## 13.2.11 Curvature as structural memory
@@ -166,7 +149,7 @@ These modes satisfy
 $$
 \Delta^2 h = \lambda h
 $$
-where (h) is the displacement field.
+where $h$ is the displacement field.
 These oscillations redistribute energy without destroying the shell.
 
 ## 13.2.14 Phase-chart interpretation
@@ -186,7 +169,3 @@ Thus shells move deeper into the persistent region of the CTS phase chart.
 Curvature provides a geometric memory that preserves shell structure.
 Deformations increase curvature energy, generating restoring forces that return the shell to its equilibrium shape.
 This curvature memory, combined with multi-fan locking, explains why shell architectures are among the most stable persistence solutions in the Collapse Tension Substrate.
-
-Minimal Shell Structures
-This section derives the simplest possible shell configurations capable of satisfying the CTS persistence conditions.
-

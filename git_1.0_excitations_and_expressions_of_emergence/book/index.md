@@ -10,8 +10,18 @@ title: Astrosynthesis — Excitations and Expressions of Emergence
 
 ---
 
+[**Start reading → Preface**](00_preface/README.md){ .md-button .md-button--primary }
+[**Print / Download as PDF**](print_page/){ .md-button }
+
+---
+
 This is the full text of **Astrosynthesis**, organized as a navigable book.
 Each Part → Chapter → Section is its own folder; use the sidebar to navigate.
+
+**To download the full book as a PDF:** click *Print / Download as PDF* above,
+then use **File → Print → Save as PDF** in your browser.
+
+---
 
 ## Table of Contents
 

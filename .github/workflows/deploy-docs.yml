@@ -33,7 +33,8 @@ jobs:
             mkdocs-material \
             mkdocs-material[imaging] \
             pymdown-extensions \
-            mkdocs>=1.5
+            mkdocs>=1.5 \
+            mkdocs-print-site-plugin
 
       - name: Build and deploy MkDocs site
         run: |

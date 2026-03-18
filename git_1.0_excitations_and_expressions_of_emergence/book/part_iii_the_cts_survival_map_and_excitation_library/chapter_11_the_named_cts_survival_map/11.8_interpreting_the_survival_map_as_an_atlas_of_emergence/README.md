@@ -4,12 +4,13 @@
 
 Sections 11.1–11.7 derived the structural regions and transition rules of the CTS survival map.
 The six major regions identified were:
-Background propagation
-Localized precursors
-Closure survival
-Chirality survival
-Shell survival
-Composite survival
+- Background propagation
+- Localized precursors
+- Closure survival
+- Chirality survival
+- Shell survival
+- Composite survival
+
 Each region corresponds to a different stabilization mechanism within the Collapse Tension Substrate.
 The purpose of this final section is to interpret the survival map as a complete atlas of structural emergence.
 
@@ -27,11 +28,9 @@ x = \Lambda_{lock}
 $$
 $$
 y =
-\mathcal{E}{shell}
-\mathcal{E}
-D
-T{obj}
-\frac{R}{\dot{R} t_{ref}}.
+\frac{\mathcal{E}_{shell}}{\mathcal{E}_D}\,
+T_{obj}
+\frac{R}{\dot{R}\,t_{ref}}.
 $$
 Thus structural identity becomes a geometric property.
 
@@ -59,23 +58,21 @@ Thus objecthood emerges when excitations cross the survival boundary.
 Each survival region acts as a basin of stability within phase space.
 An excitation that enters one of these basins tends to remain there unless strongly perturbed.
 The major basins correspond to
-basin
-stabilization mechanism
-closure basin
-circulation conservation
-chirality basin
-helicity conservation
-shell basin
-curvature locking
-composite basin
-topological linking
+
+| Basin | Stabilization mechanism |
+|---|---|
+| closure basin | circulation conservation |
+| chirality basin | helicity conservation |
+| shell basin | curvature locking |
+| composite basin | topological linking |
 
 These basins define the structural hierarchy of the CTS substrate.
 
 ## 11.8.5 Phase-space attractors
 
 The survival map contains two major attractor domains.
-Propagation attractor
+
+**Propagation attractor**
 Located near
 $$
 x \rightarrow 0, \quad y \rightarrow 0.
@@ -83,7 +80,7 @@ $$
 This region contains extremely low-energy wave excitations.
 Because formation energy is minimal, the propagation attractor dominates the background activity of the substrate.
 
-Persistence attractor
+**Persistence attractor**
 Located in the upper-right region of the phase chart.
 Here
 $$
@@ -117,27 +114,15 @@ Thus emergence becomes a progressive acquisition of persistence mechanisms.
 ## 11.8.7 Structural coordinates of excitations
 
 Using approximate values derived in earlier chapters, the CTS excitation hierarchy can be mapped onto the phase chart:
-excitation
-(x)
-(y)
-waves
-≈0
-≪1
-precursors
-~0.3–1
-<1
-vortex rings
-~1–3
-≈1
-chiral structures
-~5–10
-≫1
-shells
-~10–50
-≫10
-composites
-≫50
-≫100
+
+| Excitation | $x$ | $y$ |
+|---|---|---|
+| waves | $\approx 0$ | $\ll 1$ |
+| precursors | $0.3$–$1$ | $< 1$ |
+| vortex rings | $1$–$3$ | $\approx 1$ |
+| chiral structures | $5$–$10$ | $\gg 1$ |
+| shells | $10$–$50$ | $\gg 10$ |
+| composites | $\gg 50$ | $\gg 100$ |
 
 This table forms the first approximation of a CTS structural atlas.
 
@@ -164,10 +149,10 @@ $$
 $$
 y = S_*.
 $$
-Plotting ((x,y)) immediately reveals
-whether the structure is ephemeral or persistent
-which survival region it belongs to
-how it may evolve under perturbations.
+Plotting $(x,y)$ immediately reveals
+- whether the structure is ephemeral or persistent
+- which survival region it belongs to
+- how it may evolve under perturbations.
 
 ## 11.8.10 Emergence as selection
 
@@ -218,10 +203,3 @@ $$
 defines the transition between transient excitations and persistent structures.
 Above this threshold, excitations occupy stable regions corresponding to closure, chirality, shell, and composite survival.
 This atlas therefore provides a unified geometric framework for understanding structural emergence within the Collapse Tension Substrate.
-
-Chapter 11 Complete
-The full CTS Survival Map has now been derived and interpreted.
-
-Why Not Every Excitation Becomes Matter
-Chapter 12 begins the transition from excitation theory to the conditions required for durable matter-like structures.
-

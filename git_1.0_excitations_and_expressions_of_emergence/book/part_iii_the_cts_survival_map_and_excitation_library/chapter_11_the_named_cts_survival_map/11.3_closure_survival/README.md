@@ -47,14 +47,7 @@ The energy of an open filament of length (L) scales as
 $$
 E_{open} \sim \rho \kappa^2 L \ln\left(\frac{L}{a}\right)
 $$
-where
-$$
-$\rho$ = effective density
-$$
-$$
-$\kappa$ = circulation strength
-$$
-(a) = core radius.
+where $\rho$ is the effective density, $\kappa$ is the circulation strength, and $a$ is the core radius.
 Open filaments can shorten and collapse, leading to decay.
 
 ## 11.3.5 Energy of vortex rings
@@ -86,8 +79,7 @@ Because circulation cannot change without breaking the vortex structure, the rin
 The persistence number becomes
 $$
 S_* =
-\mathcal{E}{shell}\mathcal{E}D T{obj}
-\frac{R}{\dot{R} t_{ref}}.
+\mathcal{E}_{shell}\,\mathcal{E}\,D\,T_{obj}\,\frac{R}{\dot{R}\,t_{ref}}.
 $$
 For closure structures:
 $$
@@ -139,8 +131,8 @@ $$
 N_i \propto S_* e^{-E_{total}/T_{eff}},
 $$
 closure structures have
-moderate formation energy
-moderate persistence.
+- moderate formation energy
+- moderate persistence.
 Thus they are less common than waves but far more durable.
 
 ## 11.3.12 Role in emergence
@@ -148,14 +140,12 @@ Thus they are less common than waves but far more durable.
 Closure structures are critically important because they represent the first stable objects produced by the CTS substrate.
 These structures provide seeds for more complex excitations.
 Possible evolutionary paths include
-interaction
-result
-ring twisting
-chiral structures
-ring stacking
-shell formation
-ring linking
-braid structures
+
+| Interaction | Result |
+|---|---|
+| ring twisting | chiral structures |
+| ring stacking | shell formation |
+| ring linking | braid structures |
 
 Thus closure survival marks the transition from transient excitations to structural objecthood.
 
@@ -184,7 +174,3 @@ $$
 xy > 1.
 $$
 Closure structures therefore represent the first durable objects in the CTS emergence hierarchy.
-
-Chirality Survival
-This section examines how twisting and helicity conservation create a new class of highly persistent structures beyond simple closure.
-

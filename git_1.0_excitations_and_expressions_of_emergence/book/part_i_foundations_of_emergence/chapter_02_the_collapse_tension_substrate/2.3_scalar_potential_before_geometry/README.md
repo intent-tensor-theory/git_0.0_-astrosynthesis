@@ -22,12 +22,7 @@ $$
 $$
 Under this approximation the CTS equation
 $$
-\partial_t \Phi
-r\Phi
-
-a\nabla^2\Phi
-u\nabla^4\Phi
-s\Phi^3
+\partial_t \Phi = -r\Phi + a\nabla^2\Phi - u\nabla^4\Phi - s\Phi^3
 $$
 reduces to
 $$
@@ -145,8 +140,9 @@ The scalar field selects one of two equivalent states.
 ## 2.3.8 Structural interpretation
 
 The scalar regime therefore supports two fundamental behaviors:
-collapse toward a uniform null state
-bifurcation into finite scalar states.
+
+- collapse toward a uniform null state
+- bifurcation into finite scalar states
 The second case provides the first opportunity for structural retention.
 If a finite scalar amplitude is maintained, the retained structure becomes
 $$
@@ -188,9 +184,10 @@ Persistence therefore depends on both the linear collapse parameter (r) and the 
 
 The scalar regime represents the earliest stage of structural organization in the CTS.
 In this stage:
-spatial relationships are not yet defined
-fluctuations are purely amplitude-based
-stability depends on nonlinear self-interaction.
+
+- spatial relationships are not yet defined
+- fluctuations are purely amplitude-based
+- stability depends on nonlinear self-interaction
 If scalar states persist long enough, spatial gradients may begin to form.
 These gradients introduce directional structure.
 

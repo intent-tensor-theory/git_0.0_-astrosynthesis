@@ -3,8 +3,9 @@
 ## 13.3.1 Motivation
 
 Sections 13.1–13.2 established that shell structures achieve persistence through:
-multi-fan locking
-curvature memory
+- multi-fan locking
+- curvature memory
+
 However, not every closed surface satisfies the CTS persistence conditions.
 Some surfaces are unstable or collapse under perturbations.
 Therefore we must determine:
@@ -14,7 +15,7 @@ What is the simplest shell geometry capable of satisfying the persistence condit
 
 Stable shell structures correspond to minima of the shell energy functional
 $$
-E_{shell}
+E_{shell} =
 \int
 \left[
 \frac{\kappa}{2}(2H)^2
@@ -35,20 +36,14 @@ These conditions define stable equilibrium shapes.
 ## 13.3.3 Minimal curvature surfaces
 
 The simplest shell surfaces are those that minimize curvature energy.
-A special class of surfaces satisfies
-$$
-H = 0.
-$$
+A special class of surfaces satisfies $H = 0$.
 These are known as minimal surfaces.
-Examples include:
-surface
-description
-catenoid
-surface between two rings
-helicoid
-spiral minimal surface
-plane
-trivial minimal surface
+
+| Surface | Description |
+|---|---|
+| catenoid | surface between two rings |
+| helicoid | spiral minimal surface |
+| plane | trivial minimal surface |
 
 However minimal surfaces are not closed shells.
 Thus additional constraints are required.
@@ -57,15 +52,12 @@ Thus additional constraints are required.
 
 Closed shells must satisfy the topological constraint
 $$
-\int_S K,dA = 2\pi\chi.
+\int_S K\,dA = 2\pi\chi.
 $$
-For a sphere
-$$
-\chi = 2.
-$$
+For a sphere $\chi = 2$.
 Thus
 $$
-\int_S K,dA = 4\pi.
+\int_S K\,dA = 4\pi.
 $$
 This constraint restricts the possible shell geometries.
 
@@ -94,7 +86,7 @@ Because curvature is uniform across the surface, the sphere distributes stress e
 
 Substituting spherical curvature into the energy functional gives
 $$
-E_{sphere}
+E_{sphere} =
 \int
 \left[
 \frac{\kappa}{2}\left(\frac{2}{R}\right)^2
@@ -102,13 +94,9 @@ E_{sphere}
 \bar{\kappa}\frac{1}{R^2}
 \right] dA.
 $$
-Since
+Since $dA = R^2 \sin\theta\, d\theta\, d\phi$, the integral yields
 $$
-dA = R^2 \sin\theta, d\theta, d\phi,
-$$
-the integral yields
-$$
-E_{sphere}
+E_{sphere} =
 4\pi(2\kappa + \bar{\kappa}).
 $$
 This energy is independent of radius, making the sphere a highly stable configuration.
@@ -116,12 +104,13 @@ This energy is independent of radius, making the sphere a highly stable configur
 ## 13.3.7 Structural advantages of spheres
 
 The sphere provides several stability advantages:
-uniform curvature
-isotropic stress distribution
-maximal volume for minimal surface area
+- uniform curvature
+- isotropic stress distribution
+- maximal volume for minimal surface area.
+
 The isoperimetric inequality states
 $$
-A^3 \ge 36\pi V^2.
+A^3 \geq 36\pi V^2.
 $$
 The sphere saturates this bound.
 Thus spheres minimize surface energy.
@@ -132,13 +121,11 @@ Another important shell geometry is the torus.
 The torus can be parameterized as
 $$
 \mathbf{r}(u,v) =
-((R + r\cos v)\cos u,,
-(R + r\cos v)\sin u,,
-r\sin v).
+\bigl((R + r\cos v)\cos u,\;
+(R + r\cos v)\sin u,\;
+r\sin v\bigr).
 $$
-Here
-(R) = major radius
-(r) = minor radius.
+Here $R$ = major radius and $r$ = minor radius.
 The torus possesses regions of positive and negative curvature.
 
 ## 13.3.9 Toroidal curvature
@@ -154,15 +141,12 @@ Nevertheless they remain stable under certain parameter ranges.
 ## 13.3.10 Polyhedral shells
 
 Discrete shells can also form.
-Examples include
-polyhedron
-faces
-tetrahedron
-4
-cube
-6
-icosahedron
-20
+
+| Polyhedron | Faces |
+|---|---|
+| tetrahedron | 4 |
+| cube | 6 |
+| icosahedron | 20 |
 
 In such shells curvature is concentrated at vertices rather than distributed continuously.
 
@@ -172,7 +156,7 @@ For polyhedral shells curvature is given by
 $$
 K_v = 2\pi - \sum_i \theta_i
 $$
-where ( $\theta_i) are the face angles meeting at vertex (v).$
+where $\theta_i$ are the face angles meeting at vertex $v$.
 This discrete curvature preserves the global curvature constraint.
 
 ## 13.3.12 Minimal shell stability condition
@@ -210,7 +194,3 @@ Thus spherical shells represent the minimal persistence architecture.
 Minimal shell structures correspond to surfaces that minimize curvature energy while satisfying topological closure.
 The sphere provides the simplest stable shell because it distributes curvature uniformly and minimizes surface energy.
 These minimal shells represent the earliest durable surface structures capable of emerging within the Collapse Tension Substrate.
-
-Nested Shells
-This section derives how multiple shells can coexist and stabilize each other through layered persistence architectures.
-
