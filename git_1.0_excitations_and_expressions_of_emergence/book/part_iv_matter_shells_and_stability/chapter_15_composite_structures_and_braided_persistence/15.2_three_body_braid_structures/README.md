@@ -25,7 +25,7 @@ r_{31}=|\mathbf{r}_3-\mathbf{r}_1|.
 $$
 The total interaction energy becomes
 $$
-E_{3}
+E_{3} =
 E_1+E_2+E_3
 +
 V(r_{12})+V(r_{23})+V(r_{31})
@@ -43,10 +43,9 @@ represents collective interactions not reducible to pair potentials.
 Three-body systems permit topological linking.
 The linking number between two trajectories is defined as
 $$
-Lk
+Lk =
 \frac{1}{4\pi}
-\oint
-\oint
+\oint\!\oint
 \frac{(\mathbf{r}_1-\mathbf{r}_2)\cdot(d\mathbf{r}_1\times d\mathbf{r}_2)}
 {|\mathbf{r}_1-\mathbf{r}_2|^3}.
 $$
@@ -66,13 +65,13 @@ $$
 \quad
 (i\neq j)
 $$
-for all (t).
+for all $t$.
 This ensures the strands do not intersect.
 The topology of these trajectories defines the braid.
 
 ## 15.2.5 Braid group structure
 
-Braids are classified by the braid group (B_n).
+Braids are classified by the braid group $B_n$.
 For three strands the generators are
 $$
 \sigma_1,\quad \sigma_2.
@@ -80,7 +79,7 @@ $$
 These represent elementary strand crossings.
 They satisfy the braid relation
 $$
-\sigma_1\sigma_2\sigma_1
+\sigma_1\sigma_2\sigma_1 =
 \sigma_2\sigma_1\sigma_2.
 $$
 These algebraic rules classify all possible three-strand braids.
@@ -99,11 +98,9 @@ $$
 
 For a braid to remain stable we require
 $$
-S_*^{braid}
-\mathcal{E}
-D
-T_{obj}
-\frac{E_{lock}^{braid}}{\dot{R}t_{ref}}
+S_*^{braid} =
+\mathcal{E}_{shell} \cdot \mathcal{E}_D \cdot T_{obj} \cdot
+\frac{E_{lock}^{braid}}{\dot{R}\,t_{ref}}
 $$
 The topology factor
 $$
@@ -117,28 +114,21 @@ Thus braids often exhibit extremely strong persistence.
 The energy of a braid grows with strand tension and curvature.
 A simple estimate is
 $$
-E_{braid}
-\sim
-T L + \kappa \int k^2 ds
+E_{braid} \sim T L + \kappa \int k^2\, ds
 $$
-where
-(T) = strand tension
-(L) = strand length
-(k) = curvature.
+where $T$ = strand tension, $L$ = strand length, $k$ = curvature.
 Higher curvature increases energy cost, stabilizing smooth braid configurations.
 
 ## 15.2.9 Braided oscillation modes
 
 Braids support several dynamical modes.
 Examples include
-mode
-description
-twist modes
-strands rotate around axis
-stretch modes
-braid length oscillates
-kink modes
-localized bending
+
+| Mode | Description |
+|---|---|
+| twist modes | strands rotate around axis |
+| stretch modes | braid length oscillates |
+| kink modes | localized bending |
 
 These modes allow braids to store energy without breaking topology.
 
@@ -147,12 +137,11 @@ These modes allow braids to store energy without breaking topology.
 Pairs rely on energy minima for stability.
 Braids rely on topological constraints.
 Thus braids are typically more persistent.
-structure
-stabilization
-pair
-energy minimum
-braid
-topology
+
+| Structure | Stabilization |
+|---|---|
+| pair | energy minimum |
+| braid | topology |
 
 This distinction is important for composite persistence.
 

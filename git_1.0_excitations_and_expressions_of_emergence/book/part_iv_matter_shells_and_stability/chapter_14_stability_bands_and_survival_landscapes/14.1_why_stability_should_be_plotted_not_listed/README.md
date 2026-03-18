@@ -102,11 +102,11 @@ Each stable structure corresponds to a basin within the stability landscape.
 Within a basin the system evolves toward the local minimum.
 Mathematically
 $$
-\mathbf{x}(t+dt)
+\mathbf{x}(t+dt) =
 \mathbf{x}(t)
-\eta \nabla E(\mathbf{x})
+- \eta \nabla E(\mathbf{x})
 $$
-where ( $\eta) is a relaxation parameter.$
+where $\eta$ is a relaxation parameter.
 Thus the system naturally settles into stable configurations.
 
 ## 14.1.8 Structural phase diagrams
@@ -126,8 +126,8 @@ $$
 (Z,N)
 $$
 where
-• (Z) = proton number
-• (N) = neutron number.
+- $Z$ = proton number
+- $N$ = neutron number.
 Instead of listing stable nuclei, plotting this plane reveals a valley of stability.
 
 ## 14.1.10 Stability valley equation
@@ -135,13 +135,12 @@ Instead of listing stable nuclei, plotting this plane reveals a valley of stabil
 The approximate location of the stability band can be derived from the semi-empirical mass formula.
 Binding energy
 $$
-B(A,Z)
+B(A,Z) =
 a_v A
-a_s A^{2/3}
-a_c \frac{Z^2}{A^{1/3}}
-a_a \frac{(A-2Z)^2}{A}
-+
-\delta(A,Z).
+- a_s A^{2/3}
+- a_c \frac{Z^2}{A^{1/3}}
+- a_a \frac{(A-2Z)^2}{A}
++ \delta(A,Z).
 $$
 Maximizing binding energy yields the approximate stability relation
 $$

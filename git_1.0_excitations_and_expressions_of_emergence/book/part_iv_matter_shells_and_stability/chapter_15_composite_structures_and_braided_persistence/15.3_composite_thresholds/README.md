@@ -14,7 +14,7 @@ Thus we must determine the mathematical condition under which a multi-body syste
 Consider a system of (N) interacting persistent objects.
 The total energy can be written
 $$
-E_N
+E_N =
 \sum_{i=1}^{N} E_i
 +
 \sum_{i<j} V_{ij}
@@ -23,16 +23,16 @@ E_N
 +\dots
 $$
 where
-(E_i) = internal energy of each structure
-(V_{ij}) = pair interactions
-(V_{ijk}) = higher-order interactions.
+- $E_i$ = internal energy of each structure
+- $V_{ij}$ = pair interactions
+- $V_{ijk}$ = higher-order interactions.
 Composite formation requires that interaction energy produces additional stabilization.
 
 ## 15.3.3 Composite locking energy
 
 Define the composite locking energy
 $$
-E_{lock}^{(N)}
+E_{lock}^{(N)} =
 \sum_{i<j} |V_{ij}|
 +
 \sum_{i<j<k} |V_{ijk}|.
@@ -57,7 +57,7 @@ This includes
 
 The composite lock ratio becomes
 $$
-\Lambda_{lock}^{(N)}
+\Lambda_{lock}^{(N)} =
 \frac{E_{lock}^{(N)}}{E_{form}^{(N)}}.
 $$
 If
@@ -75,11 +75,9 @@ the structure is unstable.
 
 Substituting this into the CTS persistence expression gives
 $$
-S_*^{(N)}
-\mathcal{E}
-D
-T_{obj}
-\frac{E_{lock}^{(N)}}{\dot{R}N t{ref}}.
+S_*^{(N)} =
+\mathcal{E}_{shell} \cdot \mathcal{E}_D \cdot T_{obj} \cdot
+\frac{E_{lock}^{(N)}}{\dot{R}\,N\,t_{ref}}.
 $$
 A stable composite requires
 $$
@@ -117,14 +115,12 @@ Larger systems can therefore become more stable.
 ## 15.3.9 Composite instability modes
 
 Composite structures may fail through several modes.
-instability
-mechanism
-bond rupture
-interaction breakdown
-topology change
-braid reconnection
-thermal dissociation
-energy injection
+
+| Instability | Mechanism |
+|---|---|
+| bond rupture | interaction breakdown |
+| topology change | braid reconnection |
+| thermal dissociation | energy injection |
 
 Persistence requires that locking energy exceeds these destabilizing processes.
 
@@ -138,7 +134,7 @@ crossing a critical value
 $$
 x_{crit}.
 $$
-Similarly persistence parameter (y) must satisfy
+Similarly persistence parameter $y$ must satisfy
 $$
 xy > 1.
 $$
@@ -152,16 +148,13 @@ Within this basin the structure resists dissociation and remains stable under pe
 ## 15.3.12 Hierarchical persistence
 
 Composite formation creates a hierarchy of stability levels:
-level
-structure
-single
-persistent object
-pair
-two-body composite
-braid
-three-body topology
-network
-multi-body architecture
+
+| Level | Structure |
+|---|---|
+| single | persistent object |
+| pair | two-body composite |
+| braid | three-body topology |
+| network | multi-body architecture |
 
 Each level introduces stronger persistence mechanisms.
 

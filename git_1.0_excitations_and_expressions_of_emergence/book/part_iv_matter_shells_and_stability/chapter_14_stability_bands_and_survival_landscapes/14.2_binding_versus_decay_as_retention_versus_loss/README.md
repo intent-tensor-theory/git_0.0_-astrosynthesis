@@ -5,12 +5,12 @@
 The CTS framework defines persistence through the competition between retention and loss.
 Earlier we defined the selection number
 $$
-S = \frac{R}{\dot{R},t_{ref}}
+S = \frac{R}{\dot{R}\,t_{ref}}
 $$
 where
-• (R) = retained structure
-• ( $\dot{R}) = rate of structural loss$
-• (t_{ref}) = persistence horizon.
+- $R$ = retained structure
+- $\dot{R}$ = rate of structural loss
+- $t_{ref}$ = persistence horizon.
 This equation captures a universal principle:
 structures survive when retention mechanisms dominate loss mechanisms.
 In physical systems this principle appears as the competition between binding energy and decay processes.
@@ -23,7 +23,7 @@ $$
 B =
 \left(\sum_i m_i - M\right)c^2
 $$
-where (M) is the mass of the bound system.
+where $M$ is the mass of the bound system.
 Binding energy therefore measures the strength of structural retention.
 
 ## 14.2.3 Decay processes
@@ -141,11 +141,8 @@ $$
 Substituting these quantities into the selection equation yields
 $$
 S_* =
-\mathcal{E}{shell}
-\mathcal{E}
-D
-T{obj}
-\frac{E_{lock}}{\dot{R}t_{ref}}.
+\mathcal{E}_{shell} \cdot \mathcal{E}_D \cdot T_{obj} \cdot
+\frac{E_{lock}}{\dot{R}\,t_{ref}}.
 $$
 This generalized expression describes persistence across structural scales.
 
@@ -175,21 +172,13 @@ Thus stability appears as continuous regions within parameter space.
 ## 14.2.14 Universal principle
 
 The retention-versus-loss balance applies across many systems:
-system
-retention
-loss
-atoms
-binding energy
-ionization
-nuclei
-nuclear binding
-radioactive decay
-vortices
-circulation
-dissipation
-shells
-curvature locking
-deformation
+
+| System | Retention | Loss |
+|---|---|---|
+| atoms | binding energy | ionization |
+| nuclei | nuclear binding | radioactive decay |
+| vortices | circulation | dissipation |
+| shells | curvature locking | deformation |
 
 Each system survives when retention exceeds loss.
 

@@ -7,9 +7,7 @@ This band appears as the valley of stability when nuclei are plotted in the plan
 $$
 (Z,N)
 $$
-where
-(Z) = proton number
-(N) = neutron number.
+where $Z$ = proton number and $N$ = neutron number.
 Within the CTS framework this stability valley can be interpreted as a persistence optimum — a region where the retention–loss balance is maximized.
 
 ## 14.4.2 Binding energy per nucleon
@@ -20,13 +18,12 @@ $$
 $$
 Substituting the SEMF expression gives
 $$
-\frac{B}{A}
+\frac{B}{A} =
 a_v
-a_s A^{-1/3}
-a_c \frac{Z^2}{A^{4/3}}
-a_a \frac{(A-2Z)^2}{A^2}
-+
-\frac{\delta}{A}.
+- a_s A^{-1/3}
+- a_c \frac{Z^2}{A^{4/3}}
+- a_a \frac{(A-2Z)^2}{A^2}
++ \frac{\delta}{A}.
 $$
 Stable nuclei maximize this quantity.
 
@@ -69,8 +66,7 @@ This curve traces the center of the nuclear stability valley.
 
 Within CTS language the valley corresponds to the region where
 $$
-S(A,Z)
-\frac{R}{\dot{R}t_{ref}}
+S(A,Z) = \frac{R}{\dot{R}\,t_{ref}}
 $$
 is maximized.
 Retention contributions:
@@ -117,11 +113,11 @@ Mathematically
 $$
 \frac{dZ}{dt} \propto -\frac{\partial S}{\partial Z}.
 $$
-Thus unstable nuclei evolve toward the region where (S) is largest.
+Thus unstable nuclei evolve toward the region where $S$ is largest.
 
 ## 14.4.9 Heavy nuclei deviation
 
-For very large (A), the Coulomb term becomes dominant.
+For very large $A$, the Coulomb term becomes dominant.
 Electrostatic repulsion increases rapidly
 $$
 B_c \sim \frac{Z^2}{A^{1/3}}.
@@ -144,12 +140,12 @@ This defines the persistence optimum.
 ## 14.4.11 Stability width
 
 The width of the valley is determined by how rapidly persistence decreases away from the optimum.
-Expanding (S) near the optimum gives
+Expanding $S$ near the optimum gives
 $$
 S(A,Z)
 \approx
 S_{max}
-\frac{1}{2}
+- \frac{1}{2}
 k(Z-Z_0)^2.
 $$
 This quadratic form defines the basin of stability.
@@ -169,16 +165,13 @@ The stability valley therefore represents a persistence optimum within the nucle
 ## 14.4.14 Broader implications
 
 Similar persistence basins appear in many physical systems:
-system
-persistence basin
-nuclear physics
-valley of stability
-atoms
-electron shell stability
-vortices
-circulation conservation
-shell structures
-curvature locking
+
+| System | Persistence basin |
+|---|---|
+| nuclear physics | valley of stability |
+| atoms | electron shell stability |
+| vortices | circulation conservation |
+| shell structures | curvature locking |
 
 Thus the valley-of-stability concept generalizes across scales.
 

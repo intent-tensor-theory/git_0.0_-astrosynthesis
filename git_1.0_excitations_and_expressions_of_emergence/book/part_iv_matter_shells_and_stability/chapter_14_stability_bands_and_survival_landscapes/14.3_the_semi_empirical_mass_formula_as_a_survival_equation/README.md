@@ -13,25 +13,20 @@ Remarkably, this formula can be interpreted directly as a persistence equation i
 
 The SEMF expresses nuclear binding energy as
 $$
-B(A,Z)
+B(A,Z) =
 a_v A
-a_s A^{2/3}
-a_c \frac{Z^2}{A^{1/3}}
-a_a \frac{(A-2Z)^2}{A}
-+
-\delta(A,Z)
+- a_s A^{2/3}
+- a_c \frac{Z^2}{A^{1/3}}
+- a_a \frac{(A-2Z)^2}{A}
++ \delta(A,Z)
 $$
-where
-(A) = total nucleons
-(Z) = proton number
+where $A$ = total nucleons, $Z$ = proton number.
 Constants:
-(a_v) = volume term
-(a_s) = surface term
-(a_c) = Coulomb term
-(a_a) = asymmetry term
-$$
-$\delta$ = pairing correction.
-$$
+- $a_v$ = volume term
+- $a_s$ = surface term
+- $a_c$ = Coulomb term
+- $a_a$ = asymmetry term
+- $\delta$ = pairing correction.
 Each term represents a physical mechanism influencing nuclear stability.
 
 ## 14.3.3 Volume retention term
@@ -56,7 +51,7 @@ The surface correction is
 $$
 B_s = a_s A^{2/3}.
 $$
-Because surface area scales as (A^{2/3}), this term represents a loss mechanism.
+Because surface area scales as $A^{2/3}$, this term represents a loss mechanism.
 Within CTS language
 $$
 \dot{R}_{surface} \sim A^{2/3}.
@@ -92,11 +87,11 @@ $$
 accounts for the tendency of nucleons to form pairs.
 Typical form:
 $$
-\delta(A,Z)
+\delta(A,Z) =
 \begin{cases}
-a_p A^{-1/2} & \text{even-even nuclei} \
-0 & \text{odd } A \
-a_p A^{-1/2} & \text{odd-odd nuclei}
++a_p A^{-1/2} & \text{even-even nuclei} \\
+0 & \text{odd } A \\
+-a_p A^{-1/2} & \text{odd-odd nuclei}
 \end{cases}
 $$
 Pairing increases structural stability.
@@ -127,7 +122,7 @@ $$
 
 Substituting retention and loss terms gives
 $$
-S(A,Z)
+S(A,Z) =
 \frac{a_v A + \delta}
 {t_{ref}
 \left(

@@ -71,21 +71,18 @@ These quantum numbers define orbital shapes such as
 ## 14.6.6 Degeneracy and shell capacity
 
 Each shell can accommodate a limited number of electrons.
-The degeneracy of the (n)-th shell is
+The degeneracy of the $n$-th shell is
 $$
 g_n = 2n^2.
 $$
 Thus
-shell
-capacity
-n=1
-2
-n=2
-8
-n=3
-18
-n=4
-32
+
+| Shell | Capacity |
+|---|---|
+| $n=1$ | 2 |
+| $n=2$ | 8 |
+| $n=3$ | 18 |
+| $n=4$ | 32 |
 
 These capacities determine the periodic structure of the elements.
 
@@ -118,7 +115,7 @@ The ionization energy is
 $$
 I = E_{free} - E_{bound}.
 $$
-If environmental energy exceeds (I), the electron becomes unbound.
+If environmental energy exceeds $I$, the electron becomes unbound.
 This threshold corresponds to a persistence boundary similar to nuclear drip lines.
 
 ## 14.6.11 CTS persistence interpretation
@@ -148,14 +145,12 @@ Thus the periodic table can be viewed as a map of atomic persistence states.
 ## 14.6.13 Structural hierarchy
 
 Combining nuclear and atomic persistence yields a layered hierarchy:
-level
-persistence mechanism
-nuclear core
-strong-force binding
-atomic shells
-Coulomb orbital locking
-molecular structures
-electron sharing
+
+| Level | Persistence mechanism |
+|---|---|
+| nuclear core | strong-force binding |
+| atomic shells | Coulomb orbital locking |
+| molecular structures | electron sharing |
 
 Each layer introduces additional structural complexity.
 

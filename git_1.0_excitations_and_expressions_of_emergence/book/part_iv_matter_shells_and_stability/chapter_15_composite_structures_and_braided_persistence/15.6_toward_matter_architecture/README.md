@@ -53,11 +53,9 @@ Larger composites therefore possess increasing structural stability.
 
 Substituting into the persistence equation
 $$
-S_*^{(N)}
-\mathcal{E}
-D
-T_{obj}
-\frac{E_{lock}^{(N)}}{\dot{R}N t{ref}}
+S_*^{(N)} =
+\mathcal{E}_{shell} \cdot \mathcal{E}_D \cdot T_{obj} \cdot
+\frac{E_{lock}^{(N)}}{\dot{R}\,N\,t_{ref}}
 $$
 gives
 $$
@@ -79,7 +77,7 @@ These networks represent the next level of persistence.
 
 For a network of (N) nodes the total interaction energy becomes
 $$
-E_{network}
+E_{network} =
 \sum_{i<j} V_{ij}.
 $$
 In many systems this scales approximately as
@@ -100,7 +98,7 @@ n_2\mathbf{a}_2
 +
 n_3\mathbf{a}_3.
 $$
-Here ( $\mathbf{a}_i) are lattice vectors.$
+Here $\mathbf{a}_i$ are lattice vectors.
 Lattice order minimizes interaction energy.
 
 ## 15.6.8 Collective excitation modes
@@ -130,31 +128,24 @@ Such systems resist perturbations and behave as stable macroscopic matter.
 Large composites may develop rigidity.
 Elastic energy can be expressed as
 $$
-E_{elastic}
+E_{elastic} =
 \frac{1}{2}
 \int
-C_{ijkl}
-\epsilon_{ij}\epsilon_{kl}
-, dV.
+C_{ijkl}\,
+\epsilon_{ij}\epsilon_{kl}\, dV.
 $$
-Here
-$$
-$\epsilon_{ij}$ = strain tensor
-$$
-(C_{ijkl}) = elastic constants.
+Here $\epsilon_{ij}$ = strain tensor and $C_{ijkl}$ = elastic constants.
 Rigidity further increases persistence.
 
 ## 15.6.11 Emergent material properties
 
 Once network structures form, new physical properties emerge:
-property
-origin
-elasticity
-lattice locking
-conductivity
-mobile excitations
-thermal transport
-phonon propagation
+
+| Property | Origin |
+|---|---|
+| elasticity | lattice locking |
+| conductivity | mobile excitations |
+| thermal transport | phonon propagation |
 
 These properties arise from collective persistence mechanisms.
 
