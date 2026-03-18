@@ -15,24 +15,220 @@ title: Astrosynthesis — Excitations and Expressions of Emergence
 
 ---
 
-This is the full text of **Astrosynthesis**, organized as a navigable book.
-Each Part → Chapter → Section is its own folder; use the sidebar to navigate.
-
-**To download the full book as a PDF:** click *Print / Download as PDF* above,
-then use **File → Print → Save as PDF** in your browser.
-
----
-
 ## Table of Contents
 
-| Part | Chapters | Theme |
-|------|----------|-------|
-| I   | 1–3  | Foundations of Emergence |
-| II  | 4–6  | Persistence Mechanics |
-| III | 7–11 | CTS Survival Map and Excitation Library |
-| IV  | 12–15| Matter, Shells, and Stability |
-| V   | 16–19| Implications for Physics |
+---
+
+### [Preface](00_preface/README.md)
 
 ---
 
-[Start reading → Preface](00_preface/README.md)
+### Part I — Foundations of Emergence
+
+**[Chapter 1: The Problem of Emergence](part_i_foundations_of_emergence/chapter_01_the_problem_of_emergence/README.md)**
+
+- [1.1 Why Origin Stories Are Not Enough](part_i_foundations_of_emergence/chapter_01_the_problem_of_emergence/1.1_why_origin_stories_are_not_enough/README.md)
+- [1.2 The Failure of Particle-First Explanation](part_i_foundations_of_emergence/chapter_01_the_problem_of_emergence/1.2_the_failure_of_particle_first_explanation/README.md)
+- [1.3 Structure as Survival Rather Than Appearance](part_i_foundations_of_emergence/chapter_01_the_problem_of_emergence/1.3_structure_as_survival_rather_than_appearance/README.md)
+- [1.4 Emergence, Persistence, and the Problem of Loss](part_i_foundations_of_emergence/chapter_01_the_problem_of_emergence/1.4_emergence_persistence_and_the_problem_of_loss/README.md)
+- [1.5 Relation to Thermodynamics, Information, and Field Theory](part_i_foundations_of_emergence/chapter_01_the_problem_of_emergence/1.5_relation_to_thermodynamics_information_and_field_theory/README.md)
+- [1.6 What This Book Claims, and What It Does Not Claim](part_i_foundations_of_emergence/chapter_01_the_problem_of_emergence/1.6_what_this_book_claims_and_what_it_does_not_claim/README.md)
+
+**[Chapter 2: The Collapse Tension Substrate](part_i_foundations_of_emergence/chapter_02_the_collapse_tension_substrate/README.md)**
+
+- [2.1 Why Begin From a Pre-Geometric Substrate](part_i_foundations_of_emergence/chapter_02_the_collapse_tension_substrate/2.1_why_begin_from_a_pre_geometric_substrate/README.md)
+- [2.2 Defining the Collapse Tension Substrate](part_i_foundations_of_emergence/chapter_02_the_collapse_tension_substrate/2.2_defining_the_collapse_tension_substrate/README.md)
+- [2.3 Scalar Potential Before Geometry](part_i_foundations_of_emergence/chapter_02_the_collapse_tension_substrate/2.3_scalar_potential_before_geometry/README.md)
+- [2.4 Symmetry, Perturbation, and the First Asymmetry](part_i_foundations_of_emergence/chapter_02_the_collapse_tension_substrate/2.4_symmetry_perturbation_and_the_first_asymmetry/README.md)
+- [2.5 The CTS as a Persistence-Bearing Field](part_i_foundations_of_emergence/chapter_02_the_collapse_tension_substrate/2.5_the_cts_as_a_persistence_bearing_field/README.md)
+- [2.6 Comparison to Vacuum, Ether, Manifold, and Field Ontology](part_i_foundations_of_emergence/chapter_02_the_collapse_tension_substrate/2.6_comparison_to_vacuum_ether_manifold_and_field_ontology/README.md)
+
+**[Chapter 3: Dimensional Emergence as Constraint Acquisition](part_i_foundations_of_emergence/chapter_03_dimensional_emergence_as_constraint_acquisition/README.md)**
+
+- [3.1 0D: Scalar Variation](part_i_foundations_of_emergence/chapter_03_dimensional_emergence_as_constraint_acquisition/3.1_0d_scalar_variation/README.md)
+- [3.2 1D: Gradient Bias](part_i_foundations_of_emergence/chapter_03_dimensional_emergence_as_constraint_acquisition/3.2_1d_gradient_bias/README.md)
+- [3.3 2D: Circulation and Recursive Memory](part_i_foundations_of_emergence/chapter_03_dimensional_emergence_as_constraint_acquisition/3.3_2d_circulation_and_recursive_memory/README.md)
+- [3.4 3D: Curvature Closure and Boundary Formation](part_i_foundations_of_emergence/chapter_03_dimensional_emergence_as_constraint_acquisition/3.4_3d_curvature_closure_and_boundary_formation/README.md)
+- [3.5 Why Each Stage Is a New Mode of Resisting Loss](part_i_foundations_of_emergence/chapter_03_dimensional_emergence_as_constraint_acquisition/3.5_why_each_stage_is_a_new_mode_of_resisting_loss/README.md)
+- [3.6 The Collapse Ladder as a Mechanical Sequence](part_i_foundations_of_emergence/chapter_03_dimensional_emergence_as_constraint_acquisition/3.6_the_collapse_ladder_as_a_mechanical_sequence/README.md)
+
+---
+
+### Part II — Persistence Mechanics
+
+**[Chapter 4: Retention, Loss, and the Selection Number](part_ii_persistence_mechanics/chapter_04_retention_loss_and_the_selection_number/README.md)**
+
+- [4.1 Defining Retained Structure](part_ii_persistence_mechanics/chapter_04_retention_loss_and_the_selection_number/4.1_defining_retained_structure/README.md)
+- [4.2 Defining Loss Rate](part_ii_persistence_mechanics/chapter_04_retention_loss_and_the_selection_number/4.2_defining_loss_rate/README.md)
+- [4.3 Defining the Persistence Horizon](part_ii_persistence_mechanics/chapter_04_retention_loss_and_the_selection_number/4.3_defining_the_persistence_horizon/README.md)
+- [4.4 Derivation of the Selection Number](part_ii_persistence_mechanics/chapter_04_retention_loss_and_the_selection_number/4.4_derivation_of_the_selection_number/README.md)
+- [4.5 Interpreting Subcritical, Critical, and Supercritical Emergence](part_ii_persistence_mechanics/chapter_04_retention_loss_and_the_selection_number/4.5_interpreting_subcritical_critical_and_supercritical_emergenc/README.md)
+- [4.6 Corrected Persistence Condition and Structural Gates](part_ii_persistence_mechanics/chapter_04_retention_loss_and_the_selection_number/4.6_corrected_persistence_condition_and_structural_gates/README.md)
+
+**[Chapter 5: Eligibility, Drift, and Stability Gates](part_ii_persistence_mechanics/chapter_05_eligibility_drift_and_stability_gates/README.md)**
+
+- [5.1 Why Raw Persistence Is Not Enough](part_ii_persistence_mechanics/chapter_05_eligibility_drift_and_stability_gates/5.1_why_raw_persistence_is_not_enough/README.md)
+- [5.2 The Eligibility Operator](part_ii_persistence_mechanics/chapter_05_eligibility_drift_and_stability_gates/5.2_the_eligibility_operator/README.md)
+- [5.3 Drift Stability](part_ii_persistence_mechanics/chapter_05_eligibility_drift_and_stability_gates/5.3_drift_stability/README.md)
+- [5.4 Six-Fan Lock Logic and Shell Admissibility](part_ii_persistence_mechanics/chapter_05_eligibility_drift_and_stability_gates/5.4_six_fan_lock_logic_and_shell_admissibility/README.md)
+- [5.5 Corrected Persistence Condition](part_ii_persistence_mechanics/chapter_05_eligibility_drift_and_stability_gates/5.5_corrected_persistence_condition/README.md)
+
+**[Chapter 6: Topology and Objecthood](part_ii_persistence_mechanics/chapter_06_topology_and_objecthood/README.md)**
+
+- [6.1 Closure as the First Objecthood Threshold](part_ii_persistence_mechanics/chapter_06_topology_and_objecthood/6.1_closure_as_the_first_objecthood_threshold/README.md)
+- [6.2 Chirality as Directional Persistence](part_ii_persistence_mechanics/chapter_06_topology_and_objecthood/6.2_chirality_as_directional_persistence/README.md)
+- [6.3 Composite Order and Braid Organization](part_ii_persistence_mechanics/chapter_06_topology_and_objecthood/6.3_composite_order_and_braid_organization/README.md)
+- [6.4 Shell Coherence and Multi-Fan Survival](part_ii_persistence_mechanics/chapter_06_topology_and_objecthood/6.4_shell_coherence_and_multi_fan_survival/README.md)
+- [6.5 Deriving the Topology Factor](part_ii_persistence_mechanics/chapter_06_topology_and_objecthood/6.5_deriving_the_topology_factor/README.md)
+- [6.6 From Expression to Objecthood](part_ii_persistence_mechanics/chapter_06_topology_and_objecthood/6.6_from_expression_to_objecthood/README.md)
+
+---
+
+### Part III — The CTS Survival Map and Excitation Library
+
+**[Chapter 7: The CTS Energy Functional](part_iii_the_cts_survival_map_and_excitation_library/chapter_07_the_cts_energy_functional/README.md)**
+
+- [7.1 Why Emergence Needs an Energy Functional](part_iii_the_cts_survival_map_and_excitation_library/chapter_07_the_cts_energy_functional/7.1_why_emergence_needs_an_energy_functional/README.md)
+- [7.3 Vacuum Structure and Bifurcation](part_iii_the_cts_survival_map_and_excitation_library/chapter_07_the_cts_energy_functional/7.3_vacuum_structure_and_bifurcation/README.md)
+- [7.4 Correlation Length and Excitation Scale](part_iii_the_cts_survival_map_and_excitation_library/chapter_07_the_cts_energy_functional/7.4_correlation_length_and_excitation_scale/README.md)
+- [7.6 CTS Functional as the Generator of the Excitation Library](part_iii_the_cts_survival_map_and_excitation_library/chapter_07_the_cts_energy_functional/7.6_cts_functional_as_the_generator_of_the_excitation_library/README.md)
+
+**[Chapter 8: The CTS Excitation Ledger](part_iii_the_cts_survival_map_and_excitation_library/chapter_08_the_cts_excitation_ledger/README.md)**
+
+- [8.1 What Counts as an Excitation](part_iii_the_cts_survival_map_and_excitation_library/chapter_08_the_cts_excitation_ledger/8.1_what_counts_as_an_excitation/README.md)
+- [8.2 Wave Modes](part_iii_the_cts_survival_map_and_excitation_library/chapter_08_the_cts_excitation_ledger/8.2_wave_modes/README.md)
+- [8.3 Phase-Locked Modes](part_iii_the_cts_survival_map_and_excitation_library/chapter_08_the_cts_excitation_ledger/8.3_phase_locked_modes/README.md)
+- [8.4 Open Vortices](part_iii_the_cts_survival_map_and_excitation_library/chapter_08_the_cts_excitation_ledger/8.4_open_vortices/README.md)
+- [8.5 Closed Rings](part_iii_the_cts_survival_map_and_excitation_library/chapter_08_the_cts_excitation_ledger/8.5_closed_rings/README.md)
+- [8.6 Chiral Primitives](part_iii_the_cts_survival_map_and_excitation_library/chapter_08_the_cts_excitation_ledger/8.6_chiral_primitives/README.md)
+- [8.7 Shell Structures](part_iii_the_cts_survival_map_and_excitation_library/chapter_08_the_cts_excitation_ledger/8.7_shell_structures/README.md)
+- [8.8 Pair and Triple Braids](part_iii_the_cts_survival_map_and_excitation_library/chapter_08_the_cts_excitation_ledger/8.8_pair_and_triple_braids/README.md)
+
+**[Chapter 9: Derived Quantities for the Ledger](part_iii_the_cts_survival_map_and_excitation_library/chapter_09_derived_quantities_for_the_ledger/README.md)**
+
+- [9.1 Formation Energy](part_iii_the_cts_survival_map_and_excitation_library/chapter_09_derived_quantities_for_the_ledger/9.1_formation_energy/README.md)
+- [9.2 Lock Energy](part_iii_the_cts_survival_map_and_excitation_library/chapter_09_derived_quantities_for_the_ledger/9.2_lock_energy/README.md)
+- [9.3 Total Energy](part_iii_the_cts_survival_map_and_excitation_library/chapter_09_derived_quantities_for_the_ledger/9.3_total_energy/README.md)
+- [9.4 Lock Ratio](part_iii_the_cts_survival_map_and_excitation_library/chapter_09_derived_quantities_for_the_ledger/9.4_lock_ratio/README.md)
+- [9.5 Expression Ratio](part_iii_the_cts_survival_map_and_excitation_library/chapter_09_derived_quantities_for_the_ledger/9.5_expression_ratio/README.md)
+- [9.6 Structural Persistence](part_iii_the_cts_survival_map_and_excitation_library/chapter_09_derived_quantities_for_the_ledger/9.6_structural_persistence/README.md)
+- [9.7 Structural Persistence Scaling](part_iii_the_cts_survival_map_and_excitation_library/chapter_09_derived_quantities_for_the_ledger/9.7_structural_persistence_scaling/README.md)
+- [9.8 Abundance Law](part_iii_the_cts_survival_map_and_excitation_library/chapter_09_derived_quantities_for_the_ledger/9.8_abundance_law/README.md)
+
+**[Chapter 10: The Threshold Phase Chart](part_iii_the_cts_survival_map_and_excitation_library/chapter_10_the_threshold_phase_chart/README.md)**
+
+- [10.1 Choosing the Phase Variables](part_iii_the_cts_survival_map_and_excitation_library/chapter_10_the_threshold_phase_chart/10.1_choosing_the_phase_variables/README.md)
+- [10.2 Survival Number in Chart Form](part_iii_the_cts_survival_map_and_excitation_library/chapter_10_the_threshold_phase_chart/10.2_survival_number_in_chart_form/README.md)
+- [10.3 What Lies Below Threshold](part_iii_the_cts_survival_map_and_excitation_library/chapter_10_the_threshold_phase_chart/10.3_what_lies_below_threshold/README.md)
+- [10.4 What Lies Above Threshold](part_iii_the_cts_survival_map_and_excitation_library/chapter_10_the_threshold_phase_chart/10.4_what_lies_above_threshold/README.md)
+- [10.5 Mapping the Structural Regions](part_iii_the_cts_survival_map_and_excitation_library/chapter_10_the_threshold_phase_chart/10.5_mapping_the_structural_regions/README.md)
+
+**[Chapter 11: The Named CTS Survival Map](part_iii_the_cts_survival_map_and_excitation_library/chapter_11_the_named_cts_survival_map/README.md)**
+
+- [11.1 Background Propagation](part_iii_the_cts_survival_map_and_excitation_library/chapter_11_the_named_cts_survival_map/11.1_background_propagation/README.md)
+- [11.2 Localized Precursors](part_iii_the_cts_survival_map_and_excitation_library/chapter_11_the_named_cts_survival_map/11.2_localized_precursors/README.md)
+- [11.3 Closure Survival](part_iii_the_cts_survival_map_and_excitation_library/chapter_11_the_named_cts_survival_map/11.3_closure_survival/README.md)
+- [11.4 Chirality Survival](part_iii_the_cts_survival_map_and_excitation_library/chapter_11_the_named_cts_survival_map/11.4_chirality_survival/README.md)
+- [11.5 Shell Survival](part_iii_the_cts_survival_map_and_excitation_library/chapter_11_the_named_cts_survival_map/11.5_shell_survival/README.md)
+- [11.6 Composite Survival](part_iii_the_cts_survival_map_and_excitation_library/chapter_11_the_named_cts_survival_map/11.6_composite_survival/README.md)
+- [11.7 Transition Rules Between Regions](part_iii_the_cts_survival_map_and_excitation_library/chapter_11_the_named_cts_survival_map/11.7_transition_rules_between_regions/README.md)
+- [11.8 Interpreting the Survival Map as an Atlas of Emergence](part_iii_the_cts_survival_map_and_excitation_library/chapter_11_the_named_cts_survival_map/11.8_interpreting_the_survival_map_as_an_atlas_of_emergence/README.md)
+
+---
+
+### Part IV — Matter, Shells, and Stability
+
+**[Chapter 12: From Expressions to Durable Structures](part_iv_matter_shells_and_stability/chapter_12_from_expressions_to_durable_structures/README.md)**
+
+- [12.1 Why Not Every Excitation Becomes Matter](part_iv_matter_shells_and_stability/chapter_12_from_expressions_to_durable_structures/12.1_why_not_every_excitation_becomes_matter/README.md)
+- [12.2 Closure Versus Shell-Lock](part_iv_matter_shells_and_stability/chapter_12_from_expressions_to_durable_structures/12.2_closure_versus_shell_lock/README.md)
+- [12.3 When Objecthood Begins](part_iv_matter_shells_and_stability/chapter_12_from_expressions_to_durable_structures/12.3_when_objecthood_begins/README.md)
+- [12.4 When Durability Begins](part_iv_matter_shells_and_stability/chapter_12_from_expressions_to_durable_structures/12.4_when_durability_begins/README.md)
+- [12.5 Why Some Expressions Remain Background Modes](part_iv_matter_shells_and_stability/chapter_12_from_expressions_to_durable_structures/12.5_why_some_expressions_remain_background_modes/README.md)
+- [12.6 Why Others Become Structural Seeds](part_iv_matter_shells_and_stability/chapter_12_from_expressions_to_durable_structures/12.6_why_others_become_structural_seeds/README.md)
+
+**[Chapter 13: Shells as Persistence Solutions](part_iv_matter_shells_and_stability/chapter_13_shells_as_persistence_solutions/README.md)**
+
+- [13.1 Shells as Multi-Fan Lock Events](part_iv_matter_shells_and_stability/chapter_13_shells_as_persistence_solutions/13.1_shells_as_multi_fan_lock_events/README.md)
+- [13.2 Curvature as Closure Memory](part_iv_matter_shells_and_stability/chapter_13_shells_as_persistence_solutions/13.2_curvature_as_closure_memory/README.md)
+- [13.3 Minimal Shell Structures](part_iv_matter_shells_and_stability/chapter_13_shells_as_persistence_solutions/13.3_minimal_shell_structures/README.md)
+- [13.4 Nested Shells](part_iv_matter_shells_and_stability/chapter_13_shells_as_persistence_solutions/13.4_nested_shells/README.md)
+- [13.5 Orbital-Like Persistence from Shell Logic](part_iv_matter_shells_and_stability/chapter_13_shells_as_persistence_solutions/13.5_orbital_like_persistence_from_shell_logic/README.md)
+- [13.6 Shells as Survival Architectures](part_iv_matter_shells_and_stability/chapter_13_shells_as_persistence_solutions/13.6_shells_as_survival_architectures/README.md)
+
+**[Chapter 14: Stability Bands and Survival Landscapes](part_iv_matter_shells_and_stability/chapter_14_stability_bands_and_survival_landscapes/README.md)**
+
+- [14.1 Why Stability Should Be Plotted, Not Listed](part_iv_matter_shells_and_stability/chapter_14_stability_bands_and_survival_landscapes/14.1_why_stability_should_be_plotted_not_listed/README.md)
+- [14.2 Binding Versus Decay as Retention Versus Loss](part_iv_matter_shells_and_stability/chapter_14_stability_bands_and_survival_landscapes/14.2_binding_versus_decay_as_retention_versus_loss/README.md)
+- [14.3 Semi-Empirical Mass Formula as a Survival Equation](part_iv_matter_shells_and_stability/chapter_14_stability_bands_and_survival_landscapes/14.3_the_semi_empirical_mass_formula_as_a_survival_equation/README.md)
+- [14.4 Valley of Stability as a Persistence Optimum](part_iv_matter_shells_and_stability/chapter_14_stability_bands_and_survival_landscapes/14.4_valley_of_stability_as_a_persistence_optimum/README.md)
+- [14.5 Drip Lines as Existence Boundaries](part_iv_matter_shells_and_stability/chapter_14_stability_bands_and_survival_landscapes/14.5_drip_lines_as_existence_boundaries/README.md)
+- [14.6 The Periodic Table as a Survival Chart](part_iv_matter_shells_and_stability/chapter_14_stability_bands_and_survival_landscapes/14.6_the_periodic_table_as_a_survival_chart/README.md)
+
+**[Chapter 15: Composite Structures and Braided Persistence](part_iv_matter_shells_and_stability/chapter_15_composite_structures_and_braided_persistence/README.md)**
+
+- [15.1 Pair Structures](part_iv_matter_shells_and_stability/chapter_15_composite_structures_and_braided_persistence/15.1_pair_structures/README.md)
+- [15.2 Three-Body Braid Structures](part_iv_matter_shells_and_stability/chapter_15_composite_structures_and_braided_persistence/15.2_three_body_braid_structures/README.md)
+- [15.3 Composite Thresholds](part_iv_matter_shells_and_stability/chapter_15_composite_structures_and_braided_persistence/15.3_composite_thresholds/README.md)
+- [15.4 Why Composite Forms Are Rarer](part_iv_matter_shells_and_stability/chapter_15_composite_structures_and_braided_persistence/15.4_why_composite_forms_are_rarer/README.md)
+- [15.5 When Composite Survival Becomes Favored](part_iv_matter_shells_and_stability/chapter_15_composite_structures_and_braided_persistence/15.5_when_composite_survival_becomes_favored/README.md)
+- [15.6 Toward Matter Architecture](part_iv_matter_shells_and_stability/chapter_15_composite_structures_and_braided_persistence/15.6_toward_matter_architecture/README.md)
+
+---
+
+### Part V — Implications for Physics
+
+**[Chapter 16: Emergent Geometry](part_v_implications_for_physics/chapter_16_emergent_geometry/README.md)**
+
+- [16.1 Why Geometry May Not Be Fundamental](part_v_implications_for_physics/chapter_16_emergent_geometry/16.1_why_geometry_may_not_be_fundamental/README.md)
+- [16.2 Distance as Stabilized Relational Separation](part_v_implications_for_physics/chapter_16_emergent_geometry/16.2_distance_as_stabilized_relational_separation/README.md)
+- [16.3 Wave-Rich Background as Pre-Geometric Expression](part_v_implications_for_physics/chapter_16_emergent_geometry/16.3_wave_rich_background_as_pre_geometric_expression/README.md)
+- [16.4 Closure and Curvature as Proto-Geometry](part_v_implications_for_physics/chapter_16_emergent_geometry/16.4_closure_and_curvature_as_proto_geometry/README.md)
+- [16.5 Can a Manifold Emerge from Persistence?](part_v_implications_for_physics/chapter_16_emergent_geometry/16.5_can_a_manifold_emerge_from_persistence/README.md)
+- [16.6 Limits of the Present Derivation](part_v_implications_for_physics/chapter_16_emergent_geometry/16.6_limits_of_the_present_derivation/README.md)
+
+**[Chapter 17: Emergent Time and Entropy](part_v_implications_for_physics/chapter_17_emergent_time_and_entropy/README.md)**
+
+- [17.1 Time as Ordered Loss](part_v_implications_for_physics/chapter_17_emergent_time_and_entropy/17.1_time_as_ordered_loss/README.md)
+- [17.2 Recursive Memory Loss](part_v_implications_for_physics/chapter_17_emergent_time_and_entropy/17.2_recursive_memory_loss/README.md)
+- [17.3 Entropy as Degradation of Coherence](part_v_implications_for_physics/chapter_17_emergent_time_and_entropy/17.3_entropy_as_degradation_of_coherence/README.md)
+- [17.4 Time, Drift, and Persistence Horizon](part_v_implications_for_physics/chapter_17_emergent_time_and_entropy/17.4_time_drift_and_persistence_horizon/README.md)
+- [17.5 The Second Law in CTS Language](part_v_implications_for_physics/chapter_17_emergent_time_and_entropy/17.5_the_second_law_in_cts_language/README.md)
+- [17.6 Survival Against Entropy](part_v_implications_for_physics/chapter_17_emergent_time_and_entropy/17.6_survival_against_entropy/README.md)
+
+**[Chapter 18: Light, Propagation, and the Cheapest Expressions](part_v_implications_for_physics/chapter_18_light_propagation_and_the_cheapest_expressions/README.md)**
+
+- [18.1 Why Cheap Expressions Dominate the Backdrop](part_v_implications_for_physics/chapter_18_light_propagation_and_the_cheapest_expressions/18.1_why_cheap_expressions_dominate_the_backdrop/README.md)
+- [18.2 Wave Modes as the Least Burdened Expressions](part_v_implications_for_physics/chapter_18_light_propagation_and_the_cheapest_expressions/18.2_wave_modes_as_the_least_burdened_expressions/README.md)
+- [18.3 Why Propagation Precedes Closure](part_v_implications_for_physics/chapter_18_light_propagation_and_the_cheapest_expressions/18.3_why_propagation_precedes_closure/README.md)
+- [18.4 Why Light-Like Behavior Belongs to the Propagation Family](part_v_implications_for_physics/chapter_18_light_propagation_and_the_cheapest_expressions/18.4_why_light_like_behavior_belongs_to_the_propagation_family/README.md)
+- [18.5 Background Recurrence vs Durable Objecthood](part_v_implications_for_physics/chapter_18_light_propagation_and_the_cheapest_expressions/18.5_background_recurrence_vs_durable_objecthood/README.md)
+- [18.6 Implications for Fabric Models of Spacetime](part_v_implications_for_physics/chapter_18_light_propagation_and_the_cheapest_expressions/18.6_implications_for_fabric_models_of_spacetime/README.md)
+
+**[Chapter 19: Comparison with Existing Theories](part_v_implications_for_physics/chapter_19_comparison_with_existing_theories/README.md)**
+
+- [19.1 Thermodynamics and Dissipative Structure](part_v_implications_for_physics/chapter_19_comparison_with_existing_theories/19.1_thermodynamics_and_dissipative_structure/README.md)
+- [19.2 Landau and Ginzburg Models](part_v_implications_for_physics/chapter_19_comparison_with_existing_theories/19.2_landau_and_ginzburg_models/README.md)
+- [19.3 Decoherence and Recursive Failure](part_v_implications_for_physics/chapter_19_comparison_with_existing_theories/19.3_decoherence_and_recursive_failure/README.md)
+- [19.4 Nuclear Stability and Retention Theory](part_v_implications_for_physics/chapter_19_comparison_with_existing_theories/19.4_nuclear_stability_and_retention_theory/README.md)
+- [19.5 Complex Systems and Survival Selection](part_v_implications_for_physics/chapter_19_comparison_with_existing_theories/19.5_complex_systems_and_survival_selection/README.md)
+- [19.6 What CTS Adds and Where It Remains Incomplete](part_v_implications_for_physics/chapter_19_comparison_with_existing_theories/19.6_what_cts_adds_and_where_it_remains_incomplete/README.md)
+
+---
+
+### [Conclusion](conclusion/README.md)
+
+### [Supplementary](misc/README.md)
+
+---
+
+### Appendices
+
+- [Appendix A: Derivation of the Selection Number](appendices/appendix_a.md)
+- [Appendix B: Derivation of the Corrected Threshold](appendices/appendix_b.md)
+- [Appendix C: Derivation of the CTS Energy Functional](appendices/appendix_c.md)
+- [Appendix D: Vortex, Ring, Shell, and Braid Energy Estimates](appendices/appendix_d.md)
+- [Appendix E: The CTS Excitation Ledger](appendices/appendix_e.md)
+- [Appendix F: Threshold Phase Chart and Survival Map](appendices/appendix_f.md)
+- [Appendix G: Notation, Symbols, and Conventions](appendices/appendix_g.md)
+- [Appendix H: Glossary of CTS Terms](appendices/appendix_h.md)
