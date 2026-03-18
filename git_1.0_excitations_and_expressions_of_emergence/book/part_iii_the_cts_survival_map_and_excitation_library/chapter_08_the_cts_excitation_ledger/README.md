@@ -4,6 +4,7 @@
 
 ## Sections
 
+- [8.0 The Ab State Taxonomy](8.0_the_ab_state_taxonomy/README.md)
 - [8.1 What Counts As An Excitation](8.1_what_counts_as_an_excitation/README.md)
 - [8.2 Wave Modes](8.2_wave_modes/README.md)
 - [8.3 Phase Locked Modes](8.3_phase_locked_modes/README.md)
