@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Astrosynthesis — Two Books, One Model</title>
+  <title>Astrosynthesis — Books 1.0, 2.0 &amp; 3.0</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -106,9 +106,36 @@
 
     .resize-handle-top { top: 0; }
     .resize-handle-bottom { bottom: 0; }
+
+    /* ── BOOK 3 LINK ── */
+    #book3-link {
+      position: fixed;
+      bottom: 1.2rem;
+      right: 1.2rem;
+      z-index: 500;
+      background: linear-gradient(135deg, #3d3a8c, #6660c8);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.55rem 1.1rem;
+      border-radius: 6px;
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.45);
+      transition: opacity 0.2s, transform 0.2s;
+      line-height: 1.4;
+      text-align: center;
+    }
+    #book3-link:hover { opacity: 0.88; transform: translateY(-2px); }
+    #book3-link span { display: block; font-size: 9px; opacity: 0.7; margin-top: 1px; }
   </style>
 </head>
 <body>
+
+<a href="./book3/" id="book3-link" target="_blank" rel="noopener">
+  Book 3.0 — Astrosynthesis
+  <span>single-page · full text · math</span>
+</a>
 
 <div class="three-panel" id="three-panel">
 
